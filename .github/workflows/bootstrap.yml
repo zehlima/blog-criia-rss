@@ -19,6 +19,7 @@ jobs:
       R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
       R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
       MAX_RUN_SECONDS: '1800'
     steps:
       - uses: actions/checkout@v4
@@ -42,7 +43,7 @@ jobs:
           for key, value in expected.items():
               print("CAMPO", key, "OK" if config.get(key) == value else "DIVERGENTE")
           try:
-              with psycopg.connect(os.environ["DATABASE_URL"], connect_timeout=15, sslmode="require") as db:
+              with psycopg.connect(os.environ["DATABASE_URL"], host=os.environ["DATABASE_HOST"], connect_timeout=15, sslmode="require") as db:
                   db.execute("SELECT 1")
               print("DIAGNOSTICO: banco conectado")
           except Exception as exc:
