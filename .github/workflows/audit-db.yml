@@ -55,4 +55,14 @@ jobs:
               cfg.pop("sslmode",None)
               cfg.pop("connect_timeout",None)
               test("ORIGINAL_URL_NO_OVERRIDE",cfg)
+          from urllib.parse import urlsplit, unquote
+          try:
+              parsed=urlsplit(uri)
+              valid=(parsed.hostname=="aws-0-sa-east-1.pooler.supabase.com" and parsed.username=="postgres.ikoqkeqxqfqkfjmcwwdq" and parsed.port==5432)
+              print("URL_STANDARD_PARSER_MATCHES_PROJECT",valid)
+              print("URL_PASSWORD_CONTAINS_RAW_AT", bool(parsed.password) and "@" in parsed.password)
+              if valid and parsed.password:
+                  test("STANDARD_URL_PARSER",dict(host=parsed.hostname,port=parsed.port,user=parsed.username,dbname="postgres",password=unquote(parsed.password)))
+          except Exception:
+              print("STANDARD_URL_PARSER_INVALID")
           PY
