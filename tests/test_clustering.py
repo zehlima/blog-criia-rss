@@ -218,3 +218,31 @@ def test_story_form_metadata_is_precomputed_for_pairwise_matrix(monkeypatch):
     titles=[f'Huawei product update report {i}' for i in range(20)]
     coherent_groups(np.eye(20),titles,min_similarity=.72)
     assert len(calls)==len(titles)
+
+@pytest.mark.parametrize('titles',[
+    ['Xiaomi em destaque: uma seleção de smartphones com ótimo custo-benefício para você aproveitar agora',
+     'Motorola em destaque: veja uma seleção de smartphones com 5G, câmera com IA e bateria potente em promoção'],
+    ['Como desativar o Gemini no Gmail pela web',
+     'Como enviar uma resposta do Gemini ao Gmail [iPhone, iPad e Mac]'],
+    ['Instale o Bazecor no Ubuntu, Fedora e Debian com Flatpak',
+     'Instale o Platen no Ubuntu, Fedora e Debian com Flatpak'],
+    ['NYT Connections hints and answers for Monday, September 14 (game #1191)',
+     'NYT Strands hints and answers for Monday, September 14 (game #925)'],
+    ['Freio na IA: Trump fala em conspiração para favorecer a China',
+     'Freio na IA: China alerta para risco à segurança nacional'],
+    ['Jogo A será apresentado na TGS 2026',
+     'Jogo B terá estande próprio na TGS 2026'],
+])
+def test_recurring_editorial_shells_do_not_create_topics(titles):
+    vectors=np.array([[1.,0.],[.91,(1-.91**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_different_brands_do_not_group_as_one_product_offer():
+    titles=['ECOVACS T90 OMNI a 439€: robot con aspirazione 30.000 Pa',
+            'Dreame L50 Ultra a 499€: robot con aspirazione 28.000 Pa']
+    vectors=np.array([[1.,0.],[.91,(1-.91**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_currency_price_is_detected_as_commerce_without_word_boundary_bug():
+    from trends.clustering import story_form_flags
+    assert story_form_flags('ECOVACS T90 OMNI a 439€: robot')[4]

@@ -16,7 +16,7 @@ GENERIC={'the','and','for','with','from','this','that','new','news','tech','tech
  'gutscheine','rabattcodes','loteria','lottery','nacional','national','sorteo','resultados',
  'eylul','sifir','arac','fiyat','listesi','guncel','kampanyalar','kredi','firsatlari',
  'indirimli','otomobiller','indirimler','series','serie','serisi','model','models',
- 'costa','rica','colombia','colômbia','mexico','méxico','brasil','brazil','argentina',
+ 'costa','rica','colombia','colômbia','mexico','méxico','brasil','brazil','argentina','eua','eeuu',
  'panama','panamá','chile','peru','venezuela','china','india','italia','italy','france','spain','españa',
  'germany','europe','europa','africa','áfrica','asia','ásia','australia','united','states'}
 # A single broad brand/product family is not an event identity. Two anchors can
@@ -32,7 +32,8 @@ GENERIC.update({'risk','risks','risky','warning','warnings','warns','safety','se
 BROAD.add('anthropic')
 
 BRANDS={'apple','honor','huawei','xiaomi','samsung','google','microsoft','openai','anthropic',
-        'meta','amazon','sony','oppo','vivo','lg','nvidia','amd','intel','blizzard'}
+        'meta','amazon','sony','oppo','vivo','lg','nvidia','amd','intel','blizzard',
+        'motorola','ecovacs','dreame','philips'}
 
 SALES_RE=re.compile(
     r'(?i)(?:\b(?:sales?|sold|units?|vendas?|vendid[oa]s?|verkauft|absatz|sat[iı]s|sprzedaz|'
@@ -42,13 +43,28 @@ REVIEW_RE=re.compile(
     r'essai|test(?:e|es)?|an[aá]lise|experi[eê]ncia|inceleme)\b')
 COMMERCE_RE=re.compile(
     r'(?i)(?:\b(?:deal|offer|sale|discount|promo(?:tion)?|offerta|angebot|rabatt|fiyat|pre[cç]o)\b|'
-    r'(?:[$€£¥]|\b(?:usd|eur|euro|reais|d[oó]lares?)\b)\s*\d|\d[\d.,]*\s*(?:[$€£¥]|usd|eur|euro|reais|d[oó]lares?)\b)')
+    r'(?:[$€£¥]|\b(?:usd|eur|euro|reais|d[oó]lares?)\b)\s*\d|\d[\d.,]*\s*(?:[$€£¥]|\b(?:usd|eur|euro|reais|d[oó]lares?)\b))')
 SECURITY_FIX_RE=re.compile(
     r'(?i)\b(?:security|sicherheits(?:l[uü]cke|update)|vulnerability|vulnerabilit(?:y|ies|a|é)|falha|'
     r'bug|patch|update|atualiza[cç][aã]o)\b')
 REGULATORY_RE=re.compile(
     r'(?i)\b(?:ban|banned|prohibit(?:ed|ion)?|verbot|interdiction|proibi[cç][aã]o|'
     r'regulatory|regulation|regulamenta[cç][aã]o)\b')
+
+# These are recurring editorial shells, not event identities.  Exact duplicate
+# headlines may still group (the equality check runs first), but two different
+# tutorials, download cards, shopping roundups, calendars or conference
+# catalogue entries must remain separate even when their boilerplate is close.
+NON_EVENT_TEMPLATE_RE=re.compile(
+    r'(?ix)(?:'
+    r'^\s*(?:como\b|how\s+to\b|instale\b|install\b|download\b|baix(?:e|ar)\b|descarg(?:a|ar)\b)|'
+    r'\bhints?\s+and\s+answers?\b|'
+    r'^\s*heise-angebot\s*:|'
+    r'\b(?:uma|veja\s+uma|a)\s+sele[cç][aã]o\s+de\b|'
+    r'^\s*freio\s+na\s+ia\s*:|'
+    r'^\s*(?:\[\s*virtual\s+event\s*\]|gisec\s+20\d{2}\s*:)|'
+    r'^\s*[^:]{0,50}\b(?:tgs|ces|mwc|web\s+summit)\s+20\d{2}\b'
+    r')')
 
 ROMAN={'i':'1','ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
 VERSIONED_PRODUCTS={'iphone','ios','windows','galaxy','diablo','playstation','xbox'}
@@ -110,7 +126,7 @@ def is_multi_story_digest(title):
 def is_template_listing(title):
     # Conference/catalogue prefixes identify a venue or content type, not the
     # same announcement. Exact syndication is handled before this gate.
-    return bool(re.match(r'(?i)^\s*(?:\[\s*virtual event\s*\]|gisec\s+20\d{2}\s*:)',title))
+    return bool(NON_EVENT_TEMPLATE_RE.search(title))
 
 def story_form_flags(title):
     return (bool(SALES_RE.search(title)),bool(REVIEW_RE.search(title)),
@@ -155,7 +171,7 @@ def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_li
     brands_b=brand_set(b) if brands_b is None else brands_b
     # If one headline introduces a different brand while borrowing a brand from
     # the other (comparisons/inspiration), the shared brand is not event proof.
-    if brands_a and brands_b and brands_a!=brands_b and len(brands_a|brands_b)>1 and not compounds:
+    if brands_a and brands_b and brands_a!=brands_b and len(brands_a|brands_b)>1:
         return False
     if compounds:return similarity>=.735
     atomic={x for x in shared if not x.startswith('~')}

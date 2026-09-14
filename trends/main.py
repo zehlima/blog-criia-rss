@@ -18,7 +18,7 @@ from .core import continent,families,in_window,rankings
 BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
-VERSION='boris-topics-v16-commerce-and-review-event-gates-072'
+VERSION='boris-topics-v17-recurring-editorial-template-gates-072'
 # The semantic input is unchanged from v11; only the lexical/editorial gate
 # changed, so reuse the pinned v11 vectors instead of recomputing 24k titles.
 EMBEDDING_CACHE_VERSION='boris-topics-v11-event-context-active-inventory-072'
@@ -170,8 +170,8 @@ def prepare(db,s3,run_id):
     coverage={'clustering_method':'complete_linkage_cosine',
       'minimum_pairwise_similarity':.72,
       'semantic_basis':'title_derived_event_context_without_broad_product_identity',
-      'lexical_gate':'exact_title_or_narrow_compound_at_0735_or_two_anchors_with_rare_specific_term; product_versions_must_match; multi_story_digests_event_templates_sales_vs_review_and_cross_brand_comparisons_excluded',
-      'calibration_status':'Known v4-v11 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
+      'lexical_gate':'exact_title_or_narrow_compound_at_0735_or_two_anchors_with_rare_specific_term; product_versions_must_match; multi_story_digests_recurring_editorial_templates_sales_vs_review_cross_brand_and_distinct_price_offers_excluded',
+      'calibration_status':'Known v4-v16 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
       'editorial_status':'automatic_groups_require_editorial_review',
       'ungrouped_articles':sum(a['topic_id']=='outlier' for a in recent),
       'corpus_articles':len(articles),'window_articles':len(recent),

@@ -14,3 +14,4 @@
 2026-09-14: v14 gate calendar templates and incompatible product story forms
 2026-09-14: v15 precompute all editorial event gates outside the pairwise loop
 2026-09-14: v16 separate editorial reviews and distinct price offers
+2026-09-14: v17 exclude recurring tutorial, catalogue, roundup and event-shell false positives
