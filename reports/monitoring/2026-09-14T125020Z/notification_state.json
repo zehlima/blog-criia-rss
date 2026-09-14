@@ -1,0 +1,42 @@
+{
+  "observed_at": "2026-09-14T12:50:20Z",
+  "collection_slot": "2026-09-14T09:00:00+00:00",
+  "collection_finished_at": "2026-09-14T12:24:39.843595+00:00",
+  "attempted": 600,
+  "ok": 479,
+  "error": 121,
+  "not_attempted": 0,
+  "articles": 15624,
+  "content_key": 2848,
+  "pending": 11888,
+  "extraction_failed": 888,
+  "analysis_notifications": [
+    {
+      "id": "34840180581",
+      "status": "ready",
+      "delivered": true,
+      "scopes": [
+        "country",
+        "continent",
+        "globe"
+      ]
+    },
+    {
+      "id": "34843275756",
+      "status": "ready",
+      "delivered": true,
+      "scopes": [
+        "country",
+        "continent",
+        "globe"
+      ]
+    }
+  ],
+  "revalidation": {
+    "id": "34844318765",
+    "candidate_ok": 95,
+    "candidate_failed": 26,
+    "database_changed": false
+  },
+  "notes": "Novo encerramento parcial e duas análises técnicas entregues. Sem cobertura Brasil. Coerência editorial pendente."
+}
