@@ -1,0 +1,46 @@
+{
+  "notified_at": "2026-09-14T22:23:37Z",
+  "collection_run_id": "34897398916",
+  "collection_status": "partial",
+  "inventory_active": 675,
+  "feeds_attempted": 675,
+  "feeds_ok": 639,
+  "feeds_error": 36,
+  "feeds_not_attempted": 0,
+  "active_articles": 26874,
+  "content_key_total": 25390,
+  "valid_text_bodies": 25385,
+  "page_texts": 24476,
+  "publisher_rss_texts": 909,
+  "extraction_unavailable": 1482,
+  "invalid_references": 7,
+  "extraction_pending_at_closure": 0,
+  "existing_bodies_due_recheck_at_closure": 1740,
+  "recovery_run_id": "34903677679",
+  "recovery_status": "running",
+  "recovery_feeds_ok_asof_check": 646,
+  "recovery_feeds_error_asof_check": 29,
+  "recovery_pending_articles_asof_check": 22,
+  "analysis_run_id": "34903677667",
+  "analysis_status": "building",
+  "analysis_snapshot_rows": 0,
+  "previous_analysis_cancelled": "34902039672",
+  "fix_commit": "514408c9d219366c70d6a69cf67c00172cbd275a",
+  "local_tests_passed": 108,
+  "github_collector_tests": "success",
+  "github_analysis_tests": "success",
+  "drive_reports": [
+    {
+      "file": "feed_errors.csv",
+      "url": "https://drive.google.com/file/d/13TIEYIA0WQ2XWq2jsHyAkYb_wfrBS25W/view?usp=drivesdk"
+    },
+    {
+      "file": "feed_errors.md",
+      "url": "https://drive.google.com/file/d/1fGNqJWY2ipLva7OL-0Wtr5ve_EGAEUsS/view?usp=drivesdk"
+    },
+    {
+      "file": "extraction_errors.csv",
+      "url": "https://drive.google.com/file/d/1X2DIw5kq0u8DrFjk5bMSd8UgrhAKXaiO/view?usp=drivesdk"
+    }
+  ]
+}

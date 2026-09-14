@@ -1,0 +1,11 @@
+2026-09-14T22:10:27.1807873Z ==================================== ERRORS ====================================
+2026-09-14T22:10:27.1808687Z _____________________ ERROR collecting tests/test_daily.py _____________________
+2026-09-14T22:10:27.1809436Z ImportError while importing test module '/home/runner/work/blog-criia-rss/blog-criia-rss/tests/test_daily.py'.
+2026-09-14T22:10:27.1814141Z tests/test_daily.py:2: in <module>
+2026-09-14T22:10:27.1815084Z E   ModuleNotFoundError: No module named 'numpy'
+2026-09-14T22:10:27.1816380Z ERROR tests/test_daily.py
+2026-09-14T22:10:27.1816953Z !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+2026-09-14T22:10:27.1817608Z 1 skipped, 1 error in 1.24s
+2026-09-14T22:10:27.2444242Z ##[error]Process completed with exit code 2.
+2026-09-14T22:10:27.9989887Z (node:2302) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Analysis 34902039672: job 104170002858 cancelled 2026-09-14T22:11:23.511501Z, zero snapshots; state corrected from building to failed, progress retained.

@@ -1,0 +1,30 @@
+{
+  "finished_at": "2026-09-14T22:02:14.160454+00:00",
+  "id": "34897398916",
+  "report": {
+    "articles": {
+      "content_key_does_not_prove_integrality": true,
+      "content_key_total": 25390,
+      "extracted": 25390,
+      "invalid_references": 7,
+      "page_texts": 24476,
+      "pending": 0,
+      "publisher_rss_texts": 909,
+      "title_summary_only": 0,
+      "total": 26874,
+      "unavailable": 1482,
+      "valid_text_bodies": 25385,
+      "without_text": 1489
+    },
+    "compressed_bytes_written": 5590564,
+    "due_articles": 1740,
+    "expected_feeds": 675,
+    "feeds_errors": 36,
+    "feeds_not_attempted": 0,
+    "feeds_ok": 639,
+    "finished_at": "2026-09-14T22:02:14.160454+00:00",
+    "slot": "2026-09-14T21:00:00+00:00",
+    "status": "partial"
+  },
+  "slot": "2026-09-14T21:00:00+00:00"
+}
