@@ -1,0 +1,58 @@
+name: Auditar configuracao do banco
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/audit-db.yml']
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'psycopg[binary]==3.3.5'
+      - name: Diagnosticar sem expor credenciais
+        env:
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          python - <<'PY'
+          import os
+          import psycopg
+          from psycopg.conninfo import conninfo_to_dict
+          pw = os.getenv("DATABASE_PASSWORD", "")
+          uri = os.getenv("DATABASE_URL", "")
+          print("PASSWORD_PRESENT", bool(pw))
+          print("PASSWORD_OUTER_WHITESPACE", bool(pw) and pw != pw.strip())
+          print("PASSWORD_IS_URI", pw.startswith(("postgres://","postgresql://")))
+          try:
+              cfg = conninfo_to_dict(uri)
+          except Exception:
+              cfg = {}
+          print("URL_VALID", bool(cfg))
+          print("URL_PASSWORD_MATCHES_SEPARATE", bool(pw) and cfg.get("password") == pw)
+          print("URL_USER_MATCHES_PROJECT", cfg.get("user") == "postgres.ikoqkeqxqfqkfjmcwwdq")
+          print("URL_HOST_MATCHES_SCREENSHOT", cfg.get("host") == "aws-0-sa-east-1.pooler.supabase.com")
+          def test(label, args):
+              try:
+                  with psycopg.connect(**args, connect_timeout=10, sslmode="require") as db:
+                      db.execute("SELECT 1")
+                  print(label, "CONNECTED")
+              except Exception as exc:
+                  msg = str(exc).lower()
+                  reason = "OTHER"
+                  for needle, code in [("password authentication failed","AUTH_REJECTED"),("tenant or user not found","TENANT_NOT_FOUND"),("network is unreachable","NETWORK_UNREACHABLE"),("timeout","TIMEOUT"),("translate host","DNS"),("no password","NO_PASSWORD")]:
+                      if needle in msg:
+                          reason=code
+                          break
+                  print(label, reason)
+          if pw:
+              test("SEPARATE_PASSWORD", dict(host="aws-0-sa-east-1.pooler.supabase.com",port=5432,dbname="postgres",user="postgres.ikoqkeqxqfqkfjmcwwdq",password=pw))
+          if cfg and cfg.get("user")=="postgres.ikoqkeqxqfqkfjmcwwdq" and cfg.get("host","").endswith(".pooler.supabase.com"):
+              cfg.pop("sslmode",None)
+              cfg.pop("connect_timeout",None)
+              test("ORIGINAL_URL_NO_OVERRIDE",cfg)
+          PY
