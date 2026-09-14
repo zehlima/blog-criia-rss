@@ -9,3 +9,4 @@
 2026-09-14: v10 precompute event metadata outside the pairwise loop
 2026-09-14: v11 cluster title-derived event context and restrict corpus to active inventory
 2026-09-14: v12 exclude venue/catalogue templates and weak product-only matches
+2026-09-14: v12 reuse immutable v11 event-context embedding cache
