@@ -58,3 +58,32 @@ def test_preflight_parent_does_not_trigger_analysis(monkeypatch):
     class DB:
         def execute(self,*args):return Result()
     assert prepare(DB(),None,'test-run') is False
+
+def test_failed_refresh_preserves_archived_body():
+    from collector.article_batch import outcome
+    now=datetime.now(timezone.utc)
+    a={'id':1,'content_key':'existing','content_hash':'hash','content_chars':200,
+       'content_status':'extracted','attempts':0}
+    r=outcome(a,None,'http_403',now)
+    assert r['content_key']=='existing' and r['content_status']=='extracted'
+    assert r['attempts']==1 and not r['write_version']
+    assert r['next_attempt_at']>now
+
+def test_pending_failure_does_not_claim_full_text():
+    from collector.article_batch import outcome
+    a={'id':1,'content_key':None,'content_status':'pending','attempts':0}
+    r=outcome(a,None,'robots_disallowed',datetime.now(timezone.utc))
+    assert r['content_status']=='unavailable' and r['content_key'] is None
+
+def test_batch_sql_is_valid_and_versions_before_updates():
+    from collector.article_batch import persist
+    from pglast import parse_sql
+    from contextlib import nullcontext
+    class DB:
+        calls=[]
+        def transaction(self):return nullcontext()
+        def execute(self,sql,args):
+            parse_sql(sql.replace('%s',"'[]'"));self.calls.append(sql)
+    db=DB();assert persist(db,[])==0
+    assert 'INSERT INTO news_article_versions' in db.calls[0]
+    assert 'UPDATE news_articles' in db.calls[1]

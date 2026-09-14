@@ -65,39 +65,29 @@ def sources(db,s3,slot,feeds,deadline):
                 print(json.dumps({'phase':'feeds','feed_id':f['id'],'status':error or 'ok','items':count}),flush=True)
 
 def articles(db,s3,slot,deadline):
-    archived_bytes=0
+    from .article_batch import outcome,preserve,persist
+    archived_bytes=0;processed=0
     with ThreadPoolExecutor(max_workers=8) as pool:
         while time.monotonic()<deadline:
-            batch=db.execute('''SELECT * FROM news_articles WHERE next_attempt_at<=now()
-              AND (last_seen_at >= %s OR content_key IS NULL)
-              ORDER BY (content_key IS NOT NULL),attempts,next_attempt_at,id LIMIT 24''',(slot,)).fetchall()
+            batch=db.execute('''WITH due AS (
+              SELECT *,row_number() OVER(PARTITION BY split_part(url,'/',3)
+                ORDER BY (content_key IS NOT NULL),attempts,next_attempt_at,id) domain_rank
+              FROM news_articles WHERE next_attempt_at<=now()
+                AND (last_seen_at >= %s OR content_key IS NULL))
+              SELECT * FROM due ORDER BY domain_rank,(content_key IS NOT NULL),attempts,next_attempt_at,id LIMIT 32''',(slot,)).fetchall()
             if not batch:break
-            for a,(result,error) in zip(batch,pool.map(lambda a:attempt(fetch_article,a),batch)):
-                if error:
-                    db.execute('''UPDATE news_articles SET last_error=%s,attempts=attempts+1,
-                      content_status=CASE WHEN content_key IS NULL THEN 'unavailable' ELSE content_status END,
-                      page_checked_at=now(),next_attempt_at=now()+make_interval(secs => %s) WHERE id=%s''',
-                      (error,min(86400,3600*2**min(a['attempts'],5)),a['id']))
-                    continue
-                status,h,text,url=result
-                content_hash=a['content_hash'];key=a['content_key'];chars=a['content_chars']
-                if text is not None:
-                    content_hash=digest(text);chars=len(text)
-                    if content_hash!=a['content_hash']:
-                        # O objeto imutável é escrito ANTES de o banco apontar para ele.
-                        content_hash,key,size=archive(s3,a['url'],text);archived_bytes+=size
-                with db.transaction():
-                    if text is not None:
-                        db.execute('''INSERT INTO news_article_versions(article_id,content_hash,content_key)
-                          VALUES(%s,%s,%s) ON CONFLICT DO NOTHING''',(a['id'],content_hash,key))
-                    db.execute('''UPDATE news_articles SET content_hash=%s,content_key=%s,content_chars=%s,
-                      content_status='extracted',extracted_at=CASE WHEN %s THEN now() ELSE extracted_at END,
-                      final_url=%s,page_etag=%s,page_last_modified=%s,page_checked_at=now(),
-                      attempts=0,last_error=NULL,next_attempt_at=%s WHERE id=%s''',
-                      (content_hash,key,chars,text is not None,url,
-                       h.get('ETag',a['page_etag'] if status==304 else None),
-                       h.get('Last-Modified',a['page_last_modified'] if status==304 else None),
-                       max(slot+timedelta(hours=6),datetime.now(timezone.utc)+timedelta(hours=1)),a['id']))
+            fetched=list(pool.map(lambda a:attempt(fetch_article,a),batch))
+            def finish(pair):
+                a,(result,error)=pair
+                if not error:
+                    result,error=attempt(lambda _:preserve(s3,a,result),None)
+                    if error:error='storage_'+error
+                return outcome(a,result,error,slot)
+            rows=list(pool.map(finish,zip(batch,fetched)))
+            archived_bytes+=persist(db,rows);processed+=len(rows)
+            print(json.dumps({'phase':'articles','processed_this_run':processed,
+              'batch_extracted':sum(r['last_error'] is None for r in rows),
+              'batch_failed':sum(r['last_error'] is not None for r in rows)}),flush=True)
     return archived_bytes
 
 def summary(db,slot,total):
