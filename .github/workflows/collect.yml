@@ -3,8 +3,8 @@ on:
   schedule:
     # Brasília (UTC-3): 00h,06h,12h,18h. UTC: 03h,09h,15h,21h.
     - cron: '0 3,9,15,21 * * *'
-    # Recuperação uma hora depois: retoma pendências da mesma janela.
-    - cron: '0 4,10,16,22 * * *'
+    # Recuperação horária nas demais horas: retoma checkpoints sem refazer feeds OK.
+    - cron: '0 0-2,4-8,10-14,16-20,22-23 * * *'
   push:
     branches: [main]
     paths: ['.github/workflows/collect.trigger']
@@ -24,7 +24,7 @@ jobs:
   collect:
     if: github.event_name != 'schedule' || vars.ENABLE_COLLECTION != 'false'
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 65
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,7 +42,8 @@ jobs:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           R2_BUCKET: ${{ secrets.R2_BUCKET }}
-          MAX_RUN_SECONDS: '1800'
+          MAX_RUN_SECONDS: '3000'
+          ARTICLE_WORKERS: '16'
           MODE: ${{ inputs.mode || 'run' }}
         run: python -m collector.main "$MODE"
       - uses: actions/upload-artifact@v4

@@ -12,6 +12,7 @@ from pathlib import Path
 
 from psycopg.types.json import Jsonb
 from collector.storage import connect
+from collector.inventory import urls as active_urls
 from .core import continent,families,in_window,rankings
 
 BUCKET=os.getenv('R2_BUCKET')
@@ -165,7 +166,7 @@ def prepare(db,s3,run_id):
       VALUES(%s,%s,%s,'building',%s) ON CONFLICT(id) DO UPDATE SET status='building',error=NULL''',(run_id,source_slot,cutoff,VERSION))
     sources=attempt['feeds'] if attempt else db.execute('''SELECT f.id,f.name,f.country,f.region,f.site_url,f.rss_url,
        coalesce(r.status,'not_attempted') status,r.error FROM news_feeds f
-       LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s ORDER BY f.id''',(source_slot,)).fetchall()
+       LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s WHERE f.rss_url=ANY(%s) ORDER BY f.id''',(source_slot,active_urls())).fetchall()
     articles=all_articles(db,cutoff)
     log(phase='corpus',articles=len(articles),cutoff=cutoff)
     with ThreadPoolExecutor(max_workers=16) as pool:articles=list(pool.map(lambda a:load_text(s3,a),articles))

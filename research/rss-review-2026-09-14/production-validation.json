@@ -1,0 +1,944 @@
+[
+  {
+    "id": "9",
+    "url": "https://www.datacenterknowledge.com/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "27",
+    "url": "https://www.eetimes.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "36",
+    "url": "https://semiengineering.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "52",
+    "url": "https://rcrwireless.com/feed",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "53",
+    "url": "https://thecyberexpress.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "72",
+    "url": "https://venturebeat.com/feed",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_429"
+  },
+  {
+    "id": "75",
+    "url": "https://techstrong.ai/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "76",
+    "url": "https://nicaraguainvestiga.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 13,
+    "error": ""
+  },
+  {
+    "id": "77",
+    "url": "https://elperiodicocr.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 5,
+    "error": ""
+  },
+  {
+    "id": "84",
+    "url": "https://thecostaricanews.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "87",
+    "url": "https://www.elsalvadortimes.com/rss/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "90",
+    "url": "https://criterio.hn/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 5,
+    "error": ""
+  },
+  {
+    "id": "93",
+    "url": "https://www.ecotvpanama.com/rss/pages/ultimas-noticias.xml",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "94",
+    "url": "https://elnuevodiario.com.do/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "95",
+    "url": "https://www.elsalvador.com/sitemap.rss",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "97",
+    "url": "https://www.diariolibre.com/rss/portada.xml",
+    "ok": true,
+    "http": 200,
+    "items": 41,
+    "error": ""
+  },
+  {
+    "id": "99",
+    "url": "https://www.elheraldo.hn/rss/portada.xml",
+    "ok": true,
+    "http": 200,
+    "items": 30,
+    "error": ""
+  },
+  {
+    "id": "105",
+    "url": "https://ensegundos.com.pa/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ContentDecodingError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))"
+  },
+  {
+    "id": "107",
+    "url": "https://www.tribune242.com/rss/headlines/",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "116",
+    "url": "https://www.cibercuba.com/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "117",
+    "url": "https://dominicantoday.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "118",
+    "url": "https://www.lagacetadepanama.com/rss/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "120",
+    "url": "https://www.diariocolatino.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "122",
+    "url": "https://diariodecuba.com/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "127",
+    "url": "https://www.metrolibre.com/rss/portada.xml",
+    "ok": true,
+    "http": 200,
+    "items": 5,
+    "error": ""
+  },
+  {
+    "id": "132",
+    "url": "https://oncubanews.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: invalid_or_malformed_feed"
+  },
+  {
+    "id": "138",
+    "url": "https://republica.com/feed",
+    "ok": true,
+    "http": 200,
+    "items": 25,
+    "error": ""
+  },
+  {
+    "id": "142",
+    "url": "https://lahora.gt/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: invalid_or_malformed_feed"
+  },
+  {
+    "id": "144",
+    "url": "https://qcostarica.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "145",
+    "url": "https://elnacional.com.do/rss/home.xml",
+    "ok": true,
+    "http": 200,
+    "items": 58,
+    "error": ""
+  },
+  {
+    "id": "146",
+    "url": "https://www.telemetro.com/rss/pages/ultimas-noticias.xml",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "159",
+    "url": "https://www.chip.de/rss",
+    "ok": true,
+    "http": 200,
+    "items": 400,
+    "error": ""
+  },
+  {
+    "id": "161",
+    "url": "https://www.computerbild.de/rss/35011529.xml",
+    "ok": true,
+    "http": 200,
+    "items": 100,
+    "error": ""
+  },
+  {
+    "id": "162",
+    "url": "https://computerhoy.20minutos.es/rss/",
+    "ok": true,
+    "http": 200,
+    "items": 76,
+    "error": ""
+  },
+  {
+    "id": "165",
+    "url": "https://www.inside-it.ch/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "180",
+    "url": "https://feeds.hwupgrade.it/rss_hwup.xml",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "184",
+    "url": "https://www.fintechfutures.com/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "195",
+    "url": "https://siliconcanals.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "207",
+    "url": "https://www.siliconrepublic.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "227",
+    "url": "https://ain.ua/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "234",
+    "url": "https://mobilmania.zive.cz/rss/sc-47/default.aspx",
+    "ok": true,
+    "http": 200,
+    "items": 8,
+    "error": ""
+  },
+  {
+    "id": "240",
+    "url": "https://www.minuszos.hu/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 5,
+    "error": ""
+  },
+  {
+    "id": "243",
+    "url": "https://itreseller.pl/feed/atom/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "262",
+    "url": "https://keddr.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "264",
+    "url": "https://kursors.lv/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "268",
+    "url": "https://digitrendi.hu/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "271",
+    "url": "https://www.nwradu.ro/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "274",
+    "url": "https://www.nextech.sk/site/rssfeed/type/Produkty/page/1",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "277",
+    "url": "https://overclockers.ru/rss/all.rss",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "281",
+    "url": "https://prohardver.hu/hirfolyam/anyagok/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "292",
+    "url": "https://smartlife.mondo.rs/rss/1/Naslovna",
+    "ok": true,
+    "http": 200,
+    "items": 100,
+    "error": ""
+  },
+  {
+    "id": "301",
+    "url": "https://koreatechdesk.com/sitemap.rss",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "306",
+    "url": "https://besuccess.com/feed/atom/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "308",
+    "url": "https://robotstart.info/rss20/index.rdf",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "309",
+    "url": "https://feeds.feedburner.com/techbang/daily",
+    "ok": true,
+    "http": 200,
+    "items": 12,
+    "error": ""
+  },
+  {
+    "id": "313",
+    "url": "https://www.techedt.com/feed",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "316",
+    "url": "https://www.ddaily.co.kr/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 100,
+    "error": ""
+  },
+  {
+    "id": "318",
+    "url": "https://wiser.my/feed",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "322",
+    "url": "https://www.gadgetpilipinas.net/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "329",
+    "url": "https://cdn.bloter.net/rss/gns_allArticle.xml",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "347",
+    "url": "https://www.moguravr.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "348",
+    "url": "https://pokde.net/feed/atom",
+    "ok": true,
+    "http": 200,
+    "items": 6,
+    "error": ""
+  },
+  {
+    "id": "354",
+    "url": "https://thetechrevolutionist.com/feed.xml",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "355",
+    "url": "https://www.gizguide.com/feeds/posts/default?alt=rss",
+    "ok": true,
+    "http": 200,
+    "items": 25,
+    "error": ""
+  },
+  {
+    "id": "356",
+    "url": "https://technave.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "358",
+    "url": "https://technode.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: body_too_large"
+  },
+  {
+    "id": "363",
+    "url": "https://www.pinoytechnoguide.com/feed",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: invalid_or_malformed_feed"
+  },
+  {
+    "id": "377",
+    "url": "https://www.arabnews.com/rss.xml",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "378",
+    "url": "https://economymiddleeast.com/feed/atom/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "379",
+    "url": "https://menatech.net/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 16,
+    "error": ""
+  },
+  {
+    "id": "385",
+    "url": "https://www.click.ir/feeds",
+    "ok": true,
+    "http": 200,
+    "items": 6,
+    "error": ""
+  },
+  {
+    "id": "386",
+    "url": "https://mena.entrepreneur.com/feed",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "394",
+    "url": "https://www.intelligentcio.com/me/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "400",
+    "url": "https://fintechnews.ae/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "404",
+    "url": "https://www.techinside.com/feed/atom/",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "407",
+    "url": "https://www.telecomreview.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "409",
+    "url": "https://dohanews.co/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 9,
+    "error": ""
+  },
+  {
+    "id": "413",
+    "url": "https://mediacat.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "419",
+    "url": "https://turk-internet.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 12,
+    "error": ""
+  },
+  {
+    "id": "423",
+    "url": "https://feeds.feedburner.com/tamindir/stream",
+    "ok": true,
+    "http": 200,
+    "items": 30,
+    "error": ""
+  },
+  {
+    "id": "432",
+    "url": "https://feedpress.me/technopat",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "436",
+    "url": "https://technotoday.com.tr/feed/atom/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "437",
+    "url": "https://www.donanimarsivi.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 12,
+    "error": ""
+  },
+  {
+    "id": "440",
+    "url": "https://www.timesofisrael.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "447",
+    "url": "https://www.wired.me/feed/rss",
+    "ok": true,
+    "http": 200,
+    "items": 30,
+    "error": ""
+  },
+  {
+    "id": "453",
+    "url": "https://itweb.africa/rss",
+    "ok": true,
+    "http": 200,
+    "items": 23,
+    "error": ""
+  },
+  {
+    "id": "456",
+    "url": "https://thecondia.com/feed/atom/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: invalid_or_malformed_feed"
+  },
+  {
+    "id": "459",
+    "url": "https://iafrikan.com/rss/",
+    "ok": true,
+    "http": 200,
+    "items": 15,
+    "error": ""
+  },
+  {
+    "id": "463",
+    "url": "https://technomag.co.zw/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "466",
+    "url": "https://www.techinafrica.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "467",
+    "url": "https://techdigest.ng/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "473",
+    "url": "https://rss.punchng.com/v1/category/latest_news",
+    "ok": true,
+    "http": 200,
+    "items": 30,
+    "error": ""
+  },
+  {
+    "id": "478",
+    "url": "https://www.connectingafrica.com/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "479",
+    "url": "https://www.algerie360.com/category/high-tech/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 25,
+    "error": ""
+  },
+  {
+    "id": "483",
+    "url": "https://businessday.ng/category/technology/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 5,
+    "error": ""
+  },
+  {
+    "id": "484",
+    "url": "https://pctechmag.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "485",
+    "url": "https://shega.co/rss",
+    "ok": true,
+    "http": 200,
+    "items": 30,
+    "error": ""
+  },
+  {
+    "id": "494",
+    "url": "https://www.techawkng.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "497",
+    "url": "https://techcabal.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "500",
+    "url": "https://techeconomy.ng/feed.xml",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "502",
+    "url": "https://www.myjoyonline.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 50,
+    "error": ""
+  },
+  {
+    "id": "509",
+    "url": "https://tribuneonlineng.com/category/technology/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "513",
+    "url": "https://www.ecofinagency.com/component/obrss/agency-rss",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: invalid_or_malformed_feed"
+  },
+  {
+    "id": "519",
+    "url": "https://www.tsa-algerie.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "520",
+    "url": "https://managers.tn/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "524",
+    "url": "https://www.entreprises-magazine.com/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "525",
+    "url": "https://www.wearetech.africa/en/fils-uk/news?format=feed&type=rss",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "526",
+    "url": "https://www.abc.net.au/news/feed/46182/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 3,
+    "error": ""
+  },
+  {
+    "id": "527",
+    "url": "https://asiapacificdefencereporter.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "528",
+    "url": "https://newatlas.com/index.rss",
+    "ok": true,
+    "http": 200,
+    "items": 60,
+    "error": ""
+  },
+  {
+    "id": "539",
+    "url": "https://www.cookislandsnews.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "541",
+    "url": "https://news.risky.biz/rss/",
+    "ok": true,
+    "http": 200,
+    "items": 15,
+    "error": ""
+  },
+  {
+    "id": "546",
+    "url": "https://eftm.com/feed",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: invalid_or_malformed_feed"
+  },
+  {
+    "id": "549",
+    "url": "https://www.mediaweek.com.au/rss.xml",
+    "ok": true,
+    "http": 200,
+    "items": 30,
+    "error": ""
+  },
+  {
+    "id": "556",
+    "url": "https://www.sciencealert.com/feed",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "557",
+    "url": "https://smallbusinessconnections.com.au/feed/",
+    "ok": true,
+    "http": 200,
+    "items": 10,
+    "error": ""
+  },
+  {
+    "id": "566",
+    "url": "https://www.processonline.com.au/feed.rss",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "571",
+    "url": "https://www.ecdonline.com.au/feed.rss",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  },
+  {
+    "id": "573",
+    "url": "https://powerup-gaming.com/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "597",
+    "url": "https://autotalk.co.nz/feed/",
+    "ok": false,
+    "items": 0,
+    "error": "ValueError: http_403"
+  },
+  {
+    "id": "599",
+    "url": "https://www.sustainabilitymatters.net.au/feed.rss",
+    "ok": true,
+    "http": 200,
+    "items": 20,
+    "error": ""
+  }
+]

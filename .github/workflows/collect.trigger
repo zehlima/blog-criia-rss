@@ -1,1 +1,1 @@
-Resume production collection with immutable attempt metadata and automatic topic analysis after completion.
+Recover backlog with continuous workers and validated active RSS manifest v2

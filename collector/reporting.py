@@ -4,6 +4,7 @@ import io
 import json
 import os
 from pathlib import Path
+from .inventory import urls as active_urls
 
 
 def classify(error):
@@ -22,7 +23,7 @@ def write_feed_report(db,s3,slot,report):
     rows=db.execute('''SELECT f.id,f.name,f.country,f.region,f.rss_url,
       coalesce(r.status,'not_attempted') status,r.error,r.checked_at
       FROM news_feeds f LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s
-      WHERE r.status IS DISTINCT FROM 'ok' ORDER BY f.id''',(slot,)).fetchall()
+      WHERE f.rss_url=ANY(%s) AND r.status IS DISTINCT FROM 'ok' ORDER BY f.id''',(slot,active_urls())).fetchall()
     fields=['id','name','country','region','rss_url','status','error','checked_at','classification','action']
     buf=io.StringIO(); writer=csv.DictWriter(buf,fieldnames=fields);writer.writeheader()
     for r in rows:

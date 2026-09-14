@@ -64,12 +64,12 @@
     "justification": "Jornalismo especializado em startups canadenses, investimentos e políticas de tecnologia. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "BigDATAwire",
+    "name": "Data Center Knowledge",
     "region": "América do Norte",
     "country": "Estados Unidos",
-    "site_url": "https://www.bigdatawire.com/",
-    "rss_url": "https://www.bigdatawire.com/feed/",
-    "justification": "Publicação especializada em dados, analytics e IA empresarial. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.datacenterknowledge.com/",
+    "rss_url": "https://www.datacenterknowledge.com/rss.xml",
+    "justification": "Noticiário especializado em datacenters, IA e infraestrutura. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "BleepingComputer",
@@ -208,12 +208,12 @@
     "justification": "Publicação de tecnologia de consumo, dispositivos e serviços digitais. RSS/Atom com XML e itens confirmados. Último item observado: 2026-07-13, cadência diária não comprovada."
   },
   {
-    "name": "Digital Trends",
+    "name": "EE Times",
     "region": "América do Norte",
     "country": "Estados Unidos",
-    "site_url": "https://www.digitaltrends.com/",
-    "rss_url": "https://www.digitaltrends.com/feed/",
-    "justification": "Redação de tecnologia de consumo com testes e notícias de produtos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.eetimes.com/",
+    "rss_url": "https://www.eetimes.com/feed/",
+    "justification": "Jornalismo especializado em semicondutores e engenharia eletrônica. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "DPL News",
@@ -280,12 +280,12 @@
     "justification": "Notícias e testes de componentes, PCs, semicondutores e hardware. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "HPCwire",
+    "name": "Semiconductor Engineering",
     "region": "América do Norte",
     "country": "Estados Unidos",
-    "site_url": "https://www.hpcwire.com/",
-    "rss_url": "https://www.hpcwire.com/feed/",
-    "justification": "Veículo especializado em supercomputação, IA e infraestrutura de alto desempenho. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://semiengineering.com/",
+    "rss_url": "https://semiengineering.com/feed/",
+    "justification": "Semicondutores, infraestrutura e engenharia de computação RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "IEEE Spectrum",
@@ -416,12 +416,12 @@
     "justification": "Jornalismo especializado em telefonia móvel, redes sem fio e infraestrutura. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "SC Media",
+    "name": "The Cyber Express",
     "region": "América do Norte",
     "country": "Estados Unidos",
-    "site_url": "https://www.scworld.com/",
-    "rss_url": "https://www.scworld.com/feed",
-    "justification": "Publicação profissional especializada em cibersegurança. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "site_url": "https://thecyberexpress.com/",
+    "rss_url": "https://thecyberexpress.com/feed/",
+    "justification": "Noticiário especializado em cibersegurança; vinculado ao grupo Cyble. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "SD Times",
@@ -592,28 +592,28 @@
     "justification": "Edição mexicana de tecnologia com notícias e testes voltados ao mercado local. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "ZDNET",
+    "name": "Techstrong AI",
     "region": "América do Norte",
     "country": "Estados Unidos",
-    "site_url": "https://www.zdnet.com/",
-    "rss_url": "https://www.zdnet.com/news/rss.xml",
-    "justification": "Cobertura de TI empresarial, IA e tecnologia de consumo. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://techstrong.ai/",
+    "rss_url": "https://techstrong.ai/feed/",
+    "justification": "Jornalismo especializado em inteligência artificial empresarial. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "100% Noticias",
+    "name": "Nicaragua Investiga",
     "region": "América Central e Caribe",
-    "country": "Nicaragua",
-    "site_url": "https://100noticias.com.ni/",
-    "rss_url": "https://100noticias.com.ni/rss/",
-    "justification": "Redação nicaraguense com cobertura de tecnologia e empresas. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Nicarágua",
+    "site_url": "https://nicaraguainvestiga.com/",
+    "rss_url": "https://nicaraguainvestiga.com/feed/",
+    "justification": "Redação nicaraguense; feed geral exige filtro temático. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "Artículo 66",
+    "name": "El Periódico Costa Rica",
     "region": "América Central e Caribe",
-    "country": "Nicaragua",
-    "site_url": "https://www.articulo66.com/",
-    "rss_url": "https://www.articulo66.com/feed/",
-    "justification": "Redação nicaraguense com cobertura de economia e tecnologia. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Costa Rica",
+    "site_url": "https://elperiodicocr.com/",
+    "rss_url": "https://elperiodicocr.com/feed/",
+    "justification": "Redação costarriquenha com cobertura empresarial; feed geral exige filtro. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Breaking Belize News",
@@ -664,12 +664,12 @@
     "justification": "Jornal digital com notícias de inovação e empresas. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "CRHoy",
+    "name": "The Costa Rica News",
     "region": "América Central e Caribe",
     "country": "Costa Rica",
-    "site_url": "https://www.crhoy.com/",
-    "rss_url": "https://www.crhoy.com/tecnologia/feed/",
-    "justification": "Portal nacional com cobertura de tecnologia e telecom. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://thecostaricanews.com/",
+    "rss_url": "https://thecostaricanews.com/feed/",
+    "justification": "Notícias e negócios da Costa Rica; feed geral exige filtro temático. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Delfino.cr",
@@ -688,12 +688,12 @@
     "justification": "Jornal digital com editoria de tecnologia e inovação. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "Diario El Mundo",
+    "name": "El Salvador Times",
     "region": "América Central e Caribe",
     "country": "El Salvador",
-    "site_url": "https://diario.elmundo.sv/",
-    "rss_url": "https://diario.elmundo.sv/rss/tecnologia.xml",
-    "justification": "Jornal nacional com editoria de tecnologia. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais."
+    "site_url": "https://www.elsalvadortimes.com/",
+    "rss_url": "https://www.elsalvadortimes.com/rss/",
+    "justification": "Redação nacional salvadorenha; feed geral exige filtro tecnológico. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Diario El Salvador",
@@ -712,12 +712,12 @@
     "justification": "Jornal nacional com notícias de tecnologia. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "Diario Tiempo",
+    "name": "Criterio.hn",
     "region": "América Central e Caribe",
     "country": "Honduras",
-    "site_url": "https://tiempo.hn/",
-    "rss_url": "https://tiempo.hn/feed/",
-    "justification": "Jornal nacional com cobertura de tecnologia e economia digital. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://criterio.hn/",
+    "rss_url": "https://criterio.hn/feed/",
+    "justification": "Redação hondurenha; feed geral exige filtro temático. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Dinero.com.sv",
@@ -740,24 +740,24 @@
     "region": "América Central e Caribe",
     "country": "Panamá",
     "site_url": "https://www.ecotvpanama.com/",
-    "rss_url": "https://www.ecotvpanama.com/rss/pages/tecnologia.xml",
-    "justification": "Jornalismo econômico e empresarial com inovação e tecnologia. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais."
+    "rss_url": "https://www.ecotvpanama.com/rss/pages/ultimas-noticias.xml",
+    "justification": "Jornalismo econômico e empresarial com inovação e tecnologia. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "El Caribe",
+    "name": "El Nuevo Diario",
     "region": "América Central e Caribe",
     "country": "República Dominicana",
-    "site_url": "https://www.elcaribe.com.do/",
-    "rss_url": "https://www.elcaribe.com.do/web-stories/feed/",
-    "justification": "Jornal nacional com cobertura de telecom e tecnologia. RSS localizado no site ou página oficial, XML não confirmado neste teste. Feed amplo: filtrar tecnologia e negócios digitais."
+    "site_url": "https://elnuevodiario.com.do/",
+    "rss_url": "https://elnuevodiario.com.do/feed/",
+    "justification": "Jornal dominicano; feed geral exige filtro temático. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "El Diario de Hoy",
     "region": "América Central e Caribe",
     "country": "El Salvador",
     "site_url": "https://www.elsalvador.com/",
-    "rss_url": "https://www.elsalvador.com/feed/",
-    "justification": "Jornal nacional com notícias de tecnologia e negócios. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais."
+    "rss_url": "https://www.elsalvador.com/sitemap.rss",
+    "justification": "Jornal nacional com notícias de tecnologia e negócios. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "El Día",
@@ -768,12 +768,12 @@
     "justification": "Jornal nacional com notícias de tecnologia e inovação. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "El Economista Centroamérica",
+    "name": "Diario Libre",
     "region": "América Central e Caribe",
-    "country": "El Salvador",
-    "site_url": "https://www.eleconomista.net/",
-    "rss_url": "https://www.eleconomista.net/rss.xml",
-    "justification": "Publicação regional de negócios com empresas tecnológicas e inovação. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "country": "República Dominicana",
+    "site_url": "https://www.diariolibre.com/",
+    "rss_url": "https://www.diariolibre.com/rss/portada.xml",
+    "justification": "Jornal nacional com editoria de tecnologia. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "El Financiero Costa Rica",
@@ -788,8 +788,8 @@
     "region": "América Central e Caribe",
     "country": "Honduras",
     "site_url": "https://www.elheraldo.hn/",
-    "rss_url": "https://www.elheraldo.hn/rss/tecnologia.xml",
-    "justification": "Jornal nacional com editoria tecnológica. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://www.elheraldo.hn/rss/portada.xml",
+    "justification": "Jornal nacional com editoria tecnológica. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "El Mundo Costa Rica",
@@ -848,12 +848,12 @@
     "justification": "Portal dominicano com editoria de tecnologia. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "Estrategia & Negocios",
+    "name": "The Tribune Bahamas",
     "region": "América Central e Caribe",
-    "country": "Honduras",
-    "site_url": "https://www.estrategiaynegocios.net/",
-    "rss_url": "https://www.estrategiaynegocios.net/rss.xml",
-    "justification": "Negócios centro-americanos com cobertura de tecnologia e startups. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Bahamas",
+    "site_url": "https://www.tribune242.com/",
+    "rss_url": "https://www.tribune242.com/rss/headlines/",
+    "justification": "Jornal nacional com notícias empresariais e tecnologia financeira. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Eyewitness News Bahamas",
@@ -920,20 +920,20 @@
     "justification": "Jornal nacional com cobertura de negócios, telecom e tecnologia. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "Juventud Técnica",
+    "name": "CiberCuba",
     "region": "América Central e Caribe",
     "country": "Cuba",
-    "site_url": "https://www.juventudtecnica.cu/",
-    "rss_url": "https://www.juventudtecnica.cu/feed/",
-    "justification": "Revista cubana de ciência aplicada, tecnologia e inovação. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.cibercuba.com/",
+    "rss_url": "https://www.cibercuba.com/rss.xml",
+    "justification": "Redação cubana no exílio; feed geral exige filtro temático. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "La Estrella de Panamá",
+    "name": "Dominican Today",
     "region": "América Central e Caribe",
-    "country": "Panamá",
-    "site_url": "https://www.laestrella.com.pa/",
-    "rss_url": "https://www.laestrella.com.pa/rss.xml",
-    "justification": "Jornal nacional com cobertura de innovación e tecnologia. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais."
+    "country": "República Dominicana",
+    "site_url": "https://dominicantoday.com/",
+    "rss_url": "https://dominicantoday.com/feed/",
+    "justification": "Notícias e negócios dominicanos; feed geral exige filtro temático. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "La Gaceta de Panamá",
@@ -952,12 +952,12 @@
     "justification": "Jornal nacional com editoria de tecnologia. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "La Prensa Gráfica",
+    "name": "Diario Co Latino",
     "region": "América Central e Caribe",
     "country": "El Salvador",
-    "site_url": "https://www.laprensagrafica.com/",
-    "rss_url": "https://www.laprensagrafica.com/rss/tecnologia.xml",
-    "justification": "Jornal nacional com editoria tecnológica. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.diariocolatino.com/",
+    "rss_url": "https://www.diariocolatino.com/feed/",
+    "justification": "Jornal salvadorenho; feed geral exige filtro tecnológico. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "La Prensa Honduras",
@@ -968,12 +968,12 @@
     "justification": "Jornal nacional com cobertura de tecnologia. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "La Prensa Nicaragua",
+    "name": "Diario de Cuba",
     "region": "América Central e Caribe",
-    "country": "Nicaragua",
-    "site_url": "https://www.laprensani.com/",
-    "rss_url": "https://www.laprensani.com/feed/",
-    "justification": "Jornal nicaraguense com cobertura de tecnologia e negócios. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Cuba",
+    "site_url": "https://diariodecuba.com/",
+    "rss_url": "https://diariodecuba.com/rss.xml",
+    "justification": "Redação cubana no exílio; feed geral exige filtro temático. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "La Prensa Panamá",
@@ -1012,8 +1012,8 @@
     "region": "América Central e Caribe",
     "country": "Panamá",
     "site_url": "https://www.metrolibre.com/",
-    "rss_url": "https://www.metrolibre.com/rss.xml",
-    "justification": "Jornal nacional com notícias de tecnologia. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais."
+    "rss_url": "https://www.metrolibre.com/rss/portada.xml",
+    "justification": "Jornal nacional com notícias de tecnologia. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Metro Puerto Rico",
@@ -1099,9 +1099,9 @@
     "name": "República",
     "region": "América Central e Caribe",
     "country": "Guatemala",
-    "site_url": "https://republica.gt/",
-    "rss_url": "https://republica.gt/rss.xml",
-    "justification": "Jornalismo de negócios, inovação e economia digital. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://republica.com/",
+    "rss_url": "https://republica.com/feed",
+    "justification": "Jornalismo de negócios, inovação e economia digital. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Revista EKA",
@@ -1144,28 +1144,28 @@
     "justification": "Jornal nacional com cobertura de telecom e inovação. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "TechNewsTT",
+    "name": "Q Costa Rica",
     "region": "América Central e Caribe",
-    "country": "Trinidad e Tobago",
-    "site_url": "https://technewstt.com/",
-    "rss_url": "https://technewstt.com/feed/",
-    "justification": "Jornalismo especializado em tecnologia e telecom de Trinidad e Tobago. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Costa Rica",
+    "site_url": "https://qcostarica.com/",
+    "rss_url": "https://qcostarica.com/feed/",
+    "justification": "Redação de notícias e negócios da Costa Rica; feed geral exige filtro temático. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "TecnoComo",
+    "name": "El Nacional",
     "region": "América Central e Caribe",
     "country": "República Dominicana",
-    "site_url": "https://tecnocomo.com/",
-    "rss_url": "https://tecnocomo.com/feed/",
-    "justification": "Publicação especializada em tecnologia e gadgets. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://elnacional.com.do/",
+    "rss_url": "https://elnacional.com.do/rss/home.xml",
+    "justification": "Jornal dominicano; feed geral exige filtro tecnológico. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Telemetro",
     "region": "América Central e Caribe",
     "country": "Panamá",
     "site_url": "https://www.telemetro.com/",
-    "rss_url": "https://www.telemetro.com/rss/pages/tecnologia.xml",
-    "justification": "Rede de notícias com cobertura de tecnologia. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais."
+    "rss_url": "https://www.telemetro.com/rss/pages/ultimas-noticias.xml",
+    "justification": "Rede de notícias com cobertura de tecnologia. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "The Gleaner",
@@ -1268,8 +1268,8 @@
     "region": "Europa Ocidental",
     "country": "Alemanha",
     "site_url": "https://www.chip.de/",
-    "rss_url": "https://rss.chip.de/c/573/f/7439/index.rss",
-    "justification": "Publicação alemã de tecnologia de consumo, informática e testes de produtos. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "rss_url": "https://www.chip.de/rss",
+    "justification": "Publicação alemã de tecnologia de consumo, informática e testes de produtos. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Clubic",
@@ -1284,16 +1284,16 @@
     "region": "Europa Ocidental",
     "country": "Alemanha",
     "site_url": "https://www.computerbild.de/",
-    "rss_url": "https://www.computerbild.de/rss/",
-    "justification": "Marca alemã de informática e eletrônicos com cobertura de produtos e serviços digitais. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "rss_url": "https://www.computerbild.de/rss/35011529.xml",
+    "justification": "Marca alemã de informática e eletrônicos com cobertura de produtos e serviços digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Computer Hoy",
     "region": "Europa Ocidental",
     "country": "Espanha",
     "site_url": "https://computerhoy.20minutos.es/",
-    "rss_url": "https://computerhoy.com/rss",
-    "justification": "Marca espanhola de tecnologia de consumo, informática e serviços digitais. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://computerhoy.20minutos.es/rss/",
+    "justification": "Marca espanhola de tecnologia de consumo, informática e serviços digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Computer Weekly",
@@ -1312,12 +1312,12 @@
     "justification": "Especialista alemão em hardware com notícias e testes próprios de componentes. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Computing",
+    "name": "Inside IT",
     "region": "Europa Ocidental",
-    "country": "Reino Unido",
-    "site_url": "https://www.computing.co.uk/",
-    "rss_url": "https://www.computing.co.uk/feeds/rss",
-    "justification": "Jornalismo britânico especializado em TI corporativa e transformação digital. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Suíça",
+    "site_url": "https://www.inside-it.ch/",
+    "rss_url": "https://www.inside-it.ch/rss.xml",
+    "justification": "Veículo suíço especializado em mercado de TI, segurança e negócios tecnológicos. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "DatacenterDynamics",
@@ -1436,8 +1436,8 @@
     "region": "Europa Ocidental",
     "country": "Itália",
     "site_url": "https://www.hwupgrade.it/",
-    "rss_url": "https://www.hwupgrade.it/rss/news.xml",
-    "justification": "Redação italiana especializada em hardware, informática, IA e testes de produtos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://feeds.hwupgrade.it/rss_hwup.xml",
+    "justification": "Redação italiana especializada em hardware, informática, IA e testes de produtos. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Hardwareluxx",
@@ -1464,12 +1464,12 @@
     "justification": "Redação alemã especializada em informática, segurança, telecomunicações e política digital. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Information Age — Reino Unido",
+    "name": "FinTech Futures",
     "region": "Europa Ocidental",
     "country": "Reino Unido",
-    "site_url": "https://www.information-age.com/",
-    "rss_url": "https://www.information-age.com/feed/",
-    "justification": "Cobertura editorial de TI empresarial, liderança digital e inovação. RSS localizado no site ou página oficial, XML não confirmado neste teste."
+    "site_url": "https://www.fintechfutures.com/",
+    "rss_url": "https://www.fintechfutures.com/rss.xml",
+    "justification": "Veículo britânico especializado em tecnologia bancária, pagamentos e fintechs. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Infosecurity Magazine",
@@ -1552,12 +1552,12 @@
     "justification": "Veículo de negócios especializado em transformação digital, IA e tecnologia industrial. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
   },
   {
-    "name": "Maddyness",
+    "name": "Silicon Canals",
     "region": "Europa Ocidental",
-    "country": "França",
-    "site_url": "https://www.maddyness.com/",
-    "rss_url": "https://www.maddyness.com/feed/",
-    "justification": "Publicação francesa especializada em startups, empreendedorismo e financiamento de inovação. RSS/Atom com XML e itens confirmados."
+    "country": "Países Baixos",
+    "site_url": "https://siliconcanals.com/",
+    "rss_url": "https://siliconcanals.com/feed/",
+    "justification": "Publicação neerlandesa dedicada a startups europeias, financiamento e inovação. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Mikrobitti",
@@ -1864,12 +1864,12 @@
     "justification": "Veículo especializado em TI corporativa, IA, segurança e negócios digitais. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "BOOT.lv",
+    "name": "MobilMania.cz",
     "region": "Europa Oriental (Leste Europeu)",
-    "country": "Letônia",
-    "site_url": "https://boot.ritakafija.lv/",
-    "rss_url": "https://boot.ritakafija.lv/feed/",
-    "justification": "Publicação letã de tecnologia com hardware, software e indústria digital. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Chéquia",
+    "site_url": "https://mobilmania.zive.cz/",
+    "rss_url": "https://mobilmania.zive.cz/rss/sc-47/default.aspx",
+    "justification": "Publicação especializada em dispositivos móveis. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Bug",
@@ -1912,12 +1912,12 @@
     "justification": "Jornalismo especializado em telecom, infraestrutura e economia digital. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Computerworld Magyarország",
+    "name": "Mínuszos",
     "region": "Europa Oriental (Leste Europeu)",
     "country": "Hungria",
-    "site_url": "https://computerworld.hu/",
-    "rss_url": "https://computerworld.hu/rss",
-    "justification": "Publicação de TI empresarial, infraestrutura e transformação digital. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.minuszos.hu/",
+    "rss_url": "https://www.minuszos.hu/feed/",
+    "justification": "Noticiário de tecnologia e negócios de TI. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Connect România",
@@ -1936,12 +1936,12 @@
     "justification": "Veículo de negócios digitais, startups, inovação e investimentos. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "DEV Styler",
+    "name": "ITReseller",
     "region": "Europa Oriental (Leste Europeu)",
-    "country": "Bulgária",
-    "site_url": "https://devstyler.bg/",
-    "rss_url": "https://devstyler.bg/feed/",
-    "justification": "Redação focada em profissionais de software, empresas de TI e inovação. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Polônia",
+    "site_url": "https://itreseller.pl/",
+    "rss_url": "https://itreseller.pl/feed/atom/",
+    "justification": "Jornalismo especializado em canais de TI e negócios tecnológicos. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "dev.by",
@@ -2136,12 +2136,12 @@
     "justification": "Veículo especializado em startups, empreendedorismo e capital de risco. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "Mezha.Media",
+    "name": "Digitrendi",
     "region": "Europa Oriental (Leste Europeu)",
-    "country": "Ucrânia",
-    "site_url": "https://mezha.media/",
-    "rss_url": "https://mezha.media/feed/",
-    "justification": "Publicação especializada em hardware, dispositivos, IA e economia digital. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Hungria",
+    "site_url": "https://digitrendi.hu/",
+    "rss_url": "https://digitrendi.hu/feed/",
+    "justification": "Jornalismo especializado em tecnologia e transformação digital. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Mobile Bulgaria",
@@ -2160,12 +2160,12 @@
     "justification": "Redação especializada em telefonia, telecom e testes de dispositivos móveis. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "Mobilissimo",
+    "name": "nwradu blog",
     "region": "Europa Oriental (Leste Europeu)",
     "country": "Romênia",
-    "site_url": "https://www.mobilissimo.ro/",
-    "rss_url": "https://www.mobilissimo.ro/rss.xml",
-    "justification": "Especialista romeno em smartphones, lançamentos e avaliações de produtos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.nwradu.ro/",
+    "rss_url": "https://www.nwradu.ro/feed/",
+    "justification": "Publicação independente de análises de tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Monitor",
@@ -2188,8 +2188,8 @@
     "region": "Europa Oriental (Leste Europeu)",
     "country": "Eslováquia",
     "site_url": "https://www.nextech.sk/",
-    "rss_url": "https://www.nextech.sk/rss",
-    "justification": "Revista eslovaca de TI, transformação digital e análises de produtos. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "rss_url": "https://www.nextech.sk/site/rssfeed/type/Produkty/page/1",
+    "justification": "Revista eslovaca de TI, transformação digital e análises de produtos. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Niebezpiecznik",
@@ -2212,8 +2212,8 @@
     "region": "Europa Oriental (Leste Europeu)",
     "country": "Rússia",
     "site_url": "https://overclockers.ru/",
-    "rss_url": "https://overclockers.ru/rss/news.xml",
-    "justification": "Cobertura especializada em processadores, placas gráficas e hardware de PCs. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://overclockers.ru/rss/all.rss",
+    "justification": "Cobertura especializada em processadores, placas gráficas e hardware de PCs. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "PC Chip",
@@ -2244,8 +2244,8 @@
     "region": "Europa Oriental (Leste Europeu)",
     "country": "Hungria",
     "site_url": "https://prohardver.hu/",
-    "rss_url": "https://prohardver.hu/rss/anyagok.xml",
-    "justification": "Portal técnico estabelecido com testes de hardware e notícias de componentes. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://prohardver.hu/hirfolyam/anyagok/rss.xml",
+    "justification": "Portal técnico estabelecido com testes de hardware e notícias de componentes. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "PurePC",
@@ -2328,12 +2328,12 @@
     "justification": "Publicação especializada em Android, aplicativos e eletrônicos conectados. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Svět hardware",
+    "name": "SmartLife",
     "region": "Europa Oriental (Leste Europeu)",
-    "country": "Chéquia",
-    "site_url": "https://www.svethardware.cz/",
-    "rss_url": "https://www.svethardware.cz/rss.xml",
-    "justification": "Publicação técnica estabelecida em PCs, processadores e componentes. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Sérvia",
+    "site_url": "https://smartlife.mondo.rs/",
+    "rss_url": "https://smartlife.mondo.rs/rss/1/Naslovna",
+    "justification": "Vertical especializada em dispositivos, inovação e vida digital. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Tabletowo",
@@ -2444,8 +2444,8 @@
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
     "country": "Coreia do Sul",
     "site_url": "https://besuccess.com/",
-    "rss_url": "https://besuccess.com/feed/",
-    "justification": "Publicação de startups, venture capital e inovação. RSS/Atom com XML e itens confirmados."
+    "rss_url": "https://besuccess.com/feed/atom/",
+    "justification": "Publicação de startups, venture capital e inovação. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Blognone",
@@ -2456,20 +2456,20 @@
     "justification": "Cobertura frequente em tailandês de tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "BRIDGE",
+    "name": "RobotStart",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
     "country": "Japão",
-    "site_url": "https://thebridge.jp/",
-    "rss_url": "https://thebridge.jp/feed",
-    "justification": "Jornalismo especializado em startups e investimentos no Japão. RSS/Atom com XML e itens confirmados."
+    "site_url": "https://robotstart.info/",
+    "rss_url": "https://robotstart.info/rss20/index.rdf",
+    "justification": "Robótica, IA e automação RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "cnBeta",
+    "name": "Techbang",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
-    "country": "China",
-    "site_url": "https://www.cnbeta.com.tw/",
-    "rss_url": "https://www.cnbeta.com.tw/backend.php",
-    "justification": "Noticiário de tecnologia e indústria digital em chinês. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
+    "country": "Taiwan",
+    "site_url": "https://www.techbang.com/",
+    "rss_url": "https://feeds.feedburner.com/techbang/daily",
+    "justification": "Publicação especializada em informática e tecnologia de consumo. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "CNET Japan",
@@ -2496,12 +2496,12 @@
     "justification": "Jornalismo especializado em startups e negócios digitais indonésios. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "DealStreetAsia",
+    "name": "Tech Edition (antigo TechEDT)",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
     "country": "Singapura",
-    "site_url": "https://www.dealstreetasia.com/",
-    "rss_url": "https://www.dealstreetasia.com/feed",
-    "justification": "Reportagens especializadas em venture capital e negócios asiáticos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.techedt.com/",
+    "rss_url": "https://www.techedt.com/feed",
+    "justification": "Tecnologia e negócios digitais na Ásia. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Digital News Asia",
@@ -2520,12 +2520,12 @@
     "justification": "Reportagens especializadas em semicondutores e cadeia mundial de eletrônicos. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "DoNews",
+    "name": "Digital Daily",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
-    "country": "China",
-    "site_url": "https://www.donews.com/",
-    "rss_url": "https://www.donews.com/rss.xml",
-    "justification": "Noticiário da indústria digital, empresas e tecnologia. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Coreia do Sul",
+    "site_url": "https://www.ddaily.co.kr/",
+    "rss_url": "https://www.ddaily.co.kr/rss.xml",
+    "justification": "Publicação coreana especializada em TI e empresas tecnológicas. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "DroidLime",
@@ -2536,12 +2536,12 @@
     "justification": "Notícias e análises de smartphones. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
   },
   {
-    "name": "Droidsans",
+    "name": "Wiser.my",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
-    "country": "Tailândia",
-    "site_url": "https://droidsans.com/",
-    "rss_url": "https://droidsans.com/feed/",
-    "justification": "Testes de smartphones, telecom e notícias tecnológicas. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Malásia",
+    "site_url": "https://wiser.my/",
+    "rss_url": "https://wiser.my/feed",
+    "justification": "Jornalismo de tecnologia e dispositivos em malaio. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "e27",
@@ -2568,12 +2568,12 @@
     "justification": "Produção editorial de tecnologia e análises de dispositivos. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "Gadgetren",
+    "name": "Gadget Pilipinas",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
-    "country": "Indonésia",
-    "site_url": "https://gadgetren.com/",
-    "rss_url": "https://gadgetren.com/feed/",
-    "justification": "Noticiário e testes de smartphones e tecnologia de consumo. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Filipinas",
+    "site_url": "https://www.gadgetpilipinas.net/",
+    "rss_url": "https://www.gadgetpilipinas.net/feed/",
+    "justification": "Testes de dispositivos e notícias de tecnologia. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Geek Culture",
@@ -2624,12 +2624,12 @@
     "justification": "Publicação indonésia de tecnologia, gadgets e negócios digitais. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "Huxiu",
+    "name": "Bloter",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
-    "country": "China",
-    "site_url": "https://www.huxiu.com/",
-    "rss_url": "https://www.huxiu.com/rss/0.xml",
-    "justification": "Análises de negócios tecnológicos e economia digital chinesa. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Coreia do Sul",
+    "site_url": "https://www.bloter.net/",
+    "rss_url": "https://cdn.bloter.net/rss/gns_allArticle.xml",
+    "justification": "Jornalismo de tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "ifanr",
@@ -2768,20 +2768,20 @@
     "justification": "Publicação de informática, telecom e tecnologia de consumo. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "PingWest",
+    "name": "Mogura VR",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
-    "country": "China",
-    "site_url": "https://www.pingwest.com/",
-    "rss_url": "https://www.pingwest.com/feed",
-    "justification": "Noticiário e análises do ecossistema tecnológico chinês. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "country": "Japão",
+    "site_url": "https://www.moguravr.com/",
+    "rss_url": "https://www.moguravr.com/feed/",
+    "justification": "Realidade virtual, realidade aumentada e computação espacial RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Pokde.Net",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
     "country": "Malásia",
     "site_url": "https://pokde.net/",
-    "rss_url": "https://pokde.net/feed",
-    "justification": "Hardware, análises de PCs e dispositivos. RSS localizado no site ou página oficial, XML não confirmado neste teste."
+    "rss_url": "https://pokde.net/feed/atom",
+    "justification": "Hardware, análises de PCs e dispositivos. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "PRONEWS",
@@ -2824,28 +2824,28 @@
     "justification": "Análises e cobertura editorial de software e produtos digitais. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "Tech in Asia",
+    "name": "The Tech Revolutionist",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
     "country": "Singapura",
-    "site_url": "https://www.techinasia.com/",
-    "rss_url": "https://www.techinasia.com/feed",
-    "justification": "Startups, capital de risco e negócios digitais asiáticos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://thetechrevolutionist.com/",
+    "rss_url": "https://thetechrevolutionist.com/feed.xml",
+    "justification": "Análises de hardware e notícias de tecnologia. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "Tech Jio",
+    "name": "Gizguide",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
-    "country": "Singapura",
-    "site_url": "https://techjioblog.com/",
-    "rss_url": "https://techjioblog.com/feed/",
-    "justification": "Análises locais de dispositivos e acessórios tecnológicos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Filipinas",
+    "site_url": "https://www.gizguide.com/",
+    "rss_url": "https://www.gizguide.com/feeds/posts/default?alt=rss",
+    "justification": "Análises de dispositivos e notícias de tecnologia. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "TechNave",
     "region": "Ásia (Leste Asiático e Sudeste Asiático)",
     "country": "Malásia",
     "site_url": "https://technave.com/",
-    "rss_url": "https://technave.com/rss.xml",
-    "justification": "Cobertura de smartphones e tecnologia de consumo. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://technave.com/feed/",
+    "justification": "Cobertura de smartphones e tecnologia de consumo. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "TechNews 科技新報",
@@ -3016,20 +3016,20 @@
     "justification": "Jornal saudita com cobertura de ciência, tecnologia e inovação. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
   },
   {
-    "name": "Arabian Business",
+    "name": "Economy Middle East",
     "region": "Oriente Médio",
     "country": "Emirados Árabes Unidos",
-    "site_url": "https://www.arabianbusiness.com/",
-    "rss_url": "https://www.arabianbusiness.com/feed",
-    "justification": "Redação regional de negócios com cobertura de IA, startups e economia digital. URL RSS inferida e não validada, não ativar sem nova checagem. Feed amplo: filtrar tecnologia e negócios digitais. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://economymiddleeast.com/",
+    "rss_url": "https://economymiddleeast.com/feed/atom/",
+    "justification": "Jornalismo de negócios e inovação no Oriente Médio; feed amplo exige filtro. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "Arabian ICT",
+    "name": "Mena Tech",
     "region": "Oriente Médio",
     "country": "Emirados Árabes Unidos",
-    "site_url": "https://www.arabianict.com/",
-    "rss_url": "https://www.arabianict.com/feed/",
-    "justification": "Veículo regional de TI, segurança e infraestrutura digital. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.menatech.net/",
+    "rss_url": "https://menatech.net/feed/",
+    "justification": "Noticiário especializado em tecnologia e negócios digitais árabes RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Arabian Reseller",
@@ -3076,16 +3076,16 @@
     "region": "Oriente Médio",
     "country": "Irã",
     "site_url": "https://click.ir/",
-    "rss_url": "https://click.ir/rss",
-    "justification": "Portal iraniano de tecnologia, aplicativos e economia digital. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://www.click.ir/feeds",
+    "justification": "Portal iraniano de tecnologia, aplicativos e economia digital. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "CTech",
+    "name": "Entrepreneur Middle East",
     "region": "Oriente Médio",
-    "country": "Israel",
-    "site_url": "https://www.calcalistech.com/",
-    "rss_url": "https://www.calcalistech.com/GeneralRSS/0,16967,L-5214,00.xml",
-    "justification": "Vertical internacional do Calcalist dedicada ao ecossistema tecnológico israelense. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Emirados Árabes Unidos",
+    "site_url": "https://www.entrepreneur.com/en-ae",
+    "rss_url": "https://mena.entrepreneur.com/feed",
+    "justification": "Edição regional com startups e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "CXO Insight Middle East",
@@ -3192,12 +3192,12 @@
     "justification": "Jornal econômico israelense com cobertura de empresas de tecnologia e investimentos. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou. Último item observado: 2026-08-31, cadência diária não comprovada."
   },
   {
-    "name": "Gulf Business",
+    "name": "Fintech News Middle East",
     "region": "Oriente Médio",
-    "country": "Emirados Árabes Unidos",
-    "site_url": "https://gulfbusiness.com/",
-    "rss_url": "https://gulfbusiness.com/feed/",
-    "justification": "Negócios no Golfo com tecnologia, fintechs e startups. Feed amplo exige filtro. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Suíça (edição Oriente Médio)",
+    "site_url": "https://fintechnews.ae/",
+    "rss_url": "https://fintechnews.ae/feed/",
+    "justification": "Publicação especializada em fintechs, pagamentos e negócios digitais na região. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Hardware Plus",
@@ -3224,12 +3224,12 @@
     "justification": "Publicação israelense especializada em hardware, computadores e eletrônicos. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
   },
   {
-    "name": "Israel21c",
+    "name": "TechInside",
     "region": "Oriente Médio",
-    "country": "Israel",
-    "site_url": "https://www.israel21c.org/",
-    "rss_url": "https://www.israel21c.org/feed/",
-    "justification": "Reportagens sobre inovação israelense. Feed amplo exige filtro por tecnologia. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Turquia",
+    "site_url": "https://www.techinside.com/",
+    "rss_url": "https://www.techinside.com/feed/atom/",
+    "justification": "Jornalismo de TI empresarial e inovação. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "IT Iran",
@@ -3248,12 +3248,12 @@
     "justification": "Agência especializada em notícias de TI, internet e telecom no Irã. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "ITP.net",
+    "name": "Telecom Review",
     "region": "Oriente Médio",
     "country": "Emirados Árabes Unidos",
-    "site_url": "https://www.itp.net/",
-    "rss_url": "https://www.itp.net/feed/",
-    "justification": "Publicação regional de tecnologia empresarial, infraestrutura e inovação. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.telecomreview.com/",
+    "rss_url": "https://www.telecomreview.com/feed/",
+    "justification": "Telecom e infraestrutura digital regional RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Jerusalem Post — Tech & Startups",
@@ -3264,12 +3264,12 @@
     "justification": "RSS oficial dedicado a tecnologia e startups de jornal israelense. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Jordan News — Technology",
+    "name": "Doha News",
     "region": "Oriente Médio",
-    "country": "Jordânia",
-    "site_url": "https://www.jordannews.jo/",
-    "rss_url": "https://www.jordannews.jo/rss/Technology-32",
-    "justification": "Jornal jordaniano com notícias de tecnologia. Cadência do recorte a confirmar. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "country": "Catar",
+    "site_url": "https://dohanews.co/",
+    "rss_url": "https://dohanews.co/feed/",
+    "justification": "Noticiário nacional com negócios e tecnologia; filtro temático obrigatório RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "LOG",
@@ -3300,8 +3300,8 @@
     "region": "Oriente Médio",
     "country": "Turquia",
     "site_url": "https://mediacat.com/",
-    "rss_url": "https://mediacat.com/besleme/",
-    "justification": "Revista de marketing e comunicação com cobertura de plataformas digitais. RSS localizado no site ou página oficial, XML não confirmado neste teste."
+    "rss_url": "https://mediacat.com/feed/",
+    "justification": "Revista de marketing e comunicação com cobertura de plataformas digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "MENAbytes",
@@ -3344,12 +3344,12 @@
     "justification": "Reportagens sobre inovação israelense, startups e tecnologias emergentes. RSS/Atom com XML e itens confirmados. Último item observado: 2024-10-31, cadência diária não comprovada."
   },
   {
-    "name": "Pazarlamasyon",
+    "name": "Turk Internet",
     "region": "Oriente Médio",
     "country": "Turquia",
-    "site_url": "https://pazarlamasyon.com/",
-    "rss_url": "https://pazarlamasyon.com/feed/",
-    "justification": "Marketing, marcas e negócios digitais. Feed amplo exige filtro temático. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://turk-internet.com/",
+    "rss_url": "https://turk-internet.com/feed/",
+    "justification": "Jornalismo especializado em internet e telecomunicações. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Peivast",
@@ -3376,12 +3376,12 @@
     "justification": "Revista persa de hardware, computação e dispositivos digitais. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Saudi Android",
+    "name": "Tamindir",
     "region": "Oriente Médio",
-    "country": "Arábia Saudita",
-    "site_url": "https://www.saudandroid.net/",
-    "rss_url": "https://www.saudandroid.net/feed/",
-    "justification": "Publicação saudita especializada em Android, smartphones e aplicativos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Turquia",
+    "site_url": "https://www.tamindir.com/",
+    "rss_url": "https://feeds.feedburner.com/tamindir/stream",
+    "justification": "Tecnologia, software e dispositivos. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "ShahrSakhtAfzar",
@@ -3452,8 +3452,8 @@
     "region": "Oriente Médio",
     "country": "Turquia",
     "site_url": "https://www.technopat.net/",
-    "rss_url": "https://www.technopat.net/feed/",
-    "justification": "Publicação turca com reviews de hardware, software e notícias de tecnologia. RSS/Atom com XML e itens confirmados. Acesso intermitente: um teste posterior falhou."
+    "rss_url": "https://feedpress.me/technopat",
+    "justification": "Publicação turca com reviews de hardware, software e notícias de tecnologia. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Techrato",
@@ -3480,20 +3480,20 @@
     "justification": "Redação especializada em smartphones, dispositivos e tecnologia digital. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Teknoloji Günlüğü",
+    "name": "Technotoday",
     "region": "Oriente Médio",
     "country": "Turquia",
-    "site_url": "https://www.teknolojigunlugu.com/",
-    "rss_url": "https://www.teknolojigunlugu.com/feed/",
-    "justification": "Notícias de tecnologia de consumo, internet e produtos digitais. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://technotoday.com.tr/",
+    "rss_url": "https://technotoday.com.tr/feed/atom/",
+    "justification": "Publicação especializada em tecnologia de consumo. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "Teknolojioku",
+    "name": "Donanım Arşivi",
     "region": "Oriente Médio",
     "country": "Turquia",
-    "site_url": "https://www.teknolojioku.com/",
-    "rss_url": "https://www.teknolojioku.com/rss",
-    "justification": "Portal turco de notícias de tecnologia e dispositivos eletrônicos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://donanimarsivi.com/",
+    "rss_url": "https://www.donanimarsivi.com/feed/",
+    "justification": "Notícias e análises especializadas de hardware. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "TGspot",
@@ -3572,8 +3572,8 @@
     "region": "Oriente Médio",
     "country": "Emirados Árabes Unidos",
     "site_url": "https://wired.me/",
-    "rss_url": "https://wired.me/feed/",
-    "justification": "Edição regional da WIRED com reportagens sobre tecnologia e inovação. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://www.wired.me/feed/rss",
+    "justification": "Edição regional da WIRED com reportagens sobre tecnologia e inovação. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Ynet — Digital",
@@ -3616,12 +3616,12 @@
     "justification": "Noticiário especializado em gadgets, internet e indústria tecnológica. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "BiztechAfrica",
+    "name": "ITWeb Africa",
     "region": "África",
     "country": "África do Sul",
-    "site_url": "https://www.biztechafrica.com/",
-    "rss_url": "https://www.biztechafrica.com/feed/",
-    "justification": "Cobertura de tecnologia, telecom e negócios digitais na África. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://itweb.africa/",
+    "rss_url": "https://itweb.africa/rss",
+    "justification": "Cobertura especializada em telecom e negócios tecnológicos africanos. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Challenge — High Tech",
@@ -3664,12 +3664,12 @@
     "justification": "Jornalismo especializado em telecom, TIC e políticas digitais africanas. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Dignited",
+    "name": "iAfrikan",
     "region": "África",
-    "country": "Uganda",
-    "site_url": "https://www.dignited.com/",
-    "rss_url": "https://www.dignited.com/feed/",
-    "justification": "Publicação de tecnologia de consumo, telecom e serviços digitais africanos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "África do Sul",
+    "site_url": "https://iafrikan.com/",
+    "rss_url": "https://iafrikan.com/rss/",
+    "justification": "Jornalismo especializado em tecnologia no continente africano. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Disrupt Africa",
@@ -3696,12 +3696,12 @@
     "justification": "Publicação especializada em dispositivos, mobilidade e tecnologia de consumo. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Gadgets Africa",
+    "name": "TechnoMag",
     "region": "África",
-    "country": "Quênia",
-    "site_url": "https://gadgets-africa.com/",
-    "rss_url": "https://gadgets-africa.com/feed/",
-    "justification": "Especialista em gadgets, serviços móveis e tecnologia de consumo. RSS/Atom com XML e itens confirmados. Último item observado: 2026-08-04, cadência diária não comprovada."
+    "country": "Zimbábue",
+    "site_url": "https://technomag.co.zw/",
+    "rss_url": "https://technomag.co.zw/feed/",
+    "justification": "Telecom e tecnologia do Zimbábue RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Guru8",
@@ -3720,20 +3720,20 @@
     "justification": "Tecnologia de consumo e corporativa, hardware e inovação local. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
   },
   {
-    "name": "Innovation Village",
+    "name": "Tech In Africa",
     "region": "África",
-    "country": "Nigéria",
-    "site_url": "https://innovation-village.com/",
-    "rss_url": "https://innovation-village.com/feed/",
-    "justification": "Publicação sobre startups, inovação e negócios africanos. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "África do Sul",
+    "site_url": "https://www.techinafrica.com/",
+    "rss_url": "https://www.techinafrica.com/feed/",
+    "justification": "Startups e negócios tecnológicos africanos RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "IT Edge News",
+    "name": "TechDigest Nigeria",
     "region": "África",
     "country": "Nigéria",
-    "site_url": "https://www.itedgenews.africa/",
-    "rss_url": "https://www.itedgenews.africa/feed/",
-    "justification": "Publicação especializada em TIC, telecom e políticas digitais africanas. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://techdigest.ng/",
+    "rss_url": "https://techdigest.ng/feed/",
+    "justification": "Notícias de TIC, telecom e empresas digitais na Nigéria. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "IT News Africa",
@@ -3776,12 +3776,12 @@
     "justification": "Editoria de tecnologia de jornal nacional marroquino. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
   },
   {
-    "name": "Maroc Numeric",
+    "name": "Punch — feed geral",
     "region": "África",
-    "country": "Marrocos",
-    "site_url": "https://marocnumeric.com/",
-    "rss_url": "https://marocnumeric.com/feed/",
-    "justification": "Noticiário marroquino de inovação, startups e transformação digital. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Nigéria",
+    "site_url": "https://punchng.com/",
+    "rss_url": "https://rss.punchng.com/v1/category/latest_news",
+    "justification": "Punch: redação de notícias com cobertura de tecnologia e negócios. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Memeburn",
@@ -3816,20 +3816,20 @@
     "justification": "Especialista em smartphones, conectividade e mobilidade digital. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "MyBroadband",
+    "name": "Connecting Africa",
     "region": "África",
-    "country": "África do Sul",
-    "site_url": "https://mybroadband.co.za/news/",
-    "rss_url": "https://mybroadband.co.za/news/feed/",
-    "justification": "Referência sul-africana em telecom, internet e infraestrutura digital. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "África do Sul (redação; grupo Informa britânico)",
+    "site_url": "https://www.connectingafrica.com/",
+    "rss_url": "https://www.connectingafrica.com/rss.xml",
+    "justification": "Telecom e infraestrutura digital africana RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "N'TIC Magazine",
+    "name": "Algerie360 — High Tech",
     "region": "África",
     "country": "Argélia",
-    "site_url": "https://www.nticweb.com/",
-    "rss_url": "https://www.nticweb.com/?format=feed&type=rss",
-    "justification": "Revista argelina de TIC, telecom, smartphones e inovação. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.algerie360.com/",
+    "rss_url": "https://www.algerie360.com/category/high-tech/feed/",
+    "justification": "Editoria de tecnologia de portal argelino. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "NaijaKnowHow",
@@ -3856,12 +3856,12 @@
     "justification": "Vertical de tecnologia de veículo nigeriano de negócios e finanças. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Nigeria CommunicationsWeek",
+    "name": "BusinessDay Nigeria — Technology",
     "region": "África",
     "country": "Nigéria",
-    "site_url": "https://www.nigeriacommunicationsweek.com.ng/",
-    "rss_url": "https://www.nigeriacommunicationsweek.com.ng/feed/",
-    "justification": "Publicação especializada em telecom, TI e serviços financeiros digitais. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://businessday.ng/",
+    "rss_url": "https://businessday.ng/category/technology/feed/",
+    "justification": "Editoria de tecnologia de jornal econômico nigeriano. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "PC Tech Magazine",
@@ -3876,8 +3876,8 @@
     "region": "África",
     "country": "Etiópia",
     "site_url": "https://shega.co/",
-    "rss_url": "https://shega.co/feed/",
-    "justification": "Jornalismo e dados sobre startups e transformação digital etíope. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://shega.co/rss",
+    "justification": "Jornalismo e dados sobre startups e transformação digital etíope. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Silicon Africa",
@@ -3996,8 +3996,8 @@
     "region": "África",
     "country": "Nigéria",
     "site_url": "https://techeconomy.ng/",
-    "rss_url": "https://techeconomy.ng/feed/",
-    "justification": "Cobertura de TIC, telecom, inovação e economia digital nigeriana. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://techeconomy.ng/feed.xml",
+    "justification": "Cobertura de TIC, telecom, inovação e economia digital nigeriana. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "TechFinancials",
@@ -4008,12 +4008,12 @@
     "justification": "Cobertura de fintechs, telecom e negócios de tecnologia. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Techgh24",
+    "name": "MyJoyOnline — feed geral",
     "region": "África",
     "country": "Gana",
-    "site_url": "https://techgh24.com/",
-    "rss_url": "https://techgh24.com/feed/",
-    "justification": "Cobertura ganesa de telecom, fintechs, TIC e inovação. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.myjoyonline.com/",
+    "rss_url": "https://www.myjoyonline.com/feed/",
+    "justification": "MyJoyOnline: redação de notícias com cobertura de tecnologia e negócios. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Techjaja",
@@ -4064,12 +4064,12 @@
     "justification": "Redação especializada em startups, inovação e empresas tecnológicas africanas. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "TechSmart",
+    "name": "Nigerian Tribune — Technology",
     "region": "África",
-    "country": "África do Sul",
-    "site_url": "https://www.techsmart.co.za/",
-    "rss_url": "https://www.techsmart.co.za/rss",
-    "justification": "Análises e notícias de hardware e tecnologia de consumo. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "country": "Nigéria",
+    "site_url": "https://tribuneonlineng.com/",
+    "rss_url": "https://tribuneonlineng.com/category/technology/feed/",
+    "justification": "Editoria de tecnologia de jornal nigeriano. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "TechTrends Nigeria",
@@ -4144,20 +4144,20 @@
     "justification": "Especialista marroquino em telecom, internet e dispositivos. RSS/Atom com XML e itens confirmados. Último item observado: 2026-08-25, cadência diária não comprovada."
   },
   {
-    "name": "TSA — Tecnologia",
+    "name": "TSA — feed geral",
     "region": "África",
     "country": "Argélia",
     "site_url": "https://www.tsa-algerie.com/",
-    "rss_url": "https://www.tsa-algerie.com/tech-auto/feed/",
-    "justification": "Vertical de tecnologia de veículo argelino. Inclui conteúdo automotivo. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://www.tsa-algerie.com/feed/",
+    "justification": "TSA: redação de notícias com cobertura de tecnologia e negócios. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "Tunisie Numérique — Technologie",
+    "name": "Managers.tn",
     "region": "África",
     "country": "Tunísia",
-    "site_url": "https://www.tunisienumerique.com/",
-    "rss_url": "https://www.tunisienumerique.com/technologie/feed/",
-    "justification": "Editoria de tecnologia do portal tunisiano Tunisie Numérique. Feed amplo se redirecionado. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://managers.tn/",
+    "rss_url": "https://managers.tn/feed/",
+    "justification": "Jornalismo de negócios, startups e transformação digital; feed amplo exige filtro. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Tustex",
@@ -4184,28 +4184,28 @@
     "justification": "Vertical de tecnologia de mídia digital marroquina. RSS/Atom com XML e itens confirmados. Último item observado: 2026-09-03, cadência diária não comprovada."
   },
   {
-    "name": "Webmanagercenter — Technologie",
+    "name": "Entreprises Magazine",
     "region": "África",
     "country": "Tunísia",
-    "site_url": "https://www.webmanagercenter.com/",
-    "rss_url": "https://www.webmanagercenter.com/category/technologie/feed/",
-    "justification": "Editoria de tecnologia e negócios digitais do portal tunisiano Webmanagercenter. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "site_url": "https://www.entreprises-magazine.com/",
+    "rss_url": "https://www.entreprises-magazine.com/feed/",
+    "justification": "Noticiário empresarial e inovação; feed amplo exige filtro tecnológico. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "WeeTracker",
+    "name": "We Are Tech",
     "region": "África",
-    "country": "Maurício",
-    "site_url": "https://weetracker.com/",
-    "rss_url": "https://weetracker.com/feed/",
-    "justification": "Reportagens e análises de startups e capital de risco africano. RSS/Atom com XML e itens confirmados."
+    "country": "Suíça (edição africana)",
+    "site_url": "https://www.wearetech.africa/",
+    "rss_url": "https://www.wearetech.africa/en/fils-uk/news?format=feed&type=rss",
+    "justification": "Redação especializada em inovação e ecossistemas digitais africanos; editora Ecofin sediada na Suíça. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "ABC Australia — Technology",
+    "name": "ABC Australia — feed geral",
     "region": "Oceania",
     "country": "Austrália",
     "site_url": "https://www.abc.net.au/news/technology",
-    "rss_url": "https://www.abc.net.au/news/feed/8004590/rss.xml",
-    "justification": "Editoria de tecnologia da emissora pública australiana. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "rss_url": "https://www.abc.net.au/news/feed/46182/rss.xml",
+    "justification": "ABC Australia: redação de notícias com cobertura de tecnologia e negócios. Feed geral/amplo: filtrar tecnologia e negócios digitais. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "APDR",
@@ -4216,12 +4216,12 @@
     "justification": "Tecnologia e indústria de defesa; fonte adjacente. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "Ausdroid",
+    "name": "New Atlas",
     "region": "Oceania",
     "country": "Austrália",
-    "site_url": "https://ausdroid.net/",
-    "rss_url": "https://ausdroid.net/feed/",
-    "justification": "Android, smartphones, dispositivos e serviços digitais. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://newatlas.com/",
+    "rss_url": "https://newatlas.com/index.rss",
+    "justification": "Notícias de tecnologia aplicada, engenharia e inovação. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Australian Cyber Security Magazine",
@@ -4320,12 +4320,12 @@
     "justification": "Radiocomunicação, redes e infraestrutura de telecom. RSS localizado no site ou página oficial, XML não confirmado neste teste. Página oficial restringe RSS ao uso pessoal e proíbe republicar manchetes em páginas web."
   },
   {
-    "name": "Cyber Daily",
+    "name": "Risky Business Media",
     "region": "Oceania",
     "country": "Austrália",
-    "site_url": "https://www.cyberdaily.au/",
-    "rss_url": "https://www.cyberdaily.au/feed",
-    "justification": "Notícias de cibersegurança e defesa digital. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "site_url": "https://risky.biz/",
+    "rss_url": "https://news.risky.biz/rss/",
+    "justification": "Jornalismo especializado em cibersegurança; sede em Byron Bay. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Cybershack",
@@ -4384,12 +4384,12 @@
     "justification": "Rede pública com negócios e conectividade; fonte generalista complementar. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
   },
   {
-    "name": "FinTech Business",
+    "name": "Mediaweek",
     "region": "Oceania",
     "country": "Austrália",
-    "site_url": "https://www.fintechbusiness.com/",
-    "rss_url": "https://www.fintechbusiness.com/feed",
-    "justification": "Fintechs e serviços financeiros digitais. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.mediaweek.com.au/",
+    "rss_url": "https://www.mediaweek.com.au/rss.xml",
+    "justification": "Indústria de mídia, plataformas e publicidade digital; feed amplo exige filtro. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Future Five New Zealand",
@@ -4440,20 +4440,20 @@
     "justification": "Hardware e games. Feed misto: exige filtro temático. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Information Age — Austrália",
+    "name": "ScienceAlert",
     "region": "Oceania",
     "country": "Austrália",
-    "site_url": "https://ia.acs.org.au/",
-    "rss_url": "https://ia.acs.org.au/rss.xml",
-    "justification": "Publicação da Australian Computer Society sobre TI e trabalho digital. URL RSS inferida e não validada, não ativar sem nova checagem."
+    "site_url": "https://www.sciencealert.com/",
+    "rss_url": "https://www.sciencealert.com/feed",
+    "justification": "Publicação australiana de ciência e inovação; filtrar tecnologia aplicada. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
-    "name": "InnovationAus",
+    "name": "Small Business Connections",
     "region": "Oceania",
     "country": "Austrália",
-    "site_url": "https://www.innovationaus.com/",
-    "rss_url": "https://www.innovationaus.com/feed/",
-    "justification": "Inovação tecnológica e políticas para a indústria australiana. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://smallbusinessconnections.com.au/",
+    "rss_url": "https://smallbusinessconnections.com.au/feed/",
+    "justification": "Negócios, startups e transformação digital de pequenas empresas; feed amplo exige filtro. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Inside Retail Australia",
@@ -4520,12 +4520,12 @@
     "justification": "Jornalismo de TI, telecom e negócios digitais. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Manufacturers' Monthly",
+    "name": "Process Online",
     "region": "Oceania",
     "country": "Austrália",
-    "site_url": "https://www.manmonthly.com.au/",
-    "rss_url": "https://www.manmonthly.com.au/feed/",
-    "justification": "Manufatura e indústria digital; cobertura adjacente. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.processonline.com.au/",
+    "rss_url": "https://www.processonline.com.au/feed.rss",
+    "justification": "Automação industrial, sensores e controle RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Marketing Mag",
@@ -4560,12 +4560,12 @@
     "justification": "Empreendedorismo, startups e inovação. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "PACE Today",
+    "name": "Electrical Comms Data",
     "region": "Oceania",
     "country": "Austrália",
-    "site_url": "https://pacetoday.com.au/",
-    "rss_url": "https://pacetoday.com.au/feed/",
-    "justification": "Automação industrial, sensores e sistemas de controle. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.ecdonline.com.au/",
+    "rss_url": "https://www.ecdonline.com.au/feed.rss",
+    "justification": "Infraestrutura de comunicação e dados RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "Pickr",
@@ -4784,12 +4784,12 @@
     "justification": "Veículo generalista com análises de tecnologia; filtro necessário. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Utility Magazine",
+    "name": "Sustainability Matters",
     "region": "Oceania",
     "country": "Austrália",
-    "site_url": "https://utilitymagazine.com.au/",
-    "rss_url": "https://utilitymagazine.com.au/feed/",
-    "justification": "Infraestrutura, conectividade e digitalização de utilities; filtro necessário. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://www.sustainabilitymatters.net.au/",
+    "rss_url": "https://www.sustainabilitymatters.net.au/feed.rss",
+    "justification": "Publicação de tecnologia ambiental e inovação industrial; filtrar tema digital. RSS/Atom com XML e itens confirmados em 14/09/2026."
   },
   {
     "name": "WellPlayed",

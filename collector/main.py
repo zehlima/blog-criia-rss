@@ -4,7 +4,8 @@ import json
 import os
 import time
 import uuid
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
+from .inventory import urls as active_urls
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -67,32 +68,46 @@ def sources(db,s3,slot,feeds,deadline):
 def articles(db,s3,slot,deadline):
     from .article_batch import outcome,preserve,persist
     archived_bytes=0;processed=0
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        while time.monotonic()<deadline:
-            batch=db.execute('''WITH due AS (
-              SELECT *,row_number() OVER(PARTITION BY split_part(url,'/',3)
-                ORDER BY (content_key IS NOT NULL),attempts,next_attempt_at,id) domain_rank
-              FROM news_articles WHERE next_attempt_at<=now()
-                AND (last_seen_at >= %s OR content_key IS NULL))
-              SELECT * FROM due ORDER BY domain_rank,(content_key IS NOT NULL),attempts,next_attempt_at,id LIMIT 32''',(slot,)).fetchall()
-            if not batch:break
-            fetched=list(pool.map(lambda a:attempt(fetch_article,a),batch))
-            def finish(pair):
-                a,(result,error)=pair
-                if not error:
-                    result,error=attempt(lambda _:preserve(s3,a,result),None)
-                    if error:error='storage_'+error
-                return outcome(a,result,error,slot)
-            rows=list(pool.map(finish,zip(batch,fetched)))
-            archived_bytes+=persist(db,rows);processed+=len(rows)
-            print(json.dumps({'phase':'articles','processed_this_run':processed,
-              'batch_extracted':sum(r['last_error'] is None for r in rows),
-              'batch_failed':sum(r['last_error'] is not None for r in rows)}),flush=True)
+    workers=max(1,min(32,int(os.getenv('ARTICLE_WORKERS','16'))))
+    def process(a):
+        result,error=attempt(fetch_article,a)
+        if not error:
+            result,error=attempt(lambda _:preserve(s3,a,result),None)
+            if error:error='storage_'+error
+        return outcome(a,result,error,slot)
+    # Keep workers occupied while persisting completed work without batch barriers.
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        pending={};buffer=[];last_flush=time.monotonic()
+        while pending or time.monotonic()<deadline:
+            capacity=workers-len(pending)
+            if capacity and time.monotonic()<deadline:
+                exclude=[a['id'] for a in pending.values()]+[r['id'] for r in buffer]
+                batch=db.execute("""WITH due AS (
+                  SELECT *,row_number() OVER(PARTITION BY split_part(url,'/',3)
+                    ORDER BY (content_key IS NOT NULL),attempts,next_attempt_at,id) domain_rank
+                  FROM news_articles WHERE next_attempt_at<=now() AND NOT(id=ANY(%s::bigint[]))
+                    AND (last_seen_at >= %s OR content_key IS NULL))
+                  SELECT * FROM due ORDER BY domain_rank,(content_key IS NOT NULL),attempts,next_attempt_at,id LIMIT %s""",
+                  (exclude,slot,capacity)).fetchall()
+                for a in batch:pending[pool.submit(process,a)]=a
+            if not pending:
+                if buffer:archived_bytes+=persist(db,buffer);buffer=[]
+                break
+            done,_=wait(pending,timeout=2,return_when=FIRST_COMPLETED)
+            for future in done:
+                buffer.append(future.result());pending.pop(future);processed+=1
+            if buffer and (len(buffer)>=32 or time.monotonic()-last_flush>=5 or not pending):
+                archived_bytes+=persist(db,buffer)
+                print(json.dumps({'phase':'articles','processed_this_run':processed,
+                  'batch_extracted':sum(r['last_error'] is None for r in buffer),
+                  'batch_failed':sum(r['last_error'] is not None for r in buffer)}),flush=True)
+                buffer=[];last_flush=time.monotonic()
+        if buffer:archived_bytes+=persist(db,buffer)
     return archived_bytes
 
 def summary(db,slot,total):
     r=db.execute('''SELECT count(*) FILTER(WHERE status='ok') ok,
-      count(*) FILTER(WHERE status='error') errors FROM news_feed_runs WHERE slot=%s''',(slot,)).fetchone()
+      count(*) FILTER(WHERE status='error') errors FROM news_feed_runs WHERE slot=%s AND feed_id IN (SELECT id FROM news_feeds WHERE rss_url=ANY(%s))''',(slot,active_urls())).fetchone()
     a=db.execute('''SELECT count(*) total,count(*) FILTER(WHERE content_key IS NOT NULL) extracted,
       count(*) FILTER(WHERE content_key IS NULL) without_text FROM news_articles''').fetchone()
     pending=db.execute('''SELECT count(*) n FROM news_articles WHERE next_attempt_at<=now()
@@ -115,7 +130,7 @@ def run(db,s3,feeds):
     Path('reports/latest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     feed_states=db.execute("""SELECT f.id,f.name,f.country,f.region,f.site_url,f.rss_url,
       coalesce(r.status,'not_attempted') status,r.error FROM news_feeds f
-      LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s ORDER BY f.id""",(slot,)).fetchall()
+      LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s WHERE f.rss_url=ANY(%s) ORDER BY f.id""",(slot,active_urls())).fetchall()
     attempt_id=os.getenv('GITHUB_RUN_ID') or str(uuid.uuid4())
     db.execute('''INSERT INTO news_collection_attempts(id,slot,finished_at,report,feeds)
       VALUES(%s,%s,%s,%s,%s) ON CONFLICT(id) DO NOTHING''',
@@ -130,8 +145,8 @@ def run(db,s3,feeds):
     return 0
 
 def preflight(db,s3):
-    count=db.execute('SELECT count(*) n FROM news_feeds').fetchone()['n']
-    if count!=600:raise ValueError('Esperados 600 feeds no banco dedicado')
+    count=db.execute('SELECT count(*) n FROM news_feeds WHERE rss_url=ANY(%s)',(active_urls(),)).fetchone()['n']
+    if count!=len(active_urls()):raise ValueError('Esperados 600 feeds no banco dedicado')
     key='preflight/'+str(uuid.uuid4())+'.txt'
     s3.put_object(Bucket=os.environ['R2_BUCKET'],Key=key,Body=b'boris-preflight')
     try:
@@ -153,6 +168,7 @@ def main():
         if args.mode=='setup':
             db.execute((ROOT/'sql/001_schema.sql').read_text());seed(db,feeds);print('Schema e 600 feeds preparados.');return 0
         if args.mode=='preflight':preflight(db,s3);return 0
+        seed(db,feeds)
         return run(db,s3,feeds)
     finally:db.close()
 
