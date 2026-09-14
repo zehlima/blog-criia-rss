@@ -54,15 +54,31 @@ jobs:
           name: painel-tabler
           path: frontend/
       - name: Conferir acesso Cloudflare
+        id: cloudflare
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
         run: |
           test -n "$CLOUDFLARE_API_TOKEN" || { echo '::error::Falta CLOUDFLARE_API_TOKEN com Cloudflare Pages Edit'; exit 1; }
-          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo '::error::Falta CLOUDFLARE_ACCOUNT_ID'; exit 1; }
+          python3 - <<'PY'
+          import os, re
+          from urllib.parse import urlparse
+          account = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+          if not account:
+              host = urlparse(os.environ.get("R2_ENDPOINT_URL", "")).hostname or ""
+              match = re.fullmatch(r"([a-f0-9]{32})(?:\.(?:eu|fedramp))?\.r2\.cloudflarestorage\.com", host)
+              if match:
+                  account = match.group(1)
+          if not re.fullmatch(r"[a-f0-9]{32}", account):
+              raise SystemExit("::error::Falta CLOUDFLARE_ACCOUNT_ID valido ou endpoint R2 reconhecido")
+          print("::add-mask::" + account)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write("account_id=" + account + "\n")
+          PY
       - name: Publicar
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          accountId: ${{ steps.cloudflare.outputs.account_id }}
           command: pages deploy frontend --project-name=blog-criia-painel --branch=main
