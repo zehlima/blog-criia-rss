@@ -66,11 +66,13 @@ def is_multi_story_digest(title):
     parts=[x for x in re.split(r'\s[/|｜]\s|[/|｜]',title) if x.strip()]
     return len(parts)>=3
 
-def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_limit=0):
+def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_limit=0,
+               versions_a=None,versions_b=None,digest_a=None,digest_b=None):
     na=' '.join(a.casefold().split());nb=' '.join(b.casefold().split())
     if na==nb:return True
-    if is_multi_story_digest(a) or is_multi_story_digest(b):return False
-    versions_a,versions_b=product_versions(a),product_versions(b)
+    if (is_multi_story_digest(a) if digest_a is None else digest_a) or (is_multi_story_digest(b) if digest_b is None else digest_b):return False
+    versions_a=product_versions(a) if versions_a is None else versions_a
+    versions_b=product_versions(b) if versions_b is None else versions_b
     for product in versions_a.keys()&versions_b.keys():
         if versions_a[product]!=versions_b[product]:return False
     shared=(anchor_a if anchor_a is not None else anchors(a)) & (anchor_b if anchor_b is not None else anchors(b))
@@ -96,12 +98,15 @@ def coherent_groups(embeddings,titles=None,min_similarity=.72):
     if titles is not None:
         if len(titles)!=len(vectors):raise ValueError('title_vector_length_mismatch')
         anchor_sets=[anchors(title) for title in titles]
+        version_sets=[product_versions(title) for title in titles]
+        digests=[is_multi_story_digest(title) for title in titles]
         frequency=Counter(x for values in anchor_sets for x in values)
         rare_limit=max(4,int(len(titles)*.001))
         for i in range(len(vectors)):
             for j in range(i):
                 if not compatible(titles[i],titles[j],float(similarity[i,j]),
-                                  anchor_sets[i],anchor_sets[j],frequency,rare_limit):
+                                  anchor_sets[i],anchor_sets[j],frequency,rare_limit,
+                                  version_sets[i],version_sets[j],digests[i],digests[j]):
                     distance[i,j]=distance[j,i]=2.0
     # Complete linkage prevents A~B~C chains from merging A and C when unrelated.
     labels=AgglomerativeClustering(n_clusters=None,metric='precomputed',linkage='complete',

@@ -18,7 +18,7 @@ from .core import continent,families,in_window,rankings
 BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
-VERSION='boris-topics-v9-versioned-events-072'
+VERSION='boris-topics-v10-precomputed-event-signatures-072'
 # Embeddings depend on the pinned model and headline, not on clustering rules.
 # Keep the already materialized v4 cache schema to avoid recomputing identical vectors.
 EMBEDDING_CACHE_VERSION='boris-topics-v4-headline-anchors-072'

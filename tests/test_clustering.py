@@ -124,3 +124,14 @@ def test_multi_story_daily_digest_is_not_folded_into_one_of_its_items():
             'Morning brief | iPhone 18 Pro sold out / OpenAI delays IPO / new ice cream reviewed']
     vectors=np.array([[1.,0.],[.82,(1-.82**2)**.5]])
     assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_event_metadata_is_precomputed_for_pairwise_matrix(monkeypatch):
+    import trends.clustering as clustering
+    original=clustering.product_versions
+    calls=[]
+    def counted(title):
+        calls.append(title);return original(title)
+    monkeypatch.setattr(clustering,'product_versions',counted)
+    titles=[f'Windows 11 audio update report {i}' for i in range(20)]
+    coherent_groups(np.eye(20),titles,min_similarity=.72)
+    assert len(calls)==len(titles)
