@@ -18,7 +18,7 @@ from .core import continent,families,in_window,rankings
 BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
-VERSION='boris-topics-v11-event-context-active-inventory-072'
+VERSION='boris-topics-v12-editorial-template-gates-072'
 EMBEDDING_CACHE_VERSION=VERSION
 
 
@@ -168,8 +168,8 @@ def prepare(db,s3,run_id):
     coverage={'clustering_method':'complete_linkage_cosine',
       'minimum_pairwise_similarity':.72,
       'semantic_basis':'title_derived_event_context_without_broad_product_identity',
-      'lexical_gate':'exact_title_or_narrow_compound_signature_or_two_anchors_with_rare_specific_term; product_versions_must_match; multi_story_digests_excluded',
-      'calibration_status':'Known v4-v10 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
+      'lexical_gate':'exact_title_or_narrow_compound_at_0735_or_two_anchors_with_rare_specific_term; product_versions_must_match; multi_story_digests_and_event_templates_excluded',
+      'calibration_status':'Known v4-v11 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
       'editorial_status':'automatic_groups_require_editorial_review',
       'ungrouped_articles':sum(a['topic_id']=='outlier' for a in recent),
       'corpus_articles':len(articles),'window_articles':len(recent),

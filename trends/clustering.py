@@ -24,6 +24,11 @@ BROAD={'apple','iphone','xiaomi','samsung','google','microsoft','openai','meta',
        'sony','lg','oppo','vivo','huawei','android','windows','xbox','playstation','galaxy',
        'honor','snapdragon','blizzard','diablo','duo','gen'}
 
+GENERIC.update({'risk','risks','risky','warning','warnings','warns','safety','security',
+ 'riesgo','riesgos','advertencia','advertencias','alerta','alertas','advierte','seguridad',
+ 'risco','riscos','alerta','alertas','adverte','seguranca','segurança'})
+BROAD.add('anthropic')
+
 ROMAN={'i':'1','ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
 VERSIONED_PRODUCTS={'iphone','ios','windows','galaxy','diablo','playstation','xbox'}
 
@@ -81,10 +86,16 @@ def is_multi_story_digest(title):
     parts=[x for x in re.split(r'\s[/|｜]\s|[/|｜]',title) if x.strip()]
     return len(parts)>=3
 
+def is_template_listing(title):
+    # Conference/catalogue prefixes identify a venue or content type, not the
+    # same announcement. Exact syndication is handled before this gate.
+    return bool(re.match(r'(?i)^\s*(?:\[\s*virtual event\s*\]|gisec\s+20\d{2}\s*:)',title))
+
 def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_limit=0,
                versions_a=None,versions_b=None,digest_a=None,digest_b=None):
     na=' '.join(a.casefold().split());nb=' '.join(b.casefold().split())
     if na==nb:return True
+    if is_template_listing(a) or is_template_listing(b):return False
     if (is_multi_story_digest(a) if digest_a is None else digest_a) or (is_multi_story_digest(b) if digest_b is None else digest_b):return False
     versions_a=product_versions(a) if versions_a is None else versions_a
     versions_b=product_versions(b) if versions_b is None else versions_b
@@ -92,7 +103,7 @@ def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_li
         if versions_a[product]!=versions_b[product]:return False
     shared=(anchor_a if anchor_a is not None else anchors(a)) & (anchor_b if anchor_b is not None else anchors(b))
     compounds={x for x in shared if x.startswith('~')}
-    if compounds:return True
+    if compounds:return similarity>=.735
     atomic={x for x in shared if not x.startswith('~')}
     specific=atomic-BROAD
     # Two common words are still a subject, not necessarily one story. At least

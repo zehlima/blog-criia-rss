@@ -135,6 +135,28 @@ def test_multi_story_daily_digest_is_not_folded_into_one_of_its_items():
     vectors=np.array([[1.,0.],[.82,(1-.82**2)**.5]])
     assert coherent_groups(vectors,titles,min_similarity=.72)==[]
 
+@pytest.mark.parametrize('titles',[
+    ['GISEC 2026: Saviynt to showcase AI identity security',
+     'GISEC 2026: du to showcase sovereign AI cloud'],
+    ['[Virtual Event] Securing cloud assets in the age of AI',
+     '[Virtual Event] Building a secure AI strategy for enterprise'],
+])
+def test_shared_event_or_catalogue_prefix_is_not_one_story(titles):
+    vectors=np.array([[1.,0.],[.85,(1-.85**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_product_identity_with_weak_event_similarity_is_not_one_story():
+    titles=['Huawei Pura X View sales exceed 300,000 units',
+            'Huawei Pura X View hands-on review and price']
+    vectors=np.array([[1.,0.],[.73,(1-.73**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_specific_interview_is_not_broad_company_warning_story():
+    titles=['Ex-Anthropic researcher tells BBC employees are terrified by AI risks',
+            'Anthropic and OpenAI warn they may lose control of AI']
+    vectors=np.array([[1.,0.],[.76,(1-.76**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
 def test_event_metadata_is_precomputed_for_pairwise_matrix(monkeypatch):
     import trends.clustering as clustering
     original=clustering.product_versions
