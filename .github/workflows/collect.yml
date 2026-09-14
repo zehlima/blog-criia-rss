@@ -5,6 +5,9 @@ on:
     - cron: '0 3,9,15,21 * * *'
     # Recuperação uma hora depois: retoma pendências da mesma janela.
     - cron: '0 4,10,16,22 * * *'
+  push:
+    branches: [main]
+    paths: ['.github/workflows/collect.trigger']
   workflow_dispatch:
     inputs:
       mode:
@@ -19,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   collect:
-    if: github.event_name == 'workflow_dispatch' || vars.ENABLE_COLLECTION != 'false'
+    if: github.event_name != 'schedule' || vars.ENABLE_COLLECTION != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
@@ -42,3 +45,9 @@ jobs:
           MAX_RUN_SECONDS: '1800'
           MODE: ${{ inputs.mode || 'run' }}
         run: python -m collector.main "$MODE"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: collection-report-${{ github.run_id }}
+          path: reports/
+          retention-days: 30

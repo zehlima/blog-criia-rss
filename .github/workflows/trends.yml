@@ -1,0 +1,92 @@
+name: Tendencias pais continente globo
+on:
+  workflow_run:
+    workflows: ['Coleta global RSS', 'Validar conexao e primeira coleta']
+    types: [completed]
+    branches: [main]
+  push:
+    branches: [main]
+    paths: ['.github/workflows/trends.trigger']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: boris-topic-analysis
+  cancel-in-progress: false
+env:
+  DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+  DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
+  DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  R2_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ secrets.R2_BUCKET }}
+  ANALYSIS_RUN_ID: ${{ github.run_id }}
+  TOKENIZERS_PARALLELISM: 'false'
+jobs:
+  prepare:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            trends/requirements.txt
+      - name: CPU dependencies
+        run: |
+          pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r trends/requirements.txt
+          pip freeze > /tmp/installed-versions.txt
+      - name: Testes
+        run: python -m pytest -q
+      - name: Testar banco e R2
+        run: python -m collector.main preflight
+      - name: Analisar corpus completo e congelar temas das ultimas 24h
+        run: python -m trends.main prepare --run-id "$ANALYSIS_RUN_ID"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: analysis-preparation
+          path: |
+            reports/analysis_coverage.json
+            /tmp/installed-versions.txt
+          retention-days: 30
+  publish:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - scope: country
+            delay: 15
+          - scope: continent
+            delay: 20
+          - scope: globe
+            delay: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Publicar no horario relativo ao fim da coleta
+        env:
+          SCOPE: ${{ matrix.scope }}
+          DELAY: ${{ matrix.delay }}
+        run: python -m trends.main publish --run-id "$ANALYSIS_RUN_ID" --scope "$SCOPE" --delay "$DELAY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: trends-${{ matrix.scope }}
+          path: reports/trends_*
+          retention-days: 30

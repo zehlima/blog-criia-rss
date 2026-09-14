@@ -30,7 +30,7 @@ def sources(db,s3,slot,feeds,deadline):
     targets=db.execute('''SELECT f.* FROM news_feeds f WHERE f.rss_url=ANY(%s)
       AND NOT EXISTS(SELECT 1 FROM news_feed_runs r WHERE r.feed_id=f.id AND r.slot=%s AND r.status='ok')
       ORDER BY f.id''',([f['rss_url'] for f in feeds],slot)).fetchall()
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=8) as pool:
         for start in range(0,len(targets),8):
             if time.monotonic()>deadline:break
             batch=targets[start:start+8]
@@ -66,10 +66,11 @@ def sources(db,s3,slot,feeds,deadline):
 
 def articles(db,s3,slot,deadline):
     archived_bytes=0
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=8) as pool:
         while time.monotonic()<deadline:
             batch=db.execute('''SELECT * FROM news_articles WHERE next_attempt_at<=now()
-              AND (last_seen_at >= %s OR content_key IS NULL) ORDER BY next_attempt_at,id LIMIT 8''',(slot,)).fetchall()
+              AND (last_seen_at >= %s OR content_key IS NULL)
+              ORDER BY (content_key IS NOT NULL),attempts,next_attempt_at,id LIMIT 24''',(slot,)).fetchall()
             if not batch:break
             for a,(result,error) in zip(batch,pool.map(lambda a:attempt(fetch_article,a),batch)):
                 if error:
@@ -96,7 +97,7 @@ def articles(db,s3,slot,deadline):
                       (content_hash,key,chars,text is not None,url,
                        h.get('ETag',a['page_etag'] if status==304 else None),
                        h.get('Last-Modified',a['page_last_modified'] if status==304 else None),
-                       slot+timedelta(hours=6),a['id']))
+                       max(slot+timedelta(hours=6),datetime.now(timezone.utc)+timedelta(hours=1)),a['id']))
     return archived_bytes
 
 def summary(db,slot,total):
@@ -118,13 +119,18 @@ def run(db,s3,feeds):
     report=summary(db,slot,len(feeds));report['compressed_bytes_written']=size
     status='complete' if not (report['feeds_errors'] or report['feeds_not_attempted'] or report['due_articles'] or report['articles']['without_text']) else 'partial'
     report['status']=status
+    report['finished_at']=datetime.now(timezone.utc).isoformat()
     db.execute('UPDATE news_runs SET status=%s,finished_at=now(),report=%s WHERE slot=%s',(status,Jsonb(report),slot))
     Path('reports').mkdir(exist_ok=True)
     Path('reports/latest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+    from .reporting import write_feed_report
+    write_feed_report(db,s3,slot,report)
     print(json.dumps(report,ensure_ascii=False),flush=True)
     if os.getenv('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write('```json\n'+json.dumps(report,indent=2)+'\n```\n')
-    return 0 if status=='complete' else 2
+    # Partial is a checkpoint, not an infrastructure exception. Coverage remains explicit.
+    if status=='partial':print('::warning::Coleta parcial; consulte cobertura e pendencias no relatorio.',flush=True)
+    return 0
 
 def preflight(db,s3):
     count=db.execute('SELECT count(*) n FROM news_feeds').fetchone()['n']

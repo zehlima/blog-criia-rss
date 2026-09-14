@@ -14,7 +14,7 @@ def iso_date(value):
 
 def entries(body, base):
     parsed=feedparser.parse(body)
-    if not parsed.version or parsed.bozo:
+    if not parsed.get('version') or parsed.get('bozo'):
         raise ValueError('invalid_or_malformed_feed')
     result=[]
     for e in parsed.entries:
