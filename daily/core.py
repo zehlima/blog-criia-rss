@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 from trends.core import continent, publisher
 
 TZ = ZoneInfo('America/Sao_Paulo')
-VERSION = 'daily-v1-title-lead-conservative'
+VERSION = 'daily-v2-title-lead-shared-body-guard'
 LEAD_CHARS = 1200
 
 
@@ -48,15 +48,17 @@ def compare(a, b, title_similarity, lead_similarity):
     la, lb = normalize(a.get('lead')), normalize(b.get('lead'))
     body = a.get('text_basis') in ('extracted_page', 'publisher_rss') and b.get('text_basis') in ('extracted_page', 'publisher_rss')
     enough = body and min(len(la), len(lb)) >= 200
-    lexical = jaccard(a.get('_grams', chargrams(la)), b.get('_grams', chargrams(lb)))
+    lexical = jaccard(a['_grams'] if '_grams' in a else chargrams(la), b['_grams'] if '_grams' in b else chargrams(lb))
     score = .4 * title_similarity + .6 * lead_similarity
     evidence = {'title_similarity': round(title_similarity, 5), 'lead_similarity': round(lead_similarity, 5),
                 'lead_jaccard': round(lexical, 5), 'similarity_score': round(score, 5),
                 'probability': None, 'score_calibrated': False}
-    if enough and a.get('body_hash') and a.get('body_hash') == b.get('body_hash'):
-        return dict(evidence, decision='duplicate', reason='identical_normalized_body')
     if numeric_conflict(ta, tb):
         return dict(evidence, decision='distinct', reason='different_explicit_numbers')
+    if enough and a.get('body_hash') and a.get('body_hash') == b.get('body_hash'):
+        if title_similarity>=.70 or ta==tb:
+            return dict(evidence, decision='duplicate', reason='identical_normalized_body_compatible_title')
+        return dict(evidence, decision='distinct', reason='shared_body_conflicting_titles')
     if enough and lexical >= .88 and (ta == tb or title_similarity >= .78):
         return dict(evidence, decision='duplicate', reason='near_identical_lead_and_compatible_title')
     # Semantic equivalence alone cannot prove that two publishers copied a text.
@@ -109,6 +111,17 @@ def candidate_pairs(articles, title_vectors, lead_vectors):
 
 def group_copies(articles, title_vectors, lead_vectors, pairs=None):
     import numpy as np
+    # Consent/paywall/navigation bodies can be identical across unrelated pages.
+    hashes=defaultdict(list)
+    for i,a in enumerate(articles):
+        if a.get('body_hash'):hashes[a['body_hash']].append(i)
+    for indices in hashes.values():
+        if len(indices)<3:continue
+        titles=np.asarray(title_vectors)[indices]
+        if float((titles@titles.T).min())<.55:
+            for i in indices:
+                articles[i].update(text_basis='untrusted_body',body_error='shared_body_with_divergent_titles',body_hash=None,lead='')
+                lead_vectors[i]=0
     pairs = candidate_pairs(articles, title_vectors, lead_vectors) if pairs is None else pairs
     from collections import Counter
     from trends.clustering import anchors, compatible

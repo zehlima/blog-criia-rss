@@ -20,6 +20,8 @@ Busca candidatos pelos 32 vizinhos semânticos mais próximos, MinHash e hashes 
 
 O primeiro dia possui lacuna de observações: o sistema anterior só mantinha o último avistamento. Não reconstruímos artificialmente aparições antigas. O relatório inclui cobertura dos feeds, corpos ausentes, datas inferidas e quantidade de lotes observados frente aos esperados.
 
+Corpos idênticos com títulos semanticamente incompatíveis são tratados como suspeita de extração de texto comum do site. Esses corpos ficam fora da deduplicação e da similaridade temática; os registros continuam na contabilidade. A v2 incorpora essa proteção após encontrar 42 URLs com assuntos distintos e o mesmo conteúdo extraído.
+
 ## Operação e armazenamento
 
 - `.github/workflows/daily.yml`: `workflow_run` da coleta, entrada manual auto/preview; push no trigger executa prévia real.

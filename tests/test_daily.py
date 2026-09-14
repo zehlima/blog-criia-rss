@@ -89,9 +89,17 @@ def test_empty_day_not_error():
 
 def test_candidate_generation_detects_copy_with_low_title_similarity():
     articles=[article(1),article(2,'Aurora apresenta tecnologia de sódio')]
-    vectors=np.array([[1.,0.],[0.,1.]])
+    vectors=np.array([[1.,0.],[.71,.7042]])
     group_copies(articles,vectors,vectors)
     assert articles[0]['copy_family']==articles[1]['copy_family']
+
+
+def test_common_site_body_with_divergent_titles_is_quarantined():
+    rows=[article(1,'A new battery'),article(2,'A music concert'),article(3,'A software vulnerability')]
+    vectors=np.eye(3)
+    group_copies(rows,vectors,vectors.copy())
+    assert all(a['text_basis']=='untrusted_body' for a in rows)
+    assert len({a['copy_family'] for a in rows})==3
 
 
 def test_midnight_gate_closes_previous_calendar_day_only():

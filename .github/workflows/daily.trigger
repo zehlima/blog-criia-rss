@@ -1,1 +1,1 @@
-Validate daily accounting v1 on the current corpus, explicitly as preview.
+Validate daily accounting v2: quarantine shared extraction bodies with divergent headlines.

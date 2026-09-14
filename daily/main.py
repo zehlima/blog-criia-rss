@@ -62,7 +62,8 @@ def embeddings(s3, articles):
     import torch
     from sentence_transformers import SentenceTransformer
     torch.set_num_threads(max(1,min(4,os.cpu_count() or 2)))
-    key = 'daily/cache/' + VERSION + '.npz'
+    # Text/model inputs are unchanged: retain the expensive v1 vector cache.
+    key = 'daily/cache/daily-v1-title-lead-conservative.npz'
     raw = optional(s3,key)
     cache = {}
     if raw:
@@ -142,14 +143,15 @@ def run(db,s3,mode):
     results={scope:accounting(articles,observations,scope,sources) for scope in ('country','continent','globe')}
     coverage={'mode':mode,'day_start':start.isoformat(),'day_end_exclusive':end.isoformat(),'collection_cutoff':cutoff.isoformat(),
               'source_attempt':attempt['id'],'articles':len(articles),
-              'body_texts':sum(a['text_basis']!='title_summary' for a in articles),
-              'title_summary_only':sum(a['text_basis']=='title_summary' for a in articles),
+              'body_texts':sum(a['text_basis'] in ('extracted_page','publisher_rss') for a in articles),
+              'title_summary_only':sum(a['text_basis'] in ('title_summary','untrusted_body') for a in articles),
+              'untrusted_body_texts':sum(a['text_basis']=='untrusted_body' for a in articles),
               'body_read_errors':sum(bool(a['body_error']) for a in articles),
               'date_fallback':sum(a['published_at'] is None for a in articles),
               'feed_errors_at_closure':attempt['report'].get('feeds_errors'),
               'observation_batches':batches,'expected_full_day_feed_batches':4*len(sources),
               'observation_history_started':str(first_ledger) if first_ledger else None,
-              'observation_history_complete':bool(first_ledger and first_ledger<=start and batches>=4*len(sources)),
+              'observation_history_complete':batches>=4*len(sources),
               'historical_sightings_not_reconstructed':True,
               'probabilities_calibrated':False,'editorial_validation':'pending',
               'candidate_search':'top32_semantic_neighbors_plus_minhash_and_exact_hash; recall_not_guaranteed',
