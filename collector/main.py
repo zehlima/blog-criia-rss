@@ -5,6 +5,7 @@ import os
 import time
 import uuid
 from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
+from collections import deque
 from .inventory import urls as active_urls
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
@@ -46,23 +47,24 @@ def sources(db,s3,slot,feeds,deadline):
                     uploads=list(pool.map(lambda a:attempt(preserve,a),items))
                     failures=[e for _,e in uploads if e]
                     if failures:error='storage_'+failures[0]
-                with db.transaction():
-                    count=0
-                    if not error:
-                        status,h,items=result;count=len(items)
-                        if status!=304:
-                            db.execute('UPDATE news_article_feeds SET in_latest=false WHERE feed_id=%s',(f['id'],))
-                        save_entries(db,f['id'],items)
-                        # 304 mantém a elegibilidade das páginas para checar revisões.
-                        db.execute('''UPDATE news_articles SET last_seen_at=now() WHERE id IN
-                          (SELECT article_id FROM news_article_feeds WHERE feed_id=%s AND in_latest)''',(f['id'],)) if status==304 else None
-                        db.execute('''UPDATE news_feeds SET etag=%s,last_modified=%s,last_success_at=now() WHERE id=%s''',
-                          (h.get('ETag',f['etag'] if status==304 else None),
-                           h.get('Last-Modified',f['last_modified'] if status==304 else None),f['id']))
-                    db.execute('''INSERT INTO news_feed_runs(slot,feed_id,status,items,error)
-                      VALUES(%s,%s,%s,%s,%s) ON CONFLICT(slot,feed_id) DO UPDATE SET
-                      status=EXCLUDED.status,items=EXCLUDED.items,error=EXCLUDED.error,checked_at=now()''',
-                      (slot,f['id'],'error' if error else 'ok',count,error))
+                with db.pipeline():
+                    with db.transaction():
+                        count=0
+                        if not error:
+                            status,h,items=result;count=len(items)
+                            if status!=304:
+                                db.execute('UPDATE news_article_feeds SET in_latest=false WHERE feed_id=%s',(f['id'],))
+                            save_entries(db,f['id'],items)
+                            # 304 mantém a elegibilidade das páginas para checar revisões.
+                            db.execute('''UPDATE news_articles SET last_seen_at=now() WHERE id IN
+                              (SELECT article_id FROM news_article_feeds WHERE feed_id=%s AND in_latest)''',(f['id'],)) if status==304 else None
+                            db.execute('''UPDATE news_feeds SET etag=%s,last_modified=%s,last_success_at=now() WHERE id=%s''',
+                              (h.get('ETag',f['etag'] if status==304 else None),
+                               h.get('Last-Modified',f['last_modified'] if status==304 else None),f['id']))
+                        db.execute('''INSERT INTO news_feed_runs(slot,feed_id,status,items,error)
+                          VALUES(%s,%s,%s,%s,%s) ON CONFLICT(slot,feed_id) DO UPDATE SET
+                          status=EXCLUDED.status,items=EXCLUDED.items,error=EXCLUDED.error,checked_at=now()''',
+                          (slot,f['id'],'error' if error else 'ok',count,error))
                 print(json.dumps({'phase':'feeds','feed_id':f['id'],'status':error or 'ok','items':count}),flush=True)
 
 def articles(db,s3,slot,deadline):
@@ -71,16 +73,19 @@ def articles(db,s3,slot,deadline):
     workers=max(1,min(32,int(os.getenv('ARTICLE_WORKERS','16'))))
     def process(a):
         result,error=attempt(fetch_article,a)
+        if error and a.get('rss_content_key'):
+            from .rss_fallback import fetch as fetch_rss
+            fallback,fallback_error=attempt(lambda _:fetch_rss(s3,a),None)
+            if not fallback_error:result,error=fallback,None
         if not error:
             result,error=attempt(lambda _:preserve(s3,a,result),None)
             if error:error='storage_'+error
         return outcome(a,result,error,slot)
     # Keep workers occupied while persisting completed work without batch barriers.
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        pending={};buffer=[];last_flush=time.monotonic()
+        pending={};buffer=[];waiting=deque();last_flush=time.monotonic()
         while pending or time.monotonic()<deadline:
-            capacity=workers-len(pending)
-            if capacity and time.monotonic()<deadline:
+            if not waiting and time.monotonic()<deadline:
                 exclude=[a['id'] for a in pending.values()]+[r['id'] for r in buffer]
                 batch=db.execute("""WITH due AS (
                   SELECT *,row_number() OVER(PARTITION BY split_part(url,'/',3)
@@ -88,8 +93,10 @@ def articles(db,s3,slot,deadline):
                   FROM news_articles WHERE next_attempt_at<=now() AND NOT(id=ANY(%s::bigint[]))
                     AND (last_seen_at >= %s OR content_key IS NULL))
                   SELECT * FROM due ORDER BY domain_rank,(content_key IS NOT NULL),attempts,next_attempt_at,id LIMIT %s""",
-                  (exclude,slot,capacity)).fetchall()
-                for a in batch:pending[pool.submit(process,a)]=a
+                  (exclude,slot,256)).fetchall()
+                waiting.extend(batch)
+            while waiting and len(pending)<workers and time.monotonic()<deadline:
+                a=waiting.popleft();pending[pool.submit(process,a)]=a
             if not pending:
                 if buffer:archived_bytes+=persist(db,buffer);buffer=[]
                 break

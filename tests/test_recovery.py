@@ -30,3 +30,10 @@ def test_slow_article_does_not_block_other_worker(monkeypatch):
     monkeypatch.setattr('collector.article_batch.persist',persist)
     articles(DB(),None,datetime.now(timezone.utc),time.monotonic()+4)
     assert sorted(saved)==[0,1,2,3]
+
+def test_rss_summary_is_never_promoted_to_full_article():
+    import json
+    from collector.rss_fallback import publisher_text
+    assert publisher_text(json.dumps([{'type':'feed_summary','value':'Long summary '*100}])) is None
+    text=publisher_text(json.dumps([{'type':'text/html','value':'<p>'+'Publisher text '*100+'</p><script>bad()</script>'}]))
+    assert text and 'bad()' not in text and '<p>' not in text

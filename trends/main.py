@@ -54,7 +54,7 @@ def load_text(s3,a):
     if a['content_key']:
         try:
             body=gzip.decompress(get_object(s3,a['content_key'])).decode('utf-8')
-            text=a['title']+'\n'+body;a['text_basis']='extracted_page'
+            text=a['title']+'\n'+body;a['text_basis']='publisher_rss' if a.get('content_status')=='rss_content' else 'extracted_page'
         except Exception as exc:
             # Keep the article in the analysis, but never claim its body was read.
             a['text_read_error']=type(exc).__name__
@@ -164,6 +164,7 @@ def prepare(db,s3,run_id):
       'corpus_articles':len(articles),'window_articles':len(recent),
       'full_texts_read':sum(a['text_basis']=='extracted_page' for a in articles),
       'window_full_texts_read':sum(a['text_basis']=='extracted_page' for a in recent),
+      'publisher_rss_texts_read':sum(a['text_basis']=='publisher_rss' for a in articles),
       'body_read_errors':sum(bool(a['text_read_error']) for a in articles),
       'date_fallback_articles':sum(a['published_at'] is None for a in recent),
       'feeds_total':len(sources),'feeds_ok':sum(s['status']=='ok' for s in sources),

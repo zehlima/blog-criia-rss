@@ -53,11 +53,12 @@ def archive(s3,url,text):
     return h,key,len(data)
 
 def seed(db,feeds):
-    with db.transaction():
-        for f in feeds:
-            db.execute('''INSERT INTO news_feeds(rss_url,name,region,country,site_url,justification)
-              VALUES(%(rss_url)s,%(name)s,%(region)s,%(country)s,%(site_url)s,%(justification)s)
-              ON CONFLICT(rss_url) DO NOTHING''',f)
+    from psycopg.types.json import Jsonb
+    # One round trip, preserving all historical source identities.
+    db.execute("""INSERT INTO news_feeds(rss_url,name,region,country,site_url,justification)
+      SELECT rss_url,name,region,country,site_url,justification
+      FROM jsonb_to_recordset(%s::jsonb) AS f(rss_url text,name text,region text,country text,site_url text,justification text)
+      ON CONFLICT(rss_url) DO NOTHING""",(Jsonb(feeds),))
 
 def save_entry(db,feed_id,a):
     row=db.execute('''INSERT INTO news_articles(url,title,summary,published_at,source_updated_at,metadata_hash,rss_content_key)

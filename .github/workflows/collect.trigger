@@ -1,1 +1,1 @@
-Collect missing 75 South America sources and finish recovery v3
+Recover all 675 feeds with bulk seeding, pipelined writes, prefetched extraction and publisher RSS fallback v4

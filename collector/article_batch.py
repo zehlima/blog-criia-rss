@@ -19,7 +19,7 @@ def outcome(a,result,error,slot):
             content_hash,key,size=stored
             row.update(content_hash=content_hash,content_key=key,content_chars=len(text),
                extracted_at=now,write_version=True,bytes_written=size)
-        row.update(content_status='extracted',last_error=None,attempts=0,final_url=url,
+        row.update(content_status='rss_content' if h.get('X-Content-Basis')=='publisher_rss' else 'extracted',last_error=None,attempts=0,final_url=url,
            page_etag=h.get('ETag',a['page_etag'] if status==304 else None),
            page_last_modified=h.get('Last-Modified',a['page_last_modified'] if status==304 else None),
            next_attempt_at=max(slot+timedelta(hours=6),now+timedelta(hours=1)))

@@ -36,7 +36,7 @@ def get(url, headers=None, max_bytes=8*1024*1024, check_robots=False):
             at = max(time.monotonic(), _next.get(host,0))
             _next[host] = at + 1.0
         time.sleep(max(0,at-time.monotonic()))
-        with requests.get(url,headers={'User-Agent':UA,**(headers or {})},
+        with requests.get(url,headers={'User-Agent':UA,'Accept-Encoding':'identity',**(headers or {})},
                           timeout=(10,20),allow_redirects=False,stream=True) as r:
             if r.is_redirect:
                 url = canonical(r.headers['Location'],url)
