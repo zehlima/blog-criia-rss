@@ -1,0 +1,58 @@
+name: Painel Tabler
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['frontend/**', 'dashboard/**', '.github/workflows/dashboard.yml']
+  workflow_run:
+    workflows: ['Coleta global RSS', 'Tendencias pais continente globo']
+    types: [completed]
+  schedule:
+    - cron: '35 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: dashboard-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - run: node --test tests/test_dashboard.mjs
+      - name: Atualizar dados reais
+        env:
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
+          DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
+        run: python -m dashboard.export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: painel-tabler
+          path: frontend/
+          retention-days: 7
+      - name: Conferir acesso Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo '::error::Falta CLOUDFLARE_API_TOKEN com Cloudflare Pages Edit'; exit 1; }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo '::error::Falta CLOUDFLARE_ACCOUNT_ID'; exit 1; }
+      - name: Publicar
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy frontend --project-name=blog-criia-painel --branch=main

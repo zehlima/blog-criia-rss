@@ -1,52 +1,20 @@
-# Painel BLOG CRIIA — preparação
+# Painel Tabler — BLOG CRIIA
 
-**Publicação suspensa por instrução do usuário.** Ainda entram outros motores antes de subir o painel. Não há projeto Pages criado nem workflow de deploy nesta entrega.
+Publicação autorizada pelo usuário. Integração por snapshot do Supabase, renovado após coleta e tendências e a cada hora. O navegador atualiza a leitura a cada minuto. A data exibida é a data da fonte; não implica coleta em tempo real.
 
-## Base preparada
-Tabler Core 1.4.0 (MIT, CDN fixado) + HTML/CSS/JavaScript, sem etapa obrigatória de build. Layout responsivo com Matérias, Tendências e Coleta. Tema azul/ardósia e leitura em painel modal. Registro central de motores em src/engines.mjs; adaptador HTTP em src/api.mjs.
+## Entrega
+- Matérias: até 2.000 títulos mais recentes, busca por título e país, acesso ao veículo original.
+- Tendências: país, continente e globo, última análise pronta, janela de 24h, revisão editorial pendente.
+- Coleta: métricas, erros RSS e falhas de extração separados.
+- Textos privados do R2 e credenciais não são exportados.
 
-O front está preparado, mas NÃO está conectado ao banco. Sem API, mostra estado de preparação, sem números ou notícias inventados. A validação dos motores analíticos existentes é independente desta estrutura de interface.
+O workflow Painel Tabler gera o site com dados reais e guarda o artefato painel-tabler antes da publicação. Não declara deploy concluído se faltarem credenciais.
 
-## Contrato de integração proposto, versão 1
-Toda resposta HTTP JSON:
+## Cloudflare Pages
+Projeto: blog-criia-painel (produção main).
+Secrets GitHub necessários para publicar: CLOUDFLARE_ACCOUNT_ID e CLOUDFLARE_API_TOKEN (Account / Cloudflare Pages / Edit). DATABASE_PASSWORD já é reutilizado no runner. Não copiar senhas para frontend.
 
-```json
-{
-  "schema_version": 1,
-  "status": "ready",
-  "as_of": "2026-09-14T12:00:00Z",
-  "run_id": "id-real-da-execucao",
-  "coverage": {},
-  "data": {}
-}
-```
+Executar manualmente Painel Tabler após configurar os secrets. O projeto Pages deve existir. A atualização não escreve no banco nem altera os motores.
 
-`status`: ready, partial, building, unavailable ou failed. `data` é específico de cada motor. Datas, cobertura, referências e tipo de texto precisam vir dos dados reais.
-
-| Área | Endpoint proposto | Dados do serviço existente | data esperado |
-|---|---|---|---|
-| Matérias | GET /api/articles?q=&place=&limit=30 | news_articles + news_article_feeds + news_feeds | items[] com id, title, summary, source, country, url, published_at |
-| Leitura | GET /api/articles/{id} | news_articles e objeto privado no R2 | title, url, summary, text, text_basis |
-| Tendências | GET /api/trends?scope=country&place= | news_analysis_runs + news_topic_snapshots | items[] com label, place, articles, publishers |
-| Coleta | GET /api/operations | news_collection_attempts + contagens de artigos | metrics e errors[] |
-
-Esses endpoints são contratos planejados, não endpoints publicados. O adaptador de servidor será implementado ao integrar o conjunto de motores. Ele deve ler somente os campos necessários e manter credenciais de banco/R2 fora do navegador. Não liberar as tabelas privadas para anon para contornar a ausência da API.
-
-## Como encaixar os próximos motores
-1. Identificar finalidade, entrada, saída, frequência, dependência e sinais de execução concluída de cada motor apresentado pelo usuário.
-2. Adicionar um adaptador de servidor para traduzir a saída real ao contrato comum, sem redesenhar tabelas existentes sem necessidade.
-3. Registrar a área em src/engines.mjs e implementar a visualização correspondente.
-4. Preservar IDs, data de corte, cobertura incompleta e evidências. Não confundir saída de um motor com conclusão de todos.
-5. Validar a integração e então retirar o hold de publicação conforme a direção do usuário.
-
-Nenhum motor adicional foi presumido ou instalado. As próximas áreas serão definidas a partir dos motores que o usuário indicar.
-
-## Publicação futura
-Cloudflare Pages com frontend/ como diretório de arquivos estáticos. A camada /api deve ser servida na mesma origem (Pages Functions ou serviço associado) e ter acesso controlado antes de expor os textos privados. Definir público do painel antes da publicação; não presumir que matérias arquivadas no R2 podem ser disponibilizadas publicamente.
-
-Sem automação de deploy nesta fase. release.json registra explicitamente o hold.
-
-## Revisão local
-Servir frontend/ por HTTP. Sem backend a navegação e os filtros funcionam, mostrando a integração pendente. Não abrir via file://, pois módulos JavaScript precisam de origem HTTP.
-
-Tabler: https://github.com/tabler/tabler — licença MIT. Manter avisos da licença ao distribuir seus arquivos.
+## Limites desta versão
+Acompanhamento de leitura; orientações compartilhadas e leitura privada integral ainda não implementadas. Discrepância, redação e SEO ainda não integrados. Snapshot atrasado continua mostrando a data original, sem aparentar atualização nova.
