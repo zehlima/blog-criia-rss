@@ -2,19 +2,26 @@
 import json
 from pathlib import Path
 from datetime import datetime, timezone
+from collector.inventory import urls as active_urls
 
 ARTICLES_SQL = """SELECT a.id,a.title,a.url,a.published_at,
  string_agg(DISTINCT f.name, ', ') source,
  string_agg(DISTINCT f.country, ', ') country
- FROM (SELECT * FROM news_articles ORDER BY coalesce(published_at,first_seen_at) DESC LIMIT 2000) a
+ FROM (SELECT * FROM news_articles candidate WHERE EXISTS
+   (SELECT 1 FROM news_article_feeds active_af JOIN news_feeds active_f ON active_f.id=active_af.feed_id
+    WHERE active_af.article_id=candidate.id AND active_f.rss_url=ANY(%s))
+   ORDER BY coalesce(published_at,first_seen_at) DESC LIMIT 2000) a
  JOIN news_article_feeds af ON af.article_id=a.id JOIN news_feeds f ON f.id=af.feed_id
+ WHERE f.rss_url=ANY(%s)
  GROUP BY a.id,a.title,a.url,a.published_at,a.first_seen_at
  ORDER BY coalesce(a.published_at,a.first_seen_at) DESC"""
 COLLECTION_SQL = 'SELECT id,finished_at,report,feeds FROM news_collection_attempts ORDER BY finished_at DESC LIMIT 1'
 TRENDS_SQL = """SELECT s.scope,s.place,s.payload,s.run_id,r.finished_at,r.coverage
  FROM news_topic_snapshots s JOIN news_analysis_runs r ON r.id=s.run_id
- WHERE s.run_id=(SELECT id FROM news_analysis_runs WHERE status='ready' AND EXISTS
- (SELECT 1 FROM news_topic_snapshots WHERE run_id=news_analysis_runs.id)
+ WHERE s.run_id=(SELECT id FROM news_analysis_runs WHERE status='ready'
+ AND coalesce(coverage->>'editorial_status','')<>'rejected_by_review'
+ AND (SELECT count(DISTINCT scope) FROM news_topic_snapshots
+      WHERE run_id=news_analysis_runs.id)=3
  ORDER BY finished_at DESC NULLS LAST LIMIT 1)"""
 
 def build(articles, collections, trends):
@@ -33,10 +40,11 @@ def build(articles, collections, trends):
 
 def main():
     from collector.storage import database_connection
+    urls=active_urls()
     with database_connection() as db:
         with db.transaction():
             db.execute('SET TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY')
-            payload=build(db.execute(ARTICLES_SQL).fetchall(),db.execute(COLLECTION_SQL).fetchall(),db.execute(TRENDS_SQL).fetchall())
+            payload=build(db.execute(ARTICLES_SQL,(urls,urls)).fetchall(),db.execute(COLLECTION_SQL).fetchall(),db.execute(TRENDS_SQL).fetchall())
     dest=Path('frontend/data');dest.mkdir(exist_ok=True)
     (dest/'dashboard.json').write_text(json.dumps(payload,ensure_ascii=False,default=str))
     print(json.dumps({'articles':len(payload['articles']),'trend_places':len(payload['trends']),'generated_at':payload['generated_at']}))
