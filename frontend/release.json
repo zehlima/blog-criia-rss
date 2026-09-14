@@ -1,0 +1,8 @@
+{
+  "status": "hold",
+  "hosting": "cloudflare-pages",
+  "publish_authorized": false,
+  "reason": "Aguardar definição e integração dos motores adicionais solicitados pelo usuário.",
+  "api_connected": false,
+  "deployment_workflow_created": false
+}
