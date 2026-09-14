@@ -1,0 +1,6 @@
+[
+  {"url":"https://36kr.com/feed-article","source":"https://36kr.com/rss-center","reason":"Official article RSS, alternative to mixed feed"},
+  {"url":"https://36kr.com/feed-newsflash","source":"https://36kr.com/rss-center","reason":"Official newsflash RSS; narrower content type"},
+  {"url":"https://www.techcetera.co/feed/","source":"https://techcetera.co/amo-mi-rss/","reason":"Publisher advertises www host; current non-www endpoint returned 404"},
+  {"url":"https://ec-mea.com/feed/","source":"https://www.ec-mea.com/","reason":"Check canonical non-www host after TLS failure; certificate validation remains enabled"}
+]
