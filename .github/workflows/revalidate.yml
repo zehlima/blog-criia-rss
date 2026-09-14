@@ -20,9 +20,12 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m collector.validate_inventory
+      - run: python -m collector.discover_feeds
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: rss-revalidation-${{ github.run_id }}
-          path: reports/active-feed-validation.json
+          path: |
+            reports/active-feed-validation.json
+            reports/feed-discovery.json
           retention-days: 30

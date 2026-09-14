@@ -1,0 +1,358 @@
+[
+  {
+    "country": "Estados Unidos",
+    "http": 200,
+    "items": 0,
+    "name": "Android Central",
+    "ok": false,
+    "parsed_items": 0,
+    "parser_warning": null,
+    "url": "https://www.androidcentral.com/feeds.xml",
+    "version": "rss20"
+  },
+  {
+    "country": "Estados Unidos",
+    "error": "http_403",
+    "name": "RCR Wireless News",
+    "ok": false,
+    "url": "https://rcrwireless.com/feed"
+  },
+  {
+    "country": "Estados Unidos",
+    "error": "http_429",
+    "name": "VentureBeat",
+    "ok": false,
+    "url": "https://venturebeat.com/feed"
+  },
+  {
+    "country": "República Dominicana",
+    "error": "http_429",
+    "name": "El Nuevo Diario",
+    "ok": false,
+    "url": "https://elnuevodiario.com.do/feed/"
+  },
+  {
+    "country": "Costa Rica",
+    "error": "http_429",
+    "name": "El Mundo Costa Rica",
+    "ok": false,
+    "url": "https://elmundo.cr/feed/"
+  },
+  {
+    "country": "Panamá",
+    "error": "('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))",
+    "name": "En Segundos Panamá",
+    "ok": false,
+    "url": "https://ensegundos.com.pa/feed/"
+  },
+  {
+    "country": "Haiti",
+    "http": 200,
+    "items": 0,
+    "name": "Haiti Libre",
+    "ok": false,
+    "parsed_items": 0,
+    "parser_warning": null,
+    "url": "https://www.haitilibre.com/rss-dossiers.php",
+    "version": "rss20"
+  },
+  {
+    "country": "Panamá",
+    "error": "http_403",
+    "name": "La Gaceta de Panamá",
+    "ok": false,
+    "url": "https://www.lagacetadepanama.com/rss/"
+  },
+  {
+    "country": "Costa Rica",
+    "http": 200,
+    "items": 0,
+    "name": "La Nación Costa Rica",
+    "ok": false,
+    "parsed_items": 0,
+    "parser_warning": null,
+    "url": "https://www.nacion.com/arc/outboundfeeds/rss/category/tecnologia/?outputType=xml",
+    "version": "rss20"
+  },
+  {
+    "country": "Cuba",
+    "error": "invalid_or_malformed_feed",
+    "http": 200,
+    "name": "OnCuba News",
+    "ok": false,
+    "parsed_items": 27,
+    "parser_warning": "SAXParseException",
+    "url": "https://oncubanews.com/feed/",
+    "version": "rss20"
+  },
+  {
+    "country": "Guatemala",
+    "error": "invalid_or_malformed_feed",
+    "http": 200,
+    "name": "Soy502",
+    "ok": false,
+    "parsed_items": 0,
+    "parser_warning": "SAXParseException",
+    "url": "https://www.soy502.com/rss.xml",
+    "version": ""
+  },
+  {
+    "country": "Costa Rica",
+    "error": "invalid_or_malformed_feed",
+    "http": 200,
+    "name": "The Tico Times",
+    "ok": false,
+    "parsed_items": 0,
+    "parser_warning": "SAXParseException",
+    "url": "https://ticotimes.net/feed",
+    "version": ""
+  },
+  {
+    "country": "Irlanda",
+    "error": "http_403",
+    "name": "Silicon Republic",
+    "ok": false,
+    "url": "https://www.siliconrepublic.com/feed/"
+  },
+  {
+    "country": "Ucrânia",
+    "error": "http_403",
+    "name": "AIN",
+    "ok": false,
+    "url": "https://ain.ua/feed/"
+  },
+  {
+    "country": "Ucrânia",
+    "error": "http_403",
+    "name": "Keddr",
+    "ok": false,
+    "url": "https://keddr.com/feed/"
+  },
+  {
+    "country": "Letônia",
+    "error": "http_403",
+    "name": "Kursors.lv",
+    "ok": false,
+    "url": "https://kursors.lv/feed/"
+  },
+  {
+    "country": "Barbados",
+    "error": "HTTPSConnectionPool(host='nationnews.com', port=443): Read timed out. (read timeout=20)",
+    "name": "Nation News Barbados",
+    "ok": false,
+    "url": "https://nationnews.com/feed/"
+  },
+  {
+    "country": "China",
+    "error": "invalid_or_malformed_feed",
+    "http": 200,
+    "name": "36Kr",
+    "ok": false,
+    "parsed_items": 0,
+    "parser_warning": "SAXParseException",
+    "url": "https://36kr.com/feed",
+    "version": ""
+  },
+  {
+    "country": "Polônia",
+    "error": "HTTPSConnectionPool(host='www.gsmmaniak.pl', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gsmmania",
+    "name": "GSMmaniak",
+    "ok": false,
+    "url": "https://www.gsmmaniak.pl/feed/"
+  },
+  {
+    "country": "Coreia do Sul",
+    "error": "http_403",
+    "name": "Digital Daily",
+    "ok": false,
+    "url": "https://www.ddaily.co.kr/rss.xml"
+  },
+  {
+    "country": "China",
+    "error": "body_too_large",
+    "name": "TechNode",
+    "ok": false,
+    "url": "https://technode.com/feed/"
+  },
+  {
+    "country": "Eslováquia",
+    "error": "HTTPSConnectionPool(host='www.techbox.sk', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.techbox.sk'",
+    "name": "TECHBOX",
+    "ok": false,
+    "url": "https://www.techbox.sk/feed"
+  },
+  {
+    "country": "China",
+    "error": "non_public_destination",
+    "name": "TechWeb",
+    "ok": false,
+    "url": "https://www.techweb.com.cn/rss/all.xml"
+  },
+  {
+    "country": "Arábia Saudita",
+    "error": "http_403",
+    "name": "Arab News — Science & Technology",
+    "ok": false,
+    "url": "https://www.arabnews.com/taxonomy/term/46/all/feed"
+  },
+  {
+    "country": "Emirados Árabes Unidos",
+    "error": "HTTPSConnectionPool(host='www.ec-mea.com', port=443): Max retries exceeded with url: /feed/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_V",
+    "name": "Enterprise Channels MEA",
+    "ok": false,
+    "url": "https://www.ec-mea.com/feed/"
+  },
+  {
+    "country": "Israel",
+    "error": "http_403",
+    "name": "Times of Israel — Tech Israel",
+    "ok": false,
+    "url": "https://www.timesofisrael.com/topic/tech-israel/feed/"
+  },
+  {
+    "country": "Emirados Árabes Unidos",
+    "http": 200,
+    "items": 0,
+    "name": "The National — Technology",
+    "ok": false,
+    "parsed_items": 0,
+    "parser_warning": null,
+    "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/category/business/technology/?outputType=xml",
+    "version": "rss20"
+  },
+  {
+    "country": "Nigéria",
+    "error": "invalid_or_malformed_feed",
+    "http": 200,
+    "name": "Daba",
+    "ok": false,
+    "parsed_items": 100,
+    "parser_warning": "SAXParseException",
+    "url": "https://www.benjamindada.com/rss/",
+    "version": "rss20"
+  },
+  {
+    "country": "Uganda",
+    "error": "http_403",
+    "name": "PC Tech Magazine",
+    "ok": false,
+    "url": "https://pctechmag.com/feed/"
+  },
+  {
+    "country": "Nigéria",
+    "error": "http_403",
+    "name": "Techawk",
+    "ok": false,
+    "url": "https://www.techawkng.com/feed/"
+  },
+  {
+    "country": "Nigéria",
+    "error": "http_403",
+    "name": "TechCabal",
+    "ok": false,
+    "url": "https://techcabal.com/feed/"
+  },
+  {
+    "country": "Quênia",
+    "error": "http_403",
+    "name": "TechWeez",
+    "ok": false,
+    "url": "https://techweez.com/feed/"
+  },
+  {
+    "country": "Austrália",
+    "error": "http_403",
+    "name": "APDR",
+    "ok": false,
+    "url": "https://asiapacificdefencereporter.com/feed/"
+  },
+  {
+    "country": "Ilhas Cook",
+    "error": "http_403",
+    "name": "Cook Islands News",
+    "ok": false,
+    "url": "https://www.cookislandsnews.com/feed/"
+  },
+  {
+    "country": "Austrália",
+    "error": "invalid_or_malformed_feed",
+    "http": 200,
+    "name": "EFTM",
+    "ok": false,
+    "parsed_items": 35,
+    "parser_warning": "SAXParseException",
+    "url": "https://eftm.com/feed",
+    "version": "rss20"
+  },
+  {
+    "country": "Austrália",
+    "error": "http_403",
+    "name": "PowerUp!",
+    "ok": false,
+    "url": "https://powerup-gaming.com/feed/"
+  },
+  {
+    "country": "Papua-Nova Guiné",
+    "error": "http_403",
+    "name": "The National PNG",
+    "ok": false,
+    "url": "https://www.thenational.com.pg/feed/"
+  },
+  {
+    "country": "Brasil",
+    "error": "http_403",
+    "name": "Adrenaline",
+    "ok": false,
+    "url": "https://www.adrenaline.com.br/feed/"
+  },
+  {
+    "country": "Brasil",
+    "error": "invalid_or_malformed_feed",
+    "http": 200,
+    "name": "UOL Tilt",
+    "ok": false,
+    "parsed_items": 15,
+    "parser_warning": "CharacterEncodingOverride",
+    "url": "https://rss.uol.com.br/feed/tecnologia.xml",
+    "version": "rss"
+  },
+  {
+    "country": "Brasil",
+    "error": "http_403",
+    "name": "IT Forum",
+    "ok": false,
+    "url": "https://itforum.com.br/feed/"
+  },
+  {
+    "country": "Brasil",
+    "error": "http_403",
+    "name": "TI Inside",
+    "ok": false,
+    "url": "https://tiinside.com.br/feed/"
+  },
+  {
+    "country": "Nigéria",
+    "error": "HTTPSConnectionPool(host='techtrends.africa', port=443): Read timed out. (read timeout=20)",
+    "name": "TechTrends Nigeria",
+    "ok": false,
+    "url": "https://techtrends.africa/feed/"
+  },
+  {
+    "country": "Brasil",
+    "error": "invalid_or_malformed_feed",
+    "http": 200,
+    "name": "Consumidor Moderno",
+    "ok": false,
+    "parsed_items": 12,
+    "parser_warning": "SAXParseException",
+    "url": "https://consumidormoderno.com.br/feed/",
+    "version": "rss20"
+  },
+  {
+    "country": "Colômbia",
+    "error": "http_403",
+    "name": "FOLOU",
+    "ok": false,
+    "url": "https://folou.co/feed/"
+  }
+]

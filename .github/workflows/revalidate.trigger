@@ -1,1 +1,1 @@
-Retest recovered XML/encoding warnings and identity transfer encoding on all active feeds
+Discover advertised official RSS alternatives for remaining failed sources
