@@ -80,3 +80,29 @@ def test_two_broad_product_names_are_not_enough():
             'Samsung estabelece novo padrão com a série Galaxy Z8']
     vectors=np.array([[1.,0.],[.75,(1-.75**2)**.5]])
     assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+@pytest.mark.parametrize('titles',[
+    ['Honor представила смартфон Play 11 с чипсетом Qualcomm Snapdragon 4 Gen 4',
+     'Honor Magic 9 получит Snapdragon 8 Elite Gen 6 Pro'],
+    ['Blizzard Announces Diablo V, Sanctuary Has Fallen And Diablo Won',
+     'Blizzard поверне класику Diablo в новому сезоні Diablo IV'],
+    ['CUPRA Eylül 2026 Sıfır Araç Fiyat Listesi: Güncel Kampanyalar',
+     'Opel Eylül 2026 Sıfır Araç Fiyat Listesi: Güncel Kampanyalar'],
+    ['iPhone Duo first impressions: Apple enters foldables',
+     'iPhone Duo Max reportedly planned with a bigger screen'],
+])
+def test_same_brand_or_template_does_not_merge_different_events(titles):
+    vectors=np.array([[1.,0.],[.77,(1-.77**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+@pytest.mark.parametrize('titles',[
+    ['Apple plans a larger iPhone Duo Max',
+     'Apple iPhone Duo Max için çalışmalara başladı'],
+    ['Honor Magic 9 Super Edition leaks with 11000 mAh battery',
+     'Honor Magic 9 Super Edition tem bateria gigante'],
+    ['Blizzard announces Diablo V at BlizzCon',
+     'Blizzard sorprende y anuncia Diablo 5'],
+])
+def test_narrow_product_identity_survives_multilingual_headlines(titles):
+    vectors=np.array([[1.,0.],[.75,(1-.75**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)[0]['indices']==[0,1]
