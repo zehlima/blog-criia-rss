@@ -179,6 +179,18 @@ def test_distinct_daily_programmes_are_not_grouped_by_calendar_date():
     vectors=np.array([[1.,0.],[.79,(1-.79**2)**.5]])
     assert coherent_groups(vectors,titles,min_similarity=.72)==[]
 
+@pytest.mark.parametrize('titles',[
+    ['Philips coffee machine solves dirty hose problem',
+     'Philips-Kaffeevollautomat für nur 249 Euro'],
+    ['Beliebter Philips-Kaffeevollautomat für nur 249 Euro',
+     'Guter Philips-Kaffeevollautomat für keine 425 Euro'],
+    ['HUAWEI WATCH GT 7 Serisi İnceleme: 21 Gün Pil',
+     'HUAWEI WATCH GT 7 Serisi: 21 Günlük Pil Ömrü'],
+])
+def test_product_editorial_review_and_distinct_offers_are_separate(titles):
+    vectors=np.array([[1.,0.],[.82,(1-.82**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
 def test_specific_interview_is_not_broad_company_warning_story():
     titles=['Ex-Anthropic researcher tells BBC employees are terrified by AI risks',
             'Anthropic and OpenAI warn they may lose control of AI']

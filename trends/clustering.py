@@ -39,7 +39,10 @@ SALES_RE=re.compile(
     r'ventas?|unidades?|vendite)\b|販売|销量|銷量|开卖|開賣|爆款|萬部|万部)')
 REVIEW_RE=re.compile(
     r'(?i)\b(?:hands[- ]?on|first impressions?|review|unboxing|tr[eê]n tay|recensione|'
-    r'essai|test(?:e|es)?|an[aá]lise|experi[eê]ncia)\b')
+    r'essai|test(?:e|es)?|an[aá]lise|experi[eê]ncia|inceleme)\b')
+COMMERCE_RE=re.compile(
+    r'(?i)(?:\b(?:deal|offer|sale|discount|promo(?:tion)?|offerta|angebot|rabatt|fiyat|pre[cç]o)\b|'
+    r'(?:[$€£¥]|\b(?:usd|eur|euro|reais|d[oó]lares?)\b)\s*\d|\d[\d.,]*\s*(?:[$€£¥]|usd|eur|euro|reais|d[oó]lares?)\b)')
 SECURITY_FIX_RE=re.compile(
     r'(?i)\b(?:security|sicherheits(?:l[uü]cke|update)|vulnerability|vulnerabilit(?:y|ies|a|é)|falha|'
     r'bug|patch|update|atualiza[cç][aã]o)\b')
@@ -111,14 +114,21 @@ def is_template_listing(title):
 
 def story_form_flags(title):
     return (bool(SALES_RE.search(title)),bool(REVIEW_RE.search(title)),
-            bool(SECURITY_FIX_RE.search(title)),bool(REGULATORY_RE.search(title)))
+            bool(SECURITY_FIX_RE.search(title)),bool(REGULATORY_RE.search(title)),
+            bool(COMMERCE_RE.search(title)),price_signatures(title))
+
+def price_signatures(title):
+    return frozenset(re.findall(
+        r'(?i)(?:[$€£¥]\s*([0-9][0-9.,]*)|([0-9][0-9.,]*)\s*(?:[$€£¥]|usd|eur|euro|reais|d[oó]lares?))',title))
 
 def incompatible_story_forms(a,b,forms_a=None,forms_b=None):
     """Reject headlines about the same product but materially different events."""
-    sales_a,review_a,security_a,regulatory_a=story_form_flags(a) if forms_a is None else forms_a
-    sales_b,review_b,security_b,regulatory_b=story_form_flags(b) if forms_b is None else forms_b
+    sales_a,review_a,security_a,regulatory_a,commerce_a,prices_a=story_form_flags(a) if forms_a is None else forms_a
+    sales_b,review_b,security_b,regulatory_b,commerce_b,prices_b=story_form_flags(b) if forms_b is None else forms_b
     if sales_a!=sales_b:return True
     if review_a!=review_b:return True
+    if commerce_a!=commerce_b:return True
+    if commerce_a and prices_a and prices_b and prices_a!=prices_b:return True
     if (security_a and regulatory_b) or (security_b and regulatory_a):return True
     return False
 
