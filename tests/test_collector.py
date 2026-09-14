@@ -53,6 +53,19 @@ def test_short_extraction_is_pending_not_full(monkeypatch):
     monkeypatch.setattr('collector.extract.get',lambda *a,**kw:(200,{},b'<html>Access denied</html>','https://example.com'))
     with pytest.raises(ValueError,match='insufficient_text'):fetch_article({'url':'https://example.com'})
 
+def test_substantial_recall_fallback_is_accepted(monkeypatch):
+    monkeypatch.setattr('collector.extract.get',lambda *a,**kw:(200,{},b'<html/>','https://example.com'))
+    calls=[]
+    def extracted(*a,**kw):
+        calls.append(kw)
+        return None if kw.get('favor_precision') else 'reportagem verificada '*30
+    monkeypatch.setattr('collector.extract.trafilatura.extract',extracted)
+    assert len(fetch_article({'url':'https://example.com'})[2])>=400
+    assert calls==[
+        {'url':'https://example.com','include_comments':False,'include_tables':True,'favor_precision':True},
+        {'url':'https://example.com','include_comments':False,'include_tables':True,'favor_recall':True},
+    ]
+
 def test_article_body_extraction(monkeypatch):
     text='Uma reportagem sobre tecnologia e inovação descreve os avanços da pesquisa e seus impactos na sociedade. '
     body=('<html><head><title>Reportagem</title></head><body><article><h1>Reportagem</h1><p>'+text*20+'</p></article></body></html>').encode()

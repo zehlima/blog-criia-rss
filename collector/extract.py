@@ -78,8 +78,14 @@ def fetch_article(a):
     if status==304:
         if not a.get('content_key'):raise ValueError('304_without_content')
         return status,h,None,url
-    text=trafilatura.extract(body,url=url,include_comments=False,include_tables=True,
-                            favor_precision=True)
+    options={'url':url,'include_comments':False,'include_tables':True}
+    text=trafilatura.extract(body,**options,favor_precision=True)
+    # Some valid publisher layouts are too sparse for precision mode. Recall mode
+    # is still a structured article extractor (not raw page text), and is accepted
+    # only when it returns a substantial body.
+    if not text or len(text.strip())<200:
+        recalled=trafilatura.extract(body,**options,favor_recall=True)
+        if recalled and len(recalled.strip())>=400:text=recalled
     if not text or len(text.strip())<200:raise ValueError('insufficient_text')
     # 'extracted' significa extração automática, não garantia de integralidade editorial.
     return status,h,text.strip(),url
