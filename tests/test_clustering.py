@@ -151,6 +151,18 @@ def test_product_identity_with_weak_event_similarity_is_not_one_story():
     vectors=np.array([[1.,0.],[.73,(1-.73**2)**.5]])
     assert coherent_groups(vectors,titles,min_similarity=.72)==[]
 
+def test_product_sales_and_hands_on_are_different_stories_even_with_high_similarity():
+    titles=['HUAWEI Pura X View 開賣 5 日破 30 萬部',
+            'Trên tay Huawei Pura X View: Điện thoại lạ mắt, giá gần 30 triệu đồng']
+    vectors=np.array([[1.,0.],[.785,(1-.785**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_cross_brand_inspiration_is_not_the_source_brand_story():
+    titles=['Apple tají rozlišení selfie kamery pod displejem iPhone Duo',
+            'HONOR si ispira ad Apple: nuova selfie cam quadrata per YouTube e Reel']
+    vectors=np.array([[1.,0.],[.79,(1-.79**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
 def test_specific_interview_is_not_broad_company_warning_story():
     titles=['Ex-Anthropic researcher tells BBC employees are terrified by AI risks',
             'Anthropic and OpenAI warn they may lose control of AI']

@@ -29,6 +29,16 @@ GENERIC.update({'risk','risks','risky','warning','warnings','warns','safety','se
  'risco','riscos','alerta','alertas','adverte','seguranca','segurança'})
 BROAD.add('anthropic')
 
+BRANDS={'apple','honor','huawei','xiaomi','samsung','google','microsoft','openai','anthropic',
+        'meta','amazon','sony','oppo','vivo','lg','nvidia','amd','intel','blizzard'}
+
+SALES_RE=re.compile(
+    r'(?i)(?:\b(?:sales?|sold|units?|vendas?|vendid[oa]s?|verkauft|absatz|sat[iı]s|sprzedaz|'
+    r'ventas?|unidades?|vendite)\b|販売|销量|銷量|开卖|開賣|爆款|萬部|万部)')
+REVIEW_RE=re.compile(
+    r'(?i)\b(?:hands[- ]?on|first impressions?|review|unboxing|tr[eê]n tay|recensione|'
+    r'essai|test(?:e|es)?|an[aá]lise|experi[eê]ncia)\b')
+
 ROMAN={'i':'1','ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
 VERSIONED_PRODUCTS={'iphone','ios','windows','galaxy','diablo','playstation','xbox'}
 
@@ -91,11 +101,21 @@ def is_template_listing(title):
     # same announcement. Exact syndication is handled before this gate.
     return bool(re.match(r'(?i)^\s*(?:\[\s*virtual event\s*\]|gisec\s+20\d{2}\s*:)',title))
 
+def incompatible_story_forms(a,b):
+    """Reject headlines about the same product but materially different events."""
+    return bool(SALES_RE.search(a)) != bool(SALES_RE.search(b)) and \
+           bool(REVIEW_RE.search(a)) != bool(REVIEW_RE.search(b))
+
+def brand_set(title):
+    return set(_tokens(title)) & BRANDS
+
 def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_limit=0,
-               versions_a=None,versions_b=None,digest_a=None,digest_b=None):
+               versions_a=None,versions_b=None,digest_a=None,digest_b=None,
+               brands_a=None,brands_b=None):
     na=' '.join(a.casefold().split());nb=' '.join(b.casefold().split())
     if na==nb:return True
     if is_template_listing(a) or is_template_listing(b):return False
+    if incompatible_story_forms(a,b):return False
     if (is_multi_story_digest(a) if digest_a is None else digest_a) or (is_multi_story_digest(b) if digest_b is None else digest_b):return False
     versions_a=product_versions(a) if versions_a is None else versions_a
     versions_b=product_versions(b) if versions_b is None else versions_b
@@ -103,6 +123,12 @@ def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_li
         if versions_a[product]!=versions_b[product]:return False
     shared=(anchor_a if anchor_a is not None else anchors(a)) & (anchor_b if anchor_b is not None else anchors(b))
     compounds={x for x in shared if x.startswith('~')}
+    brands_a=brand_set(a) if brands_a is None else brands_a
+    brands_b=brand_set(b) if brands_b is None else brands_b
+    # If one headline introduces a different brand while borrowing a brand from
+    # the other (comparisons/inspiration), the shared brand is not event proof.
+    if brands_a and brands_b and brands_a!=brands_b and len(brands_a|brands_b)>1 and not compounds:
+        return False
     if compounds:return similarity>=.735
     atomic={x for x in shared if not x.startswith('~')}
     specific=atomic-BROAD
@@ -126,13 +152,15 @@ def coherent_groups(embeddings,titles=None,min_similarity=.72):
         anchor_sets=[anchors(title) for title in titles]
         version_sets=[product_versions(title) for title in titles]
         digests=[is_multi_story_digest(title) for title in titles]
+        brand_sets=[brand_set(title) for title in titles]
         frequency=Counter(x for values in anchor_sets for x in values)
         rare_limit=max(4,int(len(titles)*.001))
         for i in range(len(vectors)):
             for j in range(i):
                 if not compatible(titles[i],titles[j],float(similarity[i,j]),
                                   anchor_sets[i],anchor_sets[j],frequency,rare_limit,
-                                  version_sets[i],version_sets[j],digests[i],digests[j]):
+                                  version_sets[i],version_sets[j],digests[i],digests[j],
+                                  brand_sets[i],brand_sets[j]):
                     distance[i,j]=distance[j,i]=2.0
     # Complete linkage prevents A~B~C chains from merging A and C when unrelated.
     labels=AgglomerativeClustering(n_clusters=None,metric='precomputed',linkage='complete',
