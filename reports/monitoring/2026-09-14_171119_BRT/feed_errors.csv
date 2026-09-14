@@ -1,0 +1,27 @@
+id,name,country,region,rss_url,status,error,checked_at,classification,action
+52,RCR Wireless News,Estados Unidos,América do Norte,https://rcrwireless.com/feed,error,http_403,2026-09-14 20:10:58.797844+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+72,VentureBeat,Estados Unidos,América do Norte,https://venturebeat.com/feed,error,http_429,2026-09-14 20:10:59.517159+00:00,temporario_ou_investigar,Repetir com backoff e verificar causa; nao repor automaticamente.
+118,La Gaceta de Panamá,Panamá,América Central e Caribe,https://www.lagacetadepanama.com/rss/,error,http_403,2026-09-14 20:11:00.236909+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+142,Soy502,Guatemala,América Central e Caribe,https://www.soy502.com/rss.xml,error,invalid_or_malformed_feed,2026-09-14 20:11:00.955292+00:00,formato,Inspecionar XML e endpoint oficial; retestar.
+207,Silicon Republic,Irlanda,Europa Ocidental,https://www.siliconrepublic.com/feed/,error,http_403,2026-09-14 20:11:01.674311+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+227,AIN,Ucrânia,Europa Oriental (Leste Europeu),https://ain.ua/feed/,error,http_403,2026-09-14 20:11:02.393634+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+262,Keddr,Ucrânia,Europa Oriental (Leste Europeu),https://keddr.com/feed/,error,http_403,2026-09-14 20:11:03.112669+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+264,Kursors.lv,Letônia,Europa Oriental (Leste Europeu),https://kursors.lv/feed/,error,http_403,2026-09-14 20:11:03.831167+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+301,36Kr,China,Ásia (Leste Asiático e Sudeste Asiático),https://36kr.com/feed,error,invalid_or_malformed_feed,2026-09-14 20:11:05.640635+00:00,formato,Inspecionar XML e endpoint oficial; retestar.
+363,TechWeb,China,Ásia (Leste Asiático e Sudeste Asiático),https://www.techweb.com.cn/rss/all.xml,error,non_public_destination,2026-09-14 20:11:06.359831+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+377,Arab News — Science & Technology,Arábia Saudita,Oriente Médio,https://www.arabnews.com/taxonomy/term/46/all/feed,error,http_403,2026-09-14 20:11:07.078875+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+394,Enterprise Channels MEA,Emirados Árabes Unidos,Oriente Médio,https://www.ec-mea.com/feed/,error,SSLError,2026-09-14 20:11:07.797199+00:00,tls,Verificar certificado e URL oficial; manter validacao TLS.
+439,The National — Technology,Emirados Árabes Unidos,Oriente Médio,https://www.thenationalnews.com/arc/outboundfeeds/rss/category/business/technology/?outputType=xml,error,invalid_empty_feed_or_entries,2026-09-14 20:11:08.516605+00:00,feed_vazio,Conferir categoria e endpoint oficial; vazio nao prova indisponibilidade do veiculo.
+440,Times of Israel — Tech Israel,Israel,Oriente Médio,https://www.timesofisrael.com/topic/tech-israel/feed/,error,http_403,2026-09-14 20:11:09.235227+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+484,PC Tech Magazine,Uganda,África,https://pctechmag.com/feed/,error,http_403,2026-09-14 20:11:09.954556+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+494,Techawk,Nigéria,África,https://www.techawkng.com/feed/,error,http_403,2026-09-14 20:11:10.673813+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+497,TechCabal,Nigéria,África,https://techcabal.com/feed/,error,http_403,2026-09-14 20:11:11.520623+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+513,TechWeez,Quênia,África,https://techweez.com/feed/,error,http_403,2026-09-14 20:11:12.238842+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+527,APDR,Austrália,Oceania,https://asiapacificdefencereporter.com/feed/,error,http_403,2026-09-14 20:11:12.957807+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+539,Cook Islands News,Ilhas Cook,Oceania,https://www.cookislandsnews.com/feed/,error,http_403,2026-09-14 20:11:13.676823+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+573,PowerUp!,Austrália,Oceania,https://powerup-gaming.com/feed/,error,http_403,2026-09-14 20:11:14.395813+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+597,The National PNG,Papua-Nova Guiné,Oceania,https://www.thenational.com.pg/feed/,error,http_403,2026-09-14 20:11:15.115467+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+985,Click,Irã,Oriente Médio,https://www.click.ir/feeds,error,http_404,2026-09-14 20:11:15.834127+00:00,endpoint,Validar URL oficial antes de corrigir ou repor.
+1206,Adrenaline,Brasil,América do Sul,https://www.adrenaline.com.br/feed/,error,http_403,2026-09-14 20:11:16.553249+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+1225,IT Forum,Brasil,América do Sul,https://itforum.com.br/feed/,error,http_403,2026-09-14 20:11:17.513627+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
+1229,TI Inside,Brasil,América do Sul,https://tiinside.com.br/feed/,error,http_403,2026-09-14 20:11:18.232402+00:00,acesso,Verificar acesso permitido; nao contornar restricoes.
