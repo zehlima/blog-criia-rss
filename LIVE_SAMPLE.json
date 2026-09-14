@@ -1,0 +1,23 @@
+[
+  {
+    "feed": "Ars Technica",
+    "rss_url": "https://feeds.arstechnica.com/arstechnica/index",
+    "rss_error": "gaierror",
+    "rss_items": null,
+    "seconds": 0.0
+  },
+  {
+    "feed": "TechCrunch",
+    "rss_url": "https://techcrunch.com/feed/",
+    "rss_error": "gaierror",
+    "rss_items": null,
+    "seconds": 0.0
+  },
+  {
+    "feed": "The Verge",
+    "rss_url": "https://www.theverge.com/rss/index.xml",
+    "rss_error": "gaierror",
+    "rss_items": null,
+    "seconds": 0.0
+  }
+]
