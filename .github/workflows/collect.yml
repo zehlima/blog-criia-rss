@@ -19,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   collect:
-    if: github.event_name == 'workflow_dispatch' || vars.ENABLE_COLLECTION == 'true'
+    if: github.event_name == 'workflow_dispatch' || vars.ENABLE_COLLECTION != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
