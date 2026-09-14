@@ -17,3 +17,4 @@
 2026-09-14: v17 exclude recurring tutorial, catalogue, roundup and event-shell false positives
 2026-09-14: v18 fix unicode conference suffix and generic Turkish growth anchor
 2026-09-14T22:20Z: recover cancelled analysis with cached vectors and failure-isolated concurrency
+2026-09-14T22:40Z: v19 separate unrelated numbered editorial lists; retain exact syndication

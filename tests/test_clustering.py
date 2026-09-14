@@ -3,6 +3,14 @@ np=pytest.importorskip('numpy')
 pytest.importorskip('sklearn')
 from trends.clustering import coherent_groups,semantic_event_text
 
+@pytest.mark.parametrize('prefix',['Top 10','Top-10','Top: 10'])
+def test_different_streaming_top_lists_are_not_one_event(prefix):
+    titles=['Actualité : Paramount+ : notre top 10 des meilleurs films à voir en streaming en 2026',
+            prefix+' filmes e séries com maior bitrate no streaming']
+    vectors=np.array([[1.,0.],[.9,(1-.9**2)**.5]])
+    assert coherent_groups(vectors,titles)==[]
+    assert len(coherent_groups(vectors,[titles[0],titles[0]]))==1
+
 @pytest.mark.parametrize(('title','kept','removed'),[
     ('Windows 11 has a secret way to skip the Microsoft account requirement','skip the account requirement','windows'),
     ('Samsung Galaxy S27 Ultra gets an audio fix','gets an audio fix','samsung'),

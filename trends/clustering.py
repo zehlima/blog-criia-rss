@@ -60,6 +60,7 @@ NON_EVENT_TEMPLATE_RE=re.compile(
     r'(?ix)(?:'
     r'^\s*(?:como\b|how\s+to\b|instale\b|install\b|download\b|baix(?:e|ar)\b|descarg(?:a|ar)\b)|'
     r'\bhints?\s+and\s+answers?\b|'
+    r'\btop\s*[-:]?\s*\d+\b|'
     r'^\s*heise-angebot\s*:|'
     r'\b(?:uma|veja\s+uma|a)\s+sele[cç][aã]o\s+de\b|'
     r'^\s*freio\s+na\s+ia\s*:|'
