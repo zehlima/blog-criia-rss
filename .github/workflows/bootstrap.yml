@@ -2,7 +2,7 @@ name: Validar conexao e primeira coleta
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/bootstrap.yml']
+    paths: ['.github/workflows/bootstrap.trigger']
   workflow_dispatch:
 permissions:
   contents: read
@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     env:
+      DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+      DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       R2_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
       R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
@@ -33,17 +35,9 @@ jobs:
           python - <<'PY'
           import os
           import psycopg
-          from psycopg.conninfo import conninfo_to_dict
+          from collector.storage import database_connection
           try:
-              config = conninfo_to_dict(os.environ["DATABASE_URL"])
-          except Exception:
-              print("DIAGNOSTICO: formato DATABASE_URL invalido")
-              raise SystemExit(1)
-          expected = {"host":"aws-0-sa-east-1.pooler.supabase.com", "port":"5432", "user":"postgres.ikoqkeqxqfqkfjmcwwdq", "dbname":"postgres"}
-          for key, value in expected.items():
-              print("CAMPO", key, "OK" if config.get(key) == value else "DIVERGENTE")
-          try:
-              with psycopg.connect(os.environ["DATABASE_URL"], host=os.environ["DATABASE_HOST"], connect_timeout=15, sslmode="require") as db:
+              with database_connection() as db:
                   db.execute("SELECT 1")
               print("DIAGNOSTICO: banco conectado")
           except Exception as exc:
