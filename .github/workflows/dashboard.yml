@@ -45,7 +45,7 @@ jobs:
           retention-days: 7
   publish:
     needs: build
-    if: vars.CLOUDFLARE_PUBLISH_ENABLED == 'true'
+    if: vars.CLOUDFLARE_PUBLISH_ENABLED != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
