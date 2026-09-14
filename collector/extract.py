@@ -71,13 +71,21 @@ def fetch_source(feed):
         if status==304 and not headers:raise ValueError('invalid_304_without_validators')
         return status,h,[] if status==304 else entries(body,url)
     except (ValueError, OSError) as original:
-        from .publisher_listing import ALTERNATIVES,alternative_feed
-        if feed['rss_url'] not in ALTERNATIVES:
+        from .publisher_listing import ALTERNATIVES, LISTINGS, alternative_feed, public_listing
+        if feed['rss_url'] not in ALTERNATIVES and feed['rss_url'] not in LISTINGS:
             raise
-        try:
-            return alternative_feed(feed, entries)
-        except Exception as fallback_error:
-            raise ValueError(str(fallback_error)) from original
+        errors=[]
+        if feed['rss_url'] in ALTERNATIVES:
+            try:
+                return alternative_feed(feed, entries)
+            except Exception as exc:
+                errors.append(str(exc) if str(exc).startswith(('http_','invalid_')) else type(exc).__name__)
+        if feed['rss_url'] in LISTINGS:
+            try:
+                return public_listing(feed)
+            except Exception as exc:
+                errors.append(str(exc) if str(exc).startswith(('http_','robots_','invalid_')) else type(exc).__name__)
+        raise ValueError('invalid_alternative_feeds:' + ','.join(errors)) from original
 
 def fetch_article(a):
     headers={}
