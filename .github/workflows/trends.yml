@@ -13,7 +13,9 @@ permissions:
   actions: read
 concurrency:
   group: boris-topic-analysis
-  cancel-in-progress: false
+  # A newer clustering revision supersedes any waiting publication from a
+  # rejected editorial sample. Keep exactly one analysis worker alive.
+  cancel-in-progress: true
 env:
   DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
   DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com

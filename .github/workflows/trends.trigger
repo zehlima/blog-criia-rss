@@ -4,3 +4,4 @@
 2026-09-14: v6 require anchored event identity after v5 sample review
 2026-09-14: v7 remove calendar and coupon-template anchors found in v6 review
 2026-09-14: v8 require narrow event signatures after v7 editorial audit
+2026-09-14: v8 keep one current analysis worker after rejected revisions
