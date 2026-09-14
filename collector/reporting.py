@@ -29,12 +29,16 @@ def write_feed_report(db,s3,slot,report):
     for r in rows:
         r['classification'],r['action']=classify(r['error']) if r['status']!='not_attempted' else ('pendente','Executar feed; sem evidencia de falha.')
         writer.writerow(r)
+    # Separate article-level extraction failures from RSS endpoint failures.
+    extraction=db.execute('''SELECT id,url,title,content_status,last_error,attempts,next_attempt_at
+      FROM news_articles WHERE content_key IS NULL AND content_status='unavailable' ORDER BY id''').fetchall()
+    exbuf=io.StringIO();exwriter=csv.DictWriter(exbuf,fieldnames=['id','url','title','content_status','last_error','attempts','next_attempt_at']);exwriter.writeheader();exwriter.writerows(extraction)
     stamp=report['finished_at'].replace(':','-')
     prefix=f'reports/collection/{slot.strftime("%Y-%m-%d_%H%MUTC")}/{stamp}'
     md='# Coleta RSS — '+report['status']+'\n\n```json\n'+json.dumps(report,ensure_ascii=False,indent=2)+'\n```\n\n'
     md+='| Veiculo | Pais | Erro | Acao |\n|---|---|---|---|\n'
     for r in rows:
         md+='| '+' | '.join(str(r[k] or '').replace('|','/').replace('\n',' ') for k in ('name','country','error','action'))+' |\n'
-    for name,value in [('feed_errors.csv',buf.getvalue()),('feed_errors.md',md),('summary.json',json.dumps(report))]:
+    for name,value in [('extraction_errors.csv',exbuf.getvalue()),('feed_errors.csv',buf.getvalue()),('feed_errors.md',md),('summary.json',json.dumps(report))]:
         Path('reports',name).write_text(value,encoding='utf-8')
         s3.put_object(Bucket=os.environ['R2_BUCKET'],Key=prefix+'/'+name,Body=value.encode(),ContentType='text/plain; charset=utf-8')

@@ -65,8 +65,9 @@ def allowed(url):
             cached=p
         except ValueError as e:
             # Ausência de robots permite acesso; 403/429/5xx não são ignorados.
-            cached = True if str(e) in ('http_404','http_410') else False
-        except requests.RequestException:
-            cached=False
+            cached = True if str(e) in ('http_404','http_410') else 'robots_unavailable_'+(str(e) if str(e).startswith('http_') else type(e).__name__)
+        except requests.RequestException as exc:
+            cached='robots_unavailable_'+type(exc).__name__
         with _lock: _robots[origin]=cached
+    if isinstance(cached,str):raise ValueError(cached)
     return cached if isinstance(cached,bool) else cached.can_fetch(UA,url)

@@ -49,3 +49,13 @@ def test_empty_rss_is_not_counted_as_populated():
     import pytest
     with pytest.raises(ValueError,match='invalid_empty'):
         entries(b'<rss version="2.0"><channel><title>empty</title></channel></rss>','https://example.com')
+
+def test_robots_server_failure_is_not_a_publisher_disallow(monkeypatch):
+    from collector import network
+    import pytest
+    monkeypatch.setattr(network,'_robots',{})
+    def fail(*a,**kw):raise ValueError('http_503')
+    monkeypatch.setattr(network,'get',fail)
+    for _ in range(2):
+        with pytest.raises(ValueError,match='robots_unavailable_http_503'):
+            network.allowed('https://example.com/article')

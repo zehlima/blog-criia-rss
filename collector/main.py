@@ -116,7 +116,11 @@ def summary(db,slot,total):
     r=db.execute('''SELECT count(*) FILTER(WHERE status='ok') ok,
       count(*) FILTER(WHERE status='error') errors FROM news_feed_runs WHERE slot=%s AND feed_id IN (SELECT id FROM news_feeds WHERE rss_url=ANY(%s))''',(slot,active_urls())).fetchone()
     a=db.execute('''SELECT count(*) total,count(*) FILTER(WHERE content_key IS NOT NULL) extracted,
-      count(*) FILTER(WHERE content_key IS NULL) without_text FROM news_articles''').fetchone()
+      count(*) FILTER(WHERE content_key IS NULL) without_text,
+      count(*) FILTER(WHERE content_status='pending') pending,
+      count(*) FILTER(WHERE content_status='unavailable') unavailable,
+      count(*) FILTER(WHERE content_status='extracted') page_texts,
+      count(*) FILTER(WHERE content_status='rss_content') publisher_rss_texts FROM news_articles''').fetchone()
     pending=db.execute('''SELECT count(*) n FROM news_articles WHERE next_attempt_at<=now()
       AND (last_seen_at >= %s OR content_key IS NULL)''',(slot,)).fetchone()['n']
     return {'slot':slot.isoformat(),'expected_feeds':total,'feeds_ok':r['ok'],'feeds_errors':r['errors'],
@@ -129,7 +133,8 @@ def run(db,s3,feeds):
     sources(db,s3,slot,feeds,deadline)
     size=articles(db,s3,slot,deadline)
     report=summary(db,slot,len(feeds));report['compressed_bytes_written']=size
-    status='complete' if not (report['feeds_errors'] or report['feeds_not_attempted'] or report['due_articles'] or report['articles']['without_text']) else 'partial'
+    status=('partial' if report['feeds_not_attempted'] or report['due_articles'] or report['articles']['pending']
+      else 'complete_with_gaps' if report['feeds_errors'] or report['articles']['without_text'] else 'complete')
     report['status']=status
     report['finished_at']=datetime.now(timezone.utc).isoformat()
     db.execute('UPDATE news_runs SET status=%s,finished_at=now(),report=%s WHERE slot=%s',(status,Jsonb(report),slot))
@@ -148,7 +153,7 @@ def run(db,s3,feeds):
     if os.getenv('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write('```json\n'+json.dumps(report,indent=2)+'\n```\n')
     # Partial is a checkpoint, not an infrastructure exception. Coverage remains explicit.
-    if status=='partial':print('::warning::Coleta parcial; consulte cobertura e pendencias no relatorio.',flush=True)
+    if status!='complete':print('::warning::Coleta parcial; consulte cobertura e pendencias no relatorio.',flush=True)
     return 0
 
 def preflight(db,s3):
