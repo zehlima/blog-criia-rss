@@ -9,7 +9,7 @@ from datetime import datetime,timedelta,timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from psycopg.types.json import Jsonb
-from .storage import connect,seed,save_entry,archive
+from .storage import connect,seed,save_entries,archive
 from .extract import fetch_source,fetch_article,digest
 
 ROOT=Path(__file__).resolve().parent.parent
@@ -35,16 +35,23 @@ def sources(db,s3,slot,feeds,deadline):
             if time.monotonic()>deadline:break
             batch=targets[start:start+8]
             for f,(result,error) in zip(batch,pool.map(lambda f:attempt(fetch_source,f),batch)):
+                # Uploads paralelos antes da transação: o banco nunca aponta para arquivo ausente.
+                if not error:
+                    status,h,items=result
+                    def preserve(a):
+                        if a['rss_content']:
+                            _,a['rss_content_key'],_=archive(s3,a['url']+'#rss-source',a['rss_content'])
+                        return a
+                    uploads=list(pool.map(lambda a:attempt(preserve,a),items))
+                    failures=[e for _,e in uploads if e]
+                    if failures:error='storage_'+failures[0]
                 with db.transaction():
                     count=0
                     if not error:
                         status,h,items=result;count=len(items)
                         if status!=304:
                             db.execute('UPDATE news_article_feeds SET in_latest=false WHERE feed_id=%s',(f['id'],))
-                        for a in items:
-                            if a['rss_content']:
-                                _,a['rss_content_key'],_=archive(s3,a['url']+'#rss-source',a['rss_content'])
-                            save_entry(db,f['id'],a)
+                        save_entries(db,f['id'],items)
                         # 304 mantém a elegibilidade das páginas para checar revisões.
                         db.execute('''UPDATE news_articles SET last_seen_at=now() WHERE id IN
                           (SELECT article_id FROM news_article_feeds WHERE feed_id=%s AND in_latest)''',(f['id'],)) if status==304 else None
