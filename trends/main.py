@@ -19,6 +19,9 @@ BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
 VERSION='boris-topics-v5-discriminative-anchors-072'
+# Embeddings depend on the pinned model and headline, not on clustering rules.
+# Keep the already materialized v4 cache schema to avoid recomputing identical vectors.
+EMBEDDING_CACHE_VERSION='boris-topics-v4-headline-anchors-072'
 
 
 def log(**data):print(json.dumps(data,ensure_ascii=False,default=str),flush=True)
@@ -43,10 +46,13 @@ def put_json(s3,key,value):
 def get_json(s3,key):return json.loads(gzip.decompress(get_object(s3,key)))
 
 def all_articles(db,cutoff):
-    return db.execute('''SELECT a.*,jsonb_agg(jsonb_build_object('id',f.id,'name',f.name,
+    return db.execute('''SELECT a.id,a.url,a.title,a.summary,a.published_at,a.first_seen_at,
+      a.content_key,a.content_status,
+      jsonb_agg(jsonb_build_object('id',f.id,'name',f.name,
       'country',f.country,'region',f.region,'site_url',f.site_url,'rss_url',f.rss_url) ORDER BY f.id) sources
       FROM news_articles a JOIN news_article_feeds af ON af.article_id=a.id
       JOIN news_feeds f ON f.id=af.feed_id WHERE a.first_seen_at<=%s
+        AND a.content_status<>'invalid_reference'
       GROUP BY a.id ORDER BY a.id''',(cutoff,)).fetchall()
 
 def load_text(s3,a):
@@ -62,7 +68,7 @@ def load_text(s3,a):
     a['analysis_text']=text
     # Stable, focused representation: page boilerplate and long body averages must not drive event identity.
     a['semantic_text']=a['title'].strip()
-    a['input_hash']=hashlib.sha256((VERSION+a['semantic_text']).encode()).hexdigest()
+    a['input_hash']=hashlib.sha256((EMBEDDING_CACHE_VERSION+a['semantic_text']).encode()).hexdigest()
     return a
 
 def vectors(s3,articles,progress=None):
@@ -75,7 +81,7 @@ def vectors(s3,articles,progress=None):
     manifest=json.loads(gzip.decompress(manifest_raw)) if manifest_raw else {}
     revision=MODEL_REVISION
     cache={}
-    if manifest.get('version')==VERSION and manifest.get('key'):
+    if manifest.get('version')==EMBEDDING_CACHE_VERSION and manifest.get('key'):
         with np.load(io.BytesIO(get_object(s3,manifest['key'])),allow_pickle=False) as data:
             cache=dict(zip(data['hashes'].tolist(),data['vectors']))
     missing=[a for a in articles if a['input_hash'] not in cache]
@@ -94,7 +100,7 @@ def vectors(s3,articles,progress=None):
                 body=buf.getvalue();key='analysis/cache/'+hashlib.sha256(body).hexdigest()+'.npz'
                 s3.put_object(Bucket=BUCKET,Key=key,Body=body)
                 old_key=manifest.get('key')
-                manifest={'version':VERSION,'model':MODEL,'revision':revision,'key':key}
+                manifest={'version':EMBEDDING_CACHE_VERSION,'model':MODEL,'revision':revision,'key':key}
                 put_json(s3,'analysis/cache/manifest.json.gz',manifest)
                 # Superseded cache is reproducible; immutable analysis snapshots stay retained.
                 if old_key and old_key!=key:s3.delete_object(Bucket=BUCKET,Key=old_key)

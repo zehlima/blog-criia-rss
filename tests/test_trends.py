@@ -98,3 +98,14 @@ def test_rejected_snapshot_cannot_be_republished():
         def execute(self,*args):return Result()
     with pytest.raises(RuntimeError,match='snapshot_rejected_by_editorial_review'):
         publish(DB(),None,'rejected','globe',25)
+
+def test_analysis_corpus_excludes_invalid_references_and_unused_timestamps():
+    from trends.main import all_articles
+    class Result:
+        def fetchall(self):return []
+    class DB:
+        sql=''
+        def execute(self,sql,args):self.sql=sql;return Result()
+    db=DB();assert all_articles(db,datetime.now(timezone.utc))==[]
+    assert "content_status<>'invalid_reference'" in db.sql
+    assert 'next_attempt_at' not in db.sql and 'a.*' not in db.sql
