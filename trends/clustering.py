@@ -109,12 +109,17 @@ def is_template_listing(title):
     # same announcement. Exact syndication is handled before this gate.
     return bool(re.match(r'(?i)^\s*(?:\[\s*virtual event\s*\]|gisec\s+20\d{2}\s*:)',title))
 
-def incompatible_story_forms(a,b):
+def story_form_flags(title):
+    return (bool(SALES_RE.search(title)),bool(REVIEW_RE.search(title)),
+            bool(SECURITY_FIX_RE.search(title)),bool(REGULATORY_RE.search(title)))
+
+def incompatible_story_forms(a,b,forms_a=None,forms_b=None):
     """Reject headlines about the same product but materially different events."""
-    if bool(SALES_RE.search(a)) != bool(SALES_RE.search(b)):return True
-    if bool(REVIEW_RE.search(a)) != bool(REVIEW_RE.search(b)):return True
-    if (SECURITY_FIX_RE.search(a) and REGULATORY_RE.search(b)) or \
-       (SECURITY_FIX_RE.search(b) and REGULATORY_RE.search(a)):return True
+    sales_a,review_a,security_a,regulatory_a=story_form_flags(a) if forms_a is None else forms_a
+    sales_b,review_b,security_b,regulatory_b=story_form_flags(b) if forms_b is None else forms_b
+    if sales_a!=sales_b:return True
+    if review_a!=review_b:return True
+    if (security_a and regulatory_b) or (security_b and regulatory_a):return True
     return False
 
 def brand_set(title):
@@ -122,11 +127,13 @@ def brand_set(title):
 
 def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_limit=0,
                versions_a=None,versions_b=None,digest_a=None,digest_b=None,
-               brands_a=None,brands_b=None):
+               brands_a=None,brands_b=None,template_a=None,template_b=None,
+               forms_a=None,forms_b=None):
     na=' '.join(a.casefold().split());nb=' '.join(b.casefold().split())
     if na==nb:return True
-    if is_template_listing(a) or is_template_listing(b):return False
-    if incompatible_story_forms(a,b):return False
+    if (is_template_listing(a) if template_a is None else template_a) or \
+       (is_template_listing(b) if template_b is None else template_b):return False
+    if incompatible_story_forms(a,b,forms_a,forms_b):return False
     if (is_multi_story_digest(a) if digest_a is None else digest_a) or (is_multi_story_digest(b) if digest_b is None else digest_b):return False
     versions_a=product_versions(a) if versions_a is None else versions_a
     versions_b=product_versions(b) if versions_b is None else versions_b
@@ -164,6 +171,8 @@ def coherent_groups(embeddings,titles=None,min_similarity=.72):
         version_sets=[product_versions(title) for title in titles]
         digests=[is_multi_story_digest(title) for title in titles]
         brand_sets=[brand_set(title) for title in titles]
+        templates=[is_template_listing(title) for title in titles]
+        story_forms=[story_form_flags(title) for title in titles]
         frequency=Counter(x for values in anchor_sets for x in values)
         rare_limit=max(4,int(len(titles)*.001))
         for i in range(len(vectors)):
@@ -171,7 +180,8 @@ def coherent_groups(embeddings,titles=None,min_similarity=.72):
                 if not compatible(titles[i],titles[j],float(similarity[i,j]),
                                   anchor_sets[i],anchor_sets[j],frequency,rare_limit,
                                   version_sets[i],version_sets[j],digests[i],digests[j],
-                                  brand_sets[i],brand_sets[j]):
+                                  brand_sets[i],brand_sets[j],templates[i],templates[j],
+                                  story_forms[i],story_forms[j]):
                     distance[i,j]=distance[j,i]=2.0
     # Complete linkage prevents A~B~C chains from merging A and C when unrelated.
     labels=AgglomerativeClustering(n_clusters=None,metric='precomputed',linkage='complete',

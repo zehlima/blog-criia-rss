@@ -195,3 +195,14 @@ def test_event_metadata_is_precomputed_for_pairwise_matrix(monkeypatch):
     titles=[f'Windows 11 audio update report {i}' for i in range(20)]
     coherent_groups(np.eye(20),titles,min_similarity=.72)
     assert len(calls)==len(titles)
+
+def test_story_form_metadata_is_precomputed_for_pairwise_matrix(monkeypatch):
+    import trends.clustering as clustering
+    original=clustering.story_form_flags
+    calls=[]
+    def counted(title):
+        calls.append(title);return original(title)
+    monkeypatch.setattr(clustering,'story_form_flags',counted)
+    titles=[f'Huawei product update report {i}' for i in range(20)]
+    coherent_groups(np.eye(20),titles,min_similarity=.72)
+    assert len(calls)==len(titles)
