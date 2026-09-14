@@ -18,7 +18,7 @@ from .core import continent,families,in_window,rankings
 BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
-VERSION='boris-topics-v5-discriminative-anchors-072'
+VERSION='boris-topics-v6-anchored-events-072'
 # Embeddings depend on the pinned model and headline, not on clustering rules.
 # Keep the already materialized v4 cache schema to avoid recomputing identical vectors.
 EMBEDDING_CACHE_VERSION='boris-topics-v4-headline-anchors-072'
@@ -167,8 +167,8 @@ def prepare(db,s3,run_id):
     coverage={'clustering_method':'complete_linkage_cosine',
       'minimum_pairwise_similarity':.72,
       'semantic_basis':'headline_only_multilingual_paraphrase',
-        'lexical_gate':'two_shared_anchors_or_rare_anchor_at_cosine_0.78_or_cosine_0.90',
-      'calibration_status':'8 observed false pairs separated; 6 of 8 equivalent pairs retained at 0.72; small sample, not a general benchmark',
+      'lexical_gate':'exact_title_or_two_anchors_with_specific_term_or_rare_anchor_at_cosine_0.78',
+      'calibration_status':'Known v4/v5 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
       'editorial_status':'automatic_groups_require_editorial_review',
       'ungrouped_articles':sum(a['topic_id']=='outlier' for a in recent),
       'corpus_articles':len(articles),'window_articles':len(recent),

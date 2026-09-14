@@ -23,11 +23,11 @@ def test_generic_same_language_similarity_needs_anchor():
     titles=['Yapay zeka ile karmaşa da artıyor','Yapay zeka ile tam otonom ağlar dönemi']
     assert coherent_groups(vectors,titles,min_similarity=.72)==[]
 
-def test_multilingual_event_with_entity_anchor_is_kept():
+def test_two_broad_multilingual_anchors_are_not_forced():
     vectors=np.array([[1.,0.],[.75,(1-.75**2)**.5]])
     titles=['Apple is reportedly working on iPhone game controllers',
             'Apple’ın iPhone için geliştirdiği oyun kumandaları ortaya çıktı']
-    assert coherent_groups(vectors,titles,min_similarity=.72)[0]['indices']==[0,1]
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
 
 @pytest.mark.parametrize('titles',[
     ["Știrile zilei despre tehnologie – 14 septembrie 2026",
@@ -49,3 +49,22 @@ def test_single_specific_anchor_needs_stronger_similarity():
     strong=np.array([[1.,0.],[.82,(1-.82**2)**.5]])
     assert coherent_groups(weak,titles,min_similarity=.72)==[]
     assert coherent_groups(strong,titles,min_similarity=.72)[0]['indices']==[0,1]
+
+def test_high_vector_similarity_without_anchor_does_not_group_cjk_headlines():
+    titles=[
+        "SC제일은행, '거래 공백' 고객 잡는다…파킹통장 혜택 찾아보니",
+        "가습기살균제 피해자 43명 추가 인정…구제급여 지급 대상자 총 6080명",
+    ]
+    vectors=np.array([[1.,0.],[.95,(1-.95**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_coupon_template_is_not_an_event():
+    titles=['Hawesko-Gutscheine und Rabattcodes','Shop-Apotheke-Gutscheine und Rabattcodes']
+    vectors=np.array([[1.,0.],[.85,(1-.85**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_two_broad_product_names_are_not_enough():
+    titles=['Samsung usa Tim Cook em anúncio do Galaxy Z Fold8',
+            'Samsung estabelece novo padrão com a série Galaxy Z8']
+    vectors=np.array([[1.,0.],[.75,(1-.75**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
