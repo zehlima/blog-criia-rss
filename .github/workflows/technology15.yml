@@ -20,7 +20,6 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m pytest -q
-      - run: python -m collector.technology15
       - name: Integrar fontes no coletor existente
         if: always()
         env:
