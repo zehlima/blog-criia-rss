@@ -127,7 +127,7 @@ def prepare(db,s3,run_id):
     if existing and existing['status']=='ready':
         log(phase='already_ready',run_id=run_id);return True
     parent=os.getenv('SOURCE_COLLECTION_RUN_ID')
-    attempt=db.execute('SELECT * FROM news_collection_attempts WHERE id=%s',(parent,)).fetchone() if parent else None
+    attempt=db.execute('SELECT * FROM news_collection_attempts WHERE id=%s',(parent,)).fetchone() if parent else db.execute('SELECT * FROM news_collection_attempts ORDER BY finished_at DESC LIMIT 1').fetchone()
     if parent and not attempt:
         log(phase='skipped',reason='parent_did_not_finish_a_collection',parent=parent)
         return False

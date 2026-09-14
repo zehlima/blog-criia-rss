@@ -37,3 +37,15 @@ def test_rss_summary_is_never_promoted_to_full_article():
     assert publisher_text(json.dumps([{'type':'feed_summary','value':'Long summary '*100}])) is None
     text=publisher_text(json.dumps([{'type':'text/html','value':'<p>'+'Publisher text '*100+'</p><script>bad()</script>'}]))
     assert text and 'bad()' not in text and '<p>' not in text
+
+def test_recoverable_xml_and_partial_entries_keep_good_news():
+    from collector.extract import entries
+    body=b'<rss version="2.0"><channel><title>News</title><item><title>Research & development</title><link>https://example.com/a</link></item><item><title>incomplete</title></item></channel></rss>'
+    with __import__('pytest').warns(RuntimeWarning):items=entries(body,'https://example.com')
+    assert len(items)==1 and items[0]['url']=='https://example.com/a'
+
+def test_empty_rss_is_not_counted_as_populated():
+    from collector.extract import entries
+    import pytest
+    with pytest.raises(ValueError,match='invalid_empty'):
+        entries(b'<rss version="2.0"><channel><title>empty</title></channel></rss>','https://example.com')

@@ -1,1 +1,1 @@
-Validate 675 active sources including recovered South America list
+Retest recovered XML/encoding warnings and identity transfer encoding on all active feeds

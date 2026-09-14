@@ -1,1 +1,1 @@
-Recover all 675 feeds with bulk seeding, pipelined writes, prefetched extraction and publisher RSS fallback v4
+Recover 675 feed inventory with tolerant XML parser, fallback, bulk writes and prefetched queue v5

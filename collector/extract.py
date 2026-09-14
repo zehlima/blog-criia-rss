@@ -14,12 +14,24 @@ def iso_date(value):
 
 def entries(body, base):
     parsed=feedparser.parse(body)
-    if not parsed.get('version') or parsed.get('bozo'):
+    if not parsed.get('version'):
         raise ValueError('invalid_or_malformed_feed')
+    if parsed.get('bozo'):
+        # XML/encoding warnings do not invalidate otherwise readable syndication.
+        # Verify the recovered root, disable entities/network, retain a visible warning.
+        from lxml import etree
+        import warnings
+        try:
+            root=etree.fromstring(body,parser=etree.XMLParser(recover=True,resolve_entities=False,no_network=True))
+            if root is None or etree.QName(root).localname.lower() not in ('rss','rdf','feed'):
+                raise ValueError('invalid_or_malformed_feed')
+        except (etree.LxmlError,TypeError):
+            raise ValueError('invalid_or_malformed_feed')
+        warnings.warn('RSS recovered: '+type(parsed.get('bozo_exception')).__name__,RuntimeWarning)
     result=[]
     for e in parsed.entries:
         if not e.get('link') or not e.get('title'):
-            raise ValueError('entry_without_title_or_link')
+            continue
         a={'url':canonical(e.link,base),'title':e.title,
            'summary':e.get('summary',''), 'published_at':iso_date(e.get('published_parsed')),
            'source_updated_at':iso_date(e.get('updated_parsed'))}
@@ -34,6 +46,7 @@ def entries(body, base):
         a['rss_content']=json.dumps(content,ensure_ascii=False) if content else None
         a['rss_content_key']=None
         result.append(a)
+    if not result:raise ValueError('invalid_empty_feed_or_entries')
     return result
 
 def fetch_source(feed):
