@@ -72,3 +72,29 @@ CREATE INDEX IF NOT EXISTS news_analysis_runs_finished ON public.news_analysis_r
 CREATE TABLE IF NOT EXISTS public.news_collection_attempts (id text PRIMARY KEY,slot timestamptz NOT NULL,finished_at timestamptz NOT NULL,report jsonb NOT NULL,feeds jsonb NOT NULL);
 ALTER TABLE public.news_collection_attempts ENABLE ROW LEVEL SECURITY;
 REVOKE ALL ON public.news_collection_attempts FROM anon,authenticated;
+
+-- Daily accounting. Historical observations are deliberately not fabricated.
+CREATE TABLE IF NOT EXISTS public.news_article_observations (
+ slot timestamptz NOT NULL, feed_id bigint NOT NULL REFERENCES public.news_feeds(id),
+ article_id bigint NOT NULL REFERENCES public.news_articles(id),
+ observed_at timestamptz NOT NULL DEFAULT now(), source jsonb NOT NULL,
+ title text NOT NULL, summary text NOT NULL DEFAULT '',
+ PRIMARY KEY(slot,feed_id,article_id)
+);
+CREATE INDEX IF NOT EXISTS news_article_observations_article ON public.news_article_observations(article_id);
+CREATE TABLE IF NOT EXISTS public.news_observation_batches (
+ slot timestamptz NOT NULL, feed_id bigint NOT NULL REFERENCES public.news_feeds(id),
+ recorded_at timestamptz NOT NULL DEFAULT now(), articles integer NOT NULL,
+ PRIMARY KEY(slot,feed_id)
+);
+CREATE TABLE IF NOT EXISTS public.news_daily_closures (
+ id text PRIMARY KEY, day date NOT NULL, mode text NOT NULL CHECK(mode IN ('preview','closed')),
+ source_attempt text, version text NOT NULL, cutoff timestamptz NOT NULL,
+ created_at timestamptz NOT NULL DEFAULT now(), report_key text NOT NULL,
+ summary jsonb NOT NULL, coverage jsonb NOT NULL
+);
+CREATE INDEX IF NOT EXISTS news_daily_closures_day ON public.news_daily_closures(day,created_at DESC);
+ALTER TABLE public.news_article_observations ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.news_observation_batches ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.news_daily_closures ENABLE ROW LEVEL SECURITY;
+REVOKE ALL ON public.news_article_observations,public.news_observation_batches,public.news_daily_closures FROM anon,authenticated;

@@ -60,6 +60,8 @@ def sources(db,s3,slot,feeds,deadline):
                             if status!=304:
                                 db.execute('UPDATE news_article_feeds SET in_latest=false WHERE feed_id=%s',(f['id'],))
                             save_entries(db,f['id'],items)
+                            from .observations import record as record_observations
+                            record_observations(db,f,slot)
                             # 304 mantém a elegibilidade das páginas para checar revisões.
                             db.execute('''UPDATE news_articles SET last_seen_at=now() WHERE id IN
                               (SELECT article_id FROM news_article_feeds WHERE feed_id=%s AND in_latest)''',(f['id'],)) if status==304 else None

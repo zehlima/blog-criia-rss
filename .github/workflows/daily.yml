@@ -1,0 +1,94 @@
+name: Fechamento diario semantico
+on:
+  workflow_run:
+    workflows: ['Coleta global RSS']
+    types: [completed]
+    branches: [main]
+  push:
+    branches: [main]
+    paths: ['.github/workflows/daily.trigger']
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [auto, preview]
+        default: auto
+        description: 'auto fecha o dia anterior apos coleta 00h; preview valida o dia em andamento'
+permissions:
+  contents: read
+concurrency:
+  group: boris-daily-accounting
+  cancel-in-progress: false
+env:
+  DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+  DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
+  DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  R2_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ secrets.R2_BUCKET }}
+  SOURCE_COLLECTION_RUN_ID: ${{ github.event.workflow_run.id || '' }}
+  TOKENIZERS_PARALLELISM: 'false'
+jobs:
+  select:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      eligible: ${{ steps.gate.outputs.eligible }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - id: gate
+        env:
+          MODE: ${{ inputs.mode || (github.event_name == 'push' && 'preview') || 'auto' }}
+        run: |
+          python - <<'PY'
+          import os
+          from collector.storage import database_connection
+          from zoneinfo import ZoneInfo
+          with database_connection() as db:
+              parent=os.getenv('SOURCE_COLLECTION_RUN_ID')
+              row=db.execute('SELECT slot,report FROM news_collection_attempts WHERE id=%s',(parent,)).fetchone() if parent else db.execute('SELECT slot,report FROM news_collection_attempts ORDER BY finished_at DESC LIMIT 1').fetchone()
+          eligible=bool(row and (os.environ['MODE']=='preview' or (row['slot'].astimezone(ZoneInfo('America/Sao_Paulo')).hour==0 and row['report'].get('status') in ('complete','complete_with_gaps'))))
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('eligible='+str(eligible).lower()+'\n')
+          print('Fechamento elegivel:',eligible)
+          PY
+  close:
+    needs: select
+    if: needs.select.outputs.eligible == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            trends/requirements.txt
+      - name: Dependencias CPU
+        run: |
+          pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r trends/requirements.txt
+      - name: Testes de contabilidade
+        run: python -m pytest tests/test_daily.py tests/test_trends.py tests/test_clustering.py -q
+      - name: Fechar dia civil e verificar persistencia
+        env:
+          MODE: ${{ inputs.mode || (github.event_name == 'push' && 'preview') || 'auto' }}
+        run: python -m daily.main --mode "$MODE"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fechamento-diario
+          path: reports/daily/
+          retention-days: 90
