@@ -63,6 +63,18 @@ def test_coupon_template_is_not_an_event():
     vectors=np.array([[1.,0.],[.85,(1-.85**2)**.5]])
     assert coherent_groups(vectors,titles,min_similarity=.72)==[]
 
+def test_coupon_template_with_function_words_is_not_an_event():
+    titles=['Rebuy-Gutscheine und Rabattcodes zum Sparen beim Elektronikkauf',
+            'Temu-Gutscheine und Rabattcodes zum Sparen']
+    vectors=np.array([[1.,0.],[.85,(1-.85**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_lottery_date_template_does_not_cross_countries():
+    titles=['Resultados del sorteo dominical de la Lotería Nacional de Panamá',
+            'Lotería Nacional de Costa Rica: ganadores del domingo 13 de septiembre']
+    vectors=np.array([[1.,0.],[.75,(1-.75**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
 def test_two_broad_product_names_are_not_enough():
     titles=['Samsung usa Tim Cook em anúncio do Galaxy Z Fold8',
             'Samsung estabelece novo padrão com a série Galaxy Z8']

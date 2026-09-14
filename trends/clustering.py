@@ -5,7 +5,11 @@ from collections import Counter
 import numpy as np
 
 GENERIC={'the','and','for','with','from','this','that','new','news','tech','technology',
- 'und','oder','mit','von',
+ 'und','oder','mit','von','diese','zum','beim','der','die','das','auf','aus','eine','einer',
+ 'sparen','kosten','gelten',
+ 'del','los','las','una','para','con','por','que','esta','este','hoy','vivo','video',
+ 'domingo','septiembre','september','today',
+ 'uma','com','come','per','une','des','les','pour','avec',
  'artificial','intelligence','inteligencia','inteligência','yapay','zeka','ile','ai','pro','max',
  '2024','2025','2026','4k','5g','6g','ssd','hdd','panel','monitor','cyber',
  'gutscheine','rabattcodes','loteria','lottery','nacional','national','sorteo','resultados',

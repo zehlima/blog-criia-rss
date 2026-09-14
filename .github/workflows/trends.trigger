@@ -2,3 +2,4 @@
 2026-09-14: v5 require discriminative anchors after reviewing v4 false-positive pairs
 2026-09-14: v5 exclude retired references and reuse pinned headline embeddings
 2026-09-14: v6 require anchored event identity after v5 sample review
+2026-09-14: v7 remove calendar and coupon-template anchors found in v6 review
