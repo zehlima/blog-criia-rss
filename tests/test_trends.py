@@ -49,3 +49,12 @@ def test_empty_feed_returns_format_error_not_attribute_error():
     from collector.extract import entries
     import pytest
     with pytest.raises(ValueError,match='invalid_or_malformed_feed'):entries(b'', 'https://example.com')
+
+def test_preflight_parent_does_not_trigger_analysis(monkeypatch):
+    from trends.main import prepare
+    monkeypatch.setenv('SOURCE_COLLECTION_RUN_ID','preflight-only')
+    class Result:
+        def fetchone(self):return None
+    class DB:
+        def execute(self,*args):return Result()
+    assert prepare(DB(),None,'test-run') is False

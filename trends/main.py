@@ -144,8 +144,13 @@ def assign_topics(s3,articles,embeddings,run_id):
 def prepare(db,s3,run_id):
     existing=db.execute('SELECT * FROM news_analysis_runs WHERE id=%s',(run_id,)).fetchone()
     if existing and existing['status']=='ready':
-        log(phase='already_ready',run_id=run_id);return
-    row=db.execute("SELECT * FROM news_runs WHERE finished_at IS NOT NULL ORDER BY finished_at DESC LIMIT 1").fetchone()
+        log(phase='already_ready',run_id=run_id);return True
+    parent=os.getenv('SOURCE_COLLECTION_RUN_ID')
+    attempt=db.execute('SELECT * FROM news_collection_attempts WHERE id=%s',(parent,)).fetchone() if parent else None
+    if parent and not attempt:
+        log(phase='skipped',reason='parent_did_not_finish_a_collection',parent=parent)
+        return False
+    row={'slot':attempt['slot'],'finished_at':attempt['finished_at'],'status':attempt['report']['status']} if attempt else db.execute("SELECT * FROM news_runs WHERE finished_at IS NOT NULL ORDER BY finished_at DESC LIMIT 1").fetchone()
     if not row:raise RuntimeError('no_finished_collection')
     # An explicit workflow parent timestamp links this snapshot to its collection invocation.
     cutoff=datetime.fromisoformat(os.getenv('COLLECTION_FINISHED_AT') or row['finished_at'].isoformat())
@@ -156,6 +161,9 @@ def prepare(db,s3,run_id):
     source_slot=row['slot']
     db.execute('''INSERT INTO news_analysis_runs(id,collection_slot,collection_finished_at,status,model_version)
       VALUES(%s,%s,%s,'building',%s) ON CONFLICT(id) DO UPDATE SET status='building',error=NULL''',(run_id,source_slot,cutoff,VERSION))
+    sources=attempt['feeds'] if attempt else db.execute('''SELECT f.id,f.name,f.country,f.region,f.site_url,f.rss_url,
+       coalesce(r.status,'not_attempted') status,r.error FROM news_feeds f
+       LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s ORDER BY f.id''',(source_slot,)).fetchall()
     articles=all_articles(db,cutoff)
     log(phase='corpus',articles=len(articles),cutoff=cutoff)
     with ThreadPoolExecutor(max_workers=16) as pool:articles=list(pool.map(lambda a:load_text(s3,a),articles))
@@ -166,9 +174,6 @@ def prepare(db,s3,run_id):
     assign_topics(s3,recent,embedding[ids],run_id)
     fam=families([a['analysis_text'] for a in recent])
     for a,f in zip(recent,fam):a['family']=f
-    sources=db.execute('''SELECT f.id,f.name,f.country,f.region,f.site_url,f.rss_url,
-       coalesce(r.status,'not_attempted') status,r.error FROM news_feeds f
-       LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s ORDER BY f.id''',(source_slot,)).fetchall()
     coverage={'corpus_articles':len(articles),'window_articles':len(recent),
       'full_texts_read':sum(a['text_basis']=='extracted_page' for a in articles),
       'window_full_texts_read':sum(a['text_basis']=='extracted_page' for a in recent),
@@ -190,6 +195,7 @@ def prepare(db,s3,run_id):
     Path('reports').mkdir(exist_ok=True)
     Path('reports/analysis_coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2))
     log(phase='ready',run_id=run_id,coverage=coverage)
+    return True
 
 def render(payload,scope,result,scheduled_at,started_at):
     md=f'# Tendências — {scope}\n\nCorte: {payload["as_of"]}. Janela: 24 horas.\n\n'
@@ -239,7 +245,9 @@ def main():
     try:
         if args.mode=='prepare':
             if not db.execute('SELECT pg_try_advisory_lock(67426002) locked').fetchone()['locked']:raise RuntimeError('analysis_lock_busy')
-            prepare(db,s3,args.run_id)
+            ready=prepare(db,s3,args.run_id)
+            if os.getenv('GITHUB_OUTPUT'):
+                with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('ready='+str(bool(ready)).lower()+'\n')
         else:publish(db,s3,args.run_id,args.scope,args.delay)
     except Exception as exc:
         if args.mode=='prepare':db.execute("UPDATE news_analysis_runs SET status='failed',error=%s WHERE id=%s",(type(exc).__name__,args.run_id))

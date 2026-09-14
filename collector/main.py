@@ -123,6 +123,13 @@ def run(db,s3,feeds):
     db.execute('UPDATE news_runs SET status=%s,finished_at=now(),report=%s WHERE slot=%s',(status,Jsonb(report),slot))
     Path('reports').mkdir(exist_ok=True)
     Path('reports/latest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+    feed_states=db.execute("""SELECT f.id,f.name,f.country,f.region,f.site_url,f.rss_url,
+      coalesce(r.status,'not_attempted') status,r.error FROM news_feeds f
+      LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s ORDER BY f.id""",(slot,)).fetchall()
+    attempt_id=os.getenv('GITHUB_RUN_ID') or str(uuid.uuid4())
+    db.execute('''INSERT INTO news_collection_attempts(id,slot,finished_at,report,feeds)
+      VALUES(%s,%s,%s,%s,%s) ON CONFLICT(id) DO NOTHING''',
+      (attempt_id,slot,report['finished_at'],Jsonb(report),Jsonb(feed_states)))
     from .reporting import write_feed_report
     write_feed_report(db,s3,slot,report)
     print(json.dumps(report,ensure_ascii=False),flush=True)
