@@ -1,19 +1,33 @@
 """Bounded-diameter event groups with lexical anchors for editorial precision."""
 import re
 import unicodedata
+from collections import Counter
 import numpy as np
 
 GENERIC={'the','and','for','with','from','this','that','new','news','tech','technology',
- 'artificial','intelligence','inteligencia','inteligência','yapay','zeka','ile','ai','pro','max'}
+ 'artificial','intelligence','inteligencia','inteligência','yapay','zeka','ile','ai','pro','max',
+ '2024','2025','2026','4k','5g','6g','ssd','hdd','panel','monitor','cyber',
+ 'costa','rica','colombia','colômbia','mexico','méxico','brasil','brazil','argentina',
+ 'chile','peru','venezuela','china','india','italia','italy','france','spain','españa',
+ 'germany','europe','europa','africa','áfrica','asia','ásia','australia','united','states'}
+# A single broad brand/product family is not an event identity. Two anchors can
+# still establish a concrete event (for example Apple+iPhone).
+BROAD={'apple','iphone','xiaomi','samsung','google','microsoft','openai','meta','amazon',
+       'sony','lg','oppo','vivo','huawei','android','windows','xbox','playstation'}
 
 def anchors(title):
     text=unicodedata.normalize('NFKC',title).casefold()
     return {x for x in re.findall(r'[a-z0-9][a-z0-9+.#-]*',text)
-            if (len(x)>=3 or any(c.isdigit() for c in x)) and x not in GENERIC}
+            if not x.isdigit() and (len(x)>=3 or any(c.isdigit() for c in x)) and x not in GENERIC}
 
-def compatible(a,b,similarity):
+def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_limit=0):
     na=' '.join(a.casefold().split());nb=' '.join(b.casefold().split())
-    return na==nb or bool(anchors(a)&anchors(b)) or similarity>=.90
+    if na==nb or similarity>=.90:return True
+    shared=(anchor_a if anchor_a is not None else anchors(a)) & (anchor_b if anchor_b is not None else anchors(b))
+    if len(shared)>=2:return True
+    # A single unusually specific token can connect translations, but only with
+    # a materially stronger semantic match. Broad brands never qualify alone.
+    return similarity>=.78 and any(x not in BROAD and frequency and frequency[x]<=rare_limit for x in shared)
 
 def coherent_groups(embeddings,titles=None,min_similarity=.72):
     from sklearn.cluster import AgglomerativeClustering
@@ -24,9 +38,13 @@ def coherent_groups(embeddings,titles=None,min_similarity=.72):
     distance=1-similarity
     if titles is not None:
         if len(titles)!=len(vectors):raise ValueError('title_vector_length_mismatch')
+        anchor_sets=[anchors(title) for title in titles]
+        frequency=Counter(x for values in anchor_sets for x in values)
+        rare_limit=max(3,int(len(titles)*.005))
         for i in range(len(vectors)):
             for j in range(i):
-                if not compatible(titles[i],titles[j],float(similarity[i,j])):
+                if not compatible(titles[i],titles[j],float(similarity[i,j]),
+                                  anchor_sets[i],anchor_sets[j],frequency,rare_limit):
                     distance[i,j]=distance[j,i]=2.0
     # Complete linkage prevents A~B~C chains from merging A and C when unrelated.
     labels=AgglomerativeClustering(n_clusters=None,metric='precomputed',linkage='complete',

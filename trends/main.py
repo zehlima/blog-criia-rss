@@ -18,7 +18,7 @@ from .core import continent,families,in_window,rankings
 BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
-VERSION='boris-topics-v4-headline-anchors-072'
+VERSION='boris-topics-v5-discriminative-anchors-072'
 
 
 def log(**data):print(json.dumps(data,ensure_ascii=False,default=str),flush=True)
@@ -161,7 +161,7 @@ def prepare(db,s3,run_id):
     coverage={'clustering_method':'complete_linkage_cosine',
       'minimum_pairwise_similarity':.72,
       'semantic_basis':'headline_only_multilingual_paraphrase',
-      'lexical_gate':'shared_latin_or_numeric_anchor_or_cosine_at_least_0.90',
+        'lexical_gate':'two_shared_anchors_or_rare_anchor_at_cosine_0.78_or_cosine_0.90',
       'calibration_status':'8 observed false pairs separated; 6 of 8 equivalent pairs retained at 0.72; small sample, not a general benchmark',
       'editorial_status':'automatic_groups_require_editorial_review',
       'ungrouped_articles':sum(a['topic_id']=='outlier' for a in recent),
