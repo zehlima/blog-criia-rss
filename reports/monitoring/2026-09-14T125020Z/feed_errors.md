@@ -4,7 +4,7 @@ Janela: 14/09/2026 06h BRT (09h UTC). Encerramento: 09h24min39s BRT. Consulta: 2
 
 600/600 feeds tentados (100%); 479 OK (79,83%); 121 com erro; 0 não tentados. Fim do processo não significa sucesso em 600 feeds.
 
-15.624 notícias únicas no acervo; 2.848 textos extraídos com content_key (18,23%); 11.888 matérias pendentes; 888 com falha de extração. Todos os artigos existentes pertencem à única janela registrada. Estes números são do acervo, não volume exclusivo da janela móvel de tendências.
+15.624 notícias únicas no acervo; 2.848 textos extraídos com content_key (18,23%); 11.888 matérias pendentes; 888 com falha de extração. Há somente uma janela registrada em news_runs; o total do acervo não é uma atribuição histórica artigo-a-artigo à janela. Estes números são do acervo, não volume exclusivo da janela móvel de tendências.
 
 Em relação à devolutiva anterior das 07h38 BRT: +1.223 textos completos; erros de extração 551 → 888; pendentes 13.448 → 11.888. A última execução do coletor terminou success no GitHub, mas seu relatório persistido é partial.
 
