@@ -1,1 +1,1 @@
-Validate updated database credentials; initial ingestion after successful preflight.
+Resume verified ingestion with batched database writes and parallel RSS archives.
