@@ -1,0 +1,288 @@
+[
+  {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/feed/",
+    "checked_at": "2026-09-14T23:30:42.730772+00:00",
+    "status": 200,
+    "final_url": "https://techcrunch.com/feed/",
+    "format": "rss20",
+    "items": 20,
+    "feed_title": "TechCrunch",
+    "latest": [
+      {
+        "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
+        "date": "Mon, 14 Sep 2026 21:51:02 +0000",
+        "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/"
+      },
+      {
+        "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
+        "date": "Mon, 14 Sep 2026 20:44:14 +0000",
+        "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "The Verge",
+    "url": "https://www.theverge.com/rss/index.xml",
+    "checked_at": "2026-09-14T23:30:42.731207+00:00",
+    "status": 200,
+    "final_url": "https://www.theverge.com/rss/index.xml",
+    "format": "atom10",
+    "items": 10,
+    "feed_title": "The Verge",
+    "latest": [
+      {
+        "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+        "date": "2026-09-14T18:59:41-04:00",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel"
+      },
+      {
+        "title": "Apple Home’s new security camera features cost as much as $60 a month",
+        "date": "2026-09-14T18:28:52-04:00",
+        "url": "https://www.theverge.com/tech/994949/apple-intelligence-apple-home-icloud-plus-cost-subscription"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "WIRED",
+    "url": "https://www.wired.com/feed/rss",
+    "checked_at": "2026-09-14T23:30:42.731566+00:00",
+    "status": 200,
+    "final_url": "https://www.wired.com/feed/rss",
+    "format": "rss20",
+    "items": 50,
+    "feed_title": "WIRED",
+    "latest": [
+      {
+        "title": "The Top New Features in Apple’s iOS 27 and iPadOS 27",
+        "date": "Mon, 14 Sep 2026 18:44:44 +0000",
+        "url": "https://www.wired.com/story/top-new-features-in-apple-ios-27-and-ipados-27-launching-september-14/"
+      },
+      {
+        "title": "New York Seizes a Dozen Celebrity Deepfake Websites",
+        "date": "Mon, 14 Sep 2026 16:50:00 +0000",
+        "url": "https://www.wired.com/story/new-york-seizes-a-dozen-celebrity-deepfake-websites/"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "Ars Technica",
+    "url": "https://feeds.arstechnica.com/arstechnica/index",
+    "checked_at": "2026-09-14T23:30:42.732041+00:00",
+    "status": 200,
+    "final_url": "https://feeds.arstechnica.com/arstechnica/index",
+    "format": "rss20",
+    "items": 20,
+    "feed_title": "Ars Technica - All content",
+    "latest": [
+      {
+        "title": "RFK Jr. headlines sold-out anti-vaccine conference alongside Andrew Wakefield",
+        "date": "Mon, 14 Sep 2026 22:06:24 +0000",
+        "url": "https://arstechnica.com/health/2026/09/rfk-jr-headlines-sold-out-anti-vaccine-conference-alongside-andrew-wakefield/"
+      },
+      {
+        "title": "Rocket Lab is seeing red about NASA's decision on a Mars spacecraft",
+        "date": "Mon, 14 Sep 2026 21:32:22 +0000",
+        "url": "https://arstechnica.com/space/2026/09/rocket-lab-is-seeing-red-about-nasas-decision-on-a-mars-spacecraft/"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "Engadget",
+    "url": "https://www.engadget.com/rss.xml",
+    "checked_at": "2026-09-14T23:30:42.735723+00:00",
+    "status": 200,
+    "final_url": "https://www.engadget.com/rss.xml",
+    "format": "rss20",
+    "items": 20,
+    "feed_title": "Engadget - Technology News & Expert Reviews",
+    "latest": [
+      {
+        "title": "The EPA wants to stop regulating power plant emissions",
+        "date": "Mon, 14 Sep 2026 23:00:45 +0000",
+        "url": "https://www.engadget.com/2258444/the-epa-wants-to-stop-regulating-power-plant-emissions/"
+      },
+      {
+        "title": "How much data does Apple Music use for lossless audio quality?",
+        "date": "Mon, 14 Sep 2026 23:00:00 +0000",
+        "url": "https://www.engadget.com/2254918/how-much-data-apple-music-uses-lossless-audio-quality/"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "CNET",
+    "url": "https://www.cnet.com/rss/news/",
+    "checked_at": "2026-09-14T23:30:42.739596+00:00",
+    "ok": false,
+    "error": "ReadTimeout"
+  },
+  {
+    "name": "ZDNET",
+    "url": "https://www.zdnet.com/news/rss.xml",
+    "checked_at": "2026-09-14T23:30:42.740612+00:00",
+    "ok": false,
+    "error": "ReadTimeout"
+  },
+  {
+    "name": "TechRadar",
+    "url": "https://www.techradar.com/rss",
+    "checked_at": "2026-09-14T23:30:42.741623+00:00",
+    "status": 200,
+    "final_url": "https://www.techradar.com/feeds.xml",
+    "format": "rss20",
+    "items": 50,
+    "feed_title": "Latest from TechRadar",
+    "latest": [
+      {
+        "title": "These cheap Skullcandy earbuds have a worrying Bluetooth flaw that could let anyone connect to your device",
+        "date": "Mon, 14 Sep 2026 23:10:00 +0000",
+        "url": "https://www.techradar.com/pro/security/these-cheap-skullcandy-earbuds-have-a-worrying-bluetooth-flaw-that-could-let-anyone-connect-to-your-device"
+      },
+      {
+        "title": "Quordle hints and answers for Tuesday, September 15 (game #1695)",
+        "date": "Mon, 14 Sep 2026 23:00:00 +0000",
+        "url": "https://www.techradar.com/computing/websites-apps/quordle-today-answers-clues-15-september-2026"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "Tom’s Hardware",
+    "url": "https://www.tomshardware.com/feeds.xml",
+    "checked_at": "2026-09-14T23:30:50.137299+00:00",
+    "status": 200,
+    "final_url": "https://www.tomshardware.com/feeds.xml",
+    "format": "rss20",
+    "items": 50,
+    "feed_title": "Latest from Tom's Hardware",
+    "latest": [
+      {
+        "title": "Anthropic says AI can boost U.S. GDP by 32%, up to $44.4 trillion in four years — economics model predicts that displaced employees 'may have to switch to jobs like electrician and nurse'",
+        "date": "Mon, 14 Sep 2026 18:50:36 +0000",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-ai-can-boost-u-s-gdp-by-32-percent-up-to-usd44-4-trillion-in-four-years-economics-model-predicts-that-displaced-employees-may-have-to-switch-to-jobs-like-electrician-and-nurse"
+      },
+      {
+        "title": "Nvidia's RTX 5090 vanishes from online retail in the US — third-party sellers now demand as much as $9,500 for Nvidia's fastest GPU",
+        "date": "Mon, 14 Sep 2026 17:41:01 +0000",
+        "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-rtx-5090-vanishes-from-online-retail-in-the-us-third-party-sellers-now-demand-as-much-as-usd9-500-for-nvidias-fastest-gpu"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "VentureBeat",
+    "url": "https://venturebeat.com/feed",
+    "checked_at": "2026-09-14T23:30:50.669928+00:00",
+    "status": 200,
+    "final_url": "https://venturebeat.com/feed",
+    "format": "rss20",
+    "items": 7,
+    "feed_title": "VentureBeat",
+    "latest": [
+      {
+        "title": "Amodei's AI slowdown plan never says open weights. It doesn't have to.",
+        "date": "Mon, 14 Sep 2026 19:59:38 GMT",
+        "url": "https://venturebeat.com/technology/amodeis-ai-slowdown-plan-never-says-open-weights-it-doesnt-have-to"
+      },
+      {
+        "title": "AI governance is moving to runtime — and regulated industries are getting there first",
+        "date": "Mon, 14 Sep 2026 13:30:00 GMT",
+        "url": "https://venturebeat.com/security/ai-governance-is-moving-to-runtime-and-regulated-industries-are-getting-there-first"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "Gizmodo",
+    "url": "https://gizmodo.com/feed",
+    "checked_at": "2026-09-14T23:30:50.887649+00:00",
+    "ok": false,
+    "error": "ReadTimeout"
+  },
+  {
+    "name": "Crunchbase News",
+    "url": "https://news.crunchbase.com/feed/",
+    "checked_at": "2026-09-14T23:30:53.454032+00:00",
+    "status": 200,
+    "final_url": "https://news.crunchbase.com/feed/",
+    "format": "rss20",
+    "items": 10,
+    "feed_title": "Crunchbase News",
+    "latest": [
+      {
+        "title": "Y Combinator Still Busiest Startup Investor In August As Nvidia Ramps Up Its Dealmaking Pace",
+        "date": "Mon, 14 Sep 2026 11:00:45 +0000",
+        "url": "https://news.crunchbase.com/venture/y-combinator-busiest-startup-investor-nvda-ramps-up-august-2026/"
+      },
+      {
+        "title": "Dead Weight On The Cap Table: The Startup Equity Problem Causing Litigation And How You Can Fix It",
+        "date": "Mon, 14 Sep 2026 11:00:33 +0000",
+        "url": "https://news.crunchbase.com/startups/cap-table-dead-weight-avoiding-litigation-siegel-grellas/"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "Reddit r/technology",
+    "url": "https://www.reddit.com/r/technology/new/.rss?limit=100",
+    "checked_at": "2026-09-14T23:30:53.837458+00:00",
+    "status": 200,
+    "final_url": "https://www.reddit.com/r/technology/new/.rss?limit=100",
+    "format": "atom10",
+    "items": 100,
+    "feed_title": "newest submissions : technology",
+    "latest": [
+      {
+        "title": "Digital rights advocates urge EU to step in and save encryption from Canada's Bill C-22",
+        "date": "2026-09-14T23:27:35+00:00",
+        "url": "https://www.reddit.com/r/technology/comments/1wgjnvm/digital_rights_advocates_urge_eu_to_step_in_and/"
+      },
+      {
+        "title": "Anthropic says AI can boost U.S. GDP by 32%, up to $44.4 trillion in four years — economics model predicts that displaced employees 'may have to switch to jobs like electrician and nurse'",
+        "date": "2026-09-14T23:10:22+00:00",
+        "url": "https://www.reddit.com/r/technology/comments/1wgj9fx/anthropic_says_ai_can_boost_us_gdp_by_32_up_to/"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "heise online",
+    "url": "https://www.heise.de/rss/heise-atom.xml",
+    "checked_at": "2026-09-14T23:30:57.730068+00:00",
+    "status": 200,
+    "final_url": "https://www.heise.de/rss/heise-atom.xml",
+    "format": "atom10",
+    "items": 151,
+    "feed_title": "heise online News",
+    "latest": [
+      {
+        "title": "Verlangsamung der KI-Entwicklung: Trump greift Anthropic-Chef an",
+        "date": "2026-09-14T21:14:00+02:00",
+        "url": "https://www.heise.de/news/Verlangsamung-der-KI-Entwicklung-Trump-greift-Anthropic-Chef-an-11453004.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag"
+      },
+      {
+        "title": "Top 10: Die beste Sportuhr im Test – Garmin vor Huawei und Suunto",
+        "date": "2026-09-14T20:00:00+02:00",
+        "url": "https://www.heise.de/bestenlisten/testsieger/top-10-die-beste-sportuhr-im-test-garmin-vor-huawei-und-suunto/hxd2jx4?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag"
+      }
+    ],
+    "ok": true
+  },
+  {
+    "name": "36Kr",
+    "url": "https://36kr.com/feed",
+    "checked_at": "2026-09-14T23:30:58.937283+00:00",
+    "status": 200,
+    "final_url": "https://36kr.com/feed",
+    "format": "",
+    "items": 0,
+    "feed_title": null,
+    "latest": [],
+    "ok": false
+  }
+]
