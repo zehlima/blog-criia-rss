@@ -19,7 +19,8 @@ permissions:
   contents: read
 concurrency:
   group: boris-global-collector
-  cancel-in-progress: false
+  # Explicit repair pushes replace the outdated worker; scheduled runs keep checkpoints.
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 jobs:
   collect:
     if: github.event_name != 'schedule' || vars.ENABLE_COLLECTION != 'false'

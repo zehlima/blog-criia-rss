@@ -21,6 +21,8 @@ def discover(f):
         for link in links:
             try:u=canonical(link,base)
             except ValueError:continue
+            # Comment feeds are not editorial article sources.
+            if '/comments/' in u or 'feed=comments' in u:continue
             if u not in urls and u!=f['rss_url']:urls.append(u)
         for url in urls[:5]:result['candidates'].append({'url':url,**check(url)})
     except Exception as e:result['error']=type(e).__name__+': '+str(e)[:160]

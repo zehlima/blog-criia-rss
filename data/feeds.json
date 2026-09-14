@@ -884,8 +884,8 @@
     "region": "América Central e Caribe",
     "country": "Haiti",
     "site_url": "https://www.haitilibre.com/",
-    "rss_url": "https://www.haitilibre.com/rss-dossiers.php",
-    "justification": "Portal haitiano com cobertura de telecom e tecnologia. RSS localizado no site ou página oficial, XML não confirmado neste teste. Feed amplo: filtrar tecnologia e negócios digitais."
+    "rss_url": "https://www.haitilibre.com/rss-flash.php",
+    "justification": "Portal haitiano com cobertura de telecom e tecnologia. RSS localizado no site ou página oficial, XML não confirmado neste teste. Feed amplo: filtrar tecnologia e negócios digitais. Endpoint divulgado pelo próprio veículo e validado no runner em 14/09/2026."
   },
   {
     "name": "Hoy Digital",
@@ -948,8 +948,8 @@
     "region": "América Central e Caribe",
     "country": "Costa Rica",
     "site_url": "https://www.nacion.com/",
-    "rss_url": "https://www.nacion.com/arc/outboundfeeds/rss/category/tecnologia/?outputType=xml",
-    "justification": "Jornal nacional com editoria de tecnologia. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
+    "rss_url": "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml",
+    "justification": "Jornal nacional com editoria de tecnologia. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais. Endpoint divulgado pelo próprio veículo e validado no runner em 14/09/2026. Feed geral: requer seleção temática editorial."
   },
   {
     "name": "Diario Co Latino",
@@ -3640,12 +3640,12 @@
     "justification": "Jornalismo voltado a executivos de TI, IA, cloud e segurança. RSS/Atom com XML e itens confirmados."
   },
   {
-    "name": "Daba",
+    "name": "The Condia (antigo Daba)",
     "region": "África",
     "country": "Nigéria",
-    "site_url": "https://www.benjamindada.com/",
-    "rss_url": "https://www.benjamindada.com/rss/",
-    "justification": "Reportagens sobre fundadores, investimentos e startups africanas. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste."
+    "site_url": "https://thecondia.com/",
+    "rss_url": "https://thecondia.com/feed/",
+    "justification": "Reportagens sobre fundadores, investimentos e startups africanas. URL RSS inferida e não validada, não ativar sem nova checagem. Identidade e atividade editorial não verificadas neste teste. Endpoint divulgado pelo próprio veículo e validado no runner em 14/09/2026."
   },
   {
     "name": "Daily News Egypt — Technology",
