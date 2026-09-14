@@ -1,0 +1,6068 @@
+[
+  {
+    "topic_id": "topic-63fadc2bca1e1da4",
+    "label": "Linux Kernel",
+    "min_similarity": 0.7219500541687012,
+    "evidence": [
+      {
+        "id": 16117,
+        "title": "Linux Kernel"
+      },
+      {
+        "id": 28287,
+        "title": "Linux Kernel 7.2.6 Stable"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7334d81a15d1d218",
+    "label": "La izquierda avanza en Suecia y se perfila para recuperar el Gobierno",
+    "min_similarity": 0.7284327149391174,
+    "evidence": [
+      {
+        "id": 2128,
+        "title": "La izquierda avanza en Suecia y se perfila para recuperar el Gobierno"
+      },
+      {
+        "id": 2178,
+        "title": "Suecia gira a la izquierda por un margen mínimo, según proyecciones"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-049366c43d116dbe",
+    "label": "iPhone-Gaming-Zubehör: Apple plant offenbar eigene Controller",
+    "min_similarity": 0.7250695824623108,
+    "evidence": [
+      {
+        "id": 5351,
+        "title": "iPhone-Gaming-Zubehör: Apple plant offenbar eigene Controller"
+      },
+      {
+        "id": 25167,
+        "title": "Beats: Apple plant eigene Controller und Rückkehr der Genius Bar"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0f020ab579333df3",
+    "label": "Vodafone, Cassava Launch Egypt’s First AI Factory",
+    "min_similarity": 0.7318876385688782,
+    "evidence": [
+      {
+        "id": 34367,
+        "title": "Vodafone, Cassava Launch Egypt’s First AI Factory"
+      },
+      {
+        "id": 34838,
+        "title": "Cassava and Vodafone bring Nvidia-powered AI data centre to Egypt"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-07560774e530af5e",
+    "label": "Trump minimiza apelos de big techs para frear IA e diz que EUA não podem ficar atrás da China",
+    "min_similarity": 0.729866087436676,
+    "evidence": [
+      {
+        "id": 18718,
+        "title": "Após dono do Claude pedir freio no desenvolvimento de IA, Trump minimiza riscos, China vê ameaças e UE pede segurança"
+      },
+      {
+        "id": 18826,
+        "title": "Trump minimiza apelos de big techs para frear IA e diz que EUA não podem ficar atrás da China"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1e2f6f6835c48783",
+    "label": "Pentagon, OpenAI'dan talepleri mümkün olduğunca geri çevirmeyen bir yapay zeka modeli istedi",
+    "min_similarity": 0.726243793964386,
+    "evidence": [
+      {
+        "id": 5088,
+        "title": "The Pentagon reportedly asked OpenAI to provide an AI that doesn't like saying no to requests"
+      },
+      {
+        "id": 33919,
+        "title": "Pentagon, OpenAI'dan talepleri mümkün olduğunca geri çevirmeyen bir yapay zeka modeli istedi"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a2d2a6eaf485ac62",
+    "label": "Revolut przekazał oszustom dane klientów. Zawiodły dwie rzeczy",
+    "min_similarity": 0.7307153940200806,
+    "evidence": [
+      {
+        "id": 7621,
+        "title": "Revolut przekazał oszustom dane klientów. Zawiodły dwie rzeczy"
+      },
+      {
+        "id": 28391,
+        "title": "Ofiara fałszywego wniosku służb. Revolut sam udostępnił dane klientów oszustom"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3594d10f5dbb595c",
+    "label": "Honor Robot Phone non è uno smartphone da spiaggia: test e teardown",
+    "min_similarity": 0.7420387268066406,
+    "evidence": [
+      {
+        "id": 3976,
+        "title": "Honor Robot Phone non è uno smartphone da spiaggia: test e teardown"
+      },
+      {
+        "id": 18412,
+        "title": "Fuja da areia: Honor Robot Phone tem ponto fraco revelado em teste de resistência extremo"
+      },
+      {
+        "id": 27947,
+        "title": "Honor Robot Phone fails the beach test — and the teardown goes just as badly"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-49b2546955195d50",
+    "label": "Absetzung zurückgenommen: Matt Mullenweg angeblich wieder Automattic-Chef",
+    "min_similarity": 0.7325955629348755,
+    "evidence": [
+      {
+        "id": 3423,
+        "title": "WordPress-Mutterkonzern: Mullenweg nach kurzem Macht­kampf wieder CEO von Automattic"
+      },
+      {
+        "id": 4002,
+        "title": "Absetzung zurückgenommen: Matt Mullenweg angeblich wieder Automattic-Chef"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f04553d03d225cda",
+    "label": "Yes AI 30: RM30 postpaid with uncapped 5G, no FUP and free ILMUchat Pro",
+    "min_similarity": 0.7299454212188721,
+    "evidence": [
+      {
+        "id": 7838,
+        "title": "Yes Lancar Pelan Pascabayar 5G Beserta Langganan ILMUchat Pro – Bermula RM20 Sebulan"
+      },
+      {
+        "id": 17204,
+        "title": "YES AI 30 Dilancarkan – 5G Advanced Tanpa Had, ILMUchat Pro Percuma, RM20/Bulan Untuk 6 Bulan Pertama"
+      },
+      {
+        "id": 30484,
+        "title": "Yes AI 30: RM30 postpaid with uncapped 5G, no FUP and free ILMUchat Pro"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-85ee41b8b0d40130",
+    "label": "StarCraft Is Getting a Single-Player Open-World Shooter — No Live Service, No Season Passes",
+    "min_similarity": 0.7351517677307129,
+    "evidence": [
+      {
+        "id": 27944,
+        "title": "StarCraft Is Getting a Single-Player Open-World Shooter — No Live Service, No Season Passes"
+      },
+      {
+        "id": 30223,
+        "title": "StarCraft Kembali Hadir Sebagai Open World Shooter"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-df0dfb975418f7a4",
+    "label": "Криптобумът приключи, но геймърските видеокарти вече захранват AI сървърите – компаниите купуват цели палети с RTX 5090",
+    "min_similarity": 0.7417160272598267,
+    "evidence": [
+      {
+        "id": 5469,
+        "title": "Игровые видеокарты снова стали дефицитом — ИИ-компании скупают RTX 5090 целыми паллетами"
+      },
+      {
+        "id": 6567,
+        "title": "Криптобумът приключи, но геймърските видеокарти вече захранват AI сървърите – компаниите купуват цели палети с RTX 5090"
+      },
+      {
+        "id": 29955,
+        "title": "RTX 5090 Diduga Dipakai untuk Server AI, Harga GPU Gaming Makin Tertekan"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-422a1575c01236d8",
+    "label": "ゲームも動画編集も快適！ Lenovoのハイスペック15.6型ノート「LOQ」が33％オフ",
+    "min_similarity": 0.7279326915740967,
+    "evidence": [
+      {
+        "id": 7886,
+        "title": "ゲームも動画編集も快適！ Lenovoのハイスペック15.6型ノート「LOQ」が33％オフ"
+      },
+      {
+        "id": 29488,
+        "title": "RTX 5060＋32GBで22万4280円！ Lenovo「LOQ」がAmazonで33％オフ"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-877a72b1440de30d",
+    "label": "Έστειλε το MacBook Air για μπαταρία και πήρε πίσω M5",
+    "min_similarity": 0.7351871728897095,
+    "evidence": [
+      {
+        "id": 5006,
+        "title": "Έστειλε το MacBook Air για μπαταρία και πήρε πίσω M5"
+      },
+      {
+        "id": 10314,
+        "title": "Apple’dan Müşterisine Ücretsiz M5 MacBook Air Sürprizi"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-198065968b31a15a",
+    "label": "Oppo Find X10 Serisi Özellikleri ve Renk Seçenekleri Açıklandı",
+    "min_similarity": 0.7394986748695374,
+    "evidence": [
+      {
+        "id": 8709,
+        "title": "OPPO Find X10 Pro Max月白配色官图公布：灵感源自哈苏相机！"
+      },
+      {
+        "id": 27833,
+        "title": "Oppo раскрыла версии и цвета смартфонов Find X10 перед презентацией"
+      },
+      {
+        "id": 29364,
+        "title": "Oppo Find X10 este aproape de lansare: versiunile de culoare și principalele specificații tehnice"
+      },
+      {
+        "id": 31741,
+        "title": "Oppo Find X10 Serisi Özellikleri ve Renk Seçenekleri Açıklandı"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0014a5f0ad79a397",
+    "label": "Windows 11 może psuć BIOS w tych laptopach. Winna oczywiście aktualizacja",
+    "min_similarity": 0.7520241737365723,
+    "evidence": [
+      {
+        "id": 25106,
+        "title": "Windows 11 : voilà que la mise à jour corrompt le BIOS de certaines machines"
+      },
+      {
+        "id": 28128,
+        "title": "Windows 11 może psuć BIOS w tych laptopach. Winna oczywiście aktualizacja"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5cc7e51980780164",
+    "label": "This one feature convinced me to use the Pixel 11",
+    "min_similarity": 0.7421414852142334,
+    "evidence": [
+      {
+        "id": 202,
+        "title": "This one feature convinced me to use the Pixel 11"
+      },
+      {
+        "id": 7162,
+        "title": "Recenzia Google Pixel 11 Pro XL: Otvára dvere novým príležitostiam"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f34dba6299136b96",
+    "label": "Luna Pro od Insta360, wyczekiwany gimbal jest nareszcie dostępny globalnie",
+    "min_similarity": 0.7348021268844604,
+    "evidence": [
+      {
+        "id": 8960,
+        "title": "Insta360 Luna Pro発売、望遠なしで8万円台のLeicaレンズ ジンバルカメラ　ヘッドトラッカーやMic Pro / Air対応はUltra共通"
+      },
+      {
+        "id": 27471,
+        "title": "Luna Pro od Insta360, wyczekiwany gimbal jest nareszcie dostępny globalnie"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ce0ef76c4ea957b6",
+    "label": "Nintendo Switch 2 يحصل على حزمة ألعاب جديدة حصرية لليابان.. وهذه تفاصيلها",
+    "min_similarity": 0.7489874362945557,
+    "evidence": [
+      {
+        "id": 33875,
+        "title": "Nintendo Switch 2 يحصل على حزمة ألعاب جديدة حصرية لليابان.. وهذه تفاصيلها"
+      },
+      {
+        "id": 38670,
+        "title": "Diablo IV finalmente chegará ao Nintendo Switch 2"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1d91f5a7c00dadb0",
+    "label": "Bambu Labの3DプリンターがAmazonでセール中！　FDM方式のローエンドモデル「Bambu Lab A1 mini」は2万9900円",
+    "min_similarity": 0.7435891032218933,
+    "evidence": [
+      {
+        "id": 8424,
+        "title": "Bambu Labの3DプリンターがAmazonでセール中！　FDM方式のローエンドモデル「Bambu Lab A1 mini」は2万9900円"
+      },
+      {
+        "id": 26802,
+        "title": "This 4.5-star Bambu Lab H2S AMS Combo 3D printer impressed our expert for speed and accuracy — now it's got a big price drop"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-32a356fd66aaf954",
+    "label": "MPF e DPU vão à Justiça para barrar data center de R$ 200 bi do TikTok",
+    "min_similarity": 0.7377600073814392,
+    "evidence": [
+      {
+        "id": 18825,
+        "title": "MPF e DPU vão à Justiça para barrar data center de R$ 200 bi do TikTok"
+      },
+      {
+        "id": 38611,
+        "title": "Justiça é acionada para parar data center de R$ 200 bi do TikTok"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-edfc10538a3e98a2",
+    "label": "Palettisation, manutention, assemblage… Maven Robotics lève 100 millions de dollars pour ses robots bi-bras polyvalents",
+    "min_similarity": 0.7468827962875366,
+    "evidence": [
+      {
+        "id": 16709,
+        "title": "Maven Robotics esce dall'ombra: la scommessa da 100 milioni per conquistare i magazzini di tutto il mondo"
+      },
+      {
+        "id": 26375,
+        "title": "Palettisation, manutention, assemblage… Maven Robotics lève 100 millions de dollars pour ses robots bi-bras polyvalents"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4a420d7fa9f2be74",
+    "label": "NVIDIA RTX PRO 5500 Blackwell: 84GB μνήμης και 600W κατανάλωση",
+    "min_similarity": 0.7460483908653259,
+    "evidence": [
+      {
+        "id": 5008,
+        "title": "NVIDIA RTX PRO 5500 Blackwell: 84GB μνήμης και 600W κατανάλωση"
+      },
+      {
+        "id": 16693,
+        "title": "NVIDIA RTX PRO 5500 Blackwell: 84 GB di memoria per la nuova scheda video professionale"
+      },
+      {
+        "id": 17523,
+        "title": "NVIDIA RTX PRO 5500 Blackwell Duyuruldu: 84 GB GDDR7 ve 600W Güç Limiti"
+      },
+      {
+        "id": 22957,
+        "title": "NVIDIA's Beastly RTX Pro 5500 Blackwell Packs 84GB GDDR7 & RTX 5090 Core Count"
+      },
+      {
+        "id": 25640,
+        "title": "Mit 84 GB für KI-Workstations: NVIDIA RTX PRO 5500 Blackwell vorgestellt"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8c73858725ebb2c3",
+    "label": "Actualité : Windows 11 : Microsoft oublie un trou de souris pour l'installer en local sans compte",
+    "min_similarity": 0.7475417852401733,
+    "evidence": [
+      {
+        "id": 4632,
+        "title": "Actualité : Windows 11 : Microsoft oublie un trou de souris pour l'installer en local sans compte"
+      },
+      {
+        "id": 16134,
+        "title": "Trick für Windows 11: Versteckter Mausklick umgeht Microsoft-Account"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ef860faedd9ffcfa",
+    "label": "Gran Fondo Cycling Challenge reunió a más de 960 ciclistas de 26 países en Boquete",
+    "min_similarity": 0.7435563802719116,
+    "evidence": [
+      {
+        "id": 15352,
+        "title": "Gran Fondo Cycling Challenge reunió a más de 960 ciclistas de 26 países en Boquete"
+      },
+      {
+        "id": 16089,
+        "title": "Realizan la quinta versión del Gran Fondo de Ciclismo en Boquete"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-71fada073e157448",
+    "label": "Revolut discloses data breach exposing financial info, passports",
+    "min_similarity": 0.7328189611434937,
+    "evidence": [
+      {
+        "id": 518,
+        "title": "Revolut discloses data breach exposing financial info, passports"
+      },
+      {
+        "id": 23301,
+        "title": "Personal, Financial Info Exposed in Revolut Data Breach"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-032dbbedeb10d802",
+    "label": "EE. UU. prohíbe viajar con cannabis y vapes",
+    "min_similarity": 0.7406843900680542,
+    "evidence": [
+      {
+        "id": 2468,
+        "title": "EE. UU. prohíbe viajar con cannabis y vapes"
+      },
+      {
+        "id": 23987,
+        "title": "Embajada de EE.UU. lanza advertencia a sobre viajar con cannabis y vapes"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-defd76e696e1efb1",
+    "label": "Xiaomi представила Pad 9 и Pad 9 Pro — относительно доступные планшеты на Snapdragon",
+    "min_similarity": 0.736760139465332,
+    "evidence": [
+      {
+        "id": 12405,
+        "title": "شیائومی Pad 9 و Pad 9 Pro معرفی شدند؛ نمایشگر 3.2K و اسنپدراگون‌های قدرتمند"
+      },
+      {
+        "id": 12419,
+        "title": "Xiaomi Pad 9 ve Pad 9 Pro aynı ekran özelliklerini farklı boyutlarda sunuyor"
+      },
+      {
+        "id": 15519,
+        "title": "Xiaomi представила Pad 9 и Pad 9 Pro — относительно доступные планшеты на Snapdragon"
+      },
+      {
+        "id": 27832,
+        "title": "3,2K-экраны и до Snapdragon 8 Gen 5: Xiaomi представила планшеты Pad 9"
+      },
+      {
+        "id": 31667,
+        "title": "معرفی تبلت‌های Xiaomi Pad 9 و Pad 9 Pro با صفحه‌نمایش‌های 144 هرتزی و پردازنده‌های سری 8 کوالکام"
+      },
+      {
+        "id": 33799,
+        "title": "تبلت های Pad 9 و Pad 9 Pro شیائومی معرفی شدند"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1389c547b1f1b81f",
+    "label": "Windows 11’in Eylül güncellemesi bazı bilgisayarlarda sesi bozuyor",
+    "min_similarity": 0.7531121969223022,
+    "evidence": [
+      {
+        "id": 3218,
+        "title": "Windows 11 : la mise à jour de septembre peut casser le son de votre PC"
+      },
+      {
+        "id": 9649,
+        "title": "Windows 11’in Eylül güncellemesi bazı bilgisayarlarda sesi bozuyor"
+      },
+      {
+        "id": 26666,
+        "title": "Windows 11: September-Update sorgt für Audioprobleme und weitere Bugs"
+      },
+      {
+        "id": 29000,
+        "title": "Сентябрьское обновление Windows 11 ломает звук и «Проводник»"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-152e301470d0f050",
+    "label": "Chip A20 Pro của iPhone 18 Pro Series lập kỷ lục Geekbench 7, vượt cả chip desktop Intel và AMD",
+    "min_similarity": 0.7576332092285156,
+    "evidence": [
+      {
+        "id": 8293,
+        "title": "Chip A20 Pro của iPhone 18 Pro Series lập kỷ lục Geekbench 7, vượt cả chip desktop Intel và AMD"
+      },
+      {
+        "id": 9153,
+        "title": "蘋果 A20 Pro 單核跑分創紀錄   完勝 Intel i9 及 AMD Ryzen 9 桌上處理器"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4ba6f9b840e9b8e7",
+    "label": "Linus Torvalds, resignado ante la llegada de Linux 7.3 rc3: \"Otra versión candidata bastante grande, y de nuevo con un impacto en el sistema de archivos mayor al habitual\"",
+    "min_similarity": 0.739974319934845,
+    "evidence": [
+      {
+        "id": 16603,
+        "title": "Linus Torvalds, resignado ante la llegada de Linux 7.3 rc3: \"Otra versión candidata bastante grande, y de nuevo con un impacto en el sistema de archivos mayor al habitual\""
+      },
+      {
+        "id": 28299,
+        "title": "Линус Торвалдс обяви Linux 7.3-rc3 – какво е новото"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c3ee80c36be9442a",
+    "label": "Творець KCD2 назвав DLSS 5 майбутнім графіки в іграх",
+    "min_similarity": 0.7530277967453003,
+    "evidence": [
+      {
+        "id": 28079,
+        "title": "Творець KCD2 назвав DLSS 5 майбутнім графіки в іграх"
+      },
+      {
+        "id": 28136,
+        "title": "DLSS 5 nie tylko do gier. Wymyślili coś znacznie bardziej odjechanego"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-d616851dc6d32734",
+    "label": "Z.ai completes around US$5 billion financing for next-generation GLM models",
+    "min_similarity": 0.7542576789855957,
+    "evidence": [
+      {
+        "id": 1669,
+        "title": "Z.ai Plans $5 Billion Fundraising as Compute Cost Grows"
+      },
+      {
+        "id": 9114,
+        "title": "Z.AI plans about $5 billion in share and bond financing"
+      },
+      {
+        "id": 20000,
+        "title": "Z.ai completes around US$5 billion financing for next-generation GLM models"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-31d0cebe5da51305",
+    "label": "Rövid kedvcsinálót kapott a hamarosan megjelenő Gears of War: E-Day",
+    "min_similarity": 0.7463232278823853,
+    "evidence": [
+      {
+        "id": 16897,
+        "title": "Rövid kedvcsinálót kapott a hamarosan megjelenő Gears of War: E-Day"
+      },
+      {
+        "id": 27950,
+        "title": "Gears of War: E-Day launches October 6 — free on Game Pass day one"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-39f28b2e9d3e7bf6",
+    "label": "Tini hace vibrar a sus fans en El Salvador tras reprogramar su show",
+    "min_similarity": 0.7480567097663879,
+    "evidence": [
+      {
+        "id": 15808,
+        "title": "Tini hace vibrar a sus fans en El Salvador tras reprogramar su show"
+      },
+      {
+        "id": 15810,
+        "title": "Tini se reencuentra hoy con sus fans tras show reprogramado en El Salvador"
+      },
+      {
+        "id": 15811,
+        "title": "Tini se presenta en El Salvador y la nostalgia ya se siente"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-910f62d80e4f2fa1",
+    "label": "Galaxy S27 Ultra's M16 OLED Display Won't Hit 10,000 Nits—But for a Good Reason",
+    "min_similarity": 0.749162495136261,
+    "evidence": [
+      {
+        "id": 22294,
+        "title": "Galaxy S27 Ultra's M16 OLED Display Won't Hit 10,000 Nits—But for a Good Reason"
+      },
+      {
+        "id": 27399,
+        "title": "Galaxy S27 Ultra i Pro imaće poboljšane M16 OLED panele"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a7c5fd35076e5bdc",
+    "label": "Honor Play 11 Diumumkan dengan Baterai 8300mAh",
+    "min_similarity": 0.736562967300415,
+    "evidence": [
+      {
+        "id": 7675,
+        "title": "Honor Play 11 to telefon na kieszeń Polaka. Bateria 8300 mAh"
+      },
+      {
+        "id": 8636,
+        "title": "Honor Play 11 Diumumkan dengan Baterai 8300mAh"
+      },
+      {
+        "id": 12399,
+        "title": "آنر Play 11 با باتری غول‌پیکر ۸۳۰۰ میلی‌آمپرساعتی و مقاومت IP69K معرفی شد"
+      },
+      {
+        "id": 12440,
+        "title": "آنر Play 11 با باتری ۸۳۰۰ میلی‌آمپری و استاندارد IP69K معرفی شد؛ فقط ۱۹۵ دلار"
+      },
+      {
+        "id": 18499,
+        "title": "Honor Play 11 é lançado com chip Snapdragon e bateria de 8.300 mAh"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-fe8af25b5a5f0f43",
+    "label": "Jugendliche mit Waffe entdeckt: Robotertaxi-Betreiber ruft die Polizei",
+    "min_similarity": 0.7583860158920288,
+    "evidence": [
+      {
+        "id": 3861,
+        "title": "Jugendliche mit Waffe entdeckt: Robotertaxi-Betreiber ruft die Polizei"
+      },
+      {
+        "id": 4009,
+        "title": "Waymo-Robotaxi meldet jugendliche Passagiere mit Waffe bei der Polizei"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-d5c69177ba27f528",
+    "label": "Photovoltaik im Meer: Solarzellen erzeugen Strom in zehn Metern Tiefe",
+    "min_similarity": 0.7611593008041382,
+    "evidence": [
+      {
+        "id": 4939,
+        "title": "10 Meter unter dem Meeresspiegel: Wie Solarzellen auch in größerer Tiefe Strom erzeugen"
+      },
+      {
+        "id": 25757,
+        "title": "Photovoltaik im Meer: Solarzellen erzeugen Strom in zehn Metern Tiefe"
+      },
+      {
+        "id": 26973,
+        "title": "Solarstrom aus zehn Metern Tiefe: Chinesische Forschende bringen Photovoltaik unter Wasser"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-423782bf0ebc2da1",
+    "label": "Neglecting ITAM governance is a growing business risk",
+    "min_similarity": 0.7455841302871704,
+    "evidence": [
+      {
+        "id": 13161,
+        "title": "Is your ITAM governance keeping pace with rising compliance demands?"
+      },
+      {
+        "id": 13167,
+        "title": "Neglecting ITAM governance is a growing business risk"
+      },
+      {
+        "id": 17641,
+        "title": "Neglecting ITAM governance is a growing business risk"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-35049b9836136fe3",
+    "label": "Pourquoi les GeForce RTX 5090 sont à plus de 5 000 euros ? En réalité, vous suspectiez déjà la raison",
+    "min_similarity": 0.7462836503982544,
+    "evidence": [
+      {
+        "id": 3353,
+        "title": "Pourquoi les GeForce RTX 5090 sont à plus de 5 000 euros ? En réalité, vous suspectiez déjà la raison"
+      },
+      {
+        "id": 37155,
+        "title": "Las empresas de IA están \"robando\" las gráficas GeForce RTX 5090 a los jugadores: las compran por palés y el modelo más barato ya cuesta más de 5.000 euros"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-dab323cbc58bb26a",
+    "label": "Amazon Halts Operations With 21 Air After Fatal Miami Crash",
+    "min_similarity": 0.810655951499939,
+    "evidence": [
+      {
+        "id": 551,
+        "title": "Amazon Halts Operations With 21 Air After Fatal Miami Crash"
+      },
+      {
+        "id": 26511,
+        "title": "Amazon sospende i voli di 21 Air dopo l’incidente di Miami"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f5aa85fb5f2ea3f1",
+    "label": "OpenAIのAIエージェントがRubyGemsへの攻撃に関与か、2000件超のパッケージ投稿やAPIキー窃取の試みが判明",
+    "min_similarity": 0.7512096166610718,
+    "evidence": [
+      {
+        "id": 8318,
+        "title": "OpenAIのAIエージェントがRubyGemsへの攻撃に関与か、2000件超のパッケージ投稿やAPIキー窃取の試みが判明"
+      },
+      {
+        "id": 8485,
+        "title": "OpenAI代理人遭爆曾在今年5月攻擊RubyGems"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ba6ac7f656d7d025",
+    "label": "Fertig-Streukäse aus dem Supermarkt: Warum Sie ihn besser im Kühlregal lassen sollten",
+    "min_similarity": 0.7677860260009766,
+    "evidence": [
+      {
+        "id": 16202,
+        "title": "Paniermehl im Supermarkt: Warum ein kurzer Blick auf die Packung wichtig ist"
+      },
+      {
+        "id": 36654,
+        "title": "Fertig-Streukäse aus dem Supermarkt: Warum Sie ihn besser im Kühlregal lassen sollten"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0a38210da184f2f6",
+    "label": "Interdiction des réseaux sociaux aux moins de 15 ans : la France soumet une nouvelle version de son projet à Bruxelles",
+    "min_similarity": 0.7541046738624573,
+    "evidence": [
+      {
+        "id": 3715,
+        "title": "Mineurs et réseaux sociaux : Emmanuel Macron porte en Europe la bataille de l’interdiction"
+      },
+      {
+        "id": 4606,
+        "title": "Interdiction des réseaux sociaux aux moins de 15 ans : la France soumet une nouvelle version de son projet à Bruxelles"
+      },
+      {
+        "id": 26289,
+        "title": "Réseaux sociaux interdits aux moins de 15 ans : la France change radicalement de cap"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b9622c89af2d396d",
+    "label": "Diablo V chega em 2029 e coloca jogadores em um mundo onde o vilão já venceu",
+    "min_similarity": 0.7585585117340088,
+    "evidence": [
+      {
+        "id": 4874,
+        "title": "Diablo V è ufficiale: uscita nel 2029, e Diablo stavolta ha vinto. Tutto quello che sappiamo"
+      },
+      {
+        "id": 38560,
+        "title": "Diablo V chega em 2029 e coloca jogadores em um mundo onde o vilão já venceu"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9f485270a090f660",
+    "label": "Kontenzwang bei Windows 11: Setup-Lücke ermöglicht Installation mit lokalem Konto",
+    "min_similarity": 0.7887949347496033,
+    "evidence": [
+      {
+        "id": 25168,
+        "title": "Kontenzwang bei Windows 11: Setup-Lücke ermöglicht Installation mit lokalem Konto"
+      },
+      {
+        "id": 25610,
+        "title": "Microsoft-Kontozwang lässt sich umgehen: Windows 11 lässt sich mit einem lokalen Konto installieren"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-257a2f4c00b9dd65",
+    "label": "Un robotaxi Waymo joue les indics en dénonçant à la police de dangereux passagers à bord d'un véhicule",
+    "min_similarity": 0.79609215259552,
+    "evidence": [
+      {
+        "id": 3367,
+        "title": "Un robotaxi Waymo joue les indics en dénonçant à la police de dangereux passagers à bord d'un véhicule"
+      },
+      {
+        "id": 25558,
+        "title": "Robotaxi erkennt bewaffnete Passagiere, löst Polizeieinsatz aus"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-595cca61c7919252",
+    "label": "OPPO Find X10 Series Launching In China Next Week With Mysterious Find X10 E Model In Tow",
+    "min_similarity": 0.7890079021453857,
+    "evidence": [
+      {
+        "id": 8668,
+        "title": "OPPO Find X10 Series Launching In China Next Week With Mysterious Find X10 E Model In Tow"
+      },
+      {
+        "id": 29960,
+        "title": "OPPO Find X10 Series Resmi Meluncur 22 September, Bawa Tiga Model"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c4306a008245f84f",
+    "label": "Ecobonus, novità in arrivo: Governo valuta aumento della detrazione al 65%",
+    "min_similarity": 0.7441636323928833,
+    "evidence": [
+      {
+        "id": 3974,
+        "title": "Ecobonus, novità in arrivo: Governo valuta aumento della detrazione al 65%"
+      },
+      {
+        "id": 16696,
+        "title": "Ecobonus al 65%: il governo valuta il ritorno dello sconto per la prima casa"
+      },
+      {
+        "id": 25239,
+        "title": "Ecobonus al 65%, il Governo ripensa agli incentivi per infissi e pompe di calore"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-811f6478bdec2b59",
+    "label": "Marathón vence por la mínima al Olimpia y es líder del Apertura hondureño",
+    "min_similarity": 0.7856355905532837,
+    "evidence": [
+      {
+        "id": 2863,
+        "title": "Marathón vence por la mínima al Olimpia y es líder del Apertura hondureño"
+      },
+      {
+        "id": 15893,
+        "title": "Tabla de posiciones Liga Nacional de Honduras: Marathón tumba a Olimpia y así queda Motagua"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-400119efefac9ca9",
+    "label": "2-нм процессор Fujitsu Monaka поступит в продажу уже в  ноябре 2026",
+    "min_similarity": 0.7443366050720215,
+    "evidence": [
+      {
+        "id": 6539,
+        "title": "2-нм процессор Fujitsu Monaka поступит в продажу уже в  ноябре 2026"
+      },
+      {
+        "id": 25217,
+        "title": "Fujitsu announces Monaka CPU and server will be available from November"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b44f659c96871c53",
+    "label": "Open Cosmos Raises €300 Million to Expand Satellite Production and Space Data Services",
+    "min_similarity": 0.7481158971786499,
+    "evidence": [
+      {
+        "id": 26563,
+        "title": "Satellite startup Open Cosmos raises €300m amid space frenzy"
+      },
+      {
+        "id": 26706,
+        "title": "Open Cosmos secures €300M to expand satellite intelligence and connectivity"
+      },
+      {
+        "id": 26974,
+        "title": "Open Cosmos Raises €300 Million to Expand Satellite Production and Space Data Services"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f9e417156100ea6d",
+    "label": "Las Reinas del Caribe siguen invictas tras vencer 3-1 a Canadá en Copa Panamericana: ¿Qué sigue mañana?",
+    "min_similarity": 0.7430907487869263,
+    "evidence": [
+      {
+        "id": 2177,
+        "title": "Las Leñeras de Los Mina conquistan el TBS Femenino 2026 tras vencer a Caribes"
+      },
+      {
+        "id": 24093,
+        "title": "Las Reinas del Caribe siguen invictas tras vencer 3-1 a Canadá en Copa Panamericana: ¿Qué sigue mañana?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7a7d8aeaa6e284fa",
+    "label": "San Antonio de Guerra necesita una circunvalación, afirma diputado Fuerza del Pueblo",
+    "min_similarity": 0.7942659854888916,
+    "evidence": [
+      {
+        "id": 16030,
+        "title": "San Antonio de Guerra necesita una circunvalación, afirma diputado Fuerza del Pueblo"
+      },
+      {
+        "id": 23981,
+        "title": "¿Una circunvalación para San Antonio de Guerra?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3d00f38bea58cd8a",
+    "label": "IBM and NASA debut open source AI model for lunar exploration",
+    "min_similarity": 0.7480734586715698,
+    "evidence": [
+      {
+        "id": 13124,
+        "title": "IBM and NASA debut open source AI model for lunar exploration"
+      },
+      {
+        "id": 13193,
+        "title": "IBM and NASA’s New Moon AI Is Really a Data Infrastructure Project"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-71f324a5bd56ee5a",
+    "label": "Guerrero Jr. pega su primer jonrón en Toronto en más de un año",
+    "min_similarity": 0.7811465263366699,
+    "evidence": [
+      {
+        "id": 15862,
+        "title": "Guerrero Jr. pega su primer jonrón en Toronto en más de un año"
+      },
+      {
+        "id": 16035,
+        "title": "Vladimir Guerrero Jr. se sacude con primer jonrón en casa"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-12c54c4a48c29552",
+    "label": "Çin’den yapay zekada yavaşlama çağrılarına yanıt: “Soğuk Savaş taktiği”",
+    "min_similarity": 0.7644336223602295,
+    "evidence": [
+      {
+        "id": 31191,
+        "title": "Çin’den Anthropic’e Cevap Geldi: Bu Bir Soğuk Savaş ve Amacınız Bizi Durdurmak!"
+      },
+      {
+        "id": 31212,
+        "title": "Çin’den yapay zekada yavaşlama çağrılarına yanıt: “Soğuk Savaş taktiği”"
+      },
+      {
+        "id": 31763,
+        "title": "Çin’den Anthropic CEO’sunun yapay zeka çağrısına tepki: “Soğuk Savaş taktiği”"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3a87c93b1ceb7df1",
+    "label": "Municipalidad de Cartago descarta cierre de comercios este 14 de septiembre",
+    "min_similarity": 0.7795443534851074,
+    "evidence": [
+      {
+        "id": 2325,
+        "title": "Alcalde de Cartago da marcha atrás y elimina cierre obligatorio de comercios para este 14 de setiembre"
+      },
+      {
+        "id": 23907,
+        "title": "Municipalidad de Cartago descarta cierre de comercios este 14 de septiembre"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3533cd4cbc5d87ef",
+    "label": "LG nega que as suas Smart TVs estejam a espiar",
+    "min_similarity": 0.8203323483467102,
+    "evidence": [
+      {
+        "id": 4792,
+        "title": "LG nega que as suas Smart TVs estejam a espiar"
+      },
+      {
+        "id": 23395,
+        "title": "LG Pushes Back on Claims That Its Smart TVs Are Spying on Users"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9e1748300e39ad10",
+    "label": "Roblox wykracza poza własną aplikację. Gry trafią na PC, konsole i do przeglądarek",
+    "min_similarity": 0.8031730651855469,
+    "evidence": [
+      {
+        "id": 7947,
+        "title": "Roblox、アプリ不要で遊べるように　年内にChrome対応へ"
+      },
+      {
+        "id": 28385,
+        "title": "Roblox wykracza poza własną aplikację. Gry trafią na PC, konsole i do przeglądarek"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-20ec9f0554226ba1",
+    "label": "Filtración revela el nuevo diseño del Samsung Galaxy SmartTag 3",
+    "min_similarity": 0.7591345310211182,
+    "evidence": [
+      {
+        "id": 12428,
+        "title": "נחשף: Galaxy SmartTag 3 – קטן יותר ובעיצוב חדש"
+      },
+      {
+        "id": 16705,
+        "title": "Un'altra novità in arrivo da Samsung: ecco i primi render del tracker Galaxy SmartTag 3"
+      },
+      {
+        "id": 23169,
+        "title": "Filtración revela el nuevo diseño del Samsung Galaxy SmartTag 3"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-44f5cfa0de8b2199",
+    "label": "Jesień a aktywność fizyczna. Z zegarkiem Huawei Watch GT 7 to nie takie trudne",
+    "min_similarity": 0.7427452802658081,
+    "evidence": [
+      {
+        "id": 27389,
+        "title": "Jesień a aktywność fizyczna. Z zegarkiem Huawei Watch GT 7 to nie takie trudne"
+      },
+      {
+        "id": 31595,
+        "title": "Sporu ve Günlük Hayatı Bileğinizde Birleştiriyor; HUAWEI Watch GT 7 İncelemesi"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c24b0af421fe72d4",
+    "label": "Buildots raises $130 million to expand AI-powered construction platform",
+    "min_similarity": 0.7558077573776245,
+    "evidence": [
+      {
+        "id": 22588,
+        "title": "Intel-Backed Construction AI Firm Buildots Raises $130 Million"
+      },
+      {
+        "id": 23314,
+        "title": "Buildots raises $130 million to expand AI-powered construction platform"
+      },
+      {
+        "id": 35019,
+        "title": "Buildots Raises $130M to Scale Construction Intelligence"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-29c529a5687dd0cb",
+    "label": "The hot new job in tech as AI apocalypse fears reach a tipping point",
+    "min_similarity": 0.7963712215423584,
+    "evidence": [
+      {
+        "id": 14742,
+        "title": "Why tech oligarchs are willing to risk AI apocalypse"
+      },
+      {
+        "id": 22611,
+        "title": "The hot new job in tech as AI apocalypse fears reach a tipping point"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-72ae0269c54b9b51",
+    "label": "政府システムに不正アクセス、職員などの個人情報24.6万件が漏えいの可能性--デジタル庁",
+    "min_similarity": 0.7831546068191528,
+    "evidence": [
+      {
+        "id": 7976,
+        "title": "政府システムに不正アクセス、職員などの個人情報24.6万件が漏えいの可能性--デジタル庁"
+      },
+      {
+        "id": 8433,
+        "title": "ガバメントソリューションサービス（GSS）に不正アクセス、政府職員らの個人情報約24.6万件が漏えいの可能性"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-07212a321e89fd4d",
+    "label": "iPhone 18 Pro and iPhone 18 Pro Max pre-orders are aavailable",
+    "min_similarity": 0.7568470239639282,
+    "evidence": [
+      {
+        "id": 13229,
+        "title": "iPhone 18 Pro and iPhone 18 Pro Max pre-orders are aavailable"
+      },
+      {
+        "id": 22147,
+        "title": "iPhone 18 Pro, Pro Max pre-orders now delayed to October for most models"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0dd51dd6176474ac",
+    "label": "Alajuelense: La reveladora frase de Ismael Rescalvo en el camerino que sonó a despedida",
+    "min_similarity": 0.7594178318977356,
+    "evidence": [
+      {
+        "id": 2307,
+        "title": "Alajuelense: La reveladora frase de Ismael Rescalvo en el camerino que sonó a despedida"
+      },
+      {
+        "id": 19821,
+        "title": "El discurso de Ismael Rescalvo cambió de manera drástica: esto dijo tras la nueva derrota de Alajuelense"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-12826a96e39b3cae",
+    "label": "Às vésperas do lançamento, Sony derruba mod que levaria multiplayer a The Last of Us 2",
+    "min_similarity": 0.748782753944397,
+    "evidence": [
+      {
+        "id": 18295,
+        "title": "Às vésperas do lançamento, Sony derruba mod que levaria multiplayer a The Last of Us 2"
+      },
+      {
+        "id": 18405,
+        "title": "The Last of Us Part II: Sony obriga modder a deletar projeto do jogo multiplayer, mas há um porém"
+      },
+      {
+        "id": 27953,
+        "title": "Sony shuts down free fan-made multiplayer mod for The Last of Us Part II"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-91f5e15c75f5a783",
+    "label": "Diablo ganhará série animada na Netflix e mais está por vir",
+    "min_similarity": 0.7931384444236755,
+    "evidence": [
+      {
+        "id": 18409,
+        "title": "Diablo ganhará série animada na Netflix e mais está por vir"
+      },
+      {
+        "id": 19432,
+        "title": "Blizzard confirma una serie animada de Diablo en Netflix"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-676bdfe41b3174a0",
+    "label": "Sam Altman dice que hay dos formas de que la IA termine mal: que nadie la controle o que la controle uno solo",
+    "min_similarity": 0.7717150449752808,
+    "evidence": [
+      {
+        "id": 16607,
+        "title": "Sam Altman, creador de ChatGPT, se suma a Dario Amodei y pide frenar el ritmo de la IA: \"Hay dos formas en que el progreso de la IA podría salir muy mal y que debemos evitar\""
+      },
+      {
+        "id": 19270,
+        "title": "Sam Altman dice que hay dos formas de que la IA termine mal: que nadie la controle o que la controle uno solo"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-933b51a40963ab0c",
+    "label": "Revolut naletěl podvodníkům a sám jim vydal data: unikly jména, doklady i ověřovací selfie",
+    "min_similarity": 0.7524260878562927,
+    "evidence": [
+      {
+        "id": 16721,
+        "title": "Revolut ha consegnato passaporti e selfie a un truffatore che ha scritto da un vero indirizzo governativo"
+      },
+      {
+        "id": 27619,
+        "title": "Revolut naletěl podvodníkům a sám jim vydal data: unikly jména, doklady i ověřovací selfie"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e6c1e1d383f921d2",
+    "label": "Jornal estatal chinês critica apelos da Anthropic para desacelerar IA e vê tática da 'Guerra Fria'",
+    "min_similarity": 0.7537689805030823,
+    "evidence": [
+      {
+        "id": 18816,
+        "title": "Jornal estatal chinês critica apelos da Anthropic para desacelerar IA e vê tática da 'Guerra Fria'"
+      },
+      {
+        "id": 18820,
+        "title": "China rejeita apelo de líderes dos EUA para desacelerar IA de ponta"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9c7ebea127ea48c3",
+    "label": "Samsung amplia portfólio premium de TVs no Brasil com novas Micro RGB, OLED, Neo QLED e The Frame Pro",
+    "min_similarity": 0.7446318864822388,
+    "evidence": [
+      {
+        "id": 18406,
+        "title": "Samsung lança novas TVs Vision AI no Brasil com inédita Micro RGB de 85”; veja preços"
+      },
+      {
+        "id": 18444,
+        "title": "Samsung amplia portfólio premium de TVs no Brasil com novas Micro RGB, OLED, Neo QLED e The Frame Pro"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a66530672a9020bd",
+    "label": "Revolut: Hacker drohen nach gefälschten Behördenanfragen mit Leaks von Nutzerdaten",
+    "min_similarity": 0.8225207924842834,
+    "evidence": [
+      {
+        "id": 5256,
+        "title": "Revolut Hackers Threaten Customer Data Leaks After Fake Government Requests"
+      },
+      {
+        "id": 5257,
+        "title": "Revolut: Hacker drohen nach gefälschten Behördenanfragen mit Leaks von Nutzerdaten"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-de50a64da2dbde9a",
+    "label": "Nova Renault Trafic elétrica: 470 km de autonomia e carregamento ultrarrápido",
+    "min_similarity": 0.7587777376174927,
+    "evidence": [
+      {
+        "id": 3702,
+        "title": "Batterie XXL et connectivité digne d’une Tesla : Renault révolutionne son Trafic Van électrique pour les artisans et les voyageurs"
+      },
+      {
+        "id": 4786,
+        "title": "Nova Renault Trafic elétrica: 470 km de autonomia e carregamento ultrarrápido"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ceb4a28604c4699d",
+    "label": "Windows 11: September-Update crasht Remote-Dienste, USB-Audio und Linux-VMs",
+    "min_similarity": 0.7937912940979004,
+    "evidence": [
+      {
+        "id": 3422,
+        "title": "Windows 11: September-Update crasht Remote-Dienste, USB-Audio und Linux-VMs"
+      },
+      {
+        "id": 3999,
+        "title": "September-Updates: Windows-Probleme mit RDP, USB Audio und Hyper-V"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c61b61e5876959a2",
+    "label": "fiskaly ernennt David Feichter zum neuen Co-CEO",
+    "min_similarity": 0.7865726947784424,
+    "evidence": [
+      {
+        "id": 3542,
+        "title": "War 2019 erster Kunde – Ex-orderbird-CEO David Feichter wird Co-CEO von Wiener Scaleup fiskaly"
+      },
+      {
+        "id": 26976,
+        "title": "fiskaly ernennt David Feichter zum neuen Co-CEO"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a92d7916ed02fa8e",
+    "label": "Autistici/Inventati, una sanzione Usa basta a bloccare un conto in Italia?",
+    "min_similarity": 0.8062246441841125,
+    "evidence": [
+      {
+        "id": 3300,
+        "title": "Autistici/Inventati, una sanzione Usa basta a bloccare un conto in Italia?"
+      },
+      {
+        "id": 3301,
+        "title": "Sanzioni Usa, lo scudo europeo alla prova del caso Autistici/Inventati"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3ad53a0e357ab4f2",
+    "label": "Cobán Imperial y Comunicaciones empatan 2-2 y prolongan su racha negativa sin victorias",
+    "min_similarity": 0.7473443150520325,
+    "evidence": [
+      {
+        "id": 2354,
+        "title": "Cobán Imperial y Comunicaciones reparten puntos en el Verapaz"
+      },
+      {
+        "id": 2790,
+        "title": "Cobán Imperial y Comunicaciones empatan 2-2 y prolongan su racha negativa sin victorias"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-36fc092895ffc82d",
+    "label": "Galaxy Z Fold 8 vs iPhone Duo: 4 advantages each",
+    "min_similarity": 0.8088592290878296,
+    "evidence": [
+      {
+        "id": 22149,
+        "title": "Here’s how the iPhone Duo compares to the Samsung Galaxy Z Fold 8"
+      },
+      {
+        "id": 26678,
+        "title": "Galaxy Z Fold 8 vs iPhone Duo: 4 advantages each"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-088d01765aa88360",
+    "label": "QNB Syria Brings Mastercard Payments to Global Reach",
+    "min_similarity": 0.7826802730560303,
+    "evidence": [
+      {
+        "id": 13380,
+        "title": "QNB Syria and Mastercard Launch Locally Issued Cards With International Payment Access"
+      },
+      {
+        "id": 17423,
+        "title": "QNB Syria Brings Mastercard Payments to Global Reach"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3fa3299ceb1aa4e4",
+    "label": "Leak: Nothing Headphone (1) Pro is tipped to launch on September 29",
+    "min_similarity": 0.8582191467285156,
+    "evidence": [
+      {
+        "id": 13914,
+        "title": "Nothing Headphone (1) Pro Leak Points To September 29 Launch And Triple-Driver Audio"
+      },
+      {
+        "id": 17339,
+        "title": "Leak: Nothing Headphone (1) Pro is tipped to launch on September 29"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6c210ae1d0696ffe",
+    "label": "ASK Tech Ventures Brings ODIGO CMS to Africa to Transform Field Operations",
+    "min_similarity": 0.8475250005722046,
+    "evidence": [
+      {
+        "id": 13388,
+        "title": "ASK Tech Ventures Brings ODIGO CMS to Africa to Transform Field Operations"
+      },
+      {
+        "id": 34364,
+        "title": "ASK Tech Ventures Launches ODIGO CMS In Africa"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9a90568d5675c81b",
+    "label": "Project Phoenix: Imagens revelam novos detalhes sobre o próximo headset de realidade mista da Meta",
+    "min_similarity": 0.8127849102020264,
+    "evidence": [
+      {
+        "id": 16691,
+        "title": "Meta potrebbe aver mostrato in anticipo Project Phoenix: online emergono le immagini del nuovo visore"
+      },
+      {
+        "id": 26543,
+        "title": "Project Phoenix: Imagens revelam novos detalhes sobre o próximo headset de realidade mista da Meta"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-12476b749ee2cba9",
+    "label": "Windows 11安全性更新KB5124008可能引發USB音訊裝置無聲",
+    "min_similarity": 0.808320164680481,
+    "evidence": [
+      {
+        "id": 7983,
+        "title": "Windows 11安全性更新KB5124008可能引發USB音訊裝置無聲"
+      },
+      {
+        "id": 26473,
+        "title": "Windows 11: KB5124008 kann USB-Audiogeräte lahmlegen"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-575243db46a581eb",
+    "label": "The Masked Singer: So seht ihr die ProSieben-Show im TV und Stream - alle Sendetermine",
+    "min_similarity": 0.7669068574905396,
+    "evidence": [
+      {
+        "id": 26424,
+        "title": "&quot;The Masked Singer&quot; kehrt mit neuen Regeln zurück - das ändert sich für Zuschauer"
+      },
+      {
+        "id": 26433,
+        "title": "The Masked Singer: So seht ihr die ProSieben-Show im TV und Stream - alle Sendetermine"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1cdc25c4eddcaee0",
+    "label": "10.000 Nits und 165 Hertz: Samsungs neues Display ist heller als alles, was je in einem Handy steckte",
+    "min_similarity": 0.774174690246582,
+    "evidence": [
+      {
+        "id": 25362,
+        "title": "Samsungs nya skärm når 10.000 nits"
+      },
+      {
+        "id": 26419,
+        "title": "10.000 Nits und 165 Hertz: Samsungs neues Display ist heller als alles, was je in einem Handy steckte"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e020eb11bcae501e",
+    "label": "ИИ сожрал кэш: Oracle потратит ещё $700 млн на новые сокращения",
+    "min_similarity": 0.7688348293304443,
+    "evidence": [
+      {
+        "id": 5947,
+        "title": "ИИ сожрал кэш: Oracle потратит ещё $700 млн на новые сокращения"
+      },
+      {
+        "id": 16893,
+        "title": "Oracle потратит ещё $700 млн на увольнение сотрудников"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9e28068d73dfc67f",
+    "label": "Wiz警告3個JFrog Artifactory嚴重漏洞遭積極利用，部分漏洞被串連形成攻擊鏈",
+    "min_similarity": 0.7547571659088135,
+    "evidence": [
+      {
+        "id": 8482,
+        "title": "Wiz警告3個JFrog Artifactory嚴重漏洞遭積極利用，部分漏洞被串連形成攻擊鏈"
+      },
+      {
+        "id": 8483,
+        "title": "美國警告ConnectWise ScreenConnect、JFrog Artifactory漏洞遭積極利用"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6cd567d198fc1aef",
+    "label": "OpenAI, Anthropic ve xAI'dan ortak mesaj: Yapay zeka yarışı yavaşlamalı",
+    "min_similarity": 0.7676224708557129,
+    "evidence": [
+      {
+        "id": 9441,
+        "title": "OpenAI, Anthropic ve xAI'dan ortak mesaj: Yapay zeka yarışı yavaşlamalı"
+      },
+      {
+        "id": 16803,
+        "title": "Anthropic, OpenAI oraz xAI jednym głosem: Niekontrolowana rywalizacja w AI zagrożeniem dla stabilności świata"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-94f4ad3a66d8e78d",
+    "label": "Revolut hit by data breach after fake government email scam",
+    "min_similarity": 0.779273271560669,
+    "evidence": [
+      {
+        "id": 25389,
+        "title": "Revolut hit by data breach after fake government email scam"
+      },
+      {
+        "id": 25901,
+        "title": "Revolut Confirms Data Breach Through Fake Government Requests"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0533700b22394847",
+    "label": "iPhone 18 Pro e Pro Max preordinabili con Fastweb e Vodafone: prezzi e disponibilità",
+    "min_similarity": 0.7607640027999878,
+    "evidence": [
+      {
+        "id": 14233,
+        "title": "Vodafone offers on iPhone 18 Pro & iPhone 18 Pro Max"
+      },
+      {
+        "id": 25731,
+        "title": "iPhone 18 Pro e Pro Max preordinabili con Fastweb e Vodafone: prezzi e disponibilità"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f5d771bc1d1d24d8",
+    "label": "Nu visar Kia upp den större skåpbilen PV7",
+    "min_similarity": 0.8236456513404846,
+    "evidence": [
+      {
+        "id": 3617,
+        "title": "Nu visar Kia upp den större skåpbilen PV7"
+      },
+      {
+        "id": 31594,
+        "title": "Elektrikli Kia PV7 görücüye çıkarıldı"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a00670478a7b3adc",
+    "label": "iPod Touch Released 19 Years Ago Today",
+    "min_similarity": 0.8434360027313232,
+    "evidence": [
+      {
+        "id": 1295,
+        "title": "iPod Touch Released 19 Years Ago Today"
+      },
+      {
+        "id": 33959,
+        "title": "Bundan Tam 19 Yıl Önce Piyasaya Sürülen iPod Touch'ın Bugün Kulağımıza Şaka Gibi Gelen Özellikleri"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5b9d65ae255d2dc7",
+    "label": "Bali police investigate after Australian man and children found dead in home",
+    "min_similarity": 0.8098465204238892,
+    "evidence": [
+      {
+        "id": 15038,
+        "title": "Australian man, children found dead in Bali in suspected double-murder suicide"
+      },
+      {
+        "id": 38306,
+        "title": "Bali police investigate after Australian man and children found dead in home"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-963e2f5492b63ee5",
+    "label": "Beeper: Universal Chat - Android App",
+    "min_similarity": 0.8373011350631714,
+    "evidence": [
+      {
+        "id": 16194,
+        "title": "Beeper - Multi Messenger"
+      },
+      {
+        "id": 16197,
+        "title": "Beeper: Universal Chat - Android App"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-beb60713c9860aa7",
+    "label": "Zimbabwe’s Internet Penetration Rate Rises to 87.39% in Q1 2026",
+    "min_similarity": 0.8150811195373535,
+    "evidence": [
+      {
+        "id": 17666,
+        "title": "Zimbabwe’s Internet Penetration Rate Rises to 87.39% in Q1 2026"
+      },
+      {
+        "id": 38095,
+        "title": "Zimbabwe Internet Users Hit 13.9 Million As Broadband Penetration Reaches 85.83% period for Q1 of 2026"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1f23f3b50f552e60",
+    "label": "A Cyberpunk 2077 a Battle.netre költözik, Geralt pedig a Diablo IV-be",
+    "min_similarity": 0.8074246644973755,
+    "evidence": [
+      {
+        "id": 5510,
+        "title": "Cyberpunk 2077 взяла курс на Battle.net, а Геральт станет варваром в Diablo IV"
+      },
+      {
+        "id": 14133,
+        "title": "Cyberpunk 2077 Comes to Battle.net!"
+      },
+      {
+        "id": 16900,
+        "title": "A Cyberpunk 2077 a Battle.netre költözik, Geralt pedig a Diablo IV-be"
+      },
+      {
+        "id": 39332,
+        "title": "Cyberpunk 2077 llegará a Battle.net y Geralt aparecerá en Diablo IV"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ae174264bd59de1e",
+    "label": "Open Cosmos: Britisches SpaceTech für Satelliten holt 300 Millionen Euro Investment",
+    "min_similarity": 0.7492316961288452,
+    "evidence": [
+      {
+        "id": 26975,
+        "title": "Open Cosmos: Britisches SpaceTech für Satelliten holt 300 Millionen Euro Investment"
+      },
+      {
+        "id": 33916,
+        "title": "Uydu altyapıları geliştiren Open Cosmos, 300 milyon euro yatırım aldı"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1a179dda7c5477b5",
+    "label": "李现喜提OPPO Find X10 Pro Max！网友：被演戏耽误的摄影师",
+    "min_similarity": 0.7750107049942017,
+    "evidence": [
+      {
+        "id": 8711,
+        "title": "李现喜提OPPO Find X10 Pro Max！网友：被演戏耽误的摄影师"
+      },
+      {
+        "id": 29855,
+        "title": "OPPO Find X10 Pro Max cho đặt trước ở Trung Quốc: 3 camera 200MP, quay chụp HDR siêu đỉnh, thiết kế mới lạ nổi bật"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1a5b52406db8cbdb",
+    "label": "Synapse Analytics secures $13 million Series A led by Partech",
+    "min_similarity": 0.8529889583587646,
+    "evidence": [
+      {
+        "id": 19894,
+        "title": "Partech leads $13 million investment in Synapse Analytics series A funding"
+      },
+      {
+        "id": 33893,
+        "title": "Synapse Analytics secures $13 million Series A led by Partech"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e937239cdaad1a33",
+    "label": "Sandra Funes convierte la naturaleza salvadoreña en moda",
+    "min_similarity": 0.8728346228599548,
+    "evidence": [
+      {
+        "id": 15803,
+        "title": "Sandra Funes lleva la naturaleza al arte textil salvadoreño"
+      },
+      {
+        "id": 15816,
+        "title": "Sandra Funes convierte la naturaleza salvadoreña en moda"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7d153e00c8e43142",
+    "label": "Xiaomi TV S Mini LED 2026 Series and New Mijia Washers Now Available in the Philippines",
+    "min_similarity": 0.7485472559928894,
+    "evidence": [
+      {
+        "id": 8782,
+        "title": "Xiaomi TV S Mini LED 2026, Mijia Front and Top Load Washer lands in PH"
+      },
+      {
+        "id": 17215,
+        "title": "Xiaomi TV S Mini LED 2026 Series and New Mijia Washers Now Available in the Philippines"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7938aad8127978af",
+    "label": "不止iPhone Duo！苹果未来有望推出Duo Max、Duo Mini",
+    "min_similarity": 0.7459754347801208,
+    "evidence": [
+      {
+        "id": 8614,
+        "title": "古尔曼预测：苹果未来会推出 iPhone Duo Max，还有 Duo SE 和 Duo Mini"
+      },
+      {
+        "id": 30328,
+        "title": "不止iPhone Duo！苹果未来有望推出Duo Max、Duo Mini"
+      },
+      {
+        "id": 33846,
+        "title": "اپل احتمالاً خانواده تاشو آیفون دوئو را گسترش می‌دهد؛ از Duo Max تا Duo Mini"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-617cff7c5d3c2ba5",
+    "label": "Condiciones secas y cálidas continuarán este lunes en gran parte de Honduras",
+    "min_similarity": 0.8359322547912598,
+    "evidence": [
+      {
+        "id": 15897,
+        "title": "Honduras tendrá condiciones secas y cálidas este lunes 14 de septiembre"
+      },
+      {
+        "id": 24472,
+        "title": "Condiciones secas y cálidas continuarán este lunes en gran parte de Honduras"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-046f7d0082d6591e",
+    "label": "WhatsApp'ta Durum Videolarını 2x Hızda İzleyebileceksiniz",
+    "min_similarity": 0.8343279361724854,
+    "evidence": [
+      {
+        "id": 10317,
+        "title": "WhatsApp Durum Videolarına 2x Hızlandırma Geliyor"
+      },
+      {
+        "id": 12533,
+        "title": "WhatsApp'ta Durum Videolarını 2x Hızda İzleyebileceksiniz"
+      },
+      {
+        "id": 33830,
+        "title": "WhatsApp, iPhone’da Durum videolarına basılı tutarak 2x hız ekliyor"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2bf01566bc0c3b83",
+    "label": "Azocibao respalda diálogo comercial entre RD y Estados Unidos",
+    "min_similarity": 0.858842670917511,
+    "evidence": [
+      {
+        "id": 23932,
+        "title": "Azocibao respalda diálogo comercial entre RD y Estados Unidos"
+      },
+      {
+        "id": 36356,
+        "title": "Azocibao respalda el diálogo comercial entre la República Dominicana y los Estados Unidos"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ad9a15f8896cf61d",
+    "label": "Se revela el “ingrediente letal” de la pastilla que habría provocado la muerte de Hayden Panettiere",
+    "min_similarity": 0.8112366199493408,
+    "evidence": [
+      {
+        "id": 23986,
+        "title": "Se revela el “ingrediente letal” de la pastilla que habría provocado la muerte de Hayden Panettiere"
+      },
+      {
+        "id": 24102,
+        "title": "Revelan que Hayden Panettiere tenía un \"traficante de drogas\" y lo que habría consumido el día de su muerte"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8a2b181baf80e43d",
+    "label": "Tego jeszcze nie było w Androidzie. HONOR Magic 9 dostanie kwadratowy aparat 55 MP",
+    "min_similarity": 0.8567066192626953,
+    "evidence": [
+      {
+        "id": 15508,
+        "title": "Tego jeszcze nie było w Androidzie. HONOR Magic 9 dostanie kwadratowy aparat 55 MP"
+      },
+      {
+        "id": 33803,
+        "title": "آنر Magic 9 با دوربین سلفی مربعی ۵۵ مگاپیکسلی می‌آید؛ اولین نمونه در دنیای اندروید"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e24ce19d2143cea3",
+    "label": "Más detalles del accidente aéreo en Miami que dejó muertos: Sobreviviente demanda a Amazon",
+    "min_similarity": 0.8494582176208496,
+    "evidence": [
+      {
+        "id": 2787,
+        "title": "Más detalles del accidente aéreo en Miami que dejó muertos: Sobreviviente demanda a Amazon"
+      },
+      {
+        "id": 23980,
+        "title": "Amazon rompe con 21 Air tras accidente aéreo mortal en Miami"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0b55bc443e3f50c2",
+    "label": "El Cartaginés de Amarini Villatoro es nuevo líder en Costa Rica",
+    "min_similarity": 0.7699391841888428,
+    "evidence": [
+      {
+        "id": 19816,
+        "title": "Tabla de posiciones del Apertura 2026: el fútbol de Costa Rica tiene nuevo líder tras la jornada 8"
+      },
+      {
+        "id": 23954,
+        "title": "El Cartaginés de Amarini Villatoro es nuevo líder en Costa Rica"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-69cde5bd83f7ba8c",
+    "label": "آپدیت HyperOS 4 شیائومی به نسخه جهانی رسید؛ این 7 گوشی وارد بتای جدید می‌شوند",
+    "min_similarity": 0.8198380470275879,
+    "evidence": [
+      {
+        "id": 9734,
+        "title": "عرضه بتای جهانی HyperOS 4 شیائومی آغاز شد؛ جزئیات، ویژگی‌ها و گوشی‌های پشتیبانی‌شده"
+      },
+      {
+        "id": 10293,
+        "title": "آپدیت HyperOS 4 شیائومی به نسخه جهانی رسید؛ این 7 گوشی وارد بتای جدید می‌شوند"
+      },
+      {
+        "id": 12616,
+        "title": "نسخه بتای HyperOS 4 شیائومی را کدام گوشی‌ها دریافت می‌‌کنند؟"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a0324a95362797ac",
+    "label": "Inside the Discussions at AI Companies Over a Superintelligence Doomsday",
+    "min_similarity": 0.788282036781311,
+    "evidence": [
+      {
+        "id": 1717,
+        "title": "Inside the Discussions at AI Companies Over a Superintelligence Doomsday"
+      },
+      {
+        "id": 36310,
+        "title": "Power, Profit, Superintelligence: The Three-Way War for Control of AI"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4e27edeb7ac2789a",
+    "label": "Iberojet inicia operaciones con vuelos directos de España a El Salvador y viceversa",
+    "min_similarity": 0.7946334481239319,
+    "evidence": [
+      {
+        "id": 15809,
+        "title": "Iberojet llega este lunes a El Salvador con vuelo directo desde España"
+      },
+      {
+        "id": 15842,
+        "title": "Iberojet inaugura conexión aérea entre El Salvador y Europa"
+      },
+      {
+        "id": 23814,
+        "title": "Iberojet inicia operaciones con vuelos directos de España a El Salvador y viceversa"
+      },
+      {
+        "id": 23863,
+        "title": "Iberojet inaugura operaciones en El Salvador con conexiones directas a Madrid y Barcelona"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ae445b5d45234aab",
+    "label": "Встречайте iPhone Duo Max",
+    "min_similarity": 0.7877339124679565,
+    "evidence": [
+      {
+        "id": 6330,
+        "title": "Встречайте iPhone Duo Max"
+      },
+      {
+        "id": 10305,
+        "title": "Apple iPhone Duo Max için Çalışmalar Başladı"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-96a9d0935cc57a76",
+    "label": "Honor Robot Phone rezistă la îndoire, dar brațul camerei este un punct vulnerabil",
+    "min_similarity": 0.7786310315132141,
+    "evidence": [
+      {
+        "id": 5930,
+        "title": "Honor Robot Phone rezistă la îndoire, dar brațul camerei este un punct vulnerabil"
+      },
+      {
+        "id": 29102,
+        "title": "Honor Robot Phone v testu odolnosti: Phone je na tom lépe než Robot"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7803f64400a1eb42",
+    "label": "Revolut potwierdza wyciek danych klientów. Oszust wykorzystał do tego prawdziwą domenę rządową",
+    "min_similarity": 0.7936649322509766,
+    "evidence": [
+      {
+        "id": 27266,
+        "title": "Wyciek danych w Revolut. Skradziono dane klientów"
+      },
+      {
+        "id": 28956,
+        "title": "Revolut potwierdza wyciek danych klientów. Oszust wykorzystał do tego prawdziwą domenę rządową"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3b5ef9e036613448",
+    "label": "Zorunlu Trafik Sigortasında Yeni Dönem",
+    "min_similarity": 0.7869261503219604,
+    "evidence": [
+      {
+        "id": 31220,
+        "title": "Zorunlu trafik sigortasında yeni tarife başladı: Prim farkı 6 kata ulaştı"
+      },
+      {
+        "id": 31745,
+        "title": "Zorunlu Trafik Sigortasında Yeni Dönem"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ff3d9849d8ea9973",
+    "label": "На много лет раньше ожидаемого: SpaceX начнет запуск в космос ИИ-суперкомпьютеров Nvidia в 2027 году",
+    "min_similarity": 0.8812298774719238,
+    "evidence": [
+      {
+        "id": 6557,
+        "title": "На много лет раньше ожидаемого: SpaceX начнет запуск в космос ИИ-суперкомпьютеров Nvidia в 2027 году"
+      },
+      {
+        "id": 28907,
+        "title": "SpaceX отправит ИИ-компьютеры NVIDIA на орбиту в 2027 году"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-da2dfc82ef700230",
+    "label": "TiVo launches Agent TiVo for AI entertainment discovery",
+    "min_similarity": 0.9999997615814209,
+    "evidence": [
+      {
+        "id": 35188,
+        "title": "TiVo launches Agent TiVo for AI entertainment discovery"
+      },
+      {
+        "id": 35198,
+        "title": "TiVo launches Agent TiVo for AI entertainment discovery"
+      },
+      {
+        "id": 35242,
+        "title": "TiVo launches Agent TiVo for AI entertainment discovery"
+      },
+      {
+        "id": 35278,
+        "title": "TiVo launches Agent TiVo for AI entertainment discovery"
+      },
+      {
+        "id": 35288,
+        "title": "TiVo launches Agent TiVo for AI entertainment discovery"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-701c825856d2f5a9",
+    "label": "Salesforce launches AI agents for business workflows",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 35187,
+        "title": "Salesforce launches AI agents for business workflows"
+      },
+      {
+        "id": 35197,
+        "title": "Salesforce launches AI agents for business workflows"
+      },
+      {
+        "id": 35277,
+        "title": "Salesforce launches AI agents for business workflows"
+      },
+      {
+        "id": 35287,
+        "title": "Salesforce launches AI agents for business workflows"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3a0032a4a88e66c5",
+    "label": "iPhone 18 Pro et Pro Max : voici toutes les offres pour les précommander au meilleur prix",
+    "min_similarity": 0.7669479846954346,
+    "evidence": [
+      {
+        "id": 3714,
+        "title": "iPhone 18 Pro et Pro Max : voici toutes les offres pour les précommander au meilleur prix"
+      },
+      {
+        "id": 23087,
+        "title": "iPhone 18 Pro vs. iPhone 18 Pro Max Buyer's Guide"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0aa70b3c5b26b3cb",
+    "label": "Quá hot: Giá tăng nhưng người Việt vẫn chi ra 300 tỷ để cọc iPhone mới",
+    "min_similarity": 0.7876187562942505,
+    "evidence": [
+      {
+        "id": 8288,
+        "title": "Quá hot: Giá tăng nhưng người Việt vẫn chi ra 300 tỷ để cọc iPhone mới"
+      },
+      {
+        "id": 8858,
+        "title": "Người Việt vung hơn 300 tỷ đồng chỉ để 'giữ chỗ' iPhone 18 Pro Max trong một đêm"
+      },
+      {
+        "id": 8861,
+        "title": "Quá hot: Giá tăng nhưng người Việt vẫn chi ra 300 tỷ để cọc iPhone mới"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-148f5c32e3eb0a7b",
+    "label": "Galaxy S27 Pro and S27 Ultra to get big OLED upgrades",
+    "min_similarity": 0.7595263719558716,
+    "evidence": [
+      {
+        "id": 13230,
+        "title": "Galaxy S27 Pro and S27 Ultra to get big OLED upgrades"
+      },
+      {
+        "id": 22954,
+        "title": "Samsung’s Galaxy S27 Pro And Ultra May Get A Major OLED Power-Up"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-073ddc04926ccacb",
+    "label": "Най-новaта актуализация на Windows 11 води до загуба на звука при някои компютри, призна Microsoft",
+    "min_similarity": 0.7609341144561768,
+    "evidence": [
+      {
+        "id": 8327,
+        "title": "Windows 11のアップデートにより一部のPCで音声出力が停止する問題が発生する"
+      },
+      {
+        "id": 27222,
+        "title": "Microsoft признала, что свежее обновление Windows 11 убивает звук на некоторых ПК"
+      },
+      {
+        "id": 28283,
+        "title": "Най-новaта актуализация на Windows 11 води до загуба на звука при някои компютри, призна Microsoft"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-fa410df156759fc1",
+    "label": "荣耀Magic9超能版首发11000mAh电池：史上电量最大的Magic旗舰",
+    "min_similarity": 0.8078335523605347,
+    "evidence": [
+      {
+        "id": 8591,
+        "title": "荣耀 Magic9 超能版手机规格曝光：第五代骁龙 8 至尊版处理器，11000mAh 电池"
+      },
+      {
+        "id": 8620,
+        "title": "刷新行业纪录：荣耀 Magic9 超能版手机官宣搭载 11000mAh 超大容量青海湖电池"
+      },
+      {
+        "id": 8694,
+        "title": "荣耀Magic9超能版首发11000mAh电池：史上电量最大的Magic旗舰"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-bd6d5fe88b7e7b54",
+    "label": "Apple desenvolve controle de jogo para iPhone sob marca Beats",
+    "min_similarity": 0.8645321130752563,
+    "evidence": [
+      {
+        "id": 5927,
+        "title": "De la căști la gaming: Apple ar pregăti controllere de gaming sub marca Beats"
+      },
+      {
+        "id": 18534,
+        "title": "Apple pode lançar controle para games no iPhone da marca Beats"
+      },
+      {
+        "id": 38810,
+        "title": "Apple desenvolve controle de jogo para iPhone sob marca Beats"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5d48135922addd8c",
+    "label": "На Wildberries теперь можно торговаться: на товары можно получить скидку до 35%",
+    "min_similarity": 0.8154394626617432,
+    "evidence": [
+      {
+        "id": 28057,
+        "title": "Wildberries разрешил торговаться. Можно выпросить огромную скидку!"
+      },
+      {
+        "id": 28229,
+        "title": "На Wildberries теперь можно торговаться: на товары можно получить скидку до 35%"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-08e288b4c0100b9f",
+    "label": "Craig Federighi admits iPhone Duo may replace iPads for some users",
+    "min_similarity": 0.8167314529418945,
+    "evidence": [
+      {
+        "id": 16653,
+        "title": "Craig Federighi, directivo de Apple, responde a la gran duda del iPhone Duo: ¿puede sustituir al iPad?"
+      },
+      {
+        "id": 22341,
+        "title": "Craig Federighi admits iPhone Duo may replace iPads for some users"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9f4863a2b71c8619",
+    "label": "Obama Urges Democrats to Build Clear AI Agenda as Trump Rejects Slowdown Calls",
+    "min_similarity": 0.792304277420044,
+    "evidence": [
+      {
+        "id": 19651,
+        "title": "Barack Obama pide que regular la IA sea un tema central en las campañas de los demócratas"
+      },
+      {
+        "id": 22301,
+        "title": "Obama Urges Democrats to Build Clear AI Agenda as Trump Rejects Slowdown Calls"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ddd99f77c3dacfbb",
+    "label": "O truque escondido no Windows 11 para desbloquear o desempenho máximo do PC",
+    "min_similarity": 0.7586183547973633,
+    "evidence": [
+      {
+        "id": 4787,
+        "title": "O truque escondido no Windows 11 para desbloquear o desempenho máximo do PC"
+      },
+      {
+        "id": 28078,
+        "title": "Не поспішайте з оновленням Windows 11: які функції ПК вийшли з ладу"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2614e8017497ef6a",
+    "label": "Sam Altman: &quot;OpenAI, 2026'da halka arz gerçekleştirmeyecek&quot;",
+    "min_similarity": 0.8088897466659546,
+    "evidence": [
+      {
+        "id": 12509,
+        "title": "Sam Altman: &quot;OpenAI, 2026'da halka arz gerçekleştirmeyecek&quot;"
+      },
+      {
+        "id": 31224,
+        "title": "Sam Altman açıkladı: OpenAI bu yıl halka arz olmayacak"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6375b616bc09521b",
+    "label": "Regulă unică în UE pentru rețelele sociale: Comisia Europeană pregătește KIDS Act și limite de vârstă pentru minori",
+    "min_similarity": 0.8837997913360596,
+    "evidence": [
+      {
+        "id": 26491,
+        "title": "EU KIDS Act, a nova lei europeia para proteger os menores de 15 anos nas redes sociais"
+      },
+      {
+        "id": 27966,
+        "title": "Regulă unică în UE pentru rețelele sociale: Comisia Europeană pregătește KIDS Act și limite de vârstă pentru minori"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a09e970a9cd16885",
+    "label": "Kia PV7: Der elektrische Konkurrent für Ford E-Transit und VW e-Crafter",
+    "min_similarity": 0.8099184036254883,
+    "evidence": [
+      {
+        "id": 25746,
+        "title": "Kia PV7: Der elektrische Konkurrent für Ford E-Transit und VW e-Crafter"
+      },
+      {
+        "id": 31218,
+        "title": "Ford E-Transit Custom'a Koreli rakip: 460 km menzilli Kia PV7!"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-28b76cafa685692a",
+    "label": "Voilà à quoi ressemble la nouvelle carte du remake de Zelda Ocarina of Time",
+    "min_similarity": 0.8510357141494751,
+    "evidence": [
+      {
+        "id": 4757,
+        "title": "Voilà à quoi ressemble la nouvelle carte du remake de Zelda Ocarina of Time"
+      },
+      {
+        "id": 19653,
+        "title": "“The Legend of Zelda: Ocarina of Time” revela su fecha de salida en nuevo tráiler"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0a9d736fe2580e5d",
+    "label": "Haïti - Économie : Cadre comptable des collectivités territoriales",
+    "min_similarity": 0.8205610513687134,
+    "evidence": [
+      {
+        "id": 19780,
+        "title": "Haïti - Économie : Cadre comptable des collectivités territoriales"
+      },
+      {
+        "id": 39599,
+        "title": "Haïti - Actualité : Zapping"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ec14a1dc4ad9c2d0",
+    "label": "ONU lanza una dura advertencia sobre la IA: “Todos los derechos humanos están en riesgo”",
+    "min_similarity": 0.8396366834640503,
+    "evidence": [
+      {
+        "id": 19643,
+        "title": "La ONU advierte que todos los derechos humanos “están en riesgo” ante el avance de la IA"
+      },
+      {
+        "id": 24286,
+        "title": "ONU advierte que la inteligencia artificial pone en riesgo los derechos humanos"
+      },
+      {
+        "id": 39525,
+        "title": "ONU lanza una dura advertencia sobre la IA: “Todos los derechos humanos están en riesgo”"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4661d89c6e21bcdf",
+    "label": "Bitcoin y Ethereum: así cotizan las principales criptomonedas este lunes 14 de septiembre",
+    "min_similarity": 0.8452183604240417,
+    "evidence": [
+      {
+        "id": 8075,
+        "title": "The Fed is the real crypto story, Bitcoin and Ethereum are just following"
+      },
+      {
+        "id": 19426,
+        "title": "Bitcoin y Ethereum: así cotizan las principales criptomonedas este lunes 14 de septiembre"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c6fb73cc3275dfac",
+    "label": "I got a first look at Smeg's debut air fryer — here’s why it was worth the wait",
+    "min_similarity": 0.7823933362960815,
+    "evidence": [
+      {
+        "id": 4887,
+        "title": "Smeg just launched the most stylish air fryer I’ve ever seen – but it’s the price that will shock you"
+      },
+      {
+        "id": 39877,
+        "title": "I got a first look at Smeg's debut air fryer — here’s why it was worth the wait"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5de077026b71cd3f",
+    "label": "Honor Magic 9 Super Edition tem especificações vazadas com chip Snapdragon e bateria gigante",
+    "min_similarity": 0.7547227144241333,
+    "evidence": [
+      {
+        "id": 8671,
+        "title": "HONOR Magic 9 全系規格曝光：標準版搭 2 億像素雙鏡、超能版塞 11,000mAh 大電池配主動風扇！"
+      },
+      {
+        "id": 10102,
+        "title": "Honor Magic 9, Magic 9 Pro ve 11.000 mAh bataryalı Magic 9 Super Edition için kilit teknik detaylar sızdırıldı"
+      },
+      {
+        "id": 10303,
+        "title": "Honor Magic 9 Super Edition 11.000mAh Batarya ile Geliyor"
+      },
+      {
+        "id": 16710,
+        "title": "La serie Magic 9 di HONOR avrà anche una Super Edition con una batteria enorme"
+      },
+      {
+        "id": 38674,
+        "title": "Honor Magic 9 Super Edition tem especificações vazadas com chip Snapdragon e bateria gigante"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c615ee7ae5d3a59d",
+    "label": "Un producător chinez pretinde că a montat 96GB de memorie pe GeForce RTX 5090",
+    "min_similarity": 0.7809176445007324,
+    "evidence": [
+      {
+        "id": 5929,
+        "title": "Un producător chinez pretinde că a montat 96GB de memorie pe GeForce RTX 5090"
+      },
+      {
+        "id": 6517,
+        "title": "Ядер, как у GeForce RTX 5090, а памяти в 2,5 раза больше. Представлена Nvidia RTX PRO 5500, и у неё очень нетипичная шина памяти"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-021afe618afe1723",
+    "label": "Estrellas confirman importarán al lanzador Trevor Bauer",
+    "min_similarity": 0.7711580991744995,
+    "evidence": [
+      {
+        "id": 23883,
+        "title": "Estrellas hacen oficial contratación del lanzador Trevor Bauer"
+      },
+      {
+        "id": 36618,
+        "title": "Estrellas confirman importarán al lanzador Trevor Bauer"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8b93c6968c0665fa",
+    "label": "Microsoft нарешті виправляє низку багів Windows 11 із Bluetooth: що саме",
+    "min_similarity": 0.7915252447128296,
+    "evidence": [
+      {
+        "id": 6370,
+        "title": "Microsoft нарешті виправляє низку багів Windows 11 із Bluetooth: що саме"
+      },
+      {
+        "id": 27404,
+        "title": "Microsoft konačno popravlja Bluetooth u Windows 11 sistemu – devet izmena rešava prekide, kašnjenja i probleme sa povezivanjem"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-82e3b8a1992382a5",
+    "label": "«Дедвуд в космосе»: перспективный шутер с открытым миром StarCraft от бывшего продюсера Far Cry не станет игрой-сервисом",
+    "min_similarity": 0.7471254467964172,
+    "evidence": [
+      {
+        "id": 27223,
+        "title": "«Дедвуд в космосе»: перспективный шутер с открытым миром StarCraft от бывшего продюсера Far Cry не станет игрой-сервисом"
+      },
+      {
+        "id": 37388,
+        "title": "Бывший руководитель Far Cry возглавил разработку шутера по StarCraft"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2b351ef6337387d9",
+    "label": "POCO F9 Ultra vs POCO F8 Ultra: o que mudou de uma geração para outra",
+    "min_similarity": 0.7508094310760498,
+    "evidence": [
+      {
+        "id": 3567,
+        "title": "Análisis del POCO F9 Ultra: la última bestia de Xiaomi sube de precio pero conquista por su enorme batería y rendimiento"
+      },
+      {
+        "id": 18493,
+        "title": "POCO F9 Ultra vs POCO F8 Ultra: o que mudou de uma geração para outra"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b54bdeaf80b15cc5",
+    "label": "Tandem Health Raises $100 Million in the Scaleup Europe Fund’s First Healthtech Deal",
+    "min_similarity": 0.85117506980896,
+    "evidence": [
+      {
+        "id": 4843,
+        "title": "EU Scaleup Fund leads $100m Tandem Health raise"
+      },
+      {
+        "id": 4978,
+        "title": "Tandem Health raises $100M from Scaleup Europe Fund to develop an AI clinic operating system"
+      },
+      {
+        "id": 5258,
+        "title": "Tandem Health Raises $100 Million in the Scaleup Europe Fund’s First Healthtech Deal"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-49c0d17637b23687",
+    "label": "Salam and Dell Technologies Sign MoU to Expand Cloud and Edge AI in Saudi Arabia",
+    "min_similarity": 0.8269391655921936,
+    "evidence": [
+      {
+        "id": 9486,
+        "title": "Salam and Dell to expand Cloud Infrastructure and Edge AI solutions across Saudi Arabia"
+      },
+      {
+        "id": 34719,
+        "title": "Salam and Dell Technologies Sign MoU to Expand Cloud and Edge AI in Saudi Arabia"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f4d11a8b5d397af2",
+    "label": "Take a seat and press play on the latest episode of Two Blokes Talking Electric Cars – the EV podcast",
+    "min_similarity": 0.8000905513763428,
+    "evidence": [
+      {
+        "id": 15113,
+        "title": "Take a seat and press play on the latest episode of Two Blokes Talking Electric Cars – the EV podcast"
+      },
+      {
+        "id": 18220,
+        "title": "The Two Blokes Talking Electric Cars podcast – Episode # 137 – Connected Car Security fears and plans"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9fa01528a9b4bafc",
+    "label": "Apple is making game controllers — and they'll carry the Beats name",
+    "min_similarity": 0.8078901171684265,
+    "evidence": [
+      {
+        "id": 6224,
+        "title": "Apple is making game controllers — and they'll carry the Beats name"
+      },
+      {
+        "id": 22956,
+        "title": "Apple May Unleash Beats-Branded iPhone Controllers In Big Gaming Pivot"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6b084b6c57775891",
+    "label": "WoW Forever : c’est quoi ce « troisième » jeu World of Warcraft exactement ?",
+    "min_similarity": 0.8399057984352112,
+    "evidence": [
+      {
+        "id": 4760,
+        "title": "WoW Forever : c’est quoi ce « troisième » jeu World of Warcraft exactement ?"
+      },
+      {
+        "id": 27066,
+        "title": "World of Warcraft: Forever - Blizzard baut das Original drastisch aus"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b705c7fb2ea1c782",
+    "label": "Sporting se da un festín de goles a costa de Saprissa",
+    "min_similarity": 0.8287773132324219,
+    "evidence": [
+      {
+        "id": 2255,
+        "title": "Sporting se da un festín de goles a costa de Saprissa"
+      },
+      {
+        "id": 19832,
+        "title": "Vea los goles de Saprissa y Sporting"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c0ff32e24745001a",
+    "label": "First Table raises NZD $12 million for global growth",
+    "min_similarity": 0.8211784958839417,
+    "evidence": [
+      {
+        "id": 14016,
+        "title": "First Table raises NZD $12 million for global growth"
+      },
+      {
+        "id": 14026,
+        "title": "First Table raises NZD $12 million for global growth"
+      },
+      {
+        "id": 14200,
+        "title": "First Table raises NZD $12 million for global growth"
+      },
+      {
+        "id": 27043,
+        "title": "First Table raises $12 million NZD to fuel expansion across the UK and Ireland"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-d88cc19dc2b5648b",
+    "label": "Apple s’apprêterait à lancer sa propre manette de jeu pour iPhone",
+    "min_similarity": 0.821427047252655,
+    "evidence": [
+      {
+        "id": 3224,
+        "title": "Apple s’apprêterait à lancer sa propre manette de jeu pour iPhone"
+      },
+      {
+        "id": 3355,
+        "title": "Apple préparerait en secret sa première manette de jeu pour iPhone"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b2ac9bea3c02314e",
+    "label": "Marcelo Gallardo llega al banquillo de la selección de Ecuador",
+    "min_similarity": 0.8492081165313721,
+    "evidence": [
+      {
+        "id": 2204,
+        "title": "Marcelo Gallardo, multicampeón con River Plate, dirigirá a la selección de Ecuador"
+      },
+      {
+        "id": 2350,
+        "title": "Marcelo Gallardo se hace cargo de la Selección de Ecuador"
+      },
+      {
+        "id": 2861,
+        "title": "Marcelo Gallardo llega al banquillo de la selección de Ecuador"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-aedff0e09f4bc66f",
+    "label": "IA está cada vez mais difícil de controlar? Agentes levantam preocupação no sector",
+    "min_similarity": 0.7666451930999756,
+    "evidence": [
+      {
+        "id": 18721,
+        "title": "Inteligência artificial está cada vez mais difícil de se controlar. Até quando os humanos vão se manter no comando?"
+      },
+      {
+        "id": 34574,
+        "title": "IA está cada vez mais difícil de controlar? Agentes levantam preocupação no sector"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-341707fe37d0ed70",
+    "label": "Oppo A7 Pro Max with ultra-thin 10,000mAh battery now available for pre-order in Malaysia",
+    "min_similarity": 0.7604483366012573,
+    "evidence": [
+      {
+        "id": 17360,
+        "title": "OPPO A7 Pro 5G and A7 Pro Max 5G Malaysia pre-order release - 50MP AI Cameras, 10,000mAh Battery and more"
+      },
+      {
+        "id": 30487,
+        "title": "Oppo A7 Pro Max with ultra-thin 10,000mAh battery now available for pre-order in Malaysia"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-132cc0e0b1feb132",
+    "label": "RD recibe más 8.5 millones de visitantes hasta agosto",
+    "min_similarity": 0.8334878087043762,
+    "evidence": [
+      {
+        "id": 2179,
+        "title": "RD supera 8.5 millones visitantes y marca otro récord turístico"
+      },
+      {
+        "id": 2369,
+        "title": "RD recibe más 8.5 millones de visitantes hasta agosto"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-31c58f35251bbbe3",
+    "label": "ロジの左手デバイスMX Creative Consoleが4割引、Amazonセールで1万9800円　新製品『AIコントローラ』の両手版",
+    "min_similarity": 0.8426663875579834,
+    "evidence": [
+      {
+        "id": 8421,
+        "title": "ロジクール製左手デバイス「MX クリエイティブ コンソール」がAmazonで安い！　ディスプレイキーとダイヤルパッドがセットで1万9800円"
+      },
+      {
+        "id": 30542,
+        "title": "ロジの左手デバイスMX Creative Consoleが4割引、Amazonセールで1万9800円　新製品『AIコントローラ』の両手版"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-53892664868e41e1",
+    "label": "Nestlé Türkiye’nin yeni CEO’su Bernie Stefan oldu",
+    "min_similarity": 0.8469799757003784,
+    "evidence": [
+      {
+        "id": 10109,
+        "title": "Nestlé Türkiye’nin yeni CEO’su Bernie Stefan oldu"
+      },
+      {
+        "id": 17474,
+        "title": "Nestlé Türkiye’ye yeni CEO"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-26de616c95428548",
+    "label": "Saudi Arabia among world’s fastest scaling data center markets as live IT power grows 57 percent",
+    "min_similarity": 0.8675928115844727,
+    "evidence": [
+      {
+        "id": 9356,
+        "title": "Saudi Arabia Emerges as One of the World’s Fastest-Growing Data Centre Markets"
+      },
+      {
+        "id": 17381,
+        "title": "Saudi Arabia among world’s fastest scaling data center markets as live IT power grows 57 percent"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-857fa926d476a0e4",
+    "label": "Rithum launches home app for remote heating control",
+    "min_similarity": 1.000000238418579,
+    "evidence": [
+      {
+        "id": 13908,
+        "title": "Rithum launches home app for remote heating control"
+      },
+      {
+        "id": 14067,
+        "title": "Rithum launches home app for remote heating control"
+      },
+      {
+        "id": 15195,
+        "title": "Rithum launches home app for remote heating control"
+      },
+      {
+        "id": 15209,
+        "title": "Rithum launches home app for remote heating control"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-94b403295a18dc95",
+    "label": "Tesla promete revelar o novo Roadster quase nove anos depois do anúncio original",
+    "min_similarity": 0.8785407543182373,
+    "evidence": [
+      {
+        "id": 5716,
+        "title": "Tesla najavila predstavljanje nove generacije Roadstera"
+      },
+      {
+        "id": 26540,
+        "title": "Tesla promete revelar o novo Roadster quase nove anos depois do anúncio original"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6cc5381e78030d2c",
+    "label": "Il trucco semplicissimo per installare Windows 11  senza internet né account Microsoft setup",
+    "min_similarity": 0.8665444850921631,
+    "evidence": [
+      {
+        "id": 16684,
+        "title": "Il trucco semplicissimo per installare Windows 11  senza internet né account Microsoft setup"
+      },
+      {
+        "id": 26514,
+        "title": "Windows 11: semplice trucco per l’installazione senza account"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-03579dc028438e79",
+    "label": "Revolut abbocca alla falsa richiesta governativa, rubati i dati di alcuni clienti",
+    "min_similarity": 0.8503338098526001,
+    "evidence": [
+      {
+        "id": 25737,
+        "title": "Revolut abbocca alla falsa richiesta governativa, rubati i dati di alcuni clienti"
+      },
+      {
+        "id": 26506,
+        "title": "Revolut: dati dei clienti ad una falsa agenzia governativa"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-56dc29ef06b5b729",
+    "label": "French Days 2026 : plus que quelques heures pour saisir ces ultimes offres tech",
+    "min_similarity": 0.8135546445846558,
+    "evidence": [
+      {
+        "id": 3712,
+        "title": "French Days 2026 : plus que quelques heures pour saisir ces ultimes offres tech"
+      },
+      {
+        "id": 25446,
+        "title": "Cdiscount termine les French Days en beauté avec ces 8 offres tech"
+      },
+      {
+        "id": 26466,
+        "title": "Dernier jour des French Days : on fait le tri en direct dans les ultimes offres encore disponibles"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1f73581460b470c6",
+    "label": "BlizzCon 2026 announces World of Warcraft: Forever and Diablo V",
+    "min_similarity": 0.8827724456787109,
+    "evidence": [
+      {
+        "id": 8156,
+        "title": "BlizzCon 2026 announces World of Warcraft: Forever and Diablo V"
+      },
+      {
+        "id": 26457,
+        "title": "On a essayé à World of Warcraft Forever en avant-première à la BlizzCon 2026"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2b092d16af33a756",
+    "label": "클라우드·엣지 보안 거점을 한국에…F5, 분산 클라우드 PoP 신설",
+    "min_similarity": 0.9723074436187744,
+    "evidence": [
+      {
+        "id": 9169,
+        "title": "클라우드·엣지 보안 거점을 한국에…F5, 분산 클라우드 PoP 신설"
+      },
+      {
+        "id": 17150,
+        "title": "F5, 분산 클라우드 서비스 한국 신규 PoP 출범"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8f81cc8e019d9b23",
+    "label": "Emmy Awards 2026 heute Nacht live: So schaut ihr die Verleihung kostenlos - ganz ohne Abo",
+    "min_similarity": 0.8225338459014893,
+    "evidence": [
+      {
+        "id": 22864,
+        "title": "Emmy Awards 2026 livestream: How and when to watch"
+      },
+      {
+        "id": 26430,
+        "title": "Emmy Awards 2026 heute Nacht live: So schaut ihr die Verleihung kostenlos - ganz ohne Abo"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ef7cc9154e81f644",
+    "label": "تقابل صنعت E-commerce و FMCG؛ آیا تجارت الکترونیک صنعت کالاهای تندمصرف را دچار چالش می‌کند؟",
+    "min_similarity": 0.9999997615814209,
+    "evidence": [
+      {
+        "id": 31069,
+        "title": "تقابل صنعت E-commerce و FMCG؛ آیا تجارت الکترونیک صنعت کالاهای تندمصرف را دچار چالش می‌کند؟"
+      },
+      {
+        "id": 34020,
+        "title": "تقابل صنعت E-commerce و FMCG؛ آیا تجارت الکترونیک صنعت کالاهای تندمصرف را دچار چالش می‌کند؟"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-648294cb56bfd658",
+    "label": "기아, 대형 PBV 'PV7' 첫 공개…유럽 전동화 밴 안방 정조준",
+    "min_similarity": 0.8689827919006348,
+    "evidence": [
+      {
+        "id": 8127,
+        "title": "기아, 대형 PBV 'PV7' 첫 공개…유럽 전동화 밴 안방 정조준"
+      },
+      {
+        "id": 17099,
+        "title": "기아, ‘PV7’ 첫 공개…대형 PBV로 전동화 영토 넓힌다"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-43887b4199a13e50",
+    "label": "Logran emular Demon´s Souls Remake de PS5 en PC a 30 FPS",
+    "min_similarity": 0.7974539995193481,
+    "evidence": [
+      {
+        "id": 26398,
+        "title": "Logran emular Demon´s Souls Remake de PS5 en PC a 30 FPS"
+      },
+      {
+        "id": 39333,
+        "title": "El emulador KyTyPS5 ya corre Demon’s Souls Remake a 30 FPS en PC"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-926b7335b3eb9f25",
+    "label": "Bocoran Spesifikasi Lenovo Googlebook 15, Core Ultra 5 325 dan RAM hingga 32GB",
+    "min_similarity": 0.7741731405258179,
+    "evidence": [
+      {
+        "id": 25105,
+        "title": "Core Ultra, 1,29 kg, OLED et trackpad haptique : le Lenovo Googlebook 15 se détaille avant l'heure"
+      },
+      {
+        "id": 30228,
+        "title": "Bocoran Spesifikasi Lenovo Googlebook 15, Core Ultra 5 325 dan RAM hingga 32GB"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-323529a29815fb3b",
+    "label": "OPPO Find X10 Pro Max: Três câmaras de 200MP chegam?",
+    "min_similarity": 0.7700412273406982,
+    "evidence": [
+      {
+        "id": 6524,
+        "title": "Три датчика по 200 Мп, камера Lumo, Hasselblad и 8K Log: фотофлагман Oppo Find X10 Pro Max показали до выхода"
+      },
+      {
+        "id": 6554,
+        "title": "Камеры по 200 Мп, аккумуляторы до 8 000 мА•ч и рамка 1 мм. Oppo раскрыла дизайн Find X10, презентация состоится 22 сентября"
+      },
+      {
+        "id": 10103,
+        "title": "OPPO Find X10 iki, Find X10 Pro Max ise üç farklı 200 megapiksel kamerayla geliyor"
+      },
+      {
+        "id": 26328,
+        "title": "OPPO Find X10 Pro Max: Três câmaras de 200MP chegam?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-bf9af9583e2fad22",
+    "label": "Представлена первая внешняя док-станцию для видеокарт с Thunderbolt 5 от Ugreen",
+    "min_similarity": 0.7620360851287842,
+    "evidence": [
+      {
+        "id": 6530,
+        "title": "Представлена первая внешняя док-станцию для видеокарт с Thunderbolt 5 от Ugreen"
+      },
+      {
+        "id": 16863,
+        "title": "Ugreen выпустила док-станцию LinkStation Pro с поддержкой Thunderbolt 5 и более крупных видеокарт"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7056f53b6787516c",
+    "label": "Google DeepMind mapuje ludzkie DNA: baza 9 mld mutacji o rozmiarze petabajta",
+    "min_similarity": 0.7829330563545227,
+    "evidence": [
+      {
+        "id": 4820,
+        "title": "DeepMind lança mapa preditivo que cobre todas as mutações possíveis no genoma humano"
+      },
+      {
+        "id": 16805,
+        "title": "Google DeepMind mapuje ludzkie DNA: baza 9 mld mutacji o rozmiarze petabajta"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-381954849e985436",
+    "label": "Salesforce เปิดตัว Trusted Enterprise AI Harness รากฐานใหม่สำหรับการใช้งาน AI ในองค์กร [PR]",
+    "min_similarity": 0.7805020809173584,
+    "evidence": [
+      {
+        "id": 9028,
+        "title": "Salesforce เปิดตัว Trusted Enterprise AI Harness รากฐานใหม่สำหรับการใช้งาน AI ในองค์กร [PR]"
+      },
+      {
+        "id": 9031,
+        "title": "Salesforce เปิดตัว Enterprise AI Harness และ AI Control Plane"
+      },
+      {
+        "id": 25749,
+        "title": "Salesforce Enterprise AI Harness: KI-Infrastruktur für Unternehmen"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-fc9e5e002815d5f2",
+    "label": "Honor Magic 9, Pro Max e Super Edition: svelati colori, configurazioni e specifiche tecniche",
+    "min_similarity": 0.8571835160255432,
+    "evidence": [
+      {
+        "id": 16687,
+        "title": "Honor Magic 9, Pro Max e Super Edition: svelati colori, configurazioni e specifiche tecniche"
+      },
+      {
+        "id": 25735,
+        "title": "Honor Magic 9 Pro Series, svelati colori, modelli e tagli di memoria"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e051820e49632d18",
+    "label": "专为赛道打造，法拉利发布 296 GT Modificata 跑车",
+    "min_similarity": 0.7621920704841614,
+    "evidence": [
+      {
+        "id": 8577,
+        "title": "专为赛道打造，法拉利发布 296 GT Modificata 跑车"
+      },
+      {
+        "id": 25733,
+        "title": "Ferrari 296 GT Modificata: è la più estrema di sempre"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a616b64738440391",
+    "label": "Sicherheitslücke in Klimaanlage: Midea Portasplit bekommt ein wichtiges Update",
+    "min_similarity": 0.9970636963844299,
+    "evidence": [
+      {
+        "id": 3858,
+        "title": "Sicherheitslücke in Klimaanlage: Midea Portasplit bekommt ein wichtiges Update"
+      },
+      {
+        "id": 25633,
+        "title": "Sicherheitslücke in der Klimaanlage: Midea Portasplit bekommt wichtiges Update"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-107d30a482e4937e",
+    "label": "Vier von fünf Smartphones verfehlen EU-Reparaturregeln",
+    "min_similarity": 0.9734146595001221,
+    "evidence": [
+      {
+        "id": 4721,
+        "title": "Vier von fünf Smartphones verfehlen laut Auswertung die EU-Reparaturregeln - das könnt ihr prüfen"
+      },
+      {
+        "id": 16543,
+        "title": "Vier von fünf Smartphones verfehlen EU-Reparaturregeln"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-695c28c787cb2801",
+    "label": "Huawei WATCH GT 7 Serisi Türkiye’de Satışa Çıktı",
+    "min_similarity": 0.8175593018531799,
+    "evidence": [
+      {
+        "id": 10100,
+        "title": "Huawei Watch GT 7 akıllı saat serisi Türkiye’de satışa sunuldu"
+      },
+      {
+        "id": 10310,
+        "title": "HUAWEI WATCH GT 7 Türkiye Fiyatı ve Özellikleri Belli Oldu"
+      },
+      {
+        "id": 33948,
+        "title": "Huawei WATCH GT 7 Serisi Türkiye’de Satışa Çıktı"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f15034cf502e1e2a",
+    "label": "ChatGPT sonrası dikkat çeken değişim: Başvurular hızla artıyor",
+    "min_similarity": 0.8971415758132935,
+    "evidence": [
+      {
+        "id": 9438,
+        "title": "ChatGPT sonrası dikkat çeken değişim: Başvurular hızla artıyor"
+      },
+      {
+        "id": 33946,
+        "title": "ChatGPT Sonrası Resmî Dilekçelerde Dev Artış: Başvurular Beş Katına Çıktı!"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3d611d85caa67826",
+    "label": "Windows Firewall Control 6.33.0.0",
+    "min_similarity": 0.8622087240219116,
+    "evidence": [
+      {
+        "id": 6587,
+        "title": "Windows Firewall Control 6.33.0.0"
+      },
+      {
+        "id": 16216,
+        "title": "Windows Firewall Control"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-65a83e7ee4d31a89",
+    "label": "VueScan",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 16186,
+        "title": "VueScan"
+      },
+      {
+        "id": 16187,
+        "title": "VueScan"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-76f34492d86938f5",
+    "label": "Zelda-Remake: Offizielle Hyrule-Karte zeigt, was Spieler Neues erwartet",
+    "min_similarity": 0.8537113666534424,
+    "evidence": [
+      {
+        "id": 27063,
+        "title": "Zelda-Remake: Offizielle Hyrule-Karte zeigt, was Spieler Neues erwartet"
+      },
+      {
+        "id": 29954,
+        "title": "Switch 2 Edisi 40 Tahun Zelda Ludes, Harga Scalper Tembus Rp35 Jutaan"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5e8b86449946fff2",
+    "label": "Samsung използва „Тим Кук“ в реклама на Galaxy Z Fold8",
+    "min_similarity": 0.8480927348136902,
+    "evidence": [
+      {
+        "id": 7013,
+        "title": "Samsung използва „Тим Кук“ в реклама на Galaxy Z Fold8"
+      },
+      {
+        "id": 29938,
+        "title": "マジで!? Galaxy Z Fold8の広告にまさかティム・クックが出てるって？"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-d2f0017ac0831cd0",
+    "label": "EN VIVO | Resultados del sorteo dominical de hoy de la Lotería Nacional de Panamá",
+    "min_similarity": 0.8402841091156006,
+    "evidence": [
+      {
+        "id": 16095,
+        "title": "EN VIVO | Resultados del sorteo dominical de hoy de la Lotería Nacional de Panamá"
+      },
+      {
+        "id": 16096,
+        "title": "VIDEO | Sorteo dominical de la Lotería Nacional de Panamá del 13 de septiembre"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-46efdedc7bb607ae",
+    "label": "El conflicto estructural de la migración haitiana y la mediación de las ONG frente al Gobierno dominicano",
+    "min_similarity": 0.7811561226844788,
+    "evidence": [
+      {
+        "id": 15792,
+        "title": "El conflicto estructural de la migración haitiana y la mediación de las ONG frente al Gobierno dominicano"
+      },
+      {
+        "id": 16024,
+        "title": "\"No dejen que los haitianos destruyan RD\", el llamado de una haitiana a los dominicanos"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-95622e6f12a18d24",
+    "label": "Elektrikli Tır Tesla Semi Avrupa Yollarına Çıkıyor: 550 Km Menzil",
+    "min_similarity": 0.7906621098518372,
+    "evidence": [
+      {
+        "id": 10315,
+        "title": "Elektrikli Tır Tesla Semi Avrupa Yollarına Çıkıyor: 550 Km Menzil"
+      },
+      {
+        "id": 25101,
+        "title": "Tesla Semi : les caractéristiques du camion en Europe se dévoilent"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6b72f6635bc1e047",
+    "label": "New Warnings About the Risks of AI to Humanity Revive a Long-Running Debate",
+    "min_similarity": 0.8576887845993042,
+    "evidence": [
+      {
+        "id": 23300,
+        "title": "New Warnings About the Risks of AI to Humanity Revive a Long-Running Debate"
+      },
+      {
+        "id": 25073,
+        "title": "Why are there concerns AI could threaten humanity, and how real are they?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-723e38da6c333a4e",
+    "label": "BRKZ secures $31 million to scale AI-powered construction procurement",
+    "min_similarity": 0.8821070194244385,
+    "evidence": [
+      {
+        "id": 30924,
+        "title": "BRKZ Secures $31 Million to Scale AI-Enabled Building Materials Procurement Across Saudi Arabia and the GCC"
+      },
+      {
+        "id": 33892,
+        "title": "BRKZ secures $31 million to scale AI-powered construction procurement"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8f6f28fecf0b3e19",
+    "label": "Honor تكشف تصميم وألوان سلسلة Magic9.. وإصدار Super Edition ببطارية ضخمة 11,000 مللي أمبير",
+    "min_similarity": 0.9338376522064209,
+    "evidence": [
+      {
+        "id": 7186,
+        "title": "Honor выпустит Honor Magic9 Super Edition с батареей на 11 000 мАч"
+      },
+      {
+        "id": 33874,
+        "title": "Honor تكشف تصميم وألوان سلسلة Magic9.. وإصدار Super Edition ببطارية ضخمة 11,000 مللي أمبير"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b00fa144622e0dac",
+    "label": "Xiaomi выпустила в Китае доступный монитор Redmi A27U 2027 — с 4K и 120 Гц",
+    "min_similarity": 0.8482779264450073,
+    "evidence": [
+      {
+        "id": 8592,
+        "title": "小米 REDMI 显示器 A27U Type-C 120Hz 2027 今日首销：4K 双模低反屏，1699 元"
+      },
+      {
+        "id": 15516,
+        "title": "Xiaomi выпустила в Китае доступный монитор Redmi A27U 2027 — с 4K и 120 Гц"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ad860a2732ea7f43",
+    "label": "Alexander Zverev se corona en el US Open y alarga la maldición de EE.UU.",
+    "min_similarity": 0.7643222212791443,
+    "evidence": [
+      {
+        "id": 2205,
+        "title": "Alexander Zverev se corona en el US Open y alarga la maldición de EE.UU."
+      },
+      {
+        "id": 15455,
+        "title": "US Open 2026| Alexander Zverev se sienta en el trono del abierto estadounidense por primera vez"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1d1f4b1ef800c0a6",
+    "label": "Entre lanchas y cocodrilos: crece la preocupación en Puerto Coquira tras ataque a pescador",
+    "min_similarity": 0.8083795309066772,
+    "evidence": [
+      {
+        "id": 2743,
+        "title": "MiAmbiente hace llamado de atención a pescadores de Coquira que alimentan a los cocodrilos"
+      },
+      {
+        "id": 15329,
+        "title": "Entre lanchas y cocodrilos: crece la preocupación en Puerto Coquira tras ataque a pescador"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-cb4064e2faf50c14",
+    "label": "City Rail Link finally opens: A century in the making, a fire on day one",
+    "min_similarity": 0.7612519264221191,
+    "evidence": [
+      {
+        "id": 15284,
+        "title": "City Rail Link finally opens: A century in the making, a fire on day one"
+      },
+      {
+        "id": 15287,
+        "title": "‘Tunnel, tunnel, tunnel’: on board the first train through the City Rail Link"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7575479ed306163d",
+    "label": "Savira launches free privacy tools for small firms",
+    "min_similarity": 0.8917882442474365,
+    "evidence": [
+      {
+        "id": 14236,
+        "title": "Savira Launches Free Privacy And Consent Platform For Australian Small Businesses"
+      },
+      {
+        "id": 14941,
+        "title": "Savira launches free privacy tools for small firms"
+      },
+      {
+        "id": 15140,
+        "title": "Savira launches free privacy tools for small firms"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c30187f030bc3a9c",
+    "label": "Anuncian nueva directiva para el Centro Unido de Detallistas",
+    "min_similarity": 0.9396699666976929,
+    "evidence": [
+      {
+        "id": 2669,
+        "title": "Anuncian nueva directiva para el Centro Unido de Detallistas"
+      },
+      {
+        "id": 24338,
+        "title": "Centro Unido de Detallistas elige nueva directiva"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-73f7089a4808d500",
+    "label": "Check Point named Gartner leader in hybrid mesh firewall",
+    "min_similarity": 0.8738246560096741,
+    "evidence": [
+      {
+        "id": 13898,
+        "title": "Check Point named Gartner leader in hybrid mesh firewall"
+      },
+      {
+        "id": 13906,
+        "title": "Check Point named Gartner leader in hybrid mesh firewall"
+      },
+      {
+        "id": 14234,
+        "title": "Check Point Named a Leader in the 2026 Gartner Magic Quadrant for Hybrid Mesh Firewall"
+      },
+      {
+        "id": 14940,
+        "title": "Check Point named Gartner leader in hybrid mesh firewall"
+      },
+      {
+        "id": 14950,
+        "title": "Check Point named Gartner leader in hybrid mesh firewall"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-402d5512f1f039e1",
+    "label": "Monday, September 14, 2026",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 24180,
+        "title": "Monday, September 14, 2026"
+      },
+      {
+        "id": 24182,
+        "title": "Monday, September 14, 2026"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f0baf75eabed26b4",
+    "label": "Krayn launches due diligence platform for property buyers",
+    "min_similarity": 0.9999997615814209,
+    "evidence": [
+      {
+        "id": 14197,
+        "title": "Krayn launches due diligence platform for property buyers"
+      },
+      {
+        "id": 14207,
+        "title": "Krayn launches due diligence platform for property buyers"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-78064685debea04c",
+    "label": "Spar-Deals bei Tchibo: Diese Gutscheine sind gerade aktiv",
+    "min_similarity": 0.8404157161712646,
+    "evidence": [
+      {
+        "id": 16501,
+        "title": "Spar-Deals bei Tchibo: Diese Gutscheine sind gerade aktiv"
+      },
+      {
+        "id": 37059,
+        "title": "Spar-Deals bei Apple: Diese beliebten Gutscheine sind gerade aktiv"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-17d05e7e82fb2813",
+    "label": "PreCoHis exhorta Concejo Municipal NYC honrar a Francis Méndez con el nombre de una calle",
+    "min_similarity": 0.8588380217552185,
+    "evidence": [
+      {
+        "id": 16059,
+        "title": "PreCoHis exhorta Concejo Municipal NYC honrar a Francis Méndez con el nombre de una calle"
+      },
+      {
+        "id": 24080,
+        "title": "PreCoHis pide al Concejo Municipal de Nueva York nombrar una calle en honor a Francis Méndez"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5b69070ab1a64b70",
+    "label": "Opinion: Yes, AI is coming for your job",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 13875,
+        "title": "Opinion: Yes, AI is coming for your job"
+      },
+      {
+        "id": 13883,
+        "title": "Opinion: Yes, AI is coming for your job"
+      },
+      {
+        "id": 13895,
+        "title": "Opinion: Yes, AI is coming for your job"
+      },
+      {
+        "id": 13905,
+        "title": "Opinion: Yes, AI is coming for your job"
+      },
+      {
+        "id": 14018,
+        "title": "Opinion: Yes, AI is coming for your job"
+      },
+      {
+        "id": 14027,
+        "title": "Opinion: Yes, AI is coming for your job"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-bcd49538a56dd710",
+    "label": "Presidente de Colombia impugnará fallos judiciales que frenan su política de mano dura",
+    "min_similarity": 0.9327571988105774,
+    "evidence": [
+      {
+        "id": 15768,
+        "title": "Presidente de Colombia impugnará fallos judiciales que frenan su política de mano dura"
+      },
+      {
+        "id": 23994,
+        "title": "Presidente de Colombia impugnará fallos judiciales contra su política de seguridad"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-124388295df00ed3",
+    "label": "Submer and Edgecore Networks to accelerate AI-ready data centre infrastructure across META",
+    "min_similarity": 0.9277406930923462,
+    "evidence": [
+      {
+        "id": 9492,
+        "title": "Submer and Edgecore Networks to accelerate AI-ready data centre infrastructure across META"
+      },
+      {
+        "id": 13377,
+        "title": "Submer and Edgecore Partner on AI-Ready Data Centre Infrastructure Across META"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e780ba850f3b9671",
+    "label": "Dominican Republic welcomes record 8.5 million visitors through August 2026",
+    "min_similarity": 0.8934503197669983,
+    "evidence": [
+      {
+        "id": 15957,
+        "title": "Dominican Republic welcomes record 8.5 million visitors through August 2026"
+      },
+      {
+        "id": 23940,
+        "title": "República Dominicana recibió más de 8.5 millones de visitantes entre enero-agosto"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-bab1971f1cef0274",
+    "label": "Wall Street abre en rojo ante temores por el avance de la IA",
+    "min_similarity": 0.8378262519836426,
+    "evidence": [
+      {
+        "id": 15790,
+        "title": "Wall Street abre en rojo por caída de tecnológicas"
+      },
+      {
+        "id": 23934,
+        "title": "Wall Street abre en rojo ante temores por el avance de la IA"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c09a3b61c850bc6b",
+    "label": "تبلت Blackview Zeno 6 Pro با نمایشگر 2.3K و رم 12 گیگابایتی معرفی شد + تصویر",
+    "min_similarity": 0.8598177433013916,
+    "evidence": [
+      {
+        "id": 9716,
+        "title": "تبلت چینی Blackview Zeno 6 Pro با طراحی شبیه آیفون معرفی شد"
+      },
+      {
+        "id": 33795,
+        "title": "تبلت Blackview Zeno 6 Pro با نمایشگر 2.3K و رم 12 گیگابایتی معرفی شد + تصویر"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f8073a1d2abbde2a",
+    "label": "Torre Yankee Stadium entre 10 edificaciones afectadas en El Bronx por bacteria Legionella",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 16060,
+        "title": "Torre Yankee Stadium entre 10 edificaciones afectadas en El Bronx por bacteria Legionella"
+      },
+      {
+        "id": 23895,
+        "title": "Torre Yankee Stadium entre 10 edificaciones afectadas en El Bronx por bacteria Legionella"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3fcb00ac7948ba87",
+    "label": "Dangote Thanks Tinubu for Fuel Subsidy, Forex Reforms as Refinery IPO Opens",
+    "min_similarity": 0.8534272909164429,
+    "evidence": [
+      {
+        "id": 17698,
+        "title": "Dangote thanks Tinubu for fuel subsidy removal, FX reforms"
+      },
+      {
+        "id": 38242,
+        "title": "Dangote Thanks Tinubu for Fuel Subsidy, Forex Reforms as Refinery IPO Opens"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a843b1593f71462a",
+    "label": "گراک وارد Word، Excel و PowerPoint شد؛ رقیب Copilot حالا داخل آفیس کار می‌کند",
+    "min_similarity": 0.7977107763290405,
+    "evidence": [
+      {
+        "id": 12380,
+        "title": "مدل‌های گروک به Word، Excel و PowerPoint اضافه شدند"
+      },
+      {
+        "id": 12403,
+        "title": "گراک وارد Word، Excel و PowerPoint شد؛ رقیب Copilot حالا داخل آفیس کار می‌کند"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c8c399db3e628fbf",
+    "label": "Former West Ham and Czech Republic goalkeeper Luděk Mikloško dies at 64",
+    "min_similarity": 0.9171774387359619,
+    "evidence": [
+      {
+        "id": 17712,
+        "title": "Ex-West Ham goalkeeper Miklosko dies at 64"
+      },
+      {
+        "id": 36081,
+        "title": "Former West Ham and Czech Republic goalkeeper Luděk Mikloško dies at 64"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-899553dc072850d2",
+    "label": "Ellison visszalépett az Oracle-részvényeladástól",
+    "min_similarity": 0.8185219168663025,
+    "evidence": [
+      {
+        "id": 16796,
+        "title": "Ellison visszalépett az Oracle-részvényeladástól"
+      },
+      {
+        "id": 31762,
+        "title": "Larry Ellison, 7.5 milyar dolarlık Oracle hissesi satışından vazgeçti"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a4792d91010a87c8",
+    "label": "China exige a Panamá respetar principio diplomático",
+    "min_similarity": 0.8067246675491333,
+    "evidence": [
+      {
+        "id": 16085,
+        "title": "China condena grupo parlamentario Panamá-Taiwán y pide a Panamá respetar el principio de una sola China"
+      },
+      {
+        "id": 23670,
+        "title": "China exige a Panamá respetar principio diplomático"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c41d57977e41bd0c",
+    "label": "Why firms are now looking for AS9100 certification",
+    "min_similarity": 1.000000238418579,
+    "evidence": [
+      {
+        "id": 36011,
+        "title": "Why firms are now looking for AS9100 certification"
+      },
+      {
+        "id": 36022,
+        "title": "Why firms are now looking for AS9100 certification"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ab3d29a0cbdf5909",
+    "label": "The autonomous SOC takeover",
+    "min_similarity": 0.9999997615814209,
+    "evidence": [
+      {
+        "id": 36010,
+        "title": "The autonomous SOC takeover"
+      },
+      {
+        "id": 36021,
+        "title": "The autonomous SOC takeover"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e7a21bcdc5b5156f",
+    "label": "YouTube, TikTok “áp đảo” Netflix, FPT Play trong cuộc đua giành thời gian xem của người Việt",
+    "min_similarity": 1.000000238418579,
+    "evidence": [
+      {
+        "id": 8256,
+        "title": "YouTube, TikTok “áp đảo” Netflix, FPT Play trong cuộc đua giành thời gian xem của người Việt"
+      },
+      {
+        "id": 30433,
+        "title": "YouTube, TikTok “áp đảo” Netflix, FPT Play trong cuộc đua giành thời gian xem của người Việt"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-75192751f63d569b",
+    "label": "ECOVACS launches DEEBOT X12S OmniCyclone robot vacuum",
+    "min_similarity": 0.9999998807907104,
+    "evidence": [
+      {
+        "id": 13892,
+        "title": "ECOVACS launches DEEBOT X12S OmniCyclone robot vacuum"
+      },
+      {
+        "id": 13904,
+        "title": "ECOVACS launches DEEBOT X12S OmniCyclone robot vacuum"
+      },
+      {
+        "id": 14066,
+        "title": "ECOVACS launches DEEBOT X12S OmniCyclone robot vacuum"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1335976be8523faf",
+    "label": "存储涨价潮蔓延！NOR Flash高容量价格飙涨110%：翻倍已成定局",
+    "min_similarity": 0.7702507972717285,
+    "evidence": [
+      {
+        "id": 8704,
+        "title": "存储涨价潮蔓延！NOR Flash高容量价格飙涨110%：翻倍已成定局"
+      },
+      {
+        "id": 8935,
+        "title": "2H26 NOR Flash 價格走勢分化，高容量產品漲幅上看 90%~110%"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6781635021ccf158",
+    "label": "Gov’t says local farmers to get first choice in supplying tourism sector",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 3189,
+        "title": "Gov’t says local farmers to get first choice in supplying tourism sector"
+      },
+      {
+        "id": 24787,
+        "title": "Gov’t says local farmers to get first choice in supplying tourism sector"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1c4fbed1c1d11a37",
+    "label": "Một thông tin quan trọng trên iPhone mà tất cả người dùng cần biết để cài đặt ngay",
+    "min_similarity": 0.9999999403953552,
+    "evidence": [
+      {
+        "id": 8304,
+        "title": "Một thông tin quan trọng trên iPhone mà tất cả người dùng cần biết để cài đặt ngay"
+      },
+      {
+        "id": 8880,
+        "title": "Một thông tin quan trọng trên iPhone mà tất cả người dùng cần biết để cài đặt ngay"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7d9b4e406d8a791c",
+    "label": "Microsoft sets limits for future AI models as industry throttles frontier development",
+    "min_similarity": 0.788862407207489,
+    "evidence": [
+      {
+        "id": 22634,
+        "title": "Microsoft sets limits for future AI models as industry throttles frontier development"
+      },
+      {
+        "id": 22920,
+        "title": "Microsoft floats rules for AI models as industry weighs slowdown"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-95af6dbbb5bbbfce",
+    "label": "The best accessible design of 2026",
+    "min_similarity": 0.8690782785415649,
+    "evidence": [
+      {
+        "id": 22876,
+        "title": "The best accessible design of 2026"
+      },
+      {
+        "id": 22880,
+        "title": "The best architectural design of 2026"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-aec29a4bbfb3e610",
+    "label": "Ракеты SpaceX Falcon совершили 700-й полёт за свою 20-летнюю историю",
+    "min_similarity": 0.8270267844200134,
+    "evidence": [
+      {
+        "id": 6546,
+        "title": "То, что раньше вызывало трепет и восхищение, стало обыденностью: SpaceX запустила уже 700 ракет семейства Falcon"
+      },
+      {
+        "id": 25104,
+        "title": "C'est historique : la fusée Falcon réalise sa 700e mission, du jamais vu !"
+      },
+      {
+        "id": 27204,
+        "title": "Ракеты SpaceX Falcon совершили 700-й полёт за свою 20-летнюю историю"
+      },
+      {
+        "id": 28285,
+        "title": "Ракетата Falcon на SpaceX осъществи своя полет №700 в своята 20-годишна история"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-13d43b29b00565f5",
+    "label": "6,89 kWh/100 km sur 1 278 km : le nouveau missile de Volkswagen bat un record du monde électrique",
+    "min_similarity": 0.7780267000198364,
+    "evidence": [
+      {
+        "id": 3219,
+        "title": "6,89 kWh/100 km sur 1 278 km : le nouveau missile de Volkswagen bat un record du monde électrique"
+      },
+      {
+        "id": 28281,
+        "title": "Volkswagen създаде електромобил с рекордна аеродинамика и разход от 6,48 kWh на 100 километра"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-82324f788f8b169d",
+    "label": "Brussels-based Chift raises €10.5 million Series A to become Europe’s financial connectivity layer",
+    "min_similarity": 0.8426999449729919,
+    "evidence": [
+      {
+        "id": 3606,
+        "title": "Brussels-based Chift raises €10.5 million Series A to become Europe’s financial connectivity layer"
+      },
+      {
+        "id": 3647,
+        "title": "Chift raises €10.5m to build financial connectivity layer for the AI era"
+      },
+      {
+        "id": 4987,
+        "title": "Chift raises €10.5M Series A to scale financial connectivity across Europe"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-79b389425eed431b",
+    "label": "China Rejects AI 'Fearmongering' as CEO's Urge Slowdown",
+    "min_similarity": 0.9422025680541992,
+    "evidence": [
+      {
+        "id": 534,
+        "title": "China Rejects AI ‘Fearmongering’ After Amodei Urges Slowdown"
+      },
+      {
+        "id": 22587,
+        "title": "China Rejects AI 'Fearmongering' as CEO's Urge Slowdown"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-81a4779923f314b5",
+    "label": "iPhone 18 Pro vs Google Pixel 11 Pro : lequel choisir dans le haut de gamme ?",
+    "min_similarity": 0.81899094581604,
+    "evidence": [
+      {
+        "id": 4578,
+        "title": "iPhone 18 Pro vs Google Pixel 11 Pro : lequel choisir dans le haut de gamme ?"
+      },
+      {
+        "id": 22342,
+        "title": "iPhone 18 Pro vs Google Pixel 11 Pro: Tech giant flagships compared"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-624b26970096dc60",
+    "label": "【資安日報】9月14日，GitLab修補CVSS滿分重大漏洞，公開隔天即出現漏洞探測",
+    "min_similarity": 0.9379341006278992,
+    "evidence": [
+      {
+        "id": 8474,
+        "title": "【資安日報】9月14日，GitLab修補CVSS滿分重大漏洞，公開隔天即出現漏洞探測"
+      },
+      {
+        "id": 8491,
+        "title": "GitLab修補CVSS滿分重大漏洞，公開隔天即出現漏洞探測"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6f7291737b86a2b6",
+    "label": "Vazou: Galaxy Tab S12+ e Ultra já têm data de lançamento; saiba mais",
+    "min_similarity": 0.7937268018722534,
+    "evidence": [
+      {
+        "id": 18310,
+        "title": "Vazou: Galaxy Tab S12+ e Ultra já têm data de lançamento; saiba mais"
+      },
+      {
+        "id": 22308,
+        "title": "Samsung Galaxy Tab S12 Series Launch Date Gets Revealed… Subtly"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ab03f3c37488299a",
+    "label": "SBI証券、「こどもNISA」事前受付は10月から",
+    "min_similarity": 0.7861087918281555,
+    "evidence": [
+      {
+        "id": 7959,
+        "title": "「こどもNISA」とは--SBI証券と楽天証券が受付を10月開始　口座開設は2027年1月予定"
+      },
+      {
+        "id": 8393,
+        "title": "マネックス証券「こどもNISA」10月から事前受付"
+      },
+      {
+        "id": 8403,
+        "title": "SBI証券、「こどもNISA」事前受付は10月から"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8c50e2c9255f99ad",
+    "label": "Meta and This Is Digital launch AI Academy Kenya with startup pitchathon and practical training",
+    "min_similarity": 0.8274442553520203,
+    "evidence": [
+      {
+        "id": 34723,
+        "title": "Meta Partners with This Is Digital to Launch AI Academy Kenya"
+      },
+      {
+        "id": 34897,
+        "title": "Meta and This Is Digital launch AI Academy Kenya with startup pitchathon and practical training"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f58aeb4f064caf52",
+    "label": "Digiges fordert echte Ende-zu-Ende-Verschlüsselung fürs E-GD",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 26258,
+        "title": "Digiges fordert echte Ende-zu-Ende-Verschlüsselung fürs E-GD"
+      },
+      {
+        "id": 26436,
+        "title": "Digiges fordert echte Ende-zu-Ende-Verschlüsselung fürs E-GD"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-97b9a4cee2036468",
+    "label": "Izquierda socialdemócrata lidera elecciones en Suecia y la extrema derecha retrocede",
+    "min_similarity": 0.8238890767097473,
+    "evidence": [
+      {
+        "id": 2882,
+        "title": "El bloque opositor de centroizquierda mantiene una mínima ventaja en elecciones suecas"
+      },
+      {
+        "id": 19839,
+        "title": "Izquierda socialdemócrata lidera elecciones en Suecia y la extrema derecha retrocede"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-fbfec842f53180c9",
+    "label": "Bamboo App Crashes Under Traffic Surge as Investors Rush to Access Dangote Refinery IPO",
+    "min_similarity": 0.9794292449951172,
+    "evidence": [
+      {
+        "id": 17833,
+        "title": "Bamboo App Crashes Under Traffic Surge as Investors Rush to Access Dangote Refinery IPO"
+      },
+      {
+        "id": 34604,
+        "title": "Bamboo app crashes under traffic surge as investors rush to access Dangote Refinery IPO"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-335d00d877156241",
+    "label": "Σε πόσα μέτρα αρχίζει να χάνει ταχύτητα ένα καλώδιο Ethernet",
+    "min_similarity": 0.8895198106765747,
+    "evidence": [
+      {
+        "id": 989,
+        "title": "At what length do Ethernet cables drop to lower speeds?"
+      },
+      {
+        "id": 5009,
+        "title": "Σε πόσα μέτρα αρχίζει να χάνει ταχύτητα ένα καλώδιο Ethernet"
+      },
+      {
+        "id": 31221,
+        "title": "Ethernet kablolarında hız sınırı: Hangi kablo ne kadar yavaşlıyor"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-954bdc86a7f9c98d",
+    "label": "China Bans Drone Ownership in Beijing After Citic Tower Crash",
+    "min_similarity": 0.8252573013305664,
+    "evidence": [
+      {
+        "id": 541,
+        "title": "China Bans Drone Ownership in Beijing After Citic Tower Crash"
+      },
+      {
+        "id": 8029,
+        "title": "Beijing municipality bans civilian drones starting mid-November"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-36baa2d76460998a",
+    "label": "Donald Trump califica de “fuerzas negativas” a quienes piden regular la IA y dice que “no sucederá”",
+    "min_similarity": 0.8703168630599976,
+    "evidence": [
+      {
+        "id": 19649,
+        "title": "Donald Trump califica de “fuerzas negativas” a quienes piden regular la IA y dice que “no sucederá”"
+      },
+      {
+        "id": 19676,
+        "title": "\"Fuerzas negativas\" quieren frenar la IA, dice Donald Trump, pese a las advertencias de grandes tecnológicas"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-64bc1af36824af15",
+    "label": "Sam Altman, director de OpenAI, lanza advertencia sobre la IA y dice que se puede perder el 'control del futuro': 'Podría salir muy mal'",
+    "min_similarity": 0.8599318265914917,
+    "evidence": [
+      {
+        "id": 19358,
+        "title": "Sam Altman, CEO de OpenAI: “Podríamos perder el control del futuro ante la inteligencia artificial”"
+      },
+      {
+        "id": 19634,
+        "title": "Sam Altman, director de OpenAI, lanza advertencia sobre la IA y dice que se puede perder el 'control del futuro': 'Podría salir muy mal'"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-81a0feb7686c7614",
+    "label": "Giá iPhone 18 Pro Max tại Việt Nam đắt hay rẻ so với các thị trường khác?",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 8279,
+        "title": "Giá iPhone 18 Pro Max tại Việt Nam đắt hay rẻ so với các thị trường khác?"
+      },
+      {
+        "id": 8867,
+        "title": "Giá iPhone 18 Pro Max tại Việt Nam đắt hay rẻ so với các thị trường khác?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4298ece0e6767d11",
+    "label": "PS6: Sony fala oficialmente sobre a data de lançamento do novo console",
+    "min_similarity": 0.8515245318412781,
+    "evidence": [
+      {
+        "id": 26396,
+        "title": "PS6: posible fecha de lanzamiento y precio"
+      },
+      {
+        "id": 38676,
+        "title": "PS6: Sony fala oficialmente sobre a data de lançamento do novo console"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-611d12a38a022b64",
+    "label": "HUAWEI WATCH GT 7 Series пристигна в България и разширява възможностите за спорт на открито с карти на над 3000 ски курорта",
+    "min_similarity": 0.870858907699585,
+    "evidence": [
+      {
+        "id": 6579,
+        "title": "HUAWEI WATCH GT 7 Series пристигна в България и разширява възможностите за спорт на открито с карти на над 3000 ски курорта"
+      },
+      {
+        "id": 7011,
+        "title": "Серията смартчасовници Huawei Watch GT 7 с карти на над 3000 ски курорта вече е достъпна в България"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-811a210c3fd65e62",
+    "label": "Въглищният Oldsmobile на General Motors: Един от най-странните експерименти в автомобилната история",
+    "min_similarity": 0.8268265724182129,
+    "evidence": [
+      {
+        "id": 1579,
+        "title": "GM's Coal-Powered Oldsmobile Was One Of The Strangest Experiments In Automotive History"
+      },
+      {
+        "id": 6584,
+        "title": "Въглищният Oldsmobile на General Motors: Един от най-странните експерименти в автомобилната история"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-717d304864347d7a",
+    "label": "Honor Magic 9 и Magic 9 Pro Max: окончателни характеристики две седмици преди представянето",
+    "min_similarity": 0.881654679775238,
+    "evidence": [
+      {
+        "id": 6552,
+        "title": "Honor Magic 9, Magic 9 Pro Max и Magic 9 Super Edition показали до анонса, предзаказы уже открыты"
+      },
+      {
+        "id": 6580,
+        "title": "Honor Magic 9 и Magic 9 Pro Max: окончателни характеристики две седмици преди представянето"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-23fad94e02722de3",
+    "label": "SA Investment Firm DNI Invests R2 Billion In Digital Economy",
+    "min_similarity": 0.8312956094741821,
+    "evidence": [
+      {
+        "id": 17630,
+        "title": "SA investment firm ploughs R2.1bn into digital economy"
+      },
+      {
+        "id": 34780,
+        "title": "SA Investment Firm DNI Invests R2 Billion In Digital Economy"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4c31cbb4654930c8",
+    "label": "iOS 27 llega hoy: estas son sus principales novedades y los modelos de iPhone compatibles con la actualización",
+    "min_similarity": 0.8085184097290039,
+    "evidence": [
+      {
+        "id": 27386,
+        "title": "iOS 27 już dziś. Apple wypuszcza wielką aktualizację iPhone’ów"
+      },
+      {
+        "id": 39490,
+        "title": "iOS 27 llega hoy: estas son sus principales novedades y los modelos de iPhone compatibles con la actualización"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6ba1634086fb0ef0",
+    "label": "ASML amplia sua dominância na fabricação de chips com adoção de tecnologia High NA",
+    "min_similarity": 0.8312175273895264,
+    "evidence": [
+      {
+        "id": 16859,
+        "title": "Reuters: ASML укрепляет свои позиции на рынке производства микросхем из-за растущего спроса на чипы"
+      },
+      {
+        "id": 18821,
+        "title": "ASML amplia sua dominância na fabricação de chips com adoção de tecnologia High NA"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6e09f61ab580cce3",
+    "label": "Yadea Partners with Spiro to Accelerate Electric Mobility Across Africa",
+    "min_similarity": 0.8667564988136292,
+    "evidence": [
+      {
+        "id": 17673,
+        "title": "Yadea Partners with Spiro to Accelerate Electric Mobility Across Africa"
+      },
+      {
+        "id": 34743,
+        "title": "Yadea Targets Africa Growth with Spiro Partnership on Electric Mobility"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9761753fcf3e3fe5",
+    "label": "Teknolojiden iş değerine – Dijital dönüşümde yeni dönem",
+    "min_similarity": 0.8501989841461182,
+    "evidence": [
+      {
+        "id": 9378,
+        "title": "Teknolojiden iş değerine – Dijital dönüşümde yeni dönem"
+      },
+      {
+        "id": 30941,
+        "title": "“Küresel Dijital Dönüşüm ve Teknoloji” için önemli destek"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b8982af453c6c8d6",
+    "label": "Saudi fintech Tabby raises $233m",
+    "min_similarity": 0.7563251852989197,
+    "evidence": [
+      {
+        "id": 25390,
+        "title": "Saudi fintech Tabby raises $233m"
+      },
+      {
+        "id": 30922,
+        "title": "Tabby Raises $233 Million to Expand Beyond Buy Now, Pay Later"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-40ee651e78649af3",
+    "label": "Samsung Galaxy S27 Ultra не получит новую камеру",
+    "min_similarity": 0.823089599609375,
+    "evidence": [
+      {
+        "id": 6555,
+        "title": "Samsung Galaxy S27 Ultra не получит новую камеру"
+      },
+      {
+        "id": 18502,
+        "title": "Galaxy S27 Ultra tem nova câmera telefoto vazada; saiba detalhes"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-d6f65ec5bdb764b3",
+    "label": "Suposto controle de videogame da Apple poderá ser lançado pela Beats",
+    "min_similarity": 0.7541355490684509,
+    "evidence": [
+      {
+        "id": 18304,
+        "title": "Apple vai lançar controle para transformar iPhone em videogame; entenda"
+      },
+      {
+        "id": 18424,
+        "title": "Suposto controle de videogame da Apple poderá ser lançado pela Beats"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-979d6bcfaa10589d",
+    "label": "How GPT-6 Became No. 1: Artificial Analysis CEO Explains The Much-Debated Index Updates",
+    "min_similarity": 0.9507321715354919,
+    "evidence": [
+      {
+        "id": 5262,
+        "title": "How GPT-6 Became No. 1: Artificial Analysis CEO Explains The Much-Debated Index Updates"
+      },
+      {
+        "id": 5263,
+        "title": "GPT-6 plötzlich auf Platz 1: Artificial-Analysis-CEO erklärt die Index-Updates, die OpenAI halfen"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-80cfc200b6bd204f",
+    "label": "Open Innovation AI and Dhow Engineering Partner to Advance Sovereign AI in Kuwait",
+    "min_similarity": 0.9595153331756592,
+    "evidence": [
+      {
+        "id": 9358,
+        "title": "Open Innovation AI and Dhow Engineering Partner to Accelerate Sovereign AI Adoption in Kuwait"
+      },
+      {
+        "id": 34717,
+        "title": "Open Innovation AI and Dhow Engineering Partner to Advance Sovereign AI in Kuwait"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2b0552caa429b06e",
+    "label": "Amazon Prime Video Top 10: Die aktuell beliebtesten Serien des Streamingdienstes",
+    "min_similarity": 0.914267361164093,
+    "evidence": [
+      {
+        "id": 4715,
+        "title": "Amazon Prime Video Top 10: Die aktuell beliebtesten Serien des Streamingdienstes"
+      },
+      {
+        "id": 4716,
+        "title": "Amazon Prime Video Top 10: Die aktuell beliebtesten Filme des Streamingdienstes"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0b07abe4c854d851",
+    "label": "La urgencia de ralentizar la IA y perder contra China divide a EEUU tras alarma del sector",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 2866,
+        "title": "La urgencia de ralentizar la IA y perder contra China divide a EEUU tras alarma del sector"
+      },
+      {
+        "id": 18183,
+        "title": "La urgencia de ralentizar la IA y perder contra China divide a EEUU tras alarma del sector"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3a265220dbafa40f",
+    "label": "Amazon ve Sony dört Spider-Man senaryosunu değerlendiriyor",
+    "min_similarity": 0.8911139965057373,
+    "evidence": [
+      {
+        "id": 9654,
+        "title": "Amazon ve Sony, dört yeni Spider-Man dizisi üzerinde çalışıyor"
+      },
+      {
+        "id": 33825,
+        "title": "Amazon ve Sony dört Spider-Man senaryosunu değerlendiriyor"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-770c580fb98b7ef6",
+    "label": "Actualité : Crystal Lake (HBO Max) : un trailer horrifique pour la série préquelle de Vendredi 13",
+    "min_similarity": 0.8754026293754578,
+    "evidence": [
+      {
+        "id": 4631,
+        "title": "Actualité : Crystal Lake (HBO Max) : un trailer horrifique pour la série préquelle de Vendredi 13"
+      },
+      {
+        "id": 27053,
+        "title": "Crystal Lake: Der Trailer zum \"Freitag der 13.\"-Serien-Prequel ist da"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1bd0be15126cb5d7",
+    "label": "Rusia ataca un tren ucraniano poco después de que Boris Johnson y altos funcionarios europeos abandonaran la estación",
+    "min_similarity": 0.9350817203521729,
+    "evidence": [
+      {
+        "id": 2788,
+        "title": "Rusia ataca un tren ucraniano poco después de que Boris Johnson y altos funcionarios europeos abandonaran la estación"
+      },
+      {
+        "id": 17909,
+        "title": "Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f14983db6beb01c7",
+    "label": "Alejandro Grimaldo rescata al Atlético de un mal partido",
+    "min_similarity": 0.9458242654800415,
+    "evidence": [
+      {
+        "id": 2352,
+        "title": "Alejandro Grimaldo rescata al Atlético de un mal partido"
+      },
+      {
+        "id": 2876,
+        "title": "0-3. Grimaldo rescata al Atlético de un mal partido"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-034348800a4586c6",
+    "label": "Từ hạ tầng, công nghệ đến thương hiệu Việt vươn ra thế giới: Cùng bình chọn những giá trị đáng tự hào tại Nation Builders Awards 2026",
+    "min_similarity": 0.7688369750976562,
+    "evidence": [
+      {
+        "id": 8894,
+        "title": "Từ hạ tầng, công nghệ đến thương hiệu Việt vươn ra thế giới: Cùng bình chọn những giá trị đáng tự hào tại Nation Builders Awards 2026"
+      },
+      {
+        "id": 30434,
+        "title": "Người Việt \"quá giàu và mê iPhone\": iPhone 18 Pro bán ảm đạm trên thế giới, Việt Nam vẫn mua ầm ầm"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-65de0b6852f9f8f2",
+    "label": "Laura Fernández reduce a ¢11.000 millones el recorte al Poder Judicial y condiciona entrega de recursos",
+    "min_similarity": 0.91881263256073,
+    "evidence": [
+      {
+        "id": 2322,
+        "title": "Laura Fernández reduce a ¢11.000 millones el recorte al Poder Judicial y condiciona entrega de recursos"
+      },
+      {
+        "id": 2593,
+        "title": "Laura Fernández anuncia que recorte al Poder Judicial será de ¢11 mil millones y no de ¢27 mil millones"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3dab7287dd66e200",
+    "label": "Tibet'te 6.002 metreye çıktı: Freelander 8'den Guinnes rekoru",
+    "min_similarity": 0.847878098487854,
+    "evidence": [
+      {
+        "id": 9651,
+        "title": "Tibet'te 6.002 metreye çıktı: Freelander 8'den Guinnes rekoru"
+      },
+      {
+        "id": 17578,
+        "title": "Freelander 8 Tibet’teki 6.002 Metrelik Tırmanışla Tarihe Geçti"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-73bcca31b17afa96",
+    "label": "Netflix Malaysia quietly raises prices across all plans, Premium hits RM69.90/month now",
+    "min_similarity": 0.9443274736404419,
+    "evidence": [
+      {
+        "id": 8900,
+        "title": "Netflix Malaysia quietly raises prices across all plans, Premium hits RM69.90/month now"
+      },
+      {
+        "id": 17361,
+        "title": "Netflix has raised prices in Malaysia by up to RM69.90"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0b10eb6fc5226b73",
+    "label": "Rallentare l’AI: bella idea, ma come fare",
+    "min_similarity": 0.8609946966171265,
+    "evidence": [
+      {
+        "id": 25047,
+        "title": "Rallentare l’AI: bella idea, ma come fare"
+      },
+      {
+        "id": 26504,
+        "title": "Rallentare la corsa all’AI è davvero possibile?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ffba91b12e424295",
+    "label": "大众发布 Mission Efficiency 概念车：创下三项能效纪录，百公里耗电量仅 6.48 千瓦时",
+    "min_similarity": 0.9243127107620239,
+    "evidence": [
+      {
+        "id": 8588,
+        "title": "大众发布 Mission Efficiency 概念车：创下三项能效纪录，百公里耗电量仅 6.48 千瓦时"
+      },
+      {
+        "id": 30317,
+        "title": "百公里仅6.48度电！大众发布Mission Efficiency概念车：风阻0.158创纪录"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9e8ca5c8281b413e",
+    "label": "Anthropic bekämpft Missbrauch seiner KI-Modelle",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 26263,
+        "title": "Anthropic bekämpft Missbrauch seiner KI-Modelle"
+      },
+      {
+        "id": 26441,
+        "title": "Anthropic bekämpft Missbrauch seiner KI-Modelle"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5fcef6d28a373121",
+    "label": "Walkthrough durch den schwierigsten Dungeon im Real-Life-Game",
+    "min_similarity": 0.9999997615814209,
+    "evidence": [
+      {
+        "id": 26259,
+        "title": "Walkthrough durch den schwierigsten Dungeon im Real-Life-Game"
+      },
+      {
+        "id": 26437,
+        "title": "Walkthrough durch den schwierigsten Dungeon im Real-Life-Game"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2fbde9e64b53b4a9",
+    "label": "BYD legt vor: Erste E-Autos mit Feststoffbatterie schon nächstes Jahr",
+    "min_similarity": 0.8255177736282349,
+    "evidence": [
+      {
+        "id": 5348,
+        "title": "BYD legt vor: Erste E-Autos mit Feststoffbatterie schon nächstes Jahr"
+      },
+      {
+        "id": 26427,
+        "title": "BYD nennt erstmals ein Datum: Erstes Auto mit Feststoffbatterie soll 2027 fahren"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-d08f6fec2b4bfa92",
+    "label": "Actualité : Cette caméra de surveillance présente le meilleur rapport qualité / prix de notre comparatif",
+    "min_similarity": 0.9393203258514404,
+    "evidence": [
+      {
+        "id": 4642,
+        "title": "Actualité : Voici la meilleure caméra de surveillance à prix abordable de notre comparatif"
+      },
+      {
+        "id": 26344,
+        "title": "Actualité : Cette caméra de surveillance présente le meilleur rapport qualité / prix de notre comparatif"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-834ec7a49215235f",
+    "label": "씨엔티테크, 3DGS 기반 플랫폼 ‘온전’ 운영사 메타로지에 투자",
+    "min_similarity": 0.8609702587127686,
+    "evidence": [
+      {
+        "id": 8154,
+        "title": "씨엔티테크, AI·3DGS 기반 3D 공간 플랫폼 서비스 기업 '메타로지'에 투자"
+      },
+      {
+        "id": 17018,
+        "title": "씨엔티테크, 3DGS 기반 플랫폼 ‘온전’ 운영사 메타로지에 투자"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7f9e78ed18a105b6",
+    "label": "Microsoft: September updates break audio on some Windows PCs",
+    "min_similarity": 0.8050895929336548,
+    "evidence": [
+      {
+        "id": 519,
+        "title": "Microsoft: September updates break audio on some Windows PCs"
+      },
+      {
+        "id": 26815,
+        "title": "The latest Windows 11 update breaks audio on some PCs and reportedly kills File History feature"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7acebd0c5ec3634e",
+    "label": "Hackers Exploit Maximum Severity Flaw in GitLab",
+    "min_similarity": 0.9339308142662048,
+    "evidence": [
+      {
+        "id": 520,
+        "title": "CISA: Hackers now exploit max severity GitLab flaw in attacks"
+      },
+      {
+        "id": 25902,
+        "title": "Hackers Exploit Maximum Severity Flaw in GitLab"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0b357fb7dc071dcf",
+    "label": "Shogun Saison 2 : la série vient de franchir une grosse étape et livre quelques détails",
+    "min_similarity": 0.7841809988021851,
+    "evidence": [
+      {
+        "id": 4753,
+        "title": "Shogun Saison 2 : la série vient de franchir une grosse étape et livre quelques détails"
+      },
+      {
+        "id": 26286,
+        "title": "Deux ans après, Shogun saison 2 donne enfin une bonne nouvelle, mais il y a un problème…"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-69cd06ad95e20201",
+    "label": "Novo Xiaomi Pad 9 Pro chega com tela gamer de 144 Hz e memória de notebook",
+    "min_similarity": 0.8346766233444214,
+    "evidence": [
+      {
+        "id": 18496,
+        "title": "Xiaomi Pad 9 e Pad 9 Pro são lançados com tela de 144 Hz e até 16 GB de RAM"
+      },
+      {
+        "id": 38562,
+        "title": "Novo Xiaomi Pad 9 Pro chega com tela gamer de 144 Hz e memória de notebook"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-063e22f90c427fd0",
+    "label": "iPhone Duo Wallpaper",
+    "min_similarity": 0.910019040107727,
+    "evidence": [
+      {
+        "id": 16150,
+        "title": "iPhone 18 Pro Wallpaper"
+      },
+      {
+        "id": 16151,
+        "title": "iPhone Duo Wallpaper"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4f3b27ed2f55f061",
+    "label": "Blizzard annuncia il nuovo StarCraft: non è un RTS ma uno sparatutto open-world in uscita nel 2030",
+    "min_similarity": 0.788530707359314,
+    "evidence": [
+      {
+        "id": 4873,
+        "title": "Blizzard annuncia il nuovo StarCraft: non è un RTS ma uno sparatutto open-world in uscita nel 2030"
+      },
+      {
+        "id": 6375,
+        "title": "Blizzard вперше показала нову StarCraft, і це вже не RTS"
+      },
+      {
+        "id": 16695,
+        "title": "Blizzard annuncia un nuovo StarCraft: la storica serie abbandona gli RTS e diventa uno sparatutto open world"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f5a1ddbbcd38fda1",
+    "label": "Noch vor Hugging-Face-Hack: KI-Agenten von OpenAI haben Rubygems attackiert",
+    "min_similarity": 0.814206600189209,
+    "evidence": [
+      {
+        "id": 3851,
+        "title": "Noch vor Hugging-Face-Hack: KI-Agenten von OpenAI haben Rubygems attackiert"
+      },
+      {
+        "id": 5946,
+        "title": "ИИ-агенты атаковали RubyGems ещё до взлома Hugging Face — OpenAI призналась только сейчас"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-83cd5c7c469d67a0",
+    "label": "PokerTH",
+    "min_similarity": 0.874582052230835,
+    "evidence": [
+      {
+        "id": 16211,
+        "title": "PokerTH"
+      },
+      {
+        "id": 16212,
+        "title": "PokerTH - Android App"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-996bbe097bbfee47",
+    "label": "Nvidia выпустила профессиональную видеокарту RTX Pro 5500 Blackwell Workstation Edition с 84 Гбайт GDDR7",
+    "min_similarity": 0.8510809540748596,
+    "evidence": [
+      {
+        "id": 16876,
+        "title": "NVIDIA представила профессиональную видеокарту RTX PRO 5500 Blackwell Workstation Edition"
+      },
+      {
+        "id": 27205,
+        "title": "Nvidia выпустила профессиональную видеокарту RTX Pro 5500 Blackwell Workstation Edition с 84 Гбайт GDDR7"
+      },
+      {
+        "id": 27644,
+        "title": "Nvidia lansează RTX Pro 5500 Blackwell Workstation Edition cu 84GB GDDR7"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7243044d9cceb24c",
+    "label": "Panamá es campeón de los Juegos Codicader",
+    "min_similarity": 0.8700132369995117,
+    "evidence": [
+      {
+        "id": 2735,
+        "title": "Panamá es campeón de los Juegos Codicader"
+      },
+      {
+        "id": 16097,
+        "title": "¡Orgullo nacional! Panamá es campeón de CODICADER 2026: conquistó 72 medallas de oro"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-cf926534bf17284f",
+    "label": "Red MEO completa: SES lanza últimos satélites O3b mPOWER con SpaceX",
+    "min_similarity": 0.7965514659881592,
+    "evidence": [
+      {
+        "id": 13381,
+        "title": "SES Launches Three O3b mPOWER Satellites to Complete MEO Constellation"
+      },
+      {
+        "id": 19749,
+        "title": "Red MEO completa: SES lanza últimos satélites O3b mPOWER con SpaceX"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7e2e9678045c07c6",
+    "label": "Η Microsoft ενσωματώνει το Grok στο Copilot για Word, Excel και PowerPoint",
+    "min_similarity": 0.9391704797744751,
+    "evidence": [
+      {
+        "id": 5028,
+        "title": "Η Microsoft ενσωματώνει το Grok στο Copilot για Word, Excel και PowerPoint"
+      },
+      {
+        "id": 19720,
+        "title": "Grok llega a Word, Excel y PowerPoint como opción de IA en Microsoft Copilot"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-520a49a3cc6f3478",
+    "label": "Đi tìm 5 nội dung ngành xe đáng chú ý trong năm tại Car Choice Awards 2026",
+    "min_similarity": 0.9297105669975281,
+    "evidence": [
+      {
+        "id": 29842,
+        "title": "Đi tìm 5 nội dung ngành xe đáng chú ý trong năm tại Car Choice Awards 2026"
+      },
+      {
+        "id": 29844,
+        "title": "11 sự kiện ngành xe đáng chú ý năm 2026: Đâu sẽ là Top 5 tại Car Choice Awards?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f624748f4f13fa3d",
+    "label": "Miles se manifiestan a favor de la reelección de Lula a semanas de las presidenciales en Brasil",
+    "min_similarity": 0.8557361364364624,
+    "evidence": [
+      {
+        "id": 2245,
+        "title": "Miles apoyan reelección de Lula"
+      },
+      {
+        "id": 15467,
+        "title": "Miles se manifiestan a favor de la reelección de Lula a semanas de las presidenciales en Brasil"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-628cdefceee3d04e",
+    "label": "Condenado a 10 años de cárcel un carnicero iraquí por vender cerdo en ciudad santa",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 23849,
+        "title": "Condenado a 10 años de cárcel un carnicero iraquí por vender cerdo en ciudad santa"
+      },
+      {
+        "id": 24805,
+        "title": "Condenado a 10 años de cárcel un carnicero iraquí por vender cerdo en ciudad santa"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-31a3fca322d478d7",
+    "label": "‘Father God gave me a second chance’",
+    "min_similarity": 0.9999998211860657,
+    "evidence": [
+      {
+        "id": 3188,
+        "title": "‘Father God gave me a second chance’"
+      },
+      {
+        "id": 24786,
+        "title": "‘Father God gave me a second chance’"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5d8918a8635f4369",
+    "label": "The Spinoff announces The Great Mt Albert Debate",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 15026,
+        "title": "The Spinoff announces The Great Mt Albert Debate"
+      },
+      {
+        "id": 15285,
+        "title": "The Spinoff announces The Great Mt Albert Debate"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2c3eaea5a4baf285",
+    "label": "Big AI wants to slow down AI research. Is it a safety pause or a strategic retreat?",
+    "min_similarity": 1.0000003576278687,
+    "evidence": [
+      {
+        "id": 13310,
+        "title": "Big AI wants to slow down AI research. Is it a safety pause or a strategic retreat?"
+      },
+      {
+        "id": 15213,
+        "title": "Big AI wants to slow down AI research. Is it a safety pause or a strategic retreat?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-94351b91811c20a3",
+    "label": "RSK adds BTW Company to expand New Zealand footprint",
+    "min_similarity": 0.9999997615814209,
+    "evidence": [
+      {
+        "id": 13881,
+        "title": "RSK adds BTW Company to expand New Zealand footprint"
+      },
+      {
+        "id": 15143,
+        "title": "RSK adds BTW Company to expand New Zealand footprint"
+      },
+      {
+        "id": 15204,
+        "title": "RSK adds BTW Company to expand New Zealand footprint"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-abe3cc28f309dc3b",
+    "label": "Ingram Micro signs AirBridge distribution deal in NZ",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 13902,
+        "title": "Ingram Micro signs AirBridge distribution deal in NZ"
+      },
+      {
+        "id": 14209,
+        "title": "Ingram Micro signs AirBridge distribution deal in NZ"
+      },
+      {
+        "id": 14947,
+        "title": "Ingram Micro signs AirBridge distribution deal in NZ"
+      },
+      {
+        "id": 15152,
+        "title": "Ingram Micro signs AirBridge distribution deal in NZ"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ea8a30f1dbfac404",
+    "label": "Beyond DevSecOps: Why Devs and SecOps must unite for API and AppSec protection",
+    "min_similarity": 0.9999998211860657,
+    "evidence": [
+      {
+        "id": 13897,
+        "title": "Beyond DevSecOps: Why Devs and SecOps must unite for API and AppSec protection"
+      },
+      {
+        "id": 14939,
+        "title": "Beyond DevSecOps: Why Devs and SecOps must unite for API and AppSec protection"
+      },
+      {
+        "id": 15139,
+        "title": "Beyond DevSecOps: Why Devs and SecOps must unite for API and AppSec protection"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8f1a032814710164",
+    "label": "Genetec: Open platforms key as physical security evolves",
+    "min_similarity": 1.000000238418579,
+    "evidence": [
+      {
+        "id": 13877,
+        "title": "Genetec: Open platforms key as physical security evolves"
+      },
+      {
+        "id": 13885,
+        "title": "Genetec: Open platforms key as physical security evolves"
+      },
+      {
+        "id": 13907,
+        "title": "Genetec: Open platforms key as physical security evolves"
+      },
+      {
+        "id": 14943,
+        "title": "Genetec: Open platforms key as physical security evolves"
+      },
+      {
+        "id": 14951,
+        "title": "Genetec: Open platforms key as physical security evolves"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-09a3e19100046af7",
+    "label": "Confluent: Data architecture gap impairing AI ambitions",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 13876,
+        "title": "Confluent: Data architecture gap impairing AI ambitions"
+      },
+      {
+        "id": 14019,
+        "title": "Confluent: Data architecture gap impairing AI ambitions"
+      },
+      {
+        "id": 14942,
+        "title": "Confluent: Data architecture gap impairing AI ambitions"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-33d60a54af7d58d0",
+    "label": "Roborock unveils first pool cleaner & new robot mower",
+    "min_similarity": 0.9999998807907104,
+    "evidence": [
+      {
+        "id": 13891,
+        "title": "Roborock unveils first pool cleaner & new robot mower"
+      },
+      {
+        "id": 13901,
+        "title": "Roborock unveils first pool cleaner & new robot mower"
+      },
+      {
+        "id": 14063,
+        "title": "Roborock unveils first pool cleaner & new robot mower"
+      },
+      {
+        "id": 14196,
+        "title": "Roborock unveils first pool cleaner & new robot mower"
+      },
+      {
+        "id": 14206,
+        "title": "Roborock unveils first pool cleaner & new robot mower"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9b0d1ffdb00abae3",
+    "label": "Link4 marks 10 years as digital trade services grow",
+    "min_similarity": 0.9999998211860657,
+    "evidence": [
+      {
+        "id": 13870,
+        "title": "Link4 marks 10 years as digital trade services grow"
+      },
+      {
+        "id": 13880,
+        "title": "Link4 marks 10 years as digital trade services grow"
+      },
+      {
+        "id": 14013,
+        "title": "Link4 marks 10 years as digital trade services grow"
+      },
+      {
+        "id": 14023,
+        "title": "Link4 marks 10 years as digital trade services grow"
+      },
+      {
+        "id": 14193,
+        "title": "Link4 marks 10 years as digital trade services grow"
+      },
+      {
+        "id": 14203,
+        "title": "Link4 marks 10 years as digital trade services grow"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-28a1e59e61322f29",
+    "label": "Manzanillo Gas & Power alcanza 66.9% de ejecución",
+    "min_similarity": 0.8658180236816406,
+    "evidence": [
+      {
+        "id": 23941,
+        "title": "Manzanillo Gas & Power alcanza 66.9% de ejecución"
+      },
+      {
+        "id": 24099,
+        "title": "Proyecto Manzanillo Gas & Power alcanza el 66.9 % de ejecución y aportará 840 MW al sistema energético"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-383411df083d2c0a",
+    "label": "TikTok & Instagram reshape New Zealand avocado habits",
+    "min_similarity": 0.9999998807907104,
+    "evidence": [
+      {
+        "id": 14024,
+        "title": "TikTok & Instagram reshape New Zealand avocado habits"
+      },
+      {
+        "id": 14064,
+        "title": "TikTok & Instagram reshape New Zealand avocado habits"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9bf6895304c72185",
+    "label": "PropAMMs take 30% of on-chain DEX volume, DWF finds",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 13873,
+        "title": "PropAMMs take 30% of on-chain DEX volume, DWF finds"
+      },
+      {
+        "id": 13882,
+        "title": "PropAMMs take 30% of on-chain DEX volume, DWF finds"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e146d8621dbb800d",
+    "label": "Precio del petróleo con fuerte alza por tensión en Oriente Medio",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 15340,
+        "title": "Precio del petróleo con fuerte alza por tensión en Oriente Medio"
+      },
+      {
+        "id": 23993,
+        "title": "Precio del petróleo con fuerte alza por tensión en Oriente Medio"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-63a8b6ca801d447d",
+    "label": "Alajuelense despide a Ismael Rescalvo tras malos resultados",
+    "min_similarity": 0.8411736488342285,
+    "evidence": [
+      {
+        "id": 2261,
+        "title": "Alajuelense despide a Ismael Rescalvo tras malos resultados"
+      },
+      {
+        "id": 23919,
+        "title": "Alajuelense despide al español Ismael Rescalvo tras los malos resultados"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-fb559eac919fbccc",
+    "label": "삼성디스플레이, '2K·165Hz' 스마트폰 OLED 개발…비보 'iQOO16' 탑재",
+    "min_similarity": 0.8640012741088867,
+    "evidence": [
+      {
+        "id": 17166,
+        "title": "삼성디스플레이, '2K·165Hz' 스마트폰 OLED 개발…비보 'iQOO16' 탑재"
+      },
+      {
+        "id": 17256,
+        "title": "삼성디스플레이, 세계 최초 2K·165Hz 모바일 OLED 비보에 공급"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f64ffdf9b421366a",
+    "label": "İstanbul merkezli mobil oyun stüdyosu Arcustin Games, 500 bin dolar yatırım aldı",
+    "min_similarity": 0.9999999403953552,
+    "evidence": [
+      {
+        "id": 9696,
+        "title": "İstanbul merkezli mobil oyun stüdyosu Arcustin Games, 500 bin dolar yatırım aldı"
+      },
+      {
+        "id": 10322,
+        "title": "İstanbul merkezli mobil oyun stüdyosu Arcustin Games, 500 bin dolar yatırım aldı"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-22371b9378406704",
+    "label": "Allegro otwiera biuro w Chinach. Chce mieć sprzedawców na oku",
+    "min_similarity": 0.9438962936401367,
+    "evidence": [
+      {
+        "id": 27234,
+        "title": "Allegro otwiera biuro w Chinach. Chce mieć sprzedawców na oku"
+      },
+      {
+        "id": 29121,
+        "title": "Allegro otwiera biuro w Chinach. To ważniejsze niż myślisz"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-146cb3c0111af60d",
+    "label": "Matan en México a una estudiante española que realizaba intercambio académico",
+    "min_similarity": 0.92363041639328,
+    "evidence": [
+      {
+        "id": 23775,
+        "title": "Condenan asesinato de estudiante española durante intercambio en México"
+      },
+      {
+        "id": 23806,
+        "title": "Matan en México a una estudiante española que realizaba intercambio académico"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5e9078477112283d",
+    "label": "iOS 27 Available Today With These 8 New Features",
+    "min_similarity": 0.7894629836082458,
+    "evidence": [
+      {
+        "id": 1298,
+        "title": "iOS 27 Available Tomorrow With These 8 New Features"
+      },
+      {
+        "id": 6332,
+        "title": "iOS 27 выйдет сегодня — вот 8 главных нововведений"
+      },
+      {
+        "id": 23091,
+        "title": "iOS 27 Available Today With These 8 New Features"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ab8743b2743eb405",
+    "label": "Comsol at ZTE Global Summit 2026: Charting a 5G-Powered Path from Connectivity Provider to Digital Infrastructure Partner",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 5126,
+        "title": "Comsol at ZTE Global Summit 2026: Charting a 5G-Powered Path from Connectivity Provider to Digital Infrastructure Partner"
+      },
+      {
+        "id": 23035,
+        "title": "Comsol at ZTE Global Summit 2026: Charting a 5G-Powered Path from Connectivity Provider to Digital Infrastructure Partner"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-0c64a1ec838ba62b",
+    "label": "Tin vui cho những ai đang dùng iPhone 14, iPhone 15 và iPhone 16",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 8295,
+        "title": "Tin vui cho những ai đang dùng iPhone 14, iPhone 15 và iPhone 16"
+      },
+      {
+        "id": 8863,
+        "title": "Tin vui cho những ai đang dùng iPhone 14, iPhone 15 và iPhone 16"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3763bf7aefe021b7",
+    "label": "Cập nhật mới nhất trên eTax Mobile: Người dùng cần kiểm tra thông tin sau càng sớm càng tốt",
+    "min_similarity": 0.857282280921936,
+    "evidence": [
+      {
+        "id": 8308,
+        "title": "eTax Mobile vừa có cập nhật quan trọng, tất cả cá nhân, hộ kinh doanh cần kiểm tra ngay thông tin sau để tránh gặp rắc rối sau này"
+      },
+      {
+        "id": 8857,
+        "title": "Cập nhật mới nhất trên eTax Mobile: Người dùng cần kiểm tra thông tin sau càng sớm càng tốt"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1852872d40ee7a2b",
+    "label": "Trump dice que la IA no necesita más control que tenerlo a él como presidente de Estados Unidos",
+    "min_similarity": 0.8690993785858154,
+    "evidence": [
+      {
+        "id": 39500,
+        "title": "Trump dice que la IA no necesita más control que tenerlo a él como presidente de Estados Unidos"
+      },
+      {
+        "id": 39554,
+        "title": "Trump dice que la IA no necesita más control que tenerlo a él como presidente de EE.UU."
+      },
+      {
+        "id": 39614,
+        "title": "Trump dice que el ‘único control’ que necesita la IA es un presidente ‘fuerte e inteligente’"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5cc7fe8d9507b107",
+    "label": "Städte auf dem Mond? Schminkt es euch ab, es gibt nicht genug Wasser",
+    "min_similarity": 0.8751742243766785,
+    "evidence": [
+      {
+        "id": 25766,
+        "title": "Analyse: Wasser auf dem Mond würde für eine große Stadt nicht sehr lange reichen"
+      },
+      {
+        "id": 27059,
+        "title": "Städte auf dem Mond? Schminkt es euch ab, es gibt nicht genug Wasser"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8de90115748b58be",
+    "label": "小米推出米家三筒洗衣机 14kg 系列：小筒洗净比 1.95，到手价 3999 元起",
+    "min_similarity": 0.865057110786438,
+    "evidence": [
+      {
+        "id": 8596,
+        "title": "小米推出米家三筒洗衣机 14kg 系列：小筒洗净比 1.95，到手价 3999 元起"
+      },
+      {
+        "id": 8722,
+        "title": "米家三筒洗衣机14kg系列上架：99.99%除菌率 3999元起"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-acb3ad7904db265f",
+    "label": "宇树科技发布人形机器人G1+：一次性6项升级 标准版售价9.5万元",
+    "min_similarity": 0.8914867639541626,
+    "evidence": [
+      {
+        "id": 8602,
+        "title": "宇树科技发布人形机器人 G1+：运动性能、感知交互、智能体验全面升级，标准版售价 9.5 万元"
+      },
+      {
+        "id": 8699,
+        "title": "宇树科技发布人形机器人G1+：一次性6项升级 标准版售价9.5万元"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e7c468cdf9b96d2a",
+    "label": "Merkur schrumpfte wesentlich stärker als bisher gedacht",
+    "min_similarity": 0.8633619546890259,
+    "evidence": [
+      {
+        "id": 26663,
+        "title": "Merkur schrumpft schneller als gedacht: Warum der Planet einmal deutlich größer gewesen sein könnte"
+      },
+      {
+        "id": 27058,
+        "title": "Merkur schrumpfte wesentlich stärker als bisher gedacht"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2e755fec2908ff62",
+    "label": "Siri AI is built to be replaceable by Claude or ChatGPT",
+    "min_similarity": 0.890690803527832,
+    "evidence": [
+      {
+        "id": 22148,
+        "title": "iOS 27 code shows you may be able to replace Siri AI with Claude or ChatGPT [Poll]"
+      },
+      {
+        "id": 22340,
+        "title": "Siri AI is built to be replaceable by Claude or ChatGPT"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3668e33bc6850562",
+    "label": "Büyük Yapay Zeka Şirketleri Düzenleyici Ele Geçirme Planı Hazırlıyor",
+    "min_similarity": 0.9217873811721802,
+    "evidence": [
+      {
+        "id": 17435,
+        "title": "Büyük Yapay Zeka Şirketleri Düzenleyici Ele Geçirme Planı Hazırlıyor"
+      },
+      {
+        "id": 37880,
+        "title": "Büyük Yapay Zeka Şirketleri Düzenleyici Ele Geçirme Planlarını Açıkladı"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-cb603cf334582d77",
+    "label": "Organize İşler: Karun Hazinesi Geliyor: Netflix İlk Fragmanı Paylaştı",
+    "min_similarity": 0.8400754928588867,
+    "evidence": [
+      {
+        "id": 12420,
+        "title": "Organize İşler Karun Hazinesi 16 Ekim’de Netflix’e geliyor"
+      },
+      {
+        "id": 31750,
+        "title": "Organize İşler: Karun Hazinesi Geliyor: Netflix İlk Fragmanı Paylaştı"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c2b73a5ee5b5fbf5",
+    "label": "Honor Magic9 Super Edition packs an 11,000mAh battery into an 8mm chassis",
+    "min_similarity": 0.894260048866272,
+    "evidence": [
+      {
+        "id": 6521,
+        "title": "Honor Magic9 Super Edition получит батарею на 11 000 мА•ч при толщине всего 8,1 мм"
+      },
+      {
+        "id": 27946,
+        "title": "Honor Magic9 Super Edition packs an 11,000mAh battery into an 8mm chassis"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-26a48c1df02f676f",
+    "label": "“Los empleados estamos aterrados”: la advertencia de un exinvestigador de Anthropic a la BBC sobre los riesgos de la IA y por qué genera críticas",
+    "min_similarity": 0.9023098945617676,
+    "evidence": [
+      {
+        "id": 2323,
+        "title": "“Los empleados estamos aterrados”: la advertencia de un exinvestigador de Anthropic a la BBC sobre los riesgos de la IA y por qué genera críticas"
+      },
+      {
+        "id": 19654,
+        "title": "La advertencia de un exinvestigador de Anthropic sobre los riesgos de la IA: “Los empleados estamos aterrados”"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-d6a50459be9f17e8",
+    "label": "Deepfake Dolandırıcılığına Karşı Güvenlik Kelimesi",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 17482,
+        "title": "Deepfake Dolandırıcılığına Karşı Güvenlik Kelimesi"
+      },
+      {
+        "id": 31198,
+        "title": "Deepfake Dolandırıcılığına Karşı Güvenlik Kelimesi"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a8d36d47e70bb04a",
+    "label": "\"Resultados extremadamente distópicos\": el CEO de OpenAI volvió a advertir sobre los peligros de la inteligencia artificial y pidió un marco legal para regular su desarrollo",
+    "min_similarity": 0.8627141714096069,
+    "evidence": [
+      {
+        "id": 19364,
+        "title": "\"Resultados extremadamente distópicos\": el CEO de OpenAI volvió a advertir sobre los peligros de la inteligencia artificial y pidió un marco legal para regular su desarrollo"
+      },
+      {
+        "id": 19376,
+        "title": "La inquietante advertencia del CEO de OpenAI: \"Hay dos formas en que el progreso de la Inteligencia Artificial podría salir muy mal\""
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c243201c71a4a57f",
+    "label": "І сам не гам, і другому не дам: Sony заблокувала мультиплеєрний мод для Last of Us Part 2",
+    "min_similarity": 0.8097582459449768,
+    "evidence": [
+      {
+        "id": 5470,
+        "title": "Ни себе ни людям: амбициозный мультиплеерный мод для The Last of Us Part II отменён по требованию Sony"
+      },
+      {
+        "id": 6371,
+        "title": "І сам не гам, і другому не дам: Sony заблокувала мультиплеєрний мод для Last of Us Part 2"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-942ff0a070ac300a",
+    "label": "Ações de empresas ligadas à IA desabam após big techs pedirem desaceleração",
+    "min_similarity": 0.8883849382400513,
+    "evidence": [
+      {
+        "id": 18824,
+        "title": "Ações ligadas à IA despencam após CEOs das principais empresas do setor pedirem desaceleração no desenvolvimento"
+      },
+      {
+        "id": 18831,
+        "title": "Ações de empresas ligadas à IA desabam após big techs pedirem desaceleração"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-45d722d3a427cf1e",
+    "label": "Mannai Information Technology and Oracle expand collaboration in Saudi Arabia",
+    "min_similarity": 0.8695019483566284,
+    "evidence": [
+      {
+        "id": 9359,
+        "title": "Mannai Information Technology and Oracle Expand Collaboration in Saudi Arabia"
+      },
+      {
+        "id": 9493,
+        "title": "Mannai Information Technology and Oracle expand collaboration in Saudi Arabia"
+      },
+      {
+        "id": 30991,
+        "title": "Mannai Information Technology Expand its Partnership with Oracle in Saudi Arabia"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-19fddb80a6b70077",
+    "label": "Maite García, representante de Zacapa, se corona Reina Nacional de las Fiestas de Independencia 2026",
+    "min_similarity": 0.7959864139556885,
+    "evidence": [
+      {
+        "id": 2769,
+        "title": "Maite García, representante de Zacapa, se corona Reina Nacional de las Fiestas de Independencia 2026"
+      },
+      {
+        "id": 2778,
+        "title": "En vivo desde Quetzaltenango: siga la elección de la Reina Nacional de las Fiestas de Independencia 2026"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ff4da2b0e48ef12f",
+    "label": "Tim Cook odešel na důchod k Samsungu. Nějak se mu ale změnil přízvuk",
+    "min_similarity": 0.9078593850135803,
+    "evidence": [
+      {
+        "id": 16786,
+        "title": "Tim Cook odešel na důchod k Samsungu. Nějak se mu ale změnil přízvuk"
+      },
+      {
+        "id": 28828,
+        "title": "Tim Cook odešel do důchodu a začal propagovat skládací telefon od Samsungu. Tedy tak nějak"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-932a9539ddd92544",
+    "label": "Szaleństwo Parkside w Lidlu. Na półki wracają akumulatory i sprzęt na jesień",
+    "min_similarity": 0.7803142666816711,
+    "evidence": [
+      {
+        "id": 27242,
+        "title": "Poręczny zestaw narzędzi Parkside na promocji w Lidlu. Tanio to mało powiedziane"
+      },
+      {
+        "id": 27268,
+        "title": "Szaleństwo Parkside w Lidlu. Na półki wracają akumulatory i sprzęt na jesień"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-fd0b7f00d51b2f73",
+    "label": "Experten hielten es für unmöglich: Offenbar können Riesen-Frachter doch mit E-Motoren fahren",
+    "min_similarity": 0.9927685260772705,
+    "evidence": [
+      {
+        "id": 16240,
+        "title": "Experten hielten es für unmöglich: Doch offenbar können Riesen-Frachter doch mit E-Motoren fahren"
+      },
+      {
+        "id": 36648,
+        "title": "Experten hielten es für unmöglich: Offenbar können Riesen-Frachter doch mit E-Motoren fahren"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-764d74142e44f7b8",
+    "label": "Ausgaben für digitale Aussenwerbung steigen um 12 Prozent",
+    "min_similarity": 0.9999997615814209,
+    "evidence": [
+      {
+        "id": 4555,
+        "title": "Ausgaben für digitale Aussenwerbung steigen um 12 Prozent"
+      },
+      {
+        "id": 4731,
+        "title": "Ausgaben für digitale Aussenwerbung steigen um 12 Prozent"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a9138e12e5ec6366",
+    "label": "Centenaire de l’Hôtel Carlton Tunis (1926–2026) : Une célébration mémorable au cœur de l’histoire, de l’art et du patrimoine sur l’Avenue Habib Bourguiba",
+    "min_similarity": 0.9591387510299683,
+    "evidence": [
+      {
+        "id": 17979,
+        "title": "Centenaire de l’Hôtel Carlton Tunis (1926–2026) : Une célébration mémorable au cœur de l’histoire, de l’art et du patrimoine sur l’Avenue Habib Bourguiba"
+      },
+      {
+        "id": 34971,
+        "title": "L’Hôtel Carlton Tunis fête son centenaire : une célébration mémorable au cœur de l’histoire à l’Avenue Habib Bourguiba"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b1da6774d2ed18d5",
+    "label": "AI Stocks Fall As Safety Calls Shake Market Confidence",
+    "min_similarity": 0.7693086862564087,
+    "evidence": [
+      {
+        "id": 13400,
+        "title": "AI Stocks Fall As Safety Calls Shake Market Confidence"
+      },
+      {
+        "id": 17836,
+        "title": "AI Stocks Fall After Anthropic, OpenAI CEOs Call for Slower Development"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-8c5c18b6c1f4dade",
+    "label": "Anthropic CEO Pushes to 'Slow the Pace' of AI Development, Other CEOs Fall in Line",
+    "min_similarity": 0.89727783203125,
+    "evidence": [
+      {
+        "id": 1394,
+        "title": "Anthropic CEO Pushes to 'Slow the Pace' of AI Development, Other CEOs Fall in Line"
+      },
+      {
+        "id": 17218,
+        "title": "Anthropic CEO Pushes for AI Industry Slowdown"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7cfcec1d5ad4bb72",
+    "label": "KI-Giganten warnen vor ihrer eigenen Technologie",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 26260,
+        "title": "KI-Giganten warnen vor ihrer eigenen Technologie"
+      },
+      {
+        "id": 26438,
+        "title": "KI-Giganten warnen vor ihrer eigenen Technologie"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c3528a48a7ea3196",
+    "label": "Zwei von drei Schweizer Ransomwareopfern kämpfen mit Datenverschlüsselung",
+    "min_similarity": 0.9999998807907104,
+    "evidence": [
+      {
+        "id": 26261,
+        "title": "Zwei von drei Schweizer Ransomwareopfern kämpfen mit Datenverschlüsselung"
+      },
+      {
+        "id": 26439,
+        "title": "Zwei von drei Schweizer Ransomwareopfern kämpfen mit Datenverschlüsselung"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-1622c35189411f11",
+    "label": "MBC 신임 사장에 이성주 확정…임기 3년",
+    "min_similarity": 0.9880726337432861,
+    "evidence": [
+      {
+        "id": 8132,
+        "title": "MBC 신임 사장에 이성주 확정…임기 3년"
+      },
+      {
+        "id": 17122,
+        "title": "MBC 신임사장에 이성주 최종 선임…임기 3년"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-63fdadbaaf702cad",
+    "label": "KAIA·큐네스티, 부산서 동남권 클럽하우스 개최…지역 스타트업 투자 생태계 활성화",
+    "min_similarity": 0.9149396419525146,
+    "evidence": [
+      {
+        "id": 9162,
+        "title": "부산 초기기업 성장 사다리 잇는다…KAIA·큐네스티, 12개사 IR"
+      },
+      {
+        "id": 17020,
+        "title": "KAIA·큐네스티, 부산서 동남권 클럽하우스 개최…지역 스타트업 투자 생태계 활성화"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-51c4a086cd641446",
+    "label": "Apple може да пусне iPhone Duo Max с по-голям екран",
+    "min_similarity": 0.9148199558258057,
+    "evidence": [
+      {
+        "id": 28300,
+        "title": "Apple може да пусне iPhone Duo Max с по-голям екран"
+      },
+      {
+        "id": 33958,
+        "title": "Apple, Daha Büyük Ekranlı \"iPhone Duo Max\" Modeli Üzerinde Çalışıyor"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-6af5223e9830b537",
+    "label": "Asaltan hispano en el Alto Manhattan; arrestan y acusan hombre de asesinato mujer en mismo vecindario",
+    "min_similarity": 0.9922820329666138,
+    "evidence": [
+      {
+        "id": 23894,
+        "title": "Asaltan hispano en el Alto Manhattan; arrestan y acusan hombre de asesinato mujer en mismo vecindario"
+      },
+      {
+        "id": 36605,
+        "title": "Asaltan hispano en Alto Manhattan; arrestan y acusan hombre de asesinar mujer en el mismo vecindario"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c0d3b57434f51d85",
+    "label": "UltraVNC (32 Bit)",
+    "min_similarity": 0.957958996295929,
+    "evidence": [
+      {
+        "id": 16218,
+        "title": "UltraVNC (32 Bit)"
+      },
+      {
+        "id": 16219,
+        "title": "UltraVNC (64 Bit)"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5b3a3a1c0d171ddd",
+    "label": "Multi Commander",
+    "min_similarity": 0.8721110820770264,
+    "evidence": [
+      {
+        "id": 16118,
+        "title": "Multi Commander"
+      },
+      {
+        "id": 16119,
+        "title": "Multi Commander Portable"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-11a7de23c463c347",
+    "label": "Inadmiten a dos colombianos en Tocumen: venían a trabajar como prestamistas de \"gota a gota\"",
+    "min_similarity": 0.9164599180221558,
+    "evidence": [
+      {
+        "id": 15355,
+        "title": "Inadmiten en Tocumen a dos colombianos que pretendían ser prestamistas 'gota a gota' en Panamá"
+      },
+      {
+        "id": 16094,
+        "title": "Inadmiten a dos colombianos en Tocumen: venían a trabajar como prestamistas de \"gota a gota\""
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e3fe1ad9cfb627b0",
+    "label": "„Wer bei AI gewinnt, gewinnt“: Trump will trotz Hacking-Vorfällen keine KI-Regulierung",
+    "min_similarity": 0.8665712475776672,
+    "evidence": [
+      {
+        "id": 5261,
+        "title": "„Wer bei AI gewinnt, gewinnt“: Trump will trotz Hacking-Vorfällen keine KI-Regulierung"
+      },
+      {
+        "id": 25166,
+        "title": "Trotz Protest und Sicherheitskrise: Trump will KI-Entwicklungs­tempo nicht drosseln"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-91d4c4bfb3e7b4d0",
+    "label": "Trung Quốc mở siêu nhà máy 10.000 robot/năm: Dùng robot sản xuất robot, nhưng khó nhất là tìm được việc cho chúng làm",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 8258,
+        "title": "Trung Quốc mở siêu nhà máy 10.000 robot/năm: Dùng robot sản xuất robot, nhưng khó nhất là tìm được việc cho chúng làm"
+      },
+      {
+        "id": 30435,
+        "title": "Trung Quốc mở siêu nhà máy 10.000 robot/năm: Dùng robot sản xuất robot, nhưng khó nhất là tìm được việc cho chúng làm"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2863199a6b54aa24",
+    "label": "ChatGPT search links New Zealanders to unsafe sites",
+    "min_similarity": 0.9999998807907104,
+    "evidence": [
+      {
+        "id": 14065,
+        "title": "ChatGPT search links New Zealanders to unsafe sites"
+      },
+      {
+        "id": 14949,
+        "title": "ChatGPT search links New Zealanders to unsafe sites"
+      },
+      {
+        "id": 15206,
+        "title": "ChatGPT search links New Zealanders to unsafe sites"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-c40642d4fe339c29",
+    "label": "AI extinction is only one way the future is frightening",
+    "min_similarity": 0.9999998807907104,
+    "evidence": [
+      {
+        "id": 15146,
+        "title": "AI extinction is only one way the future is frightening"
+      },
+      {
+        "id": 15205,
+        "title": "AI extinction is only one way the future is frightening"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2d7aaf037ff0deac",
+    "label": "NVIDIA expands Australian AI infrastructure with partners",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 13890,
+        "title": "NVIDIA expands Australian AI infrastructure with partners"
+      },
+      {
+        "id": 14195,
+        "title": "NVIDIA expands Australian AI infrastructure with partners"
+      },
+      {
+        "id": 15193,
+        "title": "NVIDIA expands Australian AI infrastructure with partners"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4f1fde512b3e6d29",
+    "label": "Why a financial adviser says nearly every rental property he's owned has lost money",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 14921,
+        "title": "Why a financial adviser says nearly every rental property he's owned has lost money"
+      },
+      {
+        "id": 15144,
+        "title": "Why a financial adviser says nearly every rental property he's owned has lost money"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-f6e27251e24d1fa7",
+    "label": "University of Sydney gives campus-wide ChatGPT Edu access",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 13896,
+        "title": "University of Sydney gives campus-wide ChatGPT Edu access"
+      },
+      {
+        "id": 14938,
+        "title": "University of Sydney gives campus-wide ChatGPT Edu access"
+      },
+      {
+        "id": 15138,
+        "title": "University of Sydney gives campus-wide ChatGPT Edu access"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e543f35382447b71",
+    "label": "Gartner flags three key tech trends for governments",
+    "min_similarity": 0.9999998211860657,
+    "evidence": [
+      {
+        "id": 13872,
+        "title": "Gartner flags three key tech trends for governments"
+      },
+      {
+        "id": 14198,
+        "title": "Gartner flags three key tech trends for governments"
+      },
+      {
+        "id": 14937,
+        "title": "Gartner flags three key tech trends for governments"
+      },
+      {
+        "id": 15134,
+        "title": "Gartner flags three key tech trends for governments"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-5835b8d0fb73335d",
+    "label": "iSANZ finalists highlight New Zealand cyber sector shift",
+    "min_similarity": 1.0000003576278687,
+    "evidence": [
+      {
+        "id": 13903,
+        "title": "iSANZ finalists highlight New Zealand cyber sector shift"
+      },
+      {
+        "id": 14210,
+        "title": "iSANZ finalists highlight New Zealand cyber sector shift"
+      },
+      {
+        "id": 14948,
+        "title": "iSANZ finalists highlight New Zealand cyber sector shift"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-409805e10f40431e",
+    "label": "SonicWall wins two CybersecAsia awards, joins Hall of Fame",
+    "min_similarity": 1.000000238418579,
+    "evidence": [
+      {
+        "id": 13889,
+        "title": "SonicWall wins two CybersecAsia awards, joins Hall of Fame"
+      },
+      {
+        "id": 13899,
+        "title": "SonicWall wins two CybersecAsia awards, joins Hall of Fame"
+      },
+      {
+        "id": 14194,
+        "title": "SonicWall wins two CybersecAsia awards, joins Hall of Fame"
+      },
+      {
+        "id": 14204,
+        "title": "SonicWall wins two CybersecAsia awards, joins Hall of Fame"
+      },
+      {
+        "id": 14935,
+        "title": "SonicWall wins two CybersecAsia awards, joins Hall of Fame"
+      },
+      {
+        "id": 14945,
+        "title": "SonicWall wins two CybersecAsia awards, joins Hall of Fame"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2d746db53e403b84",
+    "label": "Shoppers warm to AI meal plans but resist product picks",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 14014,
+        "title": "Shoppers warm to AI meal plans but resist product picks"
+      },
+      {
+        "id": 14025,
+        "title": "Shoppers warm to AI meal plans but resist product picks"
+      },
+      {
+        "id": 14199,
+        "title": "Shoppers warm to AI meal plans but resist product picks"
+      },
+      {
+        "id": 14211,
+        "title": "Shoppers warm to AI meal plans but resist product picks"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-285b528937f2bb2e",
+    "label": "Samsung vám do telefonu předinstaluje 88 aplikací. Xiaomi jich má méně, ale po osobních datech prahne víc",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 16787,
+        "title": "Samsung vám do telefonu předinstaluje 88 aplikací. Xiaomi jich má méně, ale po osobních datech prahne víc"
+      },
+      {
+        "id": 29419,
+        "title": "Samsung vám do telefonu předinstaluje 88 aplikací. Xiaomi jich má méně, ale po osobních datech prahne víc"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4cf8d26b502d7dee",
+    "label": "Sự thật về công dụng của chiếc lỗ nhỏ cạnh camera trên điện thoại iPhone",
+    "min_similarity": 1.000000238418579,
+    "evidence": [
+      {
+        "id": 8280,
+        "title": "Sự thật về công dụng của chiếc lỗ nhỏ cạnh camera trên điện thoại iPhone"
+      },
+      {
+        "id": 8874,
+        "title": "Sự thật về công dụng của chiếc lỗ nhỏ cạnh camera trên điện thoại iPhone"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-b5943cb6129636eb",
+    "label": "Đằng sau mức giá 1.999 USD của iPhone Duo và lý do Apple nhảy vào thị trường điện thoại gập dù người dùng không mấy mặn mà",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 8277,
+        "title": "Đằng sau mức giá 1.999 USD của iPhone Duo và lý do Apple nhảy vào thị trường điện thoại gập dù người dùng không mấy mặn mà"
+      },
+      {
+        "id": 8850,
+        "title": "Đằng sau mức giá 1.999 USD của iPhone Duo và lý do Apple nhảy vào thị trường điện thoại gập dù người dùng không mấy mặn mà"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-dd47bd4fea2a9d70",
+    "label": "AI Bosses Risk Clash With Wall Street Over Safety",
+    "min_similarity": 0.9370375871658325,
+    "evidence": [
+      {
+        "id": 540,
+        "title": "AI Bosses Risk Clash With Wall Street and Trump Over Safety"
+      },
+      {
+        "id": 22579,
+        "title": "AI Bosses Risk Clash With Wall Street Over Safety"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ed28929b2fface98",
+    "label": "Windows 11’s September patch breaks USB audio, and there’s no fix yet",
+    "min_similarity": 0.9376729726791382,
+    "evidence": [
+      {
+        "id": 23284,
+        "title": "Windows 11’s September patch breaks USB audio, and there’s no fix yet"
+      },
+      {
+        "id": 27941,
+        "title": "Windows 11's September patch is killing USB audio — and there's still no fix"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-735c2dd9fdae9338",
+    "label": "iOS 27 آمد؛ قابلیت‌های جدید + لیست آیفون‌های سازگار",
+    "min_similarity": 0.7991253137588501,
+    "evidence": [
+      {
+        "id": 10049,
+        "title": "iOS 27 آمد؛ قابلیت‌های جدید + لیست آیفون‌های سازگار"
+      },
+      {
+        "id": 18443,
+        "title": "iOS 27 chega hoje aos iPhones; veja os principais recursos e como atualizar"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-2731b1ba60a667b0",
+    "label": "Revolut falls for fake government requests, hands over customer data",
+    "min_similarity": 0.8643413782119751,
+    "evidence": [
+      {
+        "id": 26929,
+        "title": "Revolut falls for fake government requests, hands over customer data"
+      },
+      {
+        "id": 39954,
+        "title": "Revolut hands over customer data after fake government request"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-74fabaa6b4446440",
+    "label": "Gallagher Security wins OSPA manufacturer award again",
+    "min_similarity": 0.9999998807907104,
+    "evidence": [
+      {
+        "id": 35107,
+        "title": "Gallagher Security wins OSPA manufacturer award again"
+      },
+      {
+        "id": 35289,
+        "title": "Gallagher Security wins OSPA manufacturer award again"
+      },
+      {
+        "id": 36020,
+        "title": "Gallagher Security wins OSPA manufacturer award again"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-a5690456eab34c2f",
+    "label": "Horóscopo de hoy: Lunes 14 de setiembre de 2026",
+    "min_similarity": 0.9691084623336792,
+    "evidence": [
+      {
+        "id": 2242,
+        "title": "Horóscopo de hoy: Lunes 14 de setiembre de 2026"
+      },
+      {
+        "id": 2766,
+        "title": "Horóscopo de hoy lunes 14 de septiembre de 2026"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-ce1e0319bf3bd03e",
+    "label": "Nvidia und Palantir wollen Lieferketten mit KI optimieren",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 26262,
+        "title": "Nvidia und Palantir wollen Lieferketten mit KI optimieren"
+      },
+      {
+        "id": 26440,
+        "title": "Nvidia und Palantir wollen Lieferketten mit KI optimieren"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-98c650ceadb87e5f",
+    "label": "Clima en Panamá hoy lunes 14 de septiembre: ¿dónde lloverá y a qué hora?",
+    "min_similarity": 0.9178273677825928,
+    "evidence": [
+      {
+        "id": 16084,
+        "title": "Clima en Panamá hoy lunes 14 de septiembre: ¿dónde lloverá y a qué hora?"
+      },
+      {
+        "id": 16093,
+        "title": "Clima en Panamá esta noche: ¿continuarán las lluvias?"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e01151d83b394452",
+    "label": "\"Estamos al borde de un cambio irreversible\": la ONU reclamó acciones urgentes de los gobiernos para regular la Inteligencia Artificial",
+    "min_similarity": 0.9048426747322083,
+    "evidence": [
+      {
+        "id": 19375,
+        "title": "\"Estamos al borde de un cambio irreversible\": la ONU reclamó acciones urgentes de los gobiernos para regular la Inteligencia Artificial"
+      },
+      {
+        "id": 39307,
+        "title": "La ONU reclama controles para la inteligencia artificial antes de un \"cambio irreversible\""
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-4b0249e74ff84554",
+    "label": "Spark launches Auckland data centre interconnect service",
+    "min_similarity": 0.9999998807907104,
+    "evidence": [
+      {
+        "id": 13900,
+        "title": "Spark launches Auckland data centre interconnect service"
+      },
+      {
+        "id": 14205,
+        "title": "Spark launches Auckland data centre interconnect service"
+      },
+      {
+        "id": 14946,
+        "title": "Spark launches Auckland data centre interconnect service"
+      },
+      {
+        "id": 15203,
+        "title": "Spark launches Auckland data centre interconnect service"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-e2e7ec6f0159fbf9",
+    "label": "Belkin unveils semi-solid-state power banks for Australia",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 15142,
+        "title": "Belkin unveils semi-solid-state power banks for Australia"
+      },
+      {
+        "id": 15194,
+        "title": "Belkin unveils semi-solid-state power banks for Australia"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-9740bc4a9f3a45ac",
+    "label": "'Flawed assumptions' behind Immigration NZ's bungling of tech upgrade",
+    "min_similarity": 1.000000238418579,
+    "evidence": [
+      {
+        "id": 14208,
+        "title": "'Flawed assumptions' behind Immigration NZ's bungling of tech upgrade"
+      },
+      {
+        "id": 15145,
+        "title": "'Flawed assumptions' behind Immigration NZ's bungling of tech upgrade"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3cae69772164a312",
+    "label": "UST named Workato platinum partner for AI orchestration",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 13893,
+        "title": "UST named Workato platinum partner for AI orchestration"
+      },
+      {
+        "id": 14017,
+        "title": "UST named Workato platinum partner for AI orchestration"
+      },
+      {
+        "id": 14201,
+        "title": "UST named Workato platinum partner for AI orchestration"
+      },
+      {
+        "id": 15137,
+        "title": "UST named Workato platinum partner for AI orchestration"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-bc78636fe7f006f2",
+    "label": "Openmarkets & Ondo eye tokenised finance in Australia",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 13871,
+        "title": "Openmarkets & Ondo eye tokenised finance in Australia"
+      },
+      {
+        "id": 14936,
+        "title": "Openmarkets & Ondo eye tokenised finance in Australia"
+      },
+      {
+        "id": 15133,
+        "title": "Openmarkets & Ondo eye tokenised finance in Australia"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-7c42cc2efda69b46",
+    "label": "Synapse Analytics raises USD $13 million in Series A",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 13869,
+        "title": "Synapse Analytics raises USD $13 million in Series A"
+      },
+      {
+        "id": 13879,
+        "title": "Synapse Analytics raises USD $13 million in Series A"
+      },
+      {
+        "id": 14192,
+        "title": "Synapse Analytics raises USD $13 million in Series A"
+      },
+      {
+        "id": 14202,
+        "title": "Synapse Analytics raises USD $13 million in Series A"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-06ae86e48a93eb38",
+    "label": "Shark launches the 3-in-1 upright vacuum in Australia",
+    "min_similarity": 1.0000001192092896,
+    "evidence": [
+      {
+        "id": 14020,
+        "title": "Shark launches the 3-in-1 upright vacuum in Australia"
+      },
+      {
+        "id": 15196,
+        "title": "Shark launches the 3-in-1 upright vacuum in Australia"
+      }
+    ]
+  },
+  {
+    "topic_id": "topic-3954cd6a7b96eb8a",
+    "label": "Australian accountants face constant workload pressures",
+    "min_similarity": 1.0,
+    "evidence": [
+      {
+        "id": 13874,
+        "title": "Australian accountants face constant workload pressures"
+      },
+      {
+        "id": 14015,
+        "title": "Australian accountants face constant workload pressures"
+      },
+      {
+        "id": 15136,
+        "title": "Australian accountants face constant workload pressures"
+      }
+    ]
+  }
+]
