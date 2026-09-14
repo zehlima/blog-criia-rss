@@ -2,7 +2,7 @@ name: Verificar alternativas oficiais RSS
 on:
   push:
     branches: [main]
-    paths: ['research/rss-review-2026-09-14/official-alternatives.json']
+    paths: ['research/rss-review-2026-09-14/official-alternatives.json', 'collector/diagnose_extraction.py']
 permissions:
   contents: read
 jobs:
@@ -27,6 +27,7 @@ jobs:
           Path('reports').mkdir(exist_ok=True)
           Path('reports/official-alternatives.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
           PY
+      - run: python -m collector.diagnose_extraction
       - uses: actions/upload-artifact@v4
         with:
           name: official-rss-alternatives
