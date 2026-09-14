@@ -1,6 +1,6 @@
 # Bóris Python — configuração para Zé
 
-O pacote está preparado. A coleta ainda não está ligada: faltam os projetos/segredos e o primeiro teste no ambiente remoto. Nenhuma conta paga foi ativada por este trabalho.
+Conexão Supabase e escrita/leitura/exclusão R2 validadas em 14/09/2026. A primeira coleta está em execução. O agendamento está habilitado por padrão; resultado completo e cobertura ainda em validação.
 
 ## 1. GitHub — informar o repositório
 
@@ -39,7 +39,8 @@ No repositório: **Settings → Secrets and variables → Actions → Secrets �
 
 | Nome exato | Valor a inserir diretamente no GitHub |
 |---|---|
-| DATABASE_URL | URI PostgreSQL do Session pooler Supabase, com senha |
+| DATABASE_PASSWORD | Somente a senha atual do banco; tem prioridade sobre DATABASE_URL |
+| DATABASE_URL | Alternativa antiga; ignorada quando DATABASE_PASSWORD está preenchido |
 | R2_ENDPOINT_URL | Endpoint S3 do R2 |
 | R2_ACCESS_KEY_ID | Access Key ID do R2 |
 | R2_SECRET_ACCESS_KEY | Secret Access Key do R2 |
@@ -61,11 +62,13 @@ Uma execução `partial` termina com código 2 e aparece vermelha no GitHub; é 
 
 ## 6. Ligar a rotina
 
-Após conferir o primeiro ciclo, em **Settings → Secrets and variables → Actions → Variables**, crie:
+A rotina está habilitada por padrão após o teste remoto de Supabase/R2. Não é necessário criar uma variável para ligar. Para PAUSAR disparos agendados, em **Settings → Secrets and variables → Actions → Variables**, defina:
 
 ```text
-ENABLE_COLLECTION = true
+ENABLE_COLLECTION = false
 ```
+
+Execuções manuais continuam disponíveis. A condição está em `.github/workflows/collect.yml`.
 
 O arquivo `.github/workflows/collect.yml` agenda **00h,06h,12h,18h de Brasília**. Em UTC: 03h,09h,15h,21h. Uma execução de recuperação às 01h/07h/13h/19h de Brasília retoma pendências da mesma janela, sem iniciar uma quinta rodada lógica dos 600.
 
@@ -103,4 +106,4 @@ O RSS só disponibiliza uma lista recente: a primeira coleta captura o que estiv
 
 ## Estado da entrega
 
-Código e testes preparados localmente. Supabase não conectado nesta etapa; credenciais R2 não configuradas; Git oficial identificado: zehlima/blog-criia-rss; nenhum deploy/push/coleta de produção confirmado. A tentativa de amostra HTTP neste ambiente falhou na resolução DNS (`gaierror`) das três fontes testadas, antes de acessar seus servidores. Isso não determina a disponibilidade das fontes no GitHub Actions.
+Supabase ikoqkeqxqfqkfjmcwwdq: 600 feeds cadastrados; seis tabelas com acesso público bloqueado. Preflight remoto aprovado (banco + R2); 16 testes passaram. Primeira coleta iniciada; otimização em lotes de até250 registros com deduplicação por URL e uploads RSS paralelos. SQL validado remotamente em transação revertida, incluindo atualização sem duplicidade. Última contagem: 985 matérias e28 feeds tentados, ainda sem textos de páginas confirmados; é um retrato parcial, não o fechamento do ciclo. Rotina habilitada para00h/06h/12h/18h Brasília, com recuperação +1h. Acompanhar https://github.com/zehlima/blog-criia-rss/actions/runs/34827810364 .
