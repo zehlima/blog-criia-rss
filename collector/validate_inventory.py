@@ -10,7 +10,7 @@ import feedparser
 def check(f):
     r={'name':f['name'],'country':f['country'],'url':f['rss_url']}
     try:
-        status,h,body,url=get(f['rss_url'])
+        status,h,body,url=get(f['rss_url'],max_bytes=32*1024*1024)
         parsed=feedparser.parse(body)
         r.update(http=status,version=parsed.get('version'),parsed_items=len(parsed.entries),
                  parser_warning=type(parsed.get('bozo_exception')).__name__ if parsed.get('bozo') else None)

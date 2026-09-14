@@ -28,3 +28,13 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           R2_BUCKET: ${{ secrets.R2_BUCKET }}
         run: python -m collector.smoke
+
+      - name: Validar RSS volumoso do TechNode
+        run: |
+          python - <<'PYCODE'
+          import json
+          from collector.revalidate import check
+          result=check('https://technode.com/feed/')
+          print(json.dumps(result))
+          assert result['ok'], result['error']
+          PYCODE

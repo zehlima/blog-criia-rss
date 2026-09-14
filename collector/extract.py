@@ -53,7 +53,8 @@ def fetch_source(feed):
     headers={}
     if feed.get('etag'):headers['If-None-Match']=feed['etag']
     if feed.get('last_modified'):headers['If-Modified-Since']=feed['last_modified']
-    status,h,body,url=get(feed['rss_url'],headers)
+    # Long publisher RSS feeds may exceed the page-body budget. Keep a bounded 32 MiB ceiling.
+    status,h,body,url=get(feed['rss_url'],headers,max_bytes=32*1024*1024)
     if status==304 and not headers:raise ValueError('invalid_304_without_validators')
     return status,h,[] if status==304 else entries(body,url)
 
