@@ -27,6 +27,21 @@ BROAD={'apple','iphone','xiaomi','samsung','google','microsoft','openai','meta',
 ROMAN={'i':'1','ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
 VERSIONED_PRODUCTS={'iphone','ios','windows','galaxy','diablo','playstation','xbox'}
 
+def semantic_event_text(title):
+    """Keep the event predicate while down-weighting broad product identity.
+
+    The lexical gate still sees the original headline.  Embeddings see this
+    title-derived context so two unrelated Windows/iPhone stories are not
+    grouped merely because the shared product name dominates the vector.
+    """
+    text=unicodedata.normalize('NFKC',title)
+    products='|'.join(sorted(VERSIONED_PRODUCTS,key=len,reverse=True))
+    text=re.sub(rf'(?i)\b(?:{products})\s+(?:[a-z]?\d+|[ivx]+)\b',' ',text)
+    broad='|'.join(sorted(BROAD|{'ios'},key=len,reverse=True))
+    text=re.sub(rf'(?i)\b(?:{broad})\b',' ',text)
+    text=re.sub(r'\s+',' ',text).strip(' -—–:;,.|/')
+    return text if len(text)>=8 else title.strip()
+
 def _tokens(title):
     # Fold diacritics so the template vocabulary behaves consistently across
     # Portuguese, Spanish and Turkish headlines.

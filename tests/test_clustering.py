@@ -1,7 +1,17 @@
 import pytest
 np=pytest.importorskip('numpy')
 pytest.importorskip('sklearn')
-from trends.clustering import coherent_groups
+from trends.clustering import coherent_groups,semantic_event_text
+
+@pytest.mark.parametrize(('title','kept','removed'),[
+    ('Windows 11 has a secret way to skip the Microsoft account requirement','skip the account requirement','windows'),
+    ('Samsung Galaxy S27 Ultra gets an audio fix','gets an audio fix','samsung'),
+    ('OpenAI delays its IPO over safety risks','delays its IPO over safety risks','openai'),
+])
+def test_semantic_event_text_downweights_product_identity(title,kept,removed):
+    text=semantic_event_text(title)
+    assert kept.casefold() in text.casefold()
+    assert removed.casefold() not in text.casefold()
 
 def test_transitive_similarity_does_not_merge_unrelated_ends():
     angles=np.deg2rad([0,20,40])

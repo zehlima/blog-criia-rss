@@ -108,4 +108,5 @@ def test_analysis_corpus_excludes_invalid_references_and_unused_timestamps():
         def execute(self,sql,args):self.sql=sql;return Result()
     db=DB();assert all_articles(db,datetime.now(timezone.utc))==[]
     assert "content_status<>'invalid_reference'" in db.sql
+    assert 'f.rss_url=ANY(%s)' in db.sql
     assert 'next_attempt_at' not in db.sql and 'a.*' not in db.sql

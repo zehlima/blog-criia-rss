@@ -18,10 +18,8 @@ from .core import continent,families,in_window,rankings
 BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
-VERSION='boris-topics-v10-precomputed-event-signatures-072'
-# Embeddings depend on the pinned model and headline, not on clustering rules.
-# Keep the already materialized v4 cache schema to avoid recomputing identical vectors.
-EMBEDDING_CACHE_VERSION='boris-topics-v4-headline-anchors-072'
+VERSION='boris-topics-v11-event-context-active-inventory-072'
+EMBEDDING_CACHE_VERSION=VERSION
 
 
 def log(**data):print(json.dumps(data,ensure_ascii=False,default=str),flush=True)
@@ -52,8 +50,9 @@ def all_articles(db,cutoff):
       'country',f.country,'region',f.region,'site_url',f.site_url,'rss_url',f.rss_url) ORDER BY f.id) sources
       FROM news_articles a JOIN news_article_feeds af ON af.article_id=a.id
       JOIN news_feeds f ON f.id=af.feed_id WHERE a.first_seen_at<=%s
+        AND f.rss_url=ANY(%s)
         AND a.content_status<>'invalid_reference'
-      GROUP BY a.id ORDER BY a.id''',(cutoff,)).fetchall()
+      GROUP BY a.id ORDER BY a.id''',(cutoff,active_urls())).fetchall()
 
 def load_text(s3,a):
     text=a['title']+'\n'+(a['summary'] or '')
@@ -66,8 +65,10 @@ def load_text(s3,a):
             # Keep the article in the analysis, but never claim its body was read.
             a['text_read_error']=type(exc).__name__
     a['analysis_text']=text
-    # Stable, focused representation: page boilerplate and long body averages must not drive event identity.
-    a['semantic_text']=a['title'].strip()
+    # Stable, focused representation: page boilerplate and broad product names
+    # must not dominate the event identity.
+    from .clustering import semantic_event_text
+    a['semantic_text']=semantic_event_text(a['title'])
     a['input_hash']=hashlib.sha256((EMBEDDING_CACHE_VERSION+a['semantic_text']).encode()).hexdigest()
     return a
 
@@ -166,9 +167,9 @@ def prepare(db,s3,run_id):
     for a,f in zip(recent,fam):a['family']=f
     coverage={'clustering_method':'complete_linkage_cosine',
       'minimum_pairwise_similarity':.72,
-      'semantic_basis':'headline_only_multilingual_paraphrase',
+      'semantic_basis':'title_derived_event_context_without_broad_product_identity',
       'lexical_gate':'exact_title_or_narrow_compound_signature_or_two_anchors_with_rare_specific_term; product_versions_must_match; multi_story_digests_excluded',
-      'calibration_status':'Known v4-v8 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
+      'calibration_status':'Known v4-v10 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
       'editorial_status':'automatic_groups_require_editorial_review',
       'ungrouped_articles':sum(a['topic_id']=='outlier' for a in recent),
       'corpus_articles':len(articles),'window_articles':len(recent),
