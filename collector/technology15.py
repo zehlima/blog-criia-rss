@@ -1,6 +1,6 @@
 """Audit the 15 technology sources with the same parser and HTTP client as production."""
 import json
-import csv
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
@@ -15,9 +15,16 @@ def check(feed):
     result = {'name': feed['name'], 'rss_url': feed['rss_url'],
               'source_type': feed['source_type'], 'checked_at': datetime.now(timezone.utc).isoformat()}
     try:
-        status, headers, items = fetch_source(feed)
+        try:
+            status, headers, items = fetch_source(feed)
+        except ValueError as exc:
+            if str(exc) != 'http_429':
+                raise
+            time.sleep(30)
+            status, headers, items = fetch_source(feed)
         result.update(status='ok', http_status=status, items=len(items),
                       method=headers.get('X-Collection-Method','rss_atom'),
+                      collected_url=headers.get('X-Collection-URL',feed['rss_url']),
                       latest_title=items[0]['title'] if items else None,
                       latest_url=items[0]['url'] if items else None)
     except Exception as exc:
