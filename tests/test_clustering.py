@@ -246,3 +246,14 @@ def test_different_brands_do_not_group_as_one_product_offer():
 def test_currency_price_is_detected_as_commerce_without_word_boundary_bug():
     from trends.clustering import story_form_flags
     assert story_form_flags('ECOVACS T90 OMNI a 439€: robot')[4]
+
+def test_korean_conference_suffix_does_not_hide_catalogue_template():
+    titles=["그라비티, TGS 2026서 ‘라그나로크 콘솔 프로젝트’ 최초 공개",
+            "엔씨 '아스트라에 오라티오', TGS 부스 정보 추가 공개"]
+    vectors=np.array([[1.,0.],[.91,(1-.91**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_generic_turkish_growth_verb_is_not_an_event_anchor():
+    titles=['Yapay zekanın gücü giderek artıyor','Yapay zeka ile karmaşa da artıyor']
+    vectors=np.array([[1.,0.],[.91,(1-.91**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]

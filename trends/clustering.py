@@ -29,6 +29,7 @@ GENERIC.update({'risk','risks','risky','warning','warnings','warns','safety','se
  'riesgo','riesgos','advertencia','advertencias','alerta','alertas','advierte','seguridad',
  'risco','riscos','alerta','alertas','adverte','seguranca','segurança',
  'slow','slower','slowdown','pause','development','research'})
+GENERIC.update({'artiyor'})
 BROAD.add('anthropic')
 
 BRANDS={'apple','honor','huawei','xiaomi','samsung','google','microsoft','openai','anthropic',
@@ -63,7 +64,7 @@ NON_EVENT_TEMPLATE_RE=re.compile(
     r'\b(?:uma|veja\s+uma|a)\s+sele[cç][aã]o\s+de\b|'
     r'^\s*freio\s+na\s+ia\s*:|'
     r'^\s*(?:\[\s*virtual\s+event\s*\]|gisec\s+20\d{2}\s*:)|'
-    r'^\s*[^:]{0,50}\b(?:tgs|ces|mwc|web\s+summit)\s+20\d{2}\b'
+    r'^\s*[^:]{0,50}\b(?:tgs|ces|mwc|web\s+summit)\s+20\d{2}(?!\d)'
     r')')
 
 ROMAN={'i':'1','ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
