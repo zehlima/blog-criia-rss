@@ -49,4 +49,18 @@ def repair_dday(db):
             db.execute("""UPDATE news_articles SET content_status='invalid_reference',
               last_error='rss_media_link_replaced',next_attempt_at='infinity'
               WHERE id=%s""",(pair['broken_id'],))
-    return {'source':'DDay.it','mapped':len(moved),'invalidated':len(pairs),'feed_items':len(items)}
+        # Older entries can have fallen out of the publisher's finite RSS window.
+        # Their enclosure URLs are conclusively media assets, but guessing an
+        # article URL from the image path would corrupt history. Keep the rows and
+        # any publisher-provided text, while removing only the bad references from
+        # the page-extraction queue.
+        retired=db.execute("""UPDATE news_articles a SET
+          content_status='invalid_reference',
+          last_error='rss_media_link_outside_current_feed',next_attempt_at='infinity'
+          FROM news_article_feeds af
+          WHERE af.article_id=a.id AND af.feed_id=%s
+            AND split_part(a.url,'/',3)='images.dday.it'
+            AND a.content_status<>'invalid_reference'
+          RETURNING a.id""",(feed['id'],)).fetchall()
+    return {'source':'DDay.it','mapped':len(moved),'invalidated':len(pairs)+len(retired),
+            'outside_current_feed':len(retired),'feed_items':len(items)}
