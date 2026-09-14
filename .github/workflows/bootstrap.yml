@@ -27,6 +27,34 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m pytest -q
+      - name: Diagnostico seguro do banco
+        run: |
+          python - <<'PY'
+          import os
+          import psycopg
+          from psycopg.conninfo import conninfo_to_dict
+          try:
+              config = conninfo_to_dict(os.environ["DATABASE_URL"])
+          except Exception:
+              print("DIAGNOSTICO: formato DATABASE_URL invalido")
+              raise SystemExit(1)
+          expected = {"host":"aws-0-sa-east-1.pooler.supabase.com", "port":"5432", "user":"postgres.ikoqkeqxqfqkfjmcwwdq", "dbname":"postgres"}
+          for key, value in expected.items():
+              print("CAMPO", key, "OK" if config.get(key) == value else "DIVERGENTE")
+          try:
+              with psycopg.connect(os.environ["DATABASE_URL"], connect_timeout=15, sslmode="require") as db:
+                  db.execute("SELECT 1")
+              print("DIAGNOSTICO: banco conectado")
+          except Exception as exc:
+              msg = str(exc).lower()
+              reason = "erro de conexao nao classificado"
+              for needle, label in [("password authentication failed","senha rejeitada"),("tenant or user not found","usuario ou host incorreto"),("translate host name","DNS"),("timeout","timeout"),("ssl","TLS"),("no password supplied","senha ausente")]:
+                  if needle in msg:
+                      reason = label
+                      break
+              print("DIAGNOSTICO:", reason)
+              raise SystemExit(1)
+          PY
       - name: Testar banco e R2
         run: python -m collector.main preflight
       - name: Primeira coleta
