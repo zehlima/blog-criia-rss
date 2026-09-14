@@ -76,6 +76,33 @@ jobs:
           with open(os.environ["GITHUB_OUTPUT"], "a") as output:
               output.write("account_id=" + account + "\n")
           PY
+      - name: Garantir projeto Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ steps.cloudflare.outputs.account_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+          base = "https://api.cloudflare.com/client/v4/accounts/" + os.environ["CLOUDFLARE_ACCOUNT_ID"] + "/pages/projects"
+          headers = {"Authorization": "Bearer " + os.environ["CLOUDFLARE_API_TOKEN"], "Content-Type": "application/json"}
+          req = urllib.request.Request(base + "/blog-criia-painel", headers=headers)
+          try:
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  result = json.load(response)
+              if not result.get("success"):
+                  raise SystemExit("::error::Falha ao verificar projeto Pages")
+              print("Projeto Pages existente")
+          except urllib.error.HTTPError as error:
+              result = json.load(error)
+              if not any(item.get("code") == 8000007 for item in result.get("errors", [])):
+                  raise SystemExit("::error::Cloudflare recusou verificacao do projeto: HTTP " + str(error.code))
+              data = json.dumps({"name": "blog-criia-painel", "production_branch": "main"}).encode()
+              with urllib.request.urlopen(urllib.request.Request(base, data=data, headers=headers, method="POST"), timeout=30) as response:
+                  result = json.load(response)
+              if not result.get("success"):
+                  raise SystemExit("::error::Falha ao criar projeto Pages")
+              print("Projeto Pages criado")
+          PY
       - name: Publicar
         uses: cloudflare/wrangler-action@v3
         with:
