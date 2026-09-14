@@ -2,7 +2,7 @@
 
 Coleta de RSS e textos, armazenamento em Supabase/R2 e frequência de pautas por país, continente e globo.
 
-- Inventário ativo: `data/feeds.json`, atualmente 675 feeds, incluindo 75 da América do Sul. Registros antigos são preservados no banco.
+- Inventário ativo: `data/feeds.json`, atualmente 678 fontes, incluindo 75 da América do Sul. Registros antigos são preservados no banco.
 - Coleta: 00h, 06h, 12h e 18h de Brasília; recuperação nas demais horas. `ENABLE_COLLECTION=false` pausa somente os disparos agendados.
 - Extração: 16 trabalhadores, fila contínua, gravação em lotes, retentativas com backoff. Conteúdo de página e conteúdo publicado no RSS têm estados separados; resumo não é promovido a texto completo.
 - Tendências: representações multilíngues dos títulos, agrupamento de diâmetro limitado e deduplicação estimada de republicações. Relatórios vinculados ao encerramento da coleta, com alvos de +15/+20/+25 minutos. Atrasos e cobertura ficam explícitos.
@@ -24,3 +24,7 @@ O fluxo de tendências instala também `trends/requirements.txt`. Para verificar
 python -m collector.main preflight
 python -m collector.smoke
 ```
+
+## Tecnologia global — painel de 15 fontes
+
+Inventário e classificação em `data/technology15.json`; pesquisa, RSS, evidências e limitações em `research/technology-15-2026-09-14/`. As 15 fontes usam o mesmo coletor e as mesmas quatro janelas de Brasília, sem worker duplicado. Fontes já cadastradas são reutilizadas. Reddit é comunidade; Crunchbase News é a redação, não a API comercial de empresas.

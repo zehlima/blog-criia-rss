@@ -71,6 +71,8 @@ def fetch_source(feed):
         if status==304 and not headers:raise ValueError('invalid_304_without_validators')
         return status,h,[] if status==304 else entries(body,url)
     except (ValueError, OSError) as original:
+        # Respect rate limits; the existing hourly checkpoint recovery retries later.
+        if str(original)=='http_429':raise
         from .publisher_listing import ALTERNATIVES, LISTINGS, alternative_feed, public_listing
         if feed['rss_url'] not in ALTERNATIVES and feed['rss_url'] not in LISTINGS:
             raise

@@ -5398,5 +5398,29 @@
     "site_url": "https://doblellave.com/",
     "rss_url": "https://doblellave.com/seccion/innovacion/feed/",
     "justification": "Veículo venezuelano com cobertura de inovação, cibersegurança e negócios digitais."
+  },
+  {
+    "name": "ZDNET",
+    "rss_url": "https://www.zdnet.com/news/rss.xml",
+    "site_url": "https://www.zdnet.com/",
+    "country": "Estados Unidos",
+    "region": "América do Norte",
+    "justification": "Seleção tecnologia global; validação e limitações em research/technology-15-2026-09-14."
+  },
+  {
+    "name": "Gizmodo",
+    "rss_url": "https://gizmodo.com/feed",
+    "site_url": "https://gizmodo.com/",
+    "country": "Estados Unidos",
+    "region": "América do Norte",
+    "justification": "Seleção tecnologia global; validação e limitações em research/technology-15-2026-09-14."
+  },
+  {
+    "name": "Reddit r/technology",
+    "rss_url": "https://www.reddit.com/r/technology/new/.rss?limit=100",
+    "site_url": "https://www.reddit.com/r/technology/",
+    "country": "Estados Unidos",
+    "region": "América do Norte",
+    "justification": "Seleção tecnologia global; validação e limitações em research/technology-15-2026-09-14."
   }
 ]
