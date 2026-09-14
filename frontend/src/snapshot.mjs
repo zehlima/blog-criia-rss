@@ -8,7 +8,7 @@ export function createSnapshotAPI({url,fetcher=fetch}) {
   if(endpoint==='operations')return s.operations;
   const wrap=(data,as_of=s.generated_at)=>({schema_version:1,status:'partial',as_of,data});
   const norm=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-  if(endpoint==='articles')return wrap({items:s.articles.filter(a=>norm(a.title).includes(norm(params.q))&&norm(a.country).includes(norm(params.place))).slice(0,Number(params.limit)||30)});
+  if(endpoint==='articles'){const matches=s.articles.filter(a=>norm(a.title).includes(norm(params.q))&&norm(a.country).includes(norm(params.place)));return wrap({items:matches.slice(0,Number(params.limit)||30),total:matches.length});}
   if(endpoint.startsWith('articles/')){
    const a=s.articles.find(a=>String(a.id)===endpoint.split('/')[1]);
    if(!a)throw new APIError(404,'not_found');

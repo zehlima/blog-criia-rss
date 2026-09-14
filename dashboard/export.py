@@ -7,7 +7,9 @@ from collector.inventory import urls as active_urls
 ARTICLES_SQL = """SELECT a.id,a.title,a.url,a.published_at,
  string_agg(DISTINCT f.name, ', ') source,
  string_agg(DISTINCT f.country, ', ') country
- FROM (SELECT * FROM news_articles candidate WHERE EXISTS
+ FROM (SELECT * FROM news_articles candidate WHERE
+   (candidate.published_at IS NULL OR candidate.published_at <= CURRENT_TIMESTAMP)
+   AND EXISTS
    (SELECT 1 FROM news_article_feeds active_af JOIN news_feeds active_f ON active_f.id=active_af.feed_id
     WHERE active_af.article_id=candidate.id AND active_f.rss_url=ANY(%s))
    ORDER BY coalesce(published_at,first_seen_at) DESC LIMIT 2000) a

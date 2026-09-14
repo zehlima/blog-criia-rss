@@ -7,3 +7,5 @@ test('accent-insensitive search and geography',async()=>assert.equal((await read
 test('scopes do not mix',async()=>assert.equal((await read('trends',{scope:'globe'})).data.items[0].label,'Energy'));
 test('unknown article fails',async()=>assert.rejects(read('articles/99')));
 test('HTTP errors are not reported as empty data',async()=>{const r=createSnapshotAPI({url:'http://local',fetcher:async()=>({ok:false,status:503})});await assert.rejects(r('articles'));});
+
+test('pagination retains total and reveals additional articles',async()=>{const first=await read('articles',{limit:1});assert.equal(first.data.items.length,1);assert.equal(first.data.total,2);assert.equal((await read('articles',{limit:30})).data.items.length,2);});
