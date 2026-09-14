@@ -18,7 +18,7 @@ from .core import continent,families,in_window,rankings
 BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
-VERSION='boris-topics-v13-editorial-story-form-gates-072'
+VERSION='boris-topics-v14-editorial-event-form-and-calendar-gates-072'
 # The semantic input is unchanged from v11; only the lexical/editorial gate
 # changed, so reuse the pinned v11 vectors instead of recomputing 24k titles.
 EMBEDDING_CACHE_VERSION='boris-topics-v11-event-context-active-inventory-072'

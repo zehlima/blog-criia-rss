@@ -8,7 +8,8 @@ GENERIC={'the','and','for','with','from','this','that','new','news','tech','tech
  'und','oder','mit','von','diese','zum','beim','der','die','das','auf','aus','eine','einer',
  'sparen','kosten','gelten',
  'del','los','las','una','para','con','por','que','esta','este','hoy','vivo','video',
- 'domingo','septiembre','september','today',
+ 'de','al','el','la','domingo','lunes','martes','miercoles','jueves','viernes','sabado',
+ 'segunda','terca','quarta','quinta','sexta','setembro','setiembre','septiembre','september','today',
  'uma','com','come','per','une','des','les','pour','avec',
  'artificial','intelligence','inteligencia','inteligência','yapay','zeka','ile','ai','pro','max',
  '2024','2025','2026','4k','5g','6g','ssd','hdd','panel','monitor','cyber',
@@ -26,7 +27,8 @@ BROAD={'apple','iphone','xiaomi','samsung','google','microsoft','openai','meta',
 
 GENERIC.update({'risk','risks','risky','warning','warnings','warns','safety','security',
  'riesgo','riesgos','advertencia','advertencias','alerta','alertas','advierte','seguridad',
- 'risco','riscos','alerta','alertas','adverte','seguranca','segurança'})
+ 'risco','riscos','alerta','alertas','adverte','seguranca','segurança',
+ 'slow','slower','slowdown','pause','development','research'})
 BROAD.add('anthropic')
 
 BRANDS={'apple','honor','huawei','xiaomi','samsung','google','microsoft','openai','anthropic',
@@ -38,6 +40,12 @@ SALES_RE=re.compile(
 REVIEW_RE=re.compile(
     r'(?i)\b(?:hands[- ]?on|first impressions?|review|unboxing|tr[eê]n tay|recensione|'
     r'essai|test(?:e|es)?|an[aá]lise|experi[eê]ncia)\b')
+SECURITY_FIX_RE=re.compile(
+    r'(?i)\b(?:security|sicherheits(?:l[uü]cke|update)|vulnerability|vulnerabilit(?:y|ies|a|é)|falha|'
+    r'bug|patch|update|atualiza[cç][aã]o)\b')
+REGULATORY_RE=re.compile(
+    r'(?i)\b(?:ban|banned|prohibit(?:ed|ion)?|verbot|interdiction|proibi[cç][aã]o|'
+    r'regulatory|regulation|regulamenta[cç][aã]o)\b')
 
 ROMAN={'i':'1','ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
 VERSIONED_PRODUCTS={'iphone','ios','windows','galaxy','diablo','playstation','xbox'}
@@ -103,8 +111,11 @@ def is_template_listing(title):
 
 def incompatible_story_forms(a,b):
     """Reject headlines about the same product but materially different events."""
-    return bool(SALES_RE.search(a)) != bool(SALES_RE.search(b)) and \
-           bool(REVIEW_RE.search(a)) != bool(REVIEW_RE.search(b))
+    if bool(SALES_RE.search(a)) != bool(SALES_RE.search(b)):return True
+    if bool(REVIEW_RE.search(a)) != bool(REVIEW_RE.search(b)):return True
+    if (SECURITY_FIX_RE.search(a) and REGULATORY_RE.search(b)) or \
+       (SECURITY_FIX_RE.search(b) and REGULATORY_RE.search(a)):return True
+    return False
 
 def brand_set(title):
     return set(_tokens(title)) & BRANDS

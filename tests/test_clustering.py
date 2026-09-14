@@ -163,6 +163,22 @@ def test_cross_brand_inspiration_is_not_the_source_brand_story():
     vectors=np.array([[1.,0.],[.79,(1-.79**2)**.5]])
     assert coherent_groups(vectors,titles,min_similarity=.72)==[]
 
+@pytest.mark.parametrize('titles',[
+    ['Midea PortaSplit bekommt ein wichtiges Sicherheitsupdate',
+     'Midea PortaSplit: Was das nahende EU-Verbot bedeutet'],
+    ['HUAWEI WATCH GT 7 review: 21 day battery',
+     'HUAWEI WATCH GT 7 series specifications and performance'],
+])
+def test_same_product_with_different_story_form_is_not_one_event(titles):
+    vectors=np.array([[1.,0.],[.79,(1-.79**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_distinct_daily_programmes_are_not_grouped_by_calendar_date():
+    titles=['Extranegocios del Lunes 14 de setiembre de 2026',
+            'Concolón, lunes 14 de septiembre de 2026']
+    vectors=np.array([[1.,0.],[.79,(1-.79**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
 def test_specific_interview_is_not_broad_company_warning_story():
     titles=['Ex-Anthropic researcher tells BBC employees are terrified by AI risks',
             'Anthropic and OpenAI warn they may lose control of AI']
