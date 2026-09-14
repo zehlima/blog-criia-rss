@@ -120,12 +120,24 @@ def articles(db,s3,slot,deadline):
 def summary(db,slot,total):
     r=db.execute('''SELECT count(*) FILTER(WHERE status='ok') ok,
       count(*) FILTER(WHERE status='error') errors FROM news_feed_runs WHERE slot=%s AND feed_id IN (SELECT id FROM news_feeds WHERE rss_url=ANY(%s))''',(slot,active_urls())).fetchone()
-    a=db.execute('''SELECT count(*) total,count(*) FILTER(WHERE content_key IS NOT NULL) extracted,
-      count(*) FILTER(WHERE content_key IS NULL) without_text,
+    a=db.execute('''WITH current_articles AS (
+      SELECT DISTINCT a.id,a.content_key,a.content_status FROM news_articles a
+      JOIN news_article_feeds af ON af.article_id=a.id
+      JOIN news_feeds f ON f.id=af.feed_id WHERE f.rss_url=ANY(%s))
+      SELECT count(*) total,
+      count(*) FILTER(WHERE content_key IS NOT NULL) content_key_total,
+      count(*) FILTER(WHERE content_key IS NOT NULL AND content_status IN ('extracted','rss_content')) valid_text_bodies,
+      count(*) FILTER(WHERE content_key IS NULL OR content_status NOT IN ('extracted','rss_content')) without_text,
       count(*) FILTER(WHERE content_status='pending') pending,
       count(*) FILTER(WHERE content_status='unavailable') unavailable,
-      count(*) FILTER(WHERE content_status='extracted') page_texts,
-      count(*) FILTER(WHERE content_status='rss_content') publisher_rss_texts FROM news_articles''').fetchone()
+      count(*) FILTER(WHERE content_status='invalid_reference') invalid_references,
+      count(*) FILTER(WHERE content_status='extracted' AND content_key IS NOT NULL) page_texts,
+      count(*) FILTER(WHERE content_status='rss_content' AND content_key IS NOT NULL) publisher_rss_texts,
+      count(*) FILTER(WHERE content_key IS NULL AND content_status NOT IN ('pending','unavailable','invalid_reference')) title_summary_only
+      FROM current_articles''',(active_urls(),)).fetchone()
+    # Backward-compatible key, explicitly paired with its limitation.
+    a['extracted']=a['content_key_total']
+    a['content_key_does_not_prove_integrality']=True
     pending=db.execute('''SELECT count(*) n FROM news_articles WHERE next_attempt_at<=now()
       AND (last_seen_at >= %s OR content_key IS NULL)''',(slot,)).fetchone()['n']
     return {'slot':slot.isoformat(),'expected_feeds':total,'feeds_ok':r['ok'],'feeds_errors':r['errors'],

@@ -36,8 +36,11 @@ def write_feed_report(db,s3,slot,report):
         r['classification'],r['action']=classify(r['error']) if r['status']!='not_attempted' else ('pendente','Executar feed; sem evidencia de falha.')
         writer.writerow(r)
     # Separate article-level extraction failures from RSS endpoint failures.
-    extraction=db.execute('''SELECT id,url,title,content_status,last_error,attempts,next_attempt_at
-      FROM news_articles WHERE content_key IS NULL AND content_status='unavailable' ORDER BY id''').fetchall()
+    extraction=db.execute('''SELECT DISTINCT a.id,a.url,a.title,a.content_status,a.last_error,a.attempts,a.next_attempt_at
+      FROM news_articles a JOIN news_article_feeds af ON af.article_id=a.id
+      JOIN news_feeds f ON f.id=af.feed_id
+      WHERE f.rss_url=ANY(%s) AND a.content_key IS NULL AND a.content_status='unavailable'
+      ORDER BY a.id''',(active_urls(),)).fetchall()
     exbuf=io.StringIO();exwriter=csv.DictWriter(exbuf,fieldnames=['id','url','title','content_status','last_error','attempts','next_attempt_at']);exwriter.writeheader();exwriter.writerows(extraction)
     stamp=report['finished_at'].replace(':','-')
     prefix=f'reports/collection/{slot.strftime("%Y-%m-%d_%H%MUTC")}/{stamp}'
