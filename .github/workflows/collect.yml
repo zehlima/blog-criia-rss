@@ -31,6 +31,9 @@ jobs:
       - run: python -m pytest -q
       - name: Executar
         env:
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+          DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
+          DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           R2_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
