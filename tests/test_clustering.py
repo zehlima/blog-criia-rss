@@ -17,3 +17,14 @@ def test_singletons_not_forced_into_topics():
 def test_identical_stories_are_grouped():
     groups=coherent_groups(np.array([[1.,0.],[1.,0.],[0.,1.]]))
     assert len(groups)==1 and groups[0]['indices']==[0,1]
+
+def test_generic_same_language_similarity_needs_anchor():
+    vectors=np.array([[1.,0.],[.75,(1-.75**2)**.5]])
+    titles=['Yapay zeka ile karmaşa da artıyor','Yapay zeka ile tam otonom ağlar dönemi']
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_multilingual_event_with_entity_anchor_is_kept():
+    vectors=np.array([[1.,0.],[.75,(1-.75**2)**.5]])
+    titles=['Apple is reportedly working on iPhone game controllers',
+            'Apple’ın iPhone için geliştirdiği oyun kumandaları ortaya çıktı']
+    assert coherent_groups(vectors,titles,min_similarity=.72)[0]['indices']==[0,1]

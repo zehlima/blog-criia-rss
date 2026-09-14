@@ -136,6 +136,8 @@ def run(db,s3,feeds):
     slot=slot_for(now)
     deadline=time.monotonic()+run_budget(now,int(os.getenv('MAX_RUN_SECONDS','1800')))
     db.execute('''INSERT INTO news_runs(slot) VALUES(%s) ON CONFLICT(slot) DO UPDATE SET status='running',finished_at=NULL''',(slot,))
+    from .repair_links import repair_dday
+    print(json.dumps({'phase':'link_repair',**repair_dday(db)},ensure_ascii=False),flush=True)
     sources(db,s3,slot,feeds,deadline)
     size=articles(db,s3,slot,deadline)
     report=summary(db,slot,len(feeds));report['compressed_bytes_written']=size

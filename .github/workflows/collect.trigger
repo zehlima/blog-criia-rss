@@ -1,1 +1,1 @@
-2026-09-14: final recovery deployment with verified large RSS support and next-window checkpoint
+2026-09-14: repair DDay enclosure URLs and deploy anchored v4 analysis source

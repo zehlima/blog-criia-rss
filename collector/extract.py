@@ -12,6 +12,15 @@ def digest(value):
 def iso_date(value):
     return datetime.fromtimestamp(calendar.timegm(value),timezone.utc) if value else None
 
+def entry_url(entry,base):
+    """Prefer the article alternate link over enclosures/media chosen by some parsers."""
+    for link in entry.get('links',[]):
+        if link.get('rel')=='alternate' and (link.get('type') or 'text/html').split(';',1)[0].strip()=='text/html':
+            return canonical(link['href'],base)
+    candidate=entry.get('id') or entry.get('link')
+    if not candidate:raise ValueError('entry_without_article_link')
+    return canonical(candidate,base)
+
 def entries(body, base):
     parsed=feedparser.parse(body)
     if not parsed.get('version'):
@@ -30,9 +39,11 @@ def entries(body, base):
         warnings.warn('RSS recovered: '+type(parsed.get('bozo_exception')).__name__,RuntimeWarning)
     result=[]
     for e in parsed.entries:
-        if not e.get('link') or not e.get('title'):
+        if not e.get('title'):
             continue
-        a={'url':canonical(e.link,base),'title':e.title,
+        try:url=entry_url(e,base)
+        except (ValueError,KeyError):continue
+        a={'url':url,'title':e.title,
            'summary':e.get('summary',''), 'published_at':iso_date(e.get('published_parsed')),
            'source_updated_at':iso_date(e.get('updated_parsed'))}
         # Resumo em texto. Corpo integral é extraído da página e arquivado no R2.

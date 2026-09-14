@@ -1,1 +1,1 @@
-2026-09-14: run title-only paraphrase model after editorial regression calibration
+2026-09-14: v4 add lexical anchors after reviewing v3 false-positive groups

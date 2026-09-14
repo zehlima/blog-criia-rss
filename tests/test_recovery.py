@@ -50,6 +50,24 @@ def test_empty_rss_is_not_counted_as_populated():
     with pytest.raises(ValueError,match='invalid_empty'):
         entries(b'<rss version="2.0"><channel><title>empty</title></channel></rss>','https://example.com')
 
+def test_article_alternate_wins_over_image_enclosure():
+    from collector.extract import entries
+    body=b'''<rss version="2.0"><channel><title>DDay</title><item><title>Story</title>
+      <link>https://example.com/story</link>
+      <enclosure url="https://images.example.com/thumb.jpg" type="image/jpeg"/>
+      </item></channel></rss>'''
+    assert entries(body,'https://example.com')[0]['url']=='https://example.com/story'
+
+def test_dday_repair_sql_is_valid():
+    import inspect,re
+    from pglast import parse_sql
+    from collector import repair_links
+    source=inspect.getsource(repair_links.repair_dday)
+    statements=re.findall(r'db\.execute\("""(.*?)"""',source,re.S)
+    assert len(statements)>=5
+    for sql in statements:
+        parse_sql(re.sub(r'%s',"'[]'",sql))
+
 def test_robots_server_failure_is_not_a_publisher_disallow(monkeypatch):
     from collector import network
     import pytest
