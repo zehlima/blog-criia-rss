@@ -11,7 +11,8 @@ REQUIRED=['DATABASE_URL','R2_ENDPOINT_URL','R2_ACCESS_KEY_ID','R2_SECRET_ACCESS_
 def connect():
     missing=[k for k in REQUIRED if not os.getenv(k)]
     if missing:raise ValueError('Secrets ausentes: '+', '.join(missing))
-    db=psycopg.connect(os.environ['DATABASE_URL'],sslmode='require',connect_timeout=15,
+    overrides={'host':os.environ['DATABASE_HOST']} if os.getenv('DATABASE_HOST') else {}
+    db=psycopg.connect(os.environ['DATABASE_URL'],**overrides,sslmode='require',connect_timeout=15,
                        row_factory=dict_row,autocommit=True)
     s3=boto3.client('s3',endpoint_url=os.environ['R2_ENDPOINT_URL'],region_name='auto',
         aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],
