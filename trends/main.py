@@ -19,7 +19,9 @@ BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
 VERSION='boris-topics-v12-editorial-template-gates-072'
-EMBEDDING_CACHE_VERSION=VERSION
+# The semantic input is unchanged from v11; only the lexical/editorial gate
+# changed, so reuse the pinned v11 vectors instead of recomputing 24k titles.
+EMBEDDING_CACHE_VERSION='boris-topics-v11-event-context-active-inventory-072'
 
 
 def log(**data):print(json.dumps(data,ensure_ascii=False,default=str),flush=True)
