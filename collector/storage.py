@@ -70,3 +70,36 @@ def save_entry(db,feed_id,a):
       RETURNING id''',a).fetchone()
     db.execute('INSERT INTO news_article_feeds(article_id,feed_id) VALUES(%s,%s) ON CONFLICT(article_id,feed_id) DO UPDATE SET in_latest=true',
                (row['id'],feed_id))
+
+# Uma viagem ao banco por lote; conserva a mesma política de atualização por URL.
+BATCH_SQL = """WITH incoming AS (
+ SELECT * FROM jsonb_to_recordset(%(items)s::jsonb) AS x(
+ url text,title text,summary text,published_at timestamptz,source_updated_at timestamptz,
+ metadata_hash text,rss_content_key text)
+), saved AS (
+ INSERT INTO news_articles(url,title,summary,published_at,source_updated_at,metadata_hash,rss_content_key)
+ SELECT url,title,summary,published_at,source_updated_at,metadata_hash,rss_content_key FROM incoming
+ ON CONFLICT(url) DO UPDATE SET title=EXCLUDED.title,summary=EXCLUDED.summary,
+ published_at=COALESCE(EXCLUDED.published_at,news_articles.published_at),
+ source_updated_at=COALESCE(EXCLUDED.source_updated_at,news_articles.source_updated_at),
+ metadata_hash=EXCLUDED.metadata_hash,last_seen_at=now(),
+ rss_content_key=COALESCE(EXCLUDED.rss_content_key,news_articles.rss_content_key)
+ RETURNING id
+)
+INSERT INTO news_article_feeds(article_id,feed_id)
+SELECT id,%(feed_id)s FROM saved
+ON CONFLICT(article_id,feed_id) DO UPDATE SET in_latest=true"""
+
+def save_entries(db, feed_id, items):
+    from psycopg.types.json import Jsonb
+    fields=('url','title','summary','published_at','source_updated_at','metadata_hash','rss_content_key')
+    unique={a['url']:a for a in items}
+    records=[]
+    for a in unique.values():
+        row={k:a.get(k) for k in fields}
+        for k in ('published_at','source_updated_at'):
+            if row[k] is not None and hasattr(row[k],'isoformat'):
+                row[k]=row[k].isoformat()
+        records.append(row)
+    for start in range(0,len(records),250):
+        db.execute(BATCH_SQL,{'items':Jsonb(records[start:start+250]),'feed_id':feed_id})
