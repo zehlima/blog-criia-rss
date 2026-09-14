@@ -1,1 +1,1 @@
-Use immutable completed collection attempts while recovery is active; test v2 clusters
+2026-09-14: run title-only paraphrase model after editorial regression calibration

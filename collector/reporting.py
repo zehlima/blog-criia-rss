@@ -8,6 +8,12 @@ from .inventory import urls as active_urls
 
 
 def classify(error):
+    if error in ('body_too_large',):
+        return 'limite_coletor', 'Inspecionar tamanho do RSS e ajustar limite com validacao; nao substituir fonte.'
+    if error in ('invalid_empty_feed_or_entries',):
+        return 'feed_vazio', 'Conferir categoria e endpoint oficial; vazio nao prova indisponibilidade do veiculo.'
+    if error in ('SSLError',):
+        return 'tls', 'Verificar certificado e URL oficial; manter validacao TLS.'
     if error in ('AttributeError','TypeError','KeyError'):
         return 'coletor', 'Corrigir coletor e retestar; nao substituir fonte.'
     if error in ('http_404','http_410'):

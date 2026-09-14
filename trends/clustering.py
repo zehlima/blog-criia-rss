@@ -1,7 +1,7 @@
 """Bounded-diameter event groups. No forced assignment of unrelated articles."""
 import numpy as np
 
-def coherent_groups(embeddings,min_similarity=.89):
+def coherent_groups(embeddings,min_similarity=.72):
     from sklearn.cluster import AgglomerativeClustering
     if len(embeddings)<2:return []
     vectors=np.asarray(embeddings,dtype=np.float32)

@@ -59,3 +59,10 @@ def test_robots_server_failure_is_not_a_publisher_disallow(monkeypatch):
     for _ in range(2):
         with pytest.raises(ValueError,match='robots_unavailable_http_503'):
             network.allowed('https://example.com/article')
+
+
+def test_recovery_leaves_next_collection_window_available():
+    from collector.main import run_budget
+    assert run_budget(datetime(2026,9,14,14,50,tzinfo=timezone.utc),3000)==540
+    assert run_budget(datetime(2026,9,14,14,59,45,tzinfo=timezone.utc),3000)==0
+    assert run_budget(datetime(2026,9,14,15,0,tzinfo=timezone.utc),3000)==3000

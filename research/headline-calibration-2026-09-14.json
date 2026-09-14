@@ -1,0 +1,103 @@
+{
+  "cases": [
+    {
+      "a": "iOS 27 corrigiu um dos botões mais irritantes do iPhone!",
+      "b": "Cuidado com WhatsApp no iPhone! Ataque rouba a conta sem ter de tocar no ecrã",
+      "same_event": false,
+      "similarity": 0.5574328303337097
+    },
+    {
+      "a": "Hackear um Boeing 737 em 60 segundos? Dispositivo minúsculo mostra que é possível",
+      "b": "Microsoft alerta para nova onda de ataques contra contas Microsoft 365",
+      "same_event": false,
+      "similarity": 0.11351652443408966
+    },
+    {
+      "a": "LG nega que as suas Smart TVs estejam a espiar",
+      "b": "Cuidado com WhatsApp no iPhone! Ataque rouba a conta sem ter de tocar no ecrã",
+      "same_event": false,
+      "similarity": 0.28488022089004517
+    },
+    {
+      "a": "ConnectWise修補ScreenConnect重大漏洞",
+      "b": "GitLab修補CVSS滿分重大漏洞，公開隔天即出現漏洞探測",
+      "same_event": false,
+      "similarity": 0.5035683512687683
+    },
+    {
+      "a": "Google發布9月份Android例行更新，修補200個資安漏洞",
+      "b": "Palo Alto Networks修補防火牆作業系統XML功能漏洞",
+      "same_event": false,
+      "similarity": 0.2897532880306244
+    },
+    {
+      "a": "美光、闪迪赴韩争抢半导体核心人才，三星加码薪酬与股权激励应对挖角",
+      "b": "全球首次：杭州镓仁半导体实现 12 英寸氧化镓晶体等径生长",
+      "same_event": false,
+      "similarity": 0.3111875057220459
+    },
+    {
+      "a": "Apple is reportedly working on iPhone game controllers",
+      "b": "Apple reports record quarterly revenue from iPhone sales",
+      "same_event": false,
+      "similarity": 0.43222111463546753
+    },
+    {
+      "a": "Anthropic CEO calls for slowing AI development",
+      "b": "Apple is reportedly working on iPhone game controllers",
+      "same_event": false,
+      "similarity": 0.27862071990966797
+    },
+    {
+      "a": "Apple is reportedly working on iPhone game controllers",
+      "b": "Apple is designing its own game controllers for iPhone, could be Beats branded",
+      "same_event": true,
+      "similarity": 0.8312696218490601
+    },
+    {
+      "a": "Apple is reportedly working on iPhone game controllers",
+      "b": "Apple разрабатывает игровые контроллеры для iPhone — они выйдут под брендом Beats",
+      "same_event": true,
+      "similarity": 0.823337972164154
+    },
+    {
+      "a": "Apple is reportedly working on iPhone game controllers",
+      "b": "Apple’ın Yeni Oyun Kontrolcüleri Beats Markasıyla Gelebilir",
+      "same_event": true,
+      "similarity": 0.6766717433929443
+    },
+    {
+      "a": "Apple is reportedly working on iPhone game controllers",
+      "b": "Apple estaria desenvolvendo controles de jogos para iPhone",
+      "same_event": true,
+      "similarity": 0.8338370323181152
+    },
+    {
+      "a": "Anthropic CEO Amodei calls for slowing AI development",
+      "b": "Anthropic CEO’su Dario Amodei’den yapay zeka şirketlerine “yavaşlayın” çağrısı",
+      "same_event": true,
+      "similarity": 0.7209437489509583
+    },
+    {
+      "a": "Anthropic CEO Amodei calls for slowing AI development",
+      "b": "CEO da Anthropic pede desaceleração do desenvolvimento de inteligência artificial",
+      "same_event": true,
+      "similarity": 0.758579432964325
+    },
+    {
+      "a": "ConnectWise修補ScreenConnect重大漏洞",
+      "b": "ConnectWise公布的ScreenConnect重大漏洞，傳出已於8月下旬被用於攻擊活動",
+      "same_event": true,
+      "similarity": 0.6963295936584473
+    },
+    {
+      "a": "Link4 marks 10 years as digital trade services grow",
+      "b": "Link4 marks 10 years as digital trade services grow",
+      "same_event": true,
+      "similarity": 1
+    }
+  ],
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "note": "Small editorial regression sample, includes explicit translated variants; not a general accuracy benchmark.",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+}

@@ -1,1 +1,1 @@
-2026-09-14: deploy verified publisher endpoints and restart with bulk pipeline, prefetched extraction, RSS fallback and honest coverage
+2026-09-14: final recovery deployment with verified large RSS support and next-window checkpoint

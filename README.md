@@ -1,32 +1,26 @@
-# BLOG CRIIA — Bóris Python v2
+# BLOG CRIIA — Bóris
 
-Comece por **CONFIGURAR.md**. Migração da arquitetura Worker/D1 para Python + GitHub Actions + Supabase/PostgreSQL + R2.
+Coleta de RSS e textos, armazenamento em Supabase/R2 e frequência de pautas por país, continente e globo.
 
-## Arquivos
+- Inventário ativo: `data/feeds.json`, atualmente 675 feeds, incluindo 75 da América do Sul. Registros antigos são preservados no banco.
+- Coleta: 00h, 06h, 12h e 18h de Brasília; recuperação nas demais horas. `ENABLE_COLLECTION=false` pausa somente os disparos agendados.
+- Extração: 16 trabalhadores, fila contínua, gravação em lotes, retentativas com backoff. Conteúdo de página e conteúdo publicado no RSS têm estados separados; resumo não é promovido a texto completo.
+- Tendências: representações multilíngues dos títulos, agrupamento de diâmetro limitado e deduplicação estimada de republicações. Relatórios vinculados ao encerramento da coleta, com alvos de +15/+20/+25 minutos. Atrasos e cobertura ficam explícitos.
+- Relatórios: artefatos do Actions e cópias no R2 a cada encerramento. Erros de feeds separados dos erros de extração.
+- Painel: estrutura preparada, ainda sem publicação.
 
-- `collector/`: HTTP, parser, extração, persistência e orquestração.
-- `sql/001_schema.sql`: schema PostgreSQL idempotente.
-- `.github/workflows/collect.yml`: quatro janelas Brasília e retomada uma hora depois.
-- `data/feeds.json`: os 600 registros originais, sem exclusão dos pendentes.
-- `requirements.txt`: versões instaladas fixadas.
-- `tests/`: testes locais, sem credenciais.
-- `VALIDACAO.json`: o que foi e não foi testado.
+Leia `CONFIGURAR.md` para configuração operacional e `VALIDACAO.json` para o último checkpoint documentado. O resultado verde de um workflow confirma execução técnica; não significa cobertura integral nem revisão editorial.
 
-## Local
+## Verificação local
 
 ```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
 python -m pytest -q
 ```
 
-Os comandos abaixo requerem os cinco secrets descritos no guia, definidos como variáveis de ambiente:
+O fluxo de tendências instala também `trends/requirements.txt`. Para verificar os provedores, com os secrets já configurados:
 
 ```bash
-python -m collector.main setup
 python -m collector.main preflight
-python -m collector.main run
+python -m collector.smoke
 ```
-
-Nada é publicado automaticamente ao descompactar. O agendamento só roda com `ENABLE_COLLECTION=true`. O teste completo dos provedores fica pendente dos acessos.

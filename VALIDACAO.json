@@ -1,17 +1,35 @@
 {
-  "status": "PYTHON_CODE_READY_ACCOUNTS_PENDING",
-  "progress_estimate_percent": 75,
-  "tests_passed": 16,
-  "tests_failed": 0,
-  "python_compile": "passed",
-  "workflow_yaml": "parsed_and_structure_checked",
-  "postgres_sql": "pglast_syntax_passed_not_executed_on_supabase",
-  "live_sample": "3 DNS gaierror before HTTP; see LIVE_SAMPLE.json",
-  "github_account": "zehlima",
-  "official_repo": "not_identified",
-  "supabase": "integration_suggested_not_connected",
-  "r2": "credentials_not_configured",
-  "remote_setup": "not_executed",
-  "full_600_cycle": "not_executed",
-  "schedule": "00,06,12,18 America/Sao_Paulo; recovery +1h; ENABLE_COLLECTION gate"
+  "checked_at": "2026-09-14T14:40:08Z",
+  "status": "RECOVERY_RUNNING_EDITORIAL_FIX_IN_VALIDATION",
+  "repository": "zehlima/blog-criia-rss",
+  "local_tests_passed": 37,
+  "live_database_r2_pipeline": "passed",
+  "live_probe_run": 34856689880,
+  "active_inventory": 675,
+  "latest_feed_checkpoint": {
+    "ok": 646,
+    "error": 29,
+    "not_attempted": 0
+  },
+  "latest_articles_checkpoint": {
+    "total": 19966,
+    "archived": 8120,
+    "pending": 10502,
+    "publisher_rss": 186
+  },
+  "collection_run": 34855885331,
+  "trends_v2": {
+    "run": 34854730223,
+    "technical_execution": "passed",
+    "editorial_review": "failed: unrelated headlines grouped; v3 prepared"
+  },
+  "trends_v3": {
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "threshold": 0.72,
+    "live_calibration_run": 34856985807,
+    "calibration": "8 observed negatives separated, 6/8 positives retained; small sample only",
+    "full_corpus": "pending"
+  },
+  "panel": "not_published",
+  "schedule": "00,06,12,18 America/Sao_Paulo; recovery other hours; +15/+20/+25 min targets after collection"
 }

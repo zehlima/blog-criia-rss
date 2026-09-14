@@ -20,6 +20,11 @@ def slot_for(now):
     local=now.astimezone(ZoneInfo('America/Sao_Paulo'))
     return local.replace(hour=(local.hour//6)*6,minute=0,second=0,microsecond=0).astimezone(timezone.utc)
 
+def run_budget(now, maximum):
+    # Leave a minute to drain in-flight requests and save the checkpoint before the next six-hour window.
+    remaining=(slot_for(now)+timedelta(hours=6)-now).total_seconds()
+    return max(0,min(maximum,remaining-60))
+
 def attempt(fn,item):
     try:return fn(item),None
     except Exception as e:
@@ -127,8 +132,9 @@ def summary(db,slot,total):
       'feeds_not_attempted':max(0,total-r['ok']-r['errors']),'articles':a,'due_articles':pending}
 
 def run(db,s3,feeds):
-    slot=slot_for(datetime.now(timezone.utc))
-    deadline=time.monotonic()+int(os.getenv('MAX_RUN_SECONDS','1800'))
+    now=datetime.now(timezone.utc)
+    slot=slot_for(now)
+    deadline=time.monotonic()+run_budget(now,int(os.getenv('MAX_RUN_SECONDS','1800')))
     db.execute('''INSERT INTO news_runs(slot) VALUES(%s) ON CONFLICT(slot) DO UPDATE SET status='running',finished_at=NULL''',(slot,))
     sources(db,s3,slot,feeds,deadline)
     size=articles(db,s3,slot,deadline)

@@ -16,8 +16,9 @@ from collector.inventory import urls as active_urls
 from .core import continent,families,in_window,rankings
 
 BUCKET=os.getenv('R2_BUCKET')
-MODEL='intfloat/multilingual-e5-small'
-VERSION='boris-topics-v2-headline-complete-link'
+MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
+MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
+VERSION='boris-topics-v3-headline-paraphrase-072'
 
 
 def log(**data):print(json.dumps(data,ensure_ascii=False,default=str),flush=True)
@@ -60,7 +61,7 @@ def load_text(s3,a):
             a['text_read_error']=type(exc).__name__
     a['analysis_text']=text
     # Stable, focused representation: page boilerplate and long body averages must not drive event identity.
-    a['semantic_text']=a['title']+'\n'+(a['summary'] or '')[:600]
+    a['semantic_text']=a['title'].strip()
     a['input_hash']=hashlib.sha256((VERSION+a['semantic_text']).encode()).hexdigest()
     return a
 
@@ -72,7 +73,7 @@ def vectors(s3,articles,progress=None):
     torch.set_num_threads(max(1,min(4,os.cpu_count() or 2)))
     manifest_raw=optional(s3,'analysis/cache/manifest.json.gz')
     manifest=json.loads(gzip.decompress(manifest_raw)) if manifest_raw else {}
-    revision=manifest.get('revision') or model_info(MODEL).sha
+    revision=MODEL_REVISION
     cache={}
     if manifest.get('version')==VERSION and manifest.get('key'):
         with np.load(io.BytesIO(get_object(s3,manifest['key'])),allow_pickle=False) as data:
@@ -82,10 +83,10 @@ def vectors(s3,articles,progress=None):
     if progress:progress({'phase':'embeddings','articles':len(articles),'done':len(articles)-len(missing)})
     if missing:
         model=SentenceTransformer(MODEL,revision=revision,device='cpu',trust_remote_code=False)
-        model.max_seq_length=512
+        model.max_seq_length=128
         for start in range(0,len(missing),64):
             batch=missing[start:start+64]
-            embedded=model.encode(['query: '+a['semantic_text'] for a in batch],batch_size=32,
+            embedded=model.encode([a['semantic_text'] for a in batch],batch_size=32,
                                  normalize_embeddings=True,show_progress_bar=False)
             for a,v in zip(batch,embedded):cache[a['input_hash']]=v.astype(np.float32)
             if start%512==0 or start+64>=len(missing):
@@ -158,7 +159,9 @@ def prepare(db,s3,run_id):
     fam=families([a['analysis_text'] for a in recent])
     for a,f in zip(recent,fam):a['family']=f
     coverage={'clustering_method':'complete_linkage_cosine',
-      'minimum_pairwise_similarity':.89,
+      'minimum_pairwise_similarity':.72,
+      'semantic_basis':'headline_only_multilingual_paraphrase',
+      'calibration_status':'8 observed false pairs separated; 6 of 8 equivalent pairs retained at 0.72; small sample, not a general benchmark',
       'editorial_status':'automatic_groups_require_editorial_review',
       'ungrouped_articles':sum(a['topic_id']=='outlier' for a in recent),
       'corpus_articles':len(articles),'window_articles':len(recent),
