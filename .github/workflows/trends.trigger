@@ -11,3 +11,4 @@
 2026-09-14: v12 exclude venue/catalogue templates and weak product-only matches
 2026-09-14: v12 reuse immutable v11 event-context embedding cache
 2026-09-14: v13 separate sales, reviews and cross-brand comparison stories
+2026-09-14: v14 gate calendar templates and incompatible product story forms
