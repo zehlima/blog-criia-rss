@@ -1,0 +1,47 @@
+name: Reparar links historicos RSS
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/repair-links.trigger']
+permissions:
+  contents: read
+env:
+  DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+  DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
+  DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  R2_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ secrets.R2_BUCKET }}
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Reparar links e verificar
+        run: |
+          python - <<'PY'
+          import json
+          from collector.storage import connect
+          from collector.repair_links import repair_dday
+          db,_=connect()
+          try:
+              result=repair_dday(db)
+              remaining=db.execute("""SELECT count(*) n FROM news_articles a
+                JOIN news_article_feeds af ON af.article_id=a.id
+                JOIN news_feeds f ON f.id=af.feed_id
+                WHERE f.rss_url='https://www.dday.it/rss'
+                  AND split_part(a.url,'/',3)='images.dday.it'
+                  AND a.content_status<>'invalid_reference'""").fetchone()['n']
+              print(json.dumps({**result,'remaining_active_image_links':remaining}))
+              assert remaining==0
+          finally:
+              db.close()
+          PY
