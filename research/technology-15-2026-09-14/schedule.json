@@ -1,0 +1,18 @@
+{
+  "timezone": "America/Sao_Paulo",
+  "local_hours": [
+    0,
+    6,
+    12,
+    18
+  ],
+  "cron_utc": "0 3,9,15,21 * * *",
+  "workflow": ".github/workflows/collect.yml",
+  "integrated_manifest": "data/feeds.json",
+  "technology_panel": "data/technology15.json",
+  "followup_automation_enabled": true,
+  "followup_schedule": "RRULE:FREQ=DAILY;BYHOUR=0,6,12,18;BYMINUTE=0;BYSECOND=0",
+  "initial_ingestion_run": 34909977876,
+  "last_confirmed_scheduled_collector_run": 34907512243,
+  "github_schedule_is_best_effort": true
+}

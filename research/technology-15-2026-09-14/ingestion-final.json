@@ -1,0 +1,129 @@
+{
+  "slot": "2026-09-14T21:00:00+00:00",
+  "sources": [
+    {
+      "name": "36Kr",
+      "rss_url": "https://36kr.com/feed",
+      "status": "ok",
+      "items": 30,
+      "error": null,
+      "stored_articles": 30
+    },
+    {
+      "name": "Ars Technica",
+      "rss_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "status": "ok",
+      "items": 20,
+      "error": null,
+      "stored_articles": 31
+    },
+    {
+      "name": "CNET",
+      "rss_url": "https://www.cnet.com/rss/news/",
+      "status": "ok",
+      "items": 25,
+      "error": null,
+      "stored_articles": 34
+    },
+    {
+      "name": "Crunchbase News",
+      "rss_url": "https://news.crunchbase.com/feed/",
+      "status": "ok",
+      "items": 10,
+      "error": null,
+      "stored_articles": 12
+    },
+    {
+      "name": "Engadget",
+      "rss_url": "https://www.engadget.com/rss.xml",
+      "status": "ok",
+      "items": 20,
+      "error": null,
+      "stored_articles": 43
+    },
+    {
+      "name": "Gizmodo",
+      "rss_url": "https://gizmodo.com/feed",
+      "status": "error",
+      "items": 0,
+      "error": "invalid_alternative_feeds:invalid_alternative_feeds:http_403,http_403,robots_unavailable_http_403",
+      "stored_articles": 0
+    },
+    {
+      "name": "heise online",
+      "rss_url": "https://www.heise.de/rss/heise-atom.xml",
+      "status": "ok",
+      "items": 151,
+      "error": null,
+      "stored_articles": 193
+    },
+    {
+      "name": "Reddit r/technology",
+      "rss_url": "https://www.reddit.com/r/technology/new/.rss?limit=100",
+      "status": "ok",
+      "items": 100,
+      "error": null,
+      "stored_articles": 100
+    },
+    {
+      "name": "TechCrunch",
+      "rss_url": "https://techcrunch.com/feed/",
+      "status": "ok",
+      "items": 20,
+      "error": null,
+      "stored_articles": 37
+    },
+    {
+      "name": "TechRadar",
+      "rss_url": "https://www.techradar.com/rss",
+      "status": "ok",
+      "items": 50,
+      "error": null,
+      "stored_articles": 96
+    },
+    {
+      "name": "The Verge",
+      "rss_url": "https://www.theverge.com/rss/index.xml",
+      "status": "ok",
+      "items": 10,
+      "error": null,
+      "stored_articles": 26
+    },
+    {
+      "name": "Tom's Hardware",
+      "rss_url": "https://www.tomshardware.com/feeds.xml",
+      "status": "ok",
+      "items": 50,
+      "error": null,
+      "stored_articles": 68
+    },
+    {
+      "name": "VentureBeat",
+      "rss_url": "https://venturebeat.com/feed",
+      "status": "error",
+      "items": 0,
+      "error": "http_429",
+      "stored_articles": 0
+    },
+    {
+      "name": "WIRED",
+      "rss_url": "https://www.wired.com/feed/rss",
+      "status": "ok",
+      "items": 50,
+      "error": null,
+      "stored_articles": 59
+    },
+    {
+      "name": "ZDNET",
+      "rss_url": "https://www.zdnet.com/news/rss.xml",
+      "status": "ok",
+      "items": 25,
+      "error": null,
+      "stored_articles": 25
+    }
+  ],
+  "total": 15,
+  "ok": 13,
+  "note": "Feed metadata persisted; complete page extraction continues in the global collector.",
+  "run_url": "https://github.com/zehlima/blog-criia-rss/actions/runs/34909977876"
+}
