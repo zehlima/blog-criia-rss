@@ -1,0 +1,181 @@
+# BLOG CRIIA — devolutiva da janela 2026-09-14 06h00 BRT
+
+## Estado da rodagem
+
+- Encerramento: **parcial** em 2026-09-14 07h38 BRT.
+- Cobertura: **600/600 feeds tentados (100%)**.
+- Feeds OK: **479**.
+- Feeds com erro: **121**.
+- Feeds não tentados: **0**.
+- Notícias únicas: **15624**.
+- Textos completos com `content_key`: **1625**.
+- Matérias pendentes de extração: **13448**.
+- Matérias com falha de extração: **551**.
+
+> 600/600 significa cobertura de tentativa dos feeds, não conclusão integral. A rodagem terminou parcial porque ainda há feeds com erro e extrações pendentes/falhas.
+
+## Classificação dos erros dos feeds
+
+- http_403: 47
+- http_404: 26
+- invalid_or_malformed_feed: 20
+- SSLError: 5
+- gaierror: 4
+- AttributeError: 3
+- http_405: 2
+- http_500: 2
+- http_522: 2
+- ReadTimeout: 2
+- http_503: 1
+- non_public_destination: 1
+- ContentDecodingError: 1
+- http_429: 1
+- ConnectTimeout: 1
+- too_many_redirects: 1
+- body_too_large: 1
+- http_400: 1
+
+`AttributeError` é erro interno do coletor e não prova feed inválido. Nenhum feed deve ser definitivamente substituído sem validação manual ou nova tentativa controlada.
+
+## Matérias pendentes
+
+**13448** matérias continuam pendentes de extração de texto.
+
+## Falhas de extração das matérias
+
+- robots_disallowed: 329
+- http_403: 199
+- http_429: 20
+- insufficient_text: 3
+
+Essas falhas são da leitura das páginas das matérias e estão separadas dos erros de RSS.
+
+## Todos os feeds em erro
+
+| ID | Veículo | País | Região | RSS URL | Erro original | Horário | Classificação | Ação recomendada |
+|---:|---|---|---|---|---|---|---|---|
+| 9 | BigDATAwire | Estados Unidos | América do Norte | https://www.bigdatawire.com/feed/ | http_403 | 2026-09-14 07:08:12 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 27 | Digital Trends | Estados Unidos | América do Norte | https://www.digitaltrends.com/feed/ | AttributeError | 2026-09-14 07:08:12 BRT | erro interno do coletor | corrigir/instrumentar o coletor e repetir; não substituir o feed |
+| 36 | HPCwire | Estados Unidos | América do Norte | https://www.hpcwire.com/feed/ | http_403 | 2026-09-14 07:08:13 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 52 | RCR Wireless News | Estados Unidos | América do Norte | https://rcrwireless.com/feed | http_403 | 2026-09-14 07:08:13 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 53 | SC Media | Estados Unidos | América do Norte | https://www.scworld.com/feed | invalid_or_malformed_feed | 2026-09-14 07:08:14 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 72 | VentureBeat | Estados Unidos | América do Norte | https://venturebeat.com/feed | http_429 | 2026-09-14 07:08:14 BRT | bloqueio HTTP ou política de acesso | repetir com backoff e menor concorrência |
+| 75 | ZDNET | Estados Unidos | América do Norte | https://www.zdnet.com/news/rss.xml | http_404 | 2026-09-14 07:08:15 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 76 | 100% Noticias | Nicaragua | América Central e Caribe | https://100noticias.com.ni/rss/ | gaierror | 2026-09-14 07:08:16 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 77 | Artículo 66 | Nicaragua | América Central e Caribe | https://www.articulo66.com/feed/ | http_403 | 2026-09-14 07:08:16 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 84 | CRHoy | Costa Rica | América Central e Caribe | https://www.crhoy.com/tecnologia/feed/ | http_404 | 2026-09-14 07:08:17 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 87 | Diario El Mundo | El Salvador | América Central e Caribe | https://diario.elmundo.sv/rss/tecnologia.xml | invalid_or_malformed_feed | 2026-09-14 07:08:18 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 90 | Diario Tiempo | Honduras | América Central e Caribe | https://tiempo.hn/feed/ | http_403 | 2026-09-14 07:08:18 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 93 | Eco TV | Panamá | América Central e Caribe | https://www.ecotvpanama.com/rss/pages/tecnologia.xml | AttributeError | 2026-09-14 07:08:19 BRT | erro interno do coletor | corrigir/instrumentar o coletor e repetir; não substituir o feed |
+| 94 | El Caribe | República Dominicana | América Central e Caribe | https://www.elcaribe.com.do/web-stories/feed/ | http_403 | 2026-09-14 07:08:20 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 95 | El Diario de Hoy | El Salvador | América Central e Caribe | https://www.elsalvador.com/feed/ | http_403 | 2026-09-14 07:08:20 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 97 | El Economista Centroamérica | El Salvador | América Central e Caribe | https://www.eleconomista.net/rss.xml | http_403 | 2026-09-14 07:08:21 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 99 | El Heraldo Honduras | Honduras | América Central e Caribe | https://www.elheraldo.hn/rss/tecnologia.xml | http_404 | 2026-09-14 07:08:22 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 105 | En Segundos Panamá | Panamá | América Central e Caribe | https://ensegundos.com.pa/feed/ | ContentDecodingError | 2026-09-14 07:08:23 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 107 | Estrategia & Negocios | Honduras | América Central e Caribe | https://www.estrategiaynegocios.net/rss.xml | SSLError | 2026-09-14 07:08:23 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 116 | Juventud Técnica | Cuba | América Central e Caribe | https://www.juventudtecnica.cu/feed/ | invalid_or_malformed_feed | 2026-09-14 07:08:24 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 117 | La Estrella de Panamá | Panamá | América Central e Caribe | https://www.laestrella.com.pa/rss.xml | http_404 | 2026-09-14 07:08:24 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 118 | La Gaceta de Panamá | Panamá | América Central e Caribe | https://www.lagacetadepanama.com/rss/ | http_403 | 2026-09-14 07:08:25 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 120 | La Prensa Gráfica | El Salvador | América Central e Caribe | https://www.laprensagrafica.com/rss/tecnologia.xml | http_403 | 2026-09-14 07:08:25 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 122 | La Prensa Nicaragua | Nicaragua | América Central e Caribe | https://www.laprensani.com/feed/ | http_403 | 2026-09-14 07:08:26 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 127 | Metro Libre | Panamá | América Central e Caribe | https://www.metrolibre.com/rss.xml | http_404 | 2026-09-14 07:08:27 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 132 | OnCuba News | Cuba | América Central e Caribe | https://oncubanews.com/feed/ | invalid_or_malformed_feed | 2026-09-14 07:08:35 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 138 | República | Guatemala | América Central e Caribe | https://republica.gt/rss.xml | http_404 | 2026-09-14 07:08:35 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 142 | Soy502 | Guatemala | América Central e Caribe | https://www.soy502.com/rss.xml | invalid_or_malformed_feed | 2026-09-14 07:08:36 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 144 | TechNewsTT | Trinidad e Tobago | América Central e Caribe | https://technewstt.com/feed/ | http_403 | 2026-09-14 07:08:36 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 145 | TecnoComo | República Dominicana | América Central e Caribe | https://tecnocomo.com/feed/ | gaierror | 2026-09-14 07:08:37 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 146 | Telemetro | Panamá | América Central e Caribe | https://www.telemetro.com/rss/pages/tecnologia.xml | AttributeError | 2026-09-14 07:08:37 BRT | erro interno do coletor | corrigir/instrumentar o coletor e repetir; não substituir o feed |
+| 159 | CHIP | Alemanha | Europa Ocidental | https://rss.chip.de/c/573/f/7439/index.rss | ConnectTimeout | 2026-09-14 07:08:48 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 161 | Computer Bild | Alemanha | Europa Ocidental | https://www.computerbild.de/rss/ | http_404 | 2026-09-14 07:08:48 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 162 | Computer Hoy | Espanha | Europa Ocidental | https://computerhoy.com/rss | invalid_or_malformed_feed | 2026-09-14 07:08:49 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 165 | Computing | Reino Unido | Europa Ocidental | https://www.computing.co.uk/feeds/rss | http_404 | 2026-09-14 07:08:49 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 180 | Hardware Upgrade | Itália | Europa Ocidental | https://www.hwupgrade.it/rss/news.xml | invalid_or_malformed_feed | 2026-09-14 07:08:50 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 184 | Information Age — Reino Unido | Reino Unido | Europa Ocidental | https://www.information-age.com/feed/ | http_403 | 2026-09-14 07:08:51 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 195 | Maddyness | França | Europa Ocidental | https://www.maddyness.com/feed/ | http_403 | 2026-09-14 07:08:51 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 207 | Silicon Republic | Irlanda | Europa Ocidental | https://www.siliconrepublic.com/feed/ | http_403 | 2026-09-14 07:08:55 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 227 | AIN | Ucrânia | Europa Oriental (Leste Europeu) | https://ain.ua/feed/ | http_403 | 2026-09-14 07:08:55 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 234 | BOOT.lv | Letônia | Europa Oriental (Leste Europeu) | https://boot.ritakafija.lv/feed/ | http_404 | 2026-09-14 07:08:56 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 240 | Computerworld Magyarország | Hungria | Europa Oriental (Leste Europeu) | https://computerworld.hu/rss | http_404 | 2026-09-14 07:08:56 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 243 | DEV Styler | Bulgária | Europa Oriental (Leste Europeu) | https://devstyler.bg/feed/ | http_403 | 2026-09-14 07:08:57 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 262 | Keddr | Ucrânia | Europa Oriental (Leste Europeu) | https://keddr.com/feed/ | http_403 | 2026-09-14 07:09:01 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 264 | Kursors.lv | Letônia | Europa Oriental (Leste Europeu) | https://kursors.lv/feed/ | http_403 | 2026-09-14 07:09:01 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 268 | Mezha.Media | Ucrânia | Europa Oriental (Leste Europeu) | https://mezha.media/feed/ | http_403 | 2026-09-14 07:09:02 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 271 | Mobilissimo | Romênia | Europa Oriental (Leste Europeu) | https://www.mobilissimo.ro/rss.xml | http_404 | 2026-09-14 07:09:02 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 274 | Nextech | Eslováquia | Europa Oriental (Leste Europeu) | https://www.nextech.sk/rss | invalid_or_malformed_feed | 2026-09-14 07:09:03 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 277 | Overclockers.ru | Rússia | Europa Oriental (Leste Europeu) | https://overclockers.ru/rss/news.xml | http_404 | 2026-09-14 07:09:03 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 281 | Prohardver | Hungria | Europa Oriental (Leste Europeu) | https://prohardver.hu/rss/anyagok.xml | http_404 | 2026-09-14 07:09:04 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 292 | Svět hardware | Chéquia | Europa Oriental (Leste Europeu) | https://www.svethardware.cz/rss.xml | http_404 | 2026-09-14 07:09:19 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 301 | 36Kr | China | Ásia (Leste Asiático e Sudeste Asiático) | https://36kr.com/feed | invalid_or_malformed_feed | 2026-09-14 07:09:21 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 306 | beSUCCESS | Coreia do Sul | Ásia (Leste Asiático e Sudeste Asiático) | https://besuccess.com/feed/ | invalid_or_malformed_feed | 2026-09-14 07:09:22 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 308 | BRIDGE | Japão | Ásia (Leste Asiático e Sudeste Asiático) | https://thebridge.jp/feed | http_403 | 2026-09-14 07:09:22 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 309 | cnBeta | China | Ásia (Leste Asiático e Sudeste Asiático) | https://www.cnbeta.com.tw/backend.php | ReadTimeout | 2026-09-14 07:09:26 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 313 | DealStreetAsia | Singapura | Ásia (Leste Asiático e Sudeste Asiático) | https://www.dealstreetasia.com/feed | http_503 | 2026-09-14 07:09:26 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 316 | DoNews | China | Ásia (Leste Asiático e Sudeste Asiático) | https://www.donews.com/rss.xml | http_404 | 2026-09-14 07:09:28 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 318 | Droidsans | Tailândia | Ásia (Leste Asiático e Sudeste Asiático) | https://droidsans.com/feed/ | http_403 | 2026-09-14 07:09:28 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 322 | Gadgetren | Indonésia | Ásia (Leste Asiático e Sudeste Asiático) | https://gadgetren.com/feed/ | invalid_or_malformed_feed | 2026-09-14 07:09:29 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 329 | Huxiu | China | Ásia (Leste Asiático e Sudeste Asiático) | https://www.huxiu.com/rss/0.xml | ReadTimeout | 2026-09-14 07:09:47 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 347 | PingWest | China | Ásia (Leste Asiático e Sudeste Asiático) | https://www.pingwest.com/feed | invalid_or_malformed_feed | 2026-09-14 07:09:47 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 348 | Pokde.Net | Malásia | Ásia (Leste Asiático e Sudeste Asiático) | https://pokde.net/feed | invalid_or_malformed_feed | 2026-09-14 07:09:48 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 354 | Tech in Asia | Singapura | Ásia (Leste Asiático e Sudeste Asiático) | https://www.techinasia.com/feed | http_403 | 2026-09-14 07:09:48 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 355 | Tech Jio | Singapura | Ásia (Leste Asiático e Sudeste Asiático) | https://techjioblog.com/feed/ | http_403 | 2026-09-14 07:09:49 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 356 | TechNave | Malásia | Ásia (Leste Asiático e Sudeste Asiático) | https://technave.com/rss.xml | http_404 | 2026-09-14 07:09:50 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 358 | TechNode | China | Ásia (Leste Asiático e Sudeste Asiático) | https://technode.com/feed/ | body_too_large | 2026-09-14 07:09:51 BRT | limite interno do coletor | revisar limite de resposta e validar tamanho antes de alterar |
+| 363 | TechWeb | China | Ásia (Leste Asiático e Sudeste Asiático) | https://www.techweb.com.cn/rss/all.xml | non_public_destination | 2026-09-14 07:09:51 BRT | bloqueio HTTP ou política de acesso | inspecionar redirecionamento/política SSRF e validar destino público oficial |
+| 377 | Arab News — Science & Technology | Arábia Saudita | Oriente Médio | https://www.arabnews.com/taxonomy/term/46/all/feed | http_403 | 2026-09-14 07:09:52 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 378 | Arabian Business | Emirados Árabes Unidos | Oriente Médio | https://www.arabianbusiness.com/feed | http_405 | 2026-09-14 07:09:52 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 379 | Arabian ICT | Emirados Árabes Unidos | Oriente Médio | https://www.arabianict.com/feed/ | gaierror | 2026-09-14 07:09:53 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 385 | Click | Irã | Oriente Médio | https://click.ir/rss | http_404 | 2026-09-14 07:09:53 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 386 | CTech | Israel | Oriente Médio | https://www.calcalistech.com/GeneralRSS/0,16967,L-5214,00.xml | http_404 | 2026-09-14 07:09:54 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 394 | Enterprise Channels MEA | Emirados Árabes Unidos | Oriente Médio | https://www.ec-mea.com/feed/ | SSLError | 2026-09-14 07:09:55 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 400 | Gulf Business | Emirados Árabes Unidos | Oriente Médio | https://gulfbusiness.com/feed/ | http_403 | 2026-09-14 07:09:55 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 404 | Israel21c | Israel | Oriente Médio | https://www.israel21c.org/feed/ | invalid_or_malformed_feed | 2026-09-14 07:09:56 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 407 | ITP.net | Emirados Árabes Unidos | Oriente Médio | https://www.itp.net/feed/ | http_405 | 2026-09-14 07:09:56 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 409 | Jordan News — Technology | Jordânia | Oriente Médio | https://www.jordannews.jo/rss/Technology-32 | http_404 | 2026-09-14 07:09:57 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 413 | MediaCat | Turquia | Oriente Médio | https://mediacat.com/besleme/ | http_404 | 2026-09-14 07:09:57 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 419 | Pazarlamasyon | Turquia | Oriente Médio | https://pazarlamasyon.com/feed/ | http_500 | 2026-09-14 07:09:58 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 423 | Saudi Android | Arábia Saudita | Oriente Médio | https://www.saudandroid.net/feed/ | gaierror | 2026-09-14 07:09:58 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 432 | Technopat | Turquia | Oriente Médio | https://www.technopat.net/feed/ | http_403 | 2026-09-14 07:09:59 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 436 | Teknoloji Günlüğü | Turquia | Oriente Médio | https://www.teknolojigunlugu.com/feed/ | invalid_or_malformed_feed | 2026-09-14 07:10:02 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 437 | Teknolojioku | Turquia | Oriente Médio | https://www.teknolojioku.com/rss | http_404 | 2026-09-14 07:10:03 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 440 | Times of Israel — Tech Israel | Israel | Oriente Médio | https://www.timesofisrael.com/topic/tech-israel/feed/ | http_403 | 2026-09-14 07:10:03 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 447 | WIRED Middle East | Emirados Árabes Unidos | Oriente Médio | https://wired.me/feed/ | http_400 | 2026-09-14 07:10:04 BRT | falha a validar | repetir e investigar antes de qualquer reposição |
+| 453 | BiztechAfrica | África do Sul | África | https://www.biztechafrica.com/feed/ | http_403 | 2026-09-14 07:10:04 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 456 | Daba | Nigéria | África | https://www.benjamindada.com/rss/ | invalid_or_malformed_feed | 2026-09-14 07:10:05 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 459 | Dignited | Uganda | África | https://www.dignited.com/feed/ | http_403 | 2026-09-14 07:10:05 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 463 | Gadgets Africa | Quênia | África | https://gadgets-africa.com/feed/ | http_522 | 2026-09-14 07:10:25 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 466 | Innovation Village | Nigéria | África | https://innovation-village.com/feed/ | http_403 | 2026-09-14 07:10:26 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 467 | IT Edge News | Nigéria | África | https://www.itedgenews.africa/feed/ | invalid_or_malformed_feed | 2026-09-14 07:10:26 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 473 | Maroc Numeric | Marrocos | África | https://marocnumeric.com/feed/ | SSLError | 2026-09-14 07:10:27 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 478 | MyBroadband | África do Sul | África | https://mybroadband.co.za/news/feed/ | http_403 | 2026-09-14 07:10:27 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 479 | N'TIC Magazine | Argélia | África | https://www.nticweb.com/?format=feed&type=rss | too_many_redirects | 2026-09-14 07:10:28 BRT | falha temporária de rede/servidor | inspecionar cadeia de redirecionamento e URL canônica |
+| 483 | Nigeria CommunicationsWeek | Nigéria | África | https://www.nigeriacommunicationsweek.com.ng/feed/ | http_403 | 2026-09-14 07:10:28 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 484 | PC Tech Magazine | Uganda | África | https://pctechmag.com/feed/ | http_403 | 2026-09-14 07:10:29 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 485 | Shega | Etiópia | África | https://shega.co/feed/ | http_404 | 2026-09-14 07:10:31 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 494 | Techawk | Nigéria | África | https://www.techawkng.com/feed/ | http_403 | 2026-09-14 07:10:31 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 497 | TechCabal | Nigéria | África | https://techcabal.com/feed/ | http_403 | 2026-09-14 07:10:32 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 500 | TechEconomy | Nigéria | África | https://techeconomy.ng/feed/ | http_404 | 2026-09-14 07:10:32 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 502 | Techgh24 | Gana | África | https://techgh24.com/feed/ | SSLError | 2026-09-14 07:10:33 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 509 | TechSmart | África do Sul | África | https://www.techsmart.co.za/rss | SSLError | 2026-09-14 07:10:33 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 513 | TechWeez | Quênia | África | https://techweez.com/feed/ | http_403 | 2026-09-14 07:10:34 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 519 | TSA — Tecnologia | Argélia | África | https://www.tsa-algerie.com/tech-auto/feed/ | http_404 | 2026-09-14 07:10:34 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 520 | Tunisie Numérique — Technologie | Tunísia | África | https://www.tunisienumerique.com/technologie/feed/ | invalid_or_malformed_feed | 2026-09-14 07:10:38 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 524 | Webmanagercenter — Technologie | Tunísia | África | https://www.webmanagercenter.com/category/technologie/feed/ | invalid_or_malformed_feed | 2026-09-14 07:10:38 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 525 | WeeTracker | Maurício | África | https://weetracker.com/feed/ | http_522 | 2026-09-14 07:10:54 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 526 | ABC Australia — Technology | Austrália | Oceania | https://www.abc.net.au/news/feed/8004590/rss.xml | http_500 | 2026-09-14 07:10:55 BRT | falha temporária de rede/servidor | repetir em janela posterior; validar manualmente apenas se persistir |
+| 527 | APDR | Austrália | Oceania | https://asiapacificdefencereporter.com/feed/ | http_403 | 2026-09-14 07:10:55 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 528 | Ausdroid | Austrália | Oceania | https://ausdroid.net/feed/ | http_403 | 2026-09-14 07:10:56 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 539 | Cook Islands News | Ilhas Cook | Oceania | https://www.cookislandsnews.com/feed/ | http_403 | 2026-09-14 07:10:56 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 541 | Cyber Daily | Austrália | Oceania | https://www.cyberdaily.au/feed | http_404 | 2026-09-14 07:10:57 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 546 | EFTM | Austrália | Oceania | https://eftm.com/feed | invalid_or_malformed_feed | 2026-09-14 07:11:00 BRT | XML inválido ou resposta não reconhecida como feed | validar conteúdo e Content-Type; testar URL canônica antes de considerar reposição |
+| 549 | FinTech Business | Austrália | Oceania | https://www.fintechbusiness.com/feed | http_403 | 2026-09-14 07:11:00 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 556 | Information Age — Austrália | Austrália | Oceania | https://ia.acs.org.au/rss.xml | http_404 | 2026-09-14 07:11:01 BRT | endpoint RSS não encontrado | confirmar mudança do endpoint no site oficial; só então corrigir ou substituir |
+| 557 | InnovationAus | Austrália | Oceania | https://www.innovationaus.com/feed/ | http_403 | 2026-09-14 07:11:01 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 566 | Manufacturers' Monthly | Austrália | Oceania | https://www.manmonthly.com.au/feed/ | http_403 | 2026-09-14 07:11:02 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 571 | PACE Today | Austrália | Oceania | https://pacetoday.com.au/feed/ | http_403 | 2026-09-14 07:11:02 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 573 | PowerUp! | Austrália | Oceania | https://powerup-gaming.com/feed/ | http_403 | 2026-09-14 07:11:03 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 597 | The National PNG | Papua-Nova Guiné | Oceania | https://www.thenational.com.pg/feed/ | http_403 | 2026-09-14 07:11:05 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+| 599 | Utility Magazine | Austrália | Oceania | https://utilitymagazine.com.au/feed/ | http_403 | 2026-09-14 07:11:05 BRT | bloqueio HTTP ou política de acesso | validar no navegador e testar headers/URL oficial; não repor sem validação |
+
+## Critério operacional
+
+Falhas temporárias devem ser repetidas; bloqueios HTTP exigem validação de acesso/headers; XML inválido exige inspeção do conteúdo e endpoint; erros internos do coletor exigem correção/instrumentação. Reposição definitiva somente após validação.
