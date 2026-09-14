@@ -1,0 +1,35 @@
+[
+  {
+    "error": "ValueError: invalid_or_malformed_feed",
+    "items": 0,
+    "ok": false,
+    "reason": "Official article RSS, alternative to mixed feed",
+    "source": "https://36kr.com/rss-center",
+    "url": "https://36kr.com/feed-article"
+  },
+  {
+    "error": "ValueError: invalid_or_malformed_feed",
+    "items": 0,
+    "ok": false,
+    "reason": "Official newsflash RSS; narrower content type",
+    "source": "https://36kr.com/rss-center",
+    "url": "https://36kr.com/feed-newsflash"
+  },
+  {
+    "error": "",
+    "http": 200,
+    "items": 10,
+    "ok": true,
+    "reason": "Publisher advertises www host; current non-www endpoint returned 404",
+    "source": "https://techcetera.co/amo-mi-rss/",
+    "url": "https://www.techcetera.co/feed/"
+  },
+  {
+    "error": "SSLError: HTTPSConnectionPool(host='ec-mea.com', port=443): Max retries exceeded with url: /feed/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))",
+    "items": 0,
+    "ok": false,
+    "reason": "Check canonical non-www host after TLS failure; certificate validation remains enabled",
+    "source": "https://www.ec-mea.com/",
+    "url": "https://ec-mea.com/feed/"
+  }
+]

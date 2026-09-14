@@ -205,6 +205,8 @@ def render(payload,scope,result,scheduled_at,started_at):
 def publish(db,s3,run_id,scope,delay):
     row=db.execute('SELECT * FROM news_analysis_runs WHERE id=%s',(run_id,)).fetchone()
     if not row or row['status']!='ready':raise RuntimeError('snapshot_not_ready')
+    if (row.get('coverage') or {}).get('editorial_status')=='rejected_by_review':
+        raise RuntimeError('snapshot_rejected_by_editorial_review')
     scheduled=row['collection_finished_at']+timedelta(minutes=delay)
     while (scheduled-datetime.now(timezone.utc)).total_seconds()>0:
         time.sleep(min(30,(scheduled-datetime.now(timezone.utc)).total_seconds()))

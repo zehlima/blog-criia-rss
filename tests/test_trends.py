@@ -87,3 +87,14 @@ def test_batch_sql_is_valid_and_versions_before_updates():
     db=DB();assert persist(db,[])==0
     assert 'INSERT INTO news_article_versions' in db.calls[0]
     assert 'UPDATE news_articles' in db.calls[1]
+
+
+def test_rejected_snapshot_cannot_be_republished():
+    import pytest
+    from trends.main import publish
+    class Result:
+        def fetchone(self):return {'status':'ready','coverage':{'editorial_status':'rejected_by_review'}}
+    class DB:
+        def execute(self,*args):return Result()
+    with pytest.raises(RuntimeError,match='snapshot_rejected_by_editorial_review'):
+        publish(DB(),None,'rejected','globe',25)
