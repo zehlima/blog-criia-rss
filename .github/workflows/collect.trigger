@@ -1,1 +1,1 @@
-Recover backlog with continuous workers and validated active RSS manifest v2
+Collect missing 75 South America sources and finish recovery v3

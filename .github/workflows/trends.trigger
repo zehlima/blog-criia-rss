@@ -1,1 +1,1 @@
-Production activation: multilingual country, continent and global news topic analysis v1.
+Validate bounded-diameter headline clusters v2 on current corpus

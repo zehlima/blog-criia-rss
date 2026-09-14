@@ -18,7 +18,8 @@ def test_brasilia_windows(hour,expected):
 
 def test_inventory_all600():
     f=json.loads(Path('data/feeds.json').read_text())
-    assert len(f)==len({x['rss_url'] for x in f})==600
+    assert len(f)==len({x['rss_url'] for x in f})==675
+    assert sum(x['region']=='América do Sul' for x in f)==75
 
 def test_rss_and_atom():
     rss=b'<rss version="2.0"><channel><title>x</title><item><title>A</title><link>https://example.com/a#part</link><description>Resumo</description></item></channel></rss>'

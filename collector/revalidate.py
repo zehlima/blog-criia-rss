@@ -19,11 +19,11 @@ def inventory():
     assert len(rows) == 121 and len(proposed) == len(by_new) == 600
     assert len({r['RSS_anterior'] for r in rows}) == 121
     for r in rows:
-        assert r['RSS_anterior'] in by_old and r['RSS_revisado'] in by_new
-        assert by_old[r['RSS_anterior']]['name'] == r['Veiculo_anterior']
+        assert r['RSS_revisado'] in by_new
+        assert r['RSS_anterior'] in by_old or r['RSS_revisado'] in by_old
         assert by_new[r['RSS_revisado']]['name'] == r['Veiculo_revisado']
     changed = {r['RSS_anterior'] for r in rows}
-    assert all(f == by_new.get(f['rss_url']) for f in old if f['rss_url'] not in changed)
+    assert all(f == by_new.get(f['rss_url']) for f in old if f['rss_url'] not in changed and f['rss_url'] in by_new)
     return rows
 
 def check(url):

@@ -4798,5 +4798,605 @@
     "site_url": "https://www.well-played.com.au/",
     "rss_url": "https://www.well-played.com.au/feed/",
     "justification": "Games e hardware. Feed misto de entretenimento digital. RSS/Atom com XML e itens confirmados. Feed amplo: filtrar tecnologia e negócios digitais."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TecMundo",
+    "country": "Brasil",
+    "site_url": "https://www.tecmundo.com.br/",
+    "rss_url": "https://rss.tecmundo.com.br/feed",
+    "justification": "Tecnologia e segurança. RSS com atraso: último item em 07/09/2026."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Canaltech",
+    "country": "Brasil",
+    "site_url": "https://canaltech.com.br/",
+    "rss_url": "https://canaltech.com.br/rss/",
+    "justification": "Tecnologia diária. Declara 24 milhões de visitantes únicos/mês, sem mês-base."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Olhar Digital",
+    "country": "Brasil",
+    "site_url": "https://olhardigital.com.br/",
+    "rss_url": "https://olhardigital.com.br/feed/",
+    "justification": "Veículo de tecnologia com cobertura frequente de IA, internet e dispositivos."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Tecnoblog",
+    "country": "Brasil",
+    "site_url": "https://tecnoblog.net/",
+    "rss_url": "https://tecnoblog.net/feed/",
+    "justification": "Redação especializada em tecnologia, telecom e produtos digitais."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TudoCelular",
+    "country": "Brasil",
+    "site_url": "https://www.tudocelular.com/",
+    "rss_url": "https://www.tudocelular.com/feed/",
+    "justification": "Cobertura intensiva de smartphones, hardware móvel e operadoras."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Adrenaline",
+    "country": "Brasil",
+    "site_url": "https://www.adrenaline.com.br/",
+    "rss_url": "https://www.adrenaline.com.br/feed/",
+    "justification": "Referência especializada em hardware de PCs, testes e indústria de games."
+  },
+  {
+    "region": "América do Sul",
+    "name": "MacMagazine",
+    "country": "Brasil",
+    "site_url": "https://macmagazine.com.br/",
+    "rss_url": "https://feeds.feedburner.com/blogmacmagazine",
+    "justification": "Especialista em Apple. RSS oficial, mas teste de acesso retornou HTTP 403."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Showmetech",
+    "country": "Brasil",
+    "site_url": "https://www.showmetech.com.br/",
+    "rss_url": "https://www.showmetech.com.br/feed/",
+    "justification": "Tecnologia de consumo com reviews, lançamentos e cobertura frequente de IA."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Oficina da Net",
+    "country": "Brasil",
+    "site_url": "https://www.oficinadanet.com.br/",
+    "rss_url": "https://www.oficinadanet.com.br/rss/geral",
+    "justification": "Portal brasileiro com testes de smartphones, notícias e análises de tecnologia."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Mundo Conectado",
+    "country": "Brasil",
+    "site_url": "https://www.mundoconectado.com.br/",
+    "rss_url": "https://www.mundoconectado.com.br/feed/",
+    "justification": "Especialista em eletrônicos, drones, TVs, smartphones e análises de produtos."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Hardware.com.br",
+    "country": "Brasil",
+    "site_url": "https://www.hardware.com.br/",
+    "rss_url": "https://www.hardware.com.br/feed/",
+    "justification": "Publicação especializada em hardware, informática e indústria tecnológica."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Diolinux",
+    "country": "Brasil",
+    "site_url": "https://diolinux.com.br/",
+    "rss_url": "https://diolinux.com.br/feed",
+    "justification": "Referência brasileira em Linux e software livre, com notícias e testes."
+  },
+  {
+    "region": "América do Sul",
+    "name": "SempreUpdate",
+    "country": "Brasil",
+    "site_url": "https://sempreupdate.com.br/",
+    "rss_url": "https://sempreupdate.com.br/feed/",
+    "justification": "Cobertura frequente de Linux, código aberto, IA e cibersegurança."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Blog do iPhone",
+    "country": "Brasil",
+    "site_url": "https://blogdoiphone.com/",
+    "rss_url": "https://blogdoiphone.com/feed/",
+    "justification": "Publicação brasileira dedicada a iPhone, iOS e novidades da Apple."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Meio Bit",
+    "country": "Brasil",
+    "site_url": "https://meiobit.com/",
+    "rss_url": "https://meiobit.com/feed/",
+    "justification": "Análise autoral de tecnologia, IA, hardware e negócios de games."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Giz Brasil",
+    "country": "Brasil",
+    "site_url": "https://gizbr.uol.com.br/",
+    "rss_url": "https://gizbr.uol.com.br/feed/",
+    "justification": "Publicação de vida digital e tecnologia vinculada ao UOL."
+  },
+  {
+    "region": "América do Sul",
+    "name": "G1 — Tecnologia",
+    "country": "Brasil",
+    "site_url": "https://g1.globo.com/tecnologia/",
+    "rss_url": "https://g1.globo.com/rss/g1/tecnologia/",
+    "justification": "Editoria de tecnologia do portal de notícias da Globo, com publicação diária."
+  },
+  {
+    "region": "América do Sul",
+    "name": "UOL Tilt",
+    "country": "Brasil",
+    "site_url": "https://www.uol.com.br/tilt/",
+    "rss_url": "https://rss.uol.com.br/feed/tecnologia.xml",
+    "justification": "Canal de tecnologia do UOL, com cobertura diária de IA e vida digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Folha de S.Paulo — Tec",
+    "country": "Brasil",
+    "site_url": "https://www1.folha.uol.com.br/tec/",
+    "rss_url": "https://feeds.folha.uol.com.br/tec/rss091.xml",
+    "justification": "Jornal nacional com cobertura diária de tecnologia e economia digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Mobile Time",
+    "country": "Brasil",
+    "site_url": "https://www.mobiletime.com.br/",
+    "rss_url": "https://www.mobiletime.com.br/feed/",
+    "justification": "Jornalismo especializado em telecom, aplicativos, IA e negócios móveis."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Startups",
+    "country": "Brasil",
+    "site_url": "https://startups.com.br/",
+    "rss_url": "https://startups.com.br/feed/",
+    "justification": "Jornalismo especializado em startups brasileiras, captações e negócios digitais."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Startupi",
+    "country": "Brasil",
+    "site_url": "https://startupi.com.br/",
+    "rss_url": "https://startupi.com.br/feed/",
+    "justification": "Startups, inovação e investimentos. XML validado, com HTTP 502 intermitente."
+  },
+  {
+    "region": "América do Sul",
+    "name": "NeoFeed",
+    "country": "Brasil",
+    "site_url": "https://neofeed.com.br/",
+    "rss_url": "https://neofeed.com.br/feed/",
+    "justification": "Reportagens de negócios, startups e inovação. Feed amplo: filtrar por tema."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Brazil Journal",
+    "country": "Brasil",
+    "site_url": "https://braziljournal.com/",
+    "rss_url": "https://braziljournal.com/feed/",
+    "justification": "Empresas de tecnologia, IA e investimentos. Feed amplo: filtrar por tema."
+  },
+  {
+    "region": "América do Sul",
+    "name": "IT Forum",
+    "country": "Brasil",
+    "site_url": "https://itforum.com.br/",
+    "rss_url": "https://itforum.com.br/feed/",
+    "justification": "Cobertura diária de TI corporativa, IA, segurança e transformação digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Convergência Digital",
+    "country": "Brasil",
+    "site_url": "https://convergenciadigital.com.br/",
+    "rss_url": "https://convergenciadigital.com.br/feed/",
+    "justification": "Veículo especializado em TI, telecom, infraestrutura digital e políticas do setor."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Tele.Síntese",
+    "country": "Brasil",
+    "site_url": "https://telesintese.com.br/",
+    "rss_url": "https://telesintese.com.br/feed/",
+    "justification": "Jornalismo diário de telecom, internet, TIC e regulação desde 2005."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TELETIME",
+    "country": "Brasil",
+    "site_url": "https://teletime.com.br/",
+    "rss_url": "https://teletime.com.br/feed/",
+    "justification": "Cobertura diária especializada em banda larga, telefonia, satélites e negócios telecom."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TI Inside",
+    "country": "Brasil",
+    "site_url": "https://tiinside.com.br/",
+    "rss_url": "https://tiinside.com.br/feed/",
+    "justification": "Noticiário diário de tecnologia corporativa, IA, inovação e negócios digitais."
+  },
+  {
+    "region": "América do Sul",
+    "name": "IPNews",
+    "country": "Brasil",
+    "site_url": "https://ipnews.com.br/",
+    "rss_url": "https://ipnews.com.br/feed/",
+    "justification": "Portal especializado em conectividade, telecom, cibersegurança e negócios digitais."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Finsiders Brasil",
+    "country": "Brasil",
+    "site_url": "https://finsidersbrasil.com.br/",
+    "rss_url": "https://finsidersbrasil.com.br/feed/",
+    "justification": "Jornalismo especializado em fintechs, bancos digitais, pagamentos e inovação financeira."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Decision Report",
+    "country": "Brasil",
+    "site_url": "https://decisionreport.com.br/",
+    "rss_url": "https://decisionreport.com.br/feed/",
+    "justification": "Noticiário de TI empresarial, liderança de tecnologia e transformação digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Security Leaders",
+    "country": "Brasil",
+    "site_url": "https://securityleaders.com.br/",
+    "rss_url": "https://securityleaders.com.br/feed/",
+    "justification": "Veículo especializado em cibersegurança corporativa, incidentes e lideranças de segurança."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Livecoins",
+    "country": "Brasil",
+    "site_url": "https://livecoins.com.br/",
+    "rss_url": "https://livecoins.com.br/feed/",
+    "justification": "Noticiário frequente de blockchain, criptomoedas e empresas da economia digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Portal do Bitcoin",
+    "country": "Brasil",
+    "site_url": "https://portaldobitcoin.uol.com.br/",
+    "rss_url": "https://portaldobitcoin.uol.com.br/feed/",
+    "justification": "Veículo brasileiro especializado em blockchain, criptoativos e negócios digitais."
+  },
+  {
+    "region": "América do Sul",
+    "name": "CriptoFácil",
+    "country": "Brasil",
+    "site_url": "https://www.criptofacil.com/",
+    "rss_url": "https://www.criptofacil.com/feed/",
+    "justification": "Portal brasileiro ativo desde 2016 sobre blockchain, criptoativos e economia digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Consumidor Moderno",
+    "country": "Brasil",
+    "site_url": "https://consumidormoderno.com.br/",
+    "rss_url": "https://consumidormoderno.com.br/feed/",
+    "justification": "IA, atendimento digital e comércio eletrônico. Feed amplo: filtrar por tema."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TELA VIVA",
+    "country": "Brasil",
+    "site_url": "https://telaviva.com.br/",
+    "rss_url": "https://telaviva.com.br/feed/",
+    "justification": "Streaming e tecnologia audiovisual. Feed amplo: filtrar por tema."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Inovação Tecnológica",
+    "country": "Brasil",
+    "site_url": "https://www.inovacaotecnologica.com.br/",
+    "rss_url": "https://www.inovacaotecnologica.com.br/boletim/rss.xml",
+    "justification": "Especialista brasileiro em pesquisa aplicada, computação, hardware e novas tecnologias."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Infobae Tecno",
+    "country": "Argentina",
+    "site_url": "https://www.infobae.com/tecno/",
+    "rss_url": "https://www.infobae.com/arc/outboundfeeds/rss/category/tecno/?outputType=xml",
+    "justification": "Portal argentino de alcance internacional com editoria diária de tecnologia e IA."
+  },
+  {
+    "region": "América do Sul",
+    "name": "La Nación Tecnología",
+    "country": "Argentina",
+    "site_url": "https://www.lanacion.com.ar/tecnologia/",
+    "rss_url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/tecnologia/?outputType=xml",
+    "justification": "Jornal nacional com cobertura recorrente de tecnologia, IA e segurança digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Clarín Tecnología",
+    "country": "Argentina",
+    "site_url": "https://www.clarin.com/tecnologia/",
+    "rss_url": "https://www.clarin.com/rss/tecnologia/",
+    "justification": "Editoria tech do Clarín, cujo site declara 37 milhões de usuários/mês, sem mês-base."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TN Tecno",
+    "country": "Argentina",
+    "site_url": "https://tn.com.ar/tecno/",
+    "rss_url": "https://tn.com.ar/arc/outboundfeeds/rss/category/tecno/?outputType=xml",
+    "justification": "Redação nacional com entrevistas e notícias frequentes de IA, hardware e cibersegurança."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Ámbito Tecnología",
+    "country": "Argentina",
+    "site_url": "https://www.ambito.com/tecnologia/",
+    "rss_url": "https://www.ambito.com/rss/pages/tecnologia.xml",
+    "justification": "Veículo de economia e negócios com seção ativa de tecnologia e empresas digitais."
+  },
+  {
+    "region": "América do Sul",
+    "name": "iProUP",
+    "country": "Argentina",
+    "site_url": "https://www.iproup.com/",
+    "rss_url": "https://www.iproup.com/rss/home",
+    "justification": "Especializado em startups, fintechs, inovação e economia digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "iProfesional Tecnología",
+    "country": "Argentina",
+    "site_url": "https://www.iprofesional.com/tecnologia",
+    "rss_url": "https://www.iprofesional.com/rss/tecnologia",
+    "justification": "Veículo de negócios com entrevistas e cobertura de telecom, IA e transformação digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "El Cronista Infotechnology",
+    "country": "Argentina",
+    "site_url": "https://www.cronista.com/infotechnology/",
+    "rss_url": "https://www.cronista.com/arc/outboundfeeds/rss/category/infotechnology/?outputType=xml",
+    "justification": "Vertical de tecnologia de jornal econômico, com empresas digitais, fintechs e inovação."
+  },
+  {
+    "region": "América do Sul",
+    "name": "HD Tecnología",
+    "country": "Argentina",
+    "site_url": "https://www.hd-tecnologia.com/",
+    "rss_url": "https://www.hd-tecnologia.com/feed/",
+    "justification": "Especialista em hardware desde 2008, com análises de produtos e notícias diárias."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Enfasys",
+    "country": "Argentina",
+    "site_url": "https://www.enfasys.net/",
+    "rss_url": "https://www.enfasys.net/feed/",
+    "justification": "Referência setorial para canais de TI, distribuidores, software e infraestrutura."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Prensario TILA",
+    "country": "Argentina",
+    "site_url": "https://prensariotila.com/",
+    "rss_url": "https://prensariotila.com/feed/",
+    "justification": "Publicação especializada em TI corporativa, datacenters, segurança e telecom na América Latina."
+  },
+  {
+    "region": "América do Sul",
+    "name": "ITware Latam",
+    "country": "Argentina",
+    "site_url": "https://itwarelatam.com/",
+    "rss_url": "https://itwarelatam.com/feed/",
+    "justification": "Veículo de TI corporativa com cobertura de cloud, IA, cibersegurança e negócios B2B."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Pisapapeles",
+    "country": "Chile",
+    "site_url": "https://pisapapeles.net/",
+    "rss_url": "https://pisapapeles.net/feed/",
+    "justification": "Telecom e dispositivos. Declara 450 mil+ visitas/mês, sem mês-base."
+  },
+  {
+    "region": "América do Sul",
+    "name": "FayerWayer",
+    "country": "Chile",
+    "site_url": "https://www.fayerwayer.com/",
+    "rss_url": "https://www.fayerwayer.com/arc/outboundfeeds/rss/?outputType=xml",
+    "justification": "Marca de origem chilena com cobertura regional de tecnologia e cultura digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TransMedia",
+    "country": "Chile",
+    "site_url": "https://www.transmedia.cl/",
+    "rss_url": "https://www.transmedia.cl/feed/",
+    "justification": "Especialista chileno em smartphones e indústria tecnológica, múltiplas notícias recentes."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Chócale — Tecnologia",
+    "country": "Chile",
+    "site_url": "https://chocale.cl/",
+    "rss_url": "https://chocale.cl/tecnologia-y-moviles/feed/",
+    "justification": "Feed temático de tecnologia e telecom de veículo chileno de economia e consumo."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Zoom Tecnológico",
+    "country": "Chile",
+    "site_url": "https://www.zoomtecnologico.com/",
+    "rss_url": "https://www.zoomtecnologico.com/feed/",
+    "justification": "Especialista em tecnologia, inovação e empreendedorismo com notícias e análises recentes."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TXS+",
+    "country": "Chile",
+    "site_url": "https://txsplus.com/",
+    "rss_url": "https://txsplus.com/feed/",
+    "justification": "Veículo chileno de ciência e tecnologia com programas sobre inovação e negócios."
+  },
+  {
+    "region": "América do Sul",
+    "name": "ENTER.CO",
+    "country": "Colômbia",
+    "site_url": "https://www.enter.co/",
+    "rss_url": "https://www.enter.co/feed/",
+    "justification": "Publicação colombiana de tecnologia desde 1996, feed com dezenas de notícias recentes."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Impacto TIC",
+    "country": "Colômbia",
+    "site_url": "https://impactotic.co/",
+    "rss_url": "https://impactotic.co/feed/",
+    "justification": "Jornalismo especializado em transformação digital, IA e ecossistema TIC colombiano."
+  },
+  {
+    "region": "América do Sul",
+    "name": "FOLOU",
+    "country": "Colômbia",
+    "site_url": "https://folou.co/",
+    "rss_url": "https://folou.co/feed/",
+    "justification": "Tecnologia e tendências digitais com cobertura de IA, gadgets e empreendedorismo."
+  },
+  {
+    "region": "América do Sul",
+    "name": "TECHcetera",
+    "country": "Colômbia",
+    "site_url": "https://techcetera.co/",
+    "rss_url": "https://techcetera.co/feed/",
+    "justification": "Conteúdo tecnológico original, reviews e análise de uso, publicação desde 2011."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Social Geek",
+    "country": "Colômbia",
+    "site_url": "https://socialgeek.co/",
+    "rss_url": "https://socialgeek.co/feed/",
+    "justification": "Cobertura de inovação, IA, dispositivos e cultura digital com publicações recentes."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Valora Analitik",
+    "country": "Colômbia",
+    "site_url": "https://www.valoraanalitik.com/",
+    "rss_url": "https://www.valoraanalitik.com/feed/",
+    "justification": "Negócios, fintechs e telecom. Feed geral: filtrar tecnologia e inovação."
+  },
+  {
+    "region": "América do Sul",
+    "name": "El Tiempo — Tecnósfera",
+    "country": "Colômbia",
+    "site_url": "https://www.eltiempo.com/",
+    "rss_url": "https://www.eltiempo.com/rss/tecnosfera.xml",
+    "justification": "Editoria tecnológica de jornal nacional colombiano com RSS oficial dedicado."
+  },
+  {
+    "region": "América do Sul",
+    "name": "El Comercio — Tecnología",
+    "country": "Peru",
+    "site_url": "https://elcomercio.pe/",
+    "rss_url": "https://elcomercio.pe/arc/outboundfeeds/rss/category/tecnologia/?outputType=xml",
+    "justification": "Jornal nacional com redação e editoria diária de IA, gadgets e tecnologia."
+  },
+  {
+    "region": "América do Sul",
+    "name": "MásGamers",
+    "country": "Peru",
+    "site_url": "https://www.masgamers.com/",
+    "rss_url": "https://www.masgamers.com/feed/",
+    "justification": "Veículo peruano especializado em hardware, tecnologia e entretenimento digital."
+  },
+  {
+    "region": "América do Sul",
+    "name": "El Universo — Doctor Tecno",
+    "country": "Equador",
+    "site_url": "https://www.eluniverso.com/",
+    "rss_url": "https://www.eluniverso.com/arc/outboundfeeds/rss-subsection/larevista/tecnologia?outputType=xml",
+    "justification": "Jornal nacional com editoria Doctor Tecno e RSS temático oficial."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Primicias — Ciencia y Tecnología",
+    "country": "Equador",
+    "site_url": "https://www.primicias.ec/",
+    "rss_url": "https://www.primicias.ec/rss/ciencia-tecnologia.xml",
+    "justification": "Redação digital equatoriana com cobertura frequente de IA e tecnologia."
+  },
+  {
+    "region": "América do Sul",
+    "name": "IT Ahora",
+    "country": "Equador",
+    "site_url": "https://itahora.com/",
+    "rss_url": "https://itahora.com/feed/",
+    "justification": "Revista especializada em TI, IA, cloud e inovação empresarial no Equador."
+  },
+  {
+    "region": "América do Sul",
+    "name": "El Observador — Ciencia y Tecnología",
+    "country": "Uruguai",
+    "site_url": "https://www.elobservador.com.uy/",
+    "rss_url": "https://www.elobservador.com.uy/rss/pages/ciencia-y-tecnologia.xml",
+    "justification": "Jornal uruguaio com canal oficial de ciência e tecnologia atualizado."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Montevideo Portal — Tecnología",
+    "country": "Uruguai",
+    "site_url": "https://www.montevideo.com.uy/",
+    "rss_url": "https://www.montevideo.com.uy/anxml.aspx?133",
+    "justification": "Portal nacional com canal de tecnologia e RSS temático documentado."
+  },
+  {
+    "region": "América do Sul",
+    "name": "ABC Color — Tecnología",
+    "country": "Paraguai",
+    "site_url": "https://www.abc.com.py/",
+    "rss_url": "https://www.abc.com.py/arc/outboundfeeds/rss/tecnologia/",
+    "justification": "Jornal nacional com RSS oficial exclusivo da editoria de tecnologia."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Economy — Itecno",
+    "country": "Bolívia",
+    "site_url": "https://www.economy.com.bo/",
+    "rss_url": "https://www.economy.com.bo/rss/itecno/",
+    "justification": "Tecnologia e negócios na Bolívia. Último item em 07/09/2026, cadência diária não comprovada."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Con-Café",
+    "country": "Venezuela",
+    "site_url": "https://www.con-cafe.com/",
+    "rss_url": "https://www.con-cafe.com/feed/",
+    "justification": "Telecom e dispositivos na Venezuela. Último item em 07/09/2026, cadência diária não comprovada."
+  },
+  {
+    "region": "América do Sul",
+    "name": "Doble Llave — Innovación",
+    "country": "Venezuela",
+    "site_url": "https://doblellave.com/",
+    "rss_url": "https://doblellave.com/seccion/innovacion/feed/",
+    "justification": "Veículo venezuelano com cobertura de inovação, cibersegurança e negócios digitais."
   }
 ]

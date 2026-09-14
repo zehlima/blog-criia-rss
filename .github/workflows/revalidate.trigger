@@ -1,1 +1,1 @@
-Explorer revision 2026-09-14: compare original and proposed URLs with production parser.
+Validate 675 active sources including recovered South America list

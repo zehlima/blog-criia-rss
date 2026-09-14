@@ -60,6 +60,7 @@ jobs:
           name: analysis-preparation
           path: |
             reports/analysis_coverage.json
+            reports/cluster-audit.json
             /tmp/installed-versions.txt
           retention-days: 30
   publish:

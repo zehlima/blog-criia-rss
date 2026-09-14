@@ -146,7 +146,7 @@ def run(db,s3,feeds):
 
 def preflight(db,s3):
     count=db.execute('SELECT count(*) n FROM news_feeds WHERE rss_url=ANY(%s)',(active_urls(),)).fetchone()['n']
-    if count!=len(active_urls()):raise ValueError('Esperados 600 feeds no banco dedicado')
+    if count!=len(active_urls()):raise ValueError('Inventário ativo ausente no banco')
     key='preflight/'+str(uuid.uuid4())+'.txt'
     s3.put_object(Bucket=os.environ['R2_BUCKET'],Key=key,Body=b'boris-preflight')
     try:
@@ -154,12 +154,12 @@ def preflight(db,s3):
         assert result['Body'].read()==b'boris-preflight'
         result['Body'].close()
     finally:s3.delete_object(Bucket=os.environ['R2_BUCKET'],Key=key)
-    print('OK: Supabase, 600 feeds e escrita/leitura/exclusão no R2')
+    print(f'OK: Supabase, {count} feeds ativos e escrita/leitura/exclusão no R2')
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('mode',choices=['setup','preflight','run']);args=p.parse_args()
     feeds=json.loads((ROOT/'data/feeds.json').read_text())
-    if len(feeds)!=600 or len({f['rss_url'] for f in feeds})!=600:raise ValueError('Inventário inválido')
+    if len(feeds)<600 or len({f['rss_url'] for f in feeds})!=len(feeds):raise ValueError('Inventário inválido')
     db,s3=connect()
     try:
         # Session pooler 5432 mantém o advisory lock por toda a conexão.
