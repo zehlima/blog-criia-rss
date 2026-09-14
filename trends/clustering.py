@@ -25,6 +25,7 @@ BROAD={'apple','iphone','xiaomi','samsung','google','microsoft','openai','meta',
        'honor','snapdragon','blizzard','diablo','duo','gen'}
 
 ROMAN={'i':'1','ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
+VERSIONED_PRODUCTS={'iphone','ios','windows','galaxy','diablo','playstation','xbox'}
 
 def _tokens(title):
     # Fold diacritics so the template vocabulary behaves consistently across
@@ -51,9 +52,27 @@ def anchors(title):
                 compound.add('~'+'_'.join(parts))
     return atomic|compound
 
+def product_versions(title):
+    tokens=_tokens(title)
+    found={}
+    for left,right in zip(tokens,tokens[1:]):
+        if left in VERSIONED_PRODUCTS and right.isdigit():
+            found.setdefault(left,set()).add(right)
+    return found
+
+def is_multi_story_digest(title):
+    # Daily roundups commonly concatenate unrelated headlines with slashes.
+    # They may participate only through exact-title syndication.
+    parts=[x for x in re.split(r'\s[/|｜]\s|[/|｜]',title) if x.strip()]
+    return len(parts)>=3
+
 def compatible(a,b,similarity,anchor_a=None,anchor_b=None,frequency=None,rare_limit=0):
     na=' '.join(a.casefold().split());nb=' '.join(b.casefold().split())
     if na==nb:return True
+    if is_multi_story_digest(a) or is_multi_story_digest(b):return False
+    versions_a,versions_b=product_versions(a),product_versions(b)
+    for product in versions_a.keys()&versions_b.keys():
+        if versions_a[product]!=versions_b[product]:return False
     shared=(anchor_a if anchor_a is not None else anchors(a)) & (anchor_b if anchor_b is not None else anchors(b))
     compounds={x for x in shared if x.startswith('~')}
     if compounds:return True

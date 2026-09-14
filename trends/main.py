@@ -18,7 +18,7 @@ from .core import continent,families,in_window,rankings
 BUCKET=os.getenv('R2_BUCKET')
 MODEL='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
 MODEL_REVISION='e8f8c211226b894fcb81acc59f3b34ba3efd5f42'
-VERSION='boris-topics-v8-event-signatures-072'
+VERSION='boris-topics-v9-versioned-events-072'
 # Embeddings depend on the pinned model and headline, not on clustering rules.
 # Keep the already materialized v4 cache schema to avoid recomputing identical vectors.
 EMBEDDING_CACHE_VERSION='boris-topics-v4-headline-anchors-072'
@@ -167,8 +167,8 @@ def prepare(db,s3,run_id):
     coverage={'clustering_method':'complete_linkage_cosine',
       'minimum_pairwise_similarity':.72,
       'semantic_basis':'headline_only_multilingual_paraphrase',
-      'lexical_gate':'exact_title_or_narrow_compound_signature_or_two_anchors_with_rare_specific_term',
-      'calibration_status':'Known v4-v7 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
+      'lexical_gate':'exact_title_or_narrow_compound_signature_or_two_anchors_with_rare_specific_term; product_versions_must_match; multi_story_digests_excluded',
+      'calibration_status':'Known v4-v8 false-positive patterns separated in tests; targeted sample only, not a general benchmark',
       'editorial_status':'automatic_groups_require_editorial_review',
       'ungrouped_articles':sum(a['topic_id']=='outlier' for a in recent),
       'corpus_articles':len(articles),'window_articles':len(recent),

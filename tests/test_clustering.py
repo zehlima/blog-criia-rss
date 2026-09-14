@@ -106,3 +106,21 @@ def test_same_brand_or_template_does_not_merge_different_events(titles):
 def test_narrow_product_identity_survives_multilingual_headlines(titles):
     vectors=np.array([[1.,0.],[.75,(1-.75**2)**.5]])
     assert coherent_groups(vectors,titles,min_similarity=.72)[0]['indices']==[0,1]
+
+def test_different_version_sets_do_not_merge_even_at_high_similarity():
+    titles=['Blizzard cancels Diablo 4 expansions after announcing Diablo 5',
+            'Blizzard brings a classic season to Diablo IV']
+    vectors=np.array([[1.,0.],[.84,(1-.84**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
+
+def test_same_cross_generation_story_can_group():
+    titles=['Diablo 5 announcement disappoints the Diablo 4 community',
+            'Diablo V est une mauvaise nouvelle pour Diablo IV']
+    vectors=np.array([[1.,0.],[.81,(1-.81**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)[0]['indices']==[0,1]
+
+def test_multi_story_daily_digest_is_not_folded_into_one_of_its_items():
+    titles=['iPhone 18 Pro demand is lower than last year',
+            'Morning brief | iPhone 18 Pro sold out / OpenAI delays IPO / new ice cream reviewed']
+    vectors=np.array([[1.,0.],[.82,(1-.82**2)**.5]])
+    assert coherent_groups(vectors,titles,min_similarity=.72)==[]
