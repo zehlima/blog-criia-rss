@@ -6,14 +6,25 @@ from botocore.config import Config
 from psycopg.rows import dict_row
 from .extract import digest
 
-REQUIRED=['DATABASE_URL','R2_ENDPOINT_URL','R2_ACCESS_KEY_ID','R2_SECRET_ACCESS_KEY','R2_BUCKET']
+REQUIRED=['R2_ENDPOINT_URL','R2_ACCESS_KEY_ID','R2_SECRET_ACCESS_KEY','R2_BUCKET']
+
+def database_connection():
+    """Senha separada evita erros com @, :, / e outros caracteres na URI."""
+    if os.getenv('DATABASE_PASSWORD'):
+        return psycopg.connect(
+            host=os.environ['DATABASE_HOST'], port=5432,
+            user=os.environ['DATABASE_USER'], dbname='postgres',
+            password=os.environ['DATABASE_PASSWORD'],
+            sslmode='require', connect_timeout=15,
+            row_factory=dict_row, autocommit=True)
+    overrides={'host':os.environ['DATABASE_HOST']} if os.getenv('DATABASE_HOST') else {}
+    return psycopg.connect(os.environ['DATABASE_URL'],**overrides,sslmode='require',
+                           connect_timeout=15,row_factory=dict_row,autocommit=True)
 
 def connect():
     missing=[k for k in REQUIRED if not os.getenv(k)]
     if missing:raise ValueError('Secrets ausentes: '+', '.join(missing))
-    overrides={'host':os.environ['DATABASE_HOST']} if os.getenv('DATABASE_HOST') else {}
-    db=psycopg.connect(os.environ['DATABASE_URL'],**overrides,sslmode='require',connect_timeout=15,
-                       row_factory=dict_row,autocommit=True)
+    db=database_connection()
     s3=boto3.client('s3',endpoint_url=os.environ['R2_ENDPOINT_URL'],region_name='auto',
         aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],
         aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
