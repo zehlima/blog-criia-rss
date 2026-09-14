@@ -1,0 +1,36 @@
+{
+  "run_id": "34905786511",
+  "known_false_positive_article_ids": [
+    4659,
+    56667
+  ],
+  "audit_groups": 610,
+  "groups_containing_either_article": 0,
+  "local_tests": 113,
+  "github_tests": 113,
+  "editorial_status": "automatic_groups_require_editorial_review",
+  "scope": "Validation of the specified false-positive pair only; not overall editorial acceptance.",
+  "delays": [
+    {
+      "delay_seconds": "0.0002",
+      "n": 7,
+      "scheduled_at": "2026-09-14 23:04:56.665893+00",
+      "scope": "continent",
+      "started_at": "2026-09-14 23:04:56.666043+00"
+    },
+    {
+      "delay_seconds": "0.0001",
+      "n": 105,
+      "scheduled_at": "2026-09-14 22:59:56.665893+00",
+      "scope": "country",
+      "started_at": "2026-09-14 22:59:56.66604+00"
+    },
+    {
+      "delay_seconds": "0.0001",
+      "n": 1,
+      "scheduled_at": "2026-09-14 23:09:56.665893+00",
+      "scope": "globe",
+      "started_at": "2026-09-14 23:09:56.666034+00"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "coverage": {
+    "body_read_errors": 0,
+    "calibration_status": "Known v4-v17 false-positive patterns separated in tests; targeted sample only, not a general benchmark",
+    "clustering_method": "complete_linkage_cosine",
+    "collection_status": "complete_with_gaps",
+    "corpus_articles": 26889,
+    "date_fallback_articles": 465,
+    "editorial_status": "automatic_groups_require_editorial_review",
+    "feeds_error": 29,
+    "feeds_not_attempted": 0,
+    "feeds_ok": 646,
+    "feeds_total": 675,
+    "full_texts_read": 24501,
+    "growth_status": "Histórico comparável ainda não validado; ranking mede frequência observada, não previsão.",
+    "lexical_gate": "exact_title_or_narrow_compound_at_0735_or_two_anchors_with_rare_specific_term; product_versions_must_match; multi_story_digests_recurring_editorial_templates_sales_vs_review_cross_brand_and_distinct_price_offers_excluded",
+    "minimum_pairwise_similarity": 0.72,
+    "missing_continents": [],
+    "publisher_rss_texts_read": 914,
+    "regions_present": [
+      "América Central e Caribe",
+      "América do Norte",
+      "América do Sul",
+      "Europa Ocidental",
+      "Europa Oriental (Leste Europeu)",
+      "Oceania",
+      "Oriente Médio",
+      "África",
+      "Ásia (Leste Asiático e Sudeste Asiático)"
+    ],
+    "scope_definition": "País editorial dos veículos monitorados; não país do acontecimento.",
+    "semantic_basis": "title_derived_event_context_without_broad_product_identity",
+    "ungrouped_articles": 7238,
+    "window_articles": 8696,
+    "window_full_texts_read": 7875
+  },
+  "error": null,
+  "finished_at": "2026-09-14 22:55:03.379717+00",
+  "id": "34905786511",
+  "model_version": "boris-topics-v19-top-list-editorial-gate-072",
+  "status": "ready"
+}

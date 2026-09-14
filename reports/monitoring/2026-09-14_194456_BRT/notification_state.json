@@ -1,0 +1,72 @@
+{
+  "notified_at": "2026-09-14 23:15:10 UTC",
+  "collection_run_id": "34904308547",
+  "collection_status": "complete_with_gaps",
+  "inventory_active": 675,
+  "feeds_attempted": 675,
+  "feeds_ok": 646,
+  "feeds_error": 29,
+  "feeds_not_attempted": 0,
+  "active_articles": 26896,
+  "content_key_total": 25420,
+  "valid_text_bodies": 25415,
+  "page_texts": 24501,
+  "publisher_rss_texts": 914,
+  "extraction_unavailable": 1474,
+  "invalid_references": 7,
+  "extraction_pending_at_closure": 0,
+  "existing_bodies_due_recheck_at_closure": 0,
+  "analysis_run_id": "34905786511",
+  "analysis_status": "ready",
+  "analysis_snapshot_rows": 113,
+  "analysis_scopes": [
+    "country",
+    "continent",
+    "globe"
+  ],
+  "analysis_articles": 8696,
+  "analysis_publishers": 568,
+  "analysis_outliers": 7238,
+  "analysis_topics": 610,
+  "brazil_articles": 378,
+  "brazil_publishers": 32,
+  "editorial_status": "automatic_groups_require_editorial_review",
+  "correction_validated": "4659 and 56667 absent from all 610 v19 groups; 113 tests passed locally and in GitHub",
+  "fix_commit": "a247d0a5ea728e6a5dd5f99e12da9c9445fccd54",
+  "previous_analysis_notified": "34903677667",
+  "previous_analysis_editorial_status": "issues_found_requires_review",
+  "previous_analysis_delays_seconds": {
+    "country": 677.036954,
+    "continent": 376.715548,
+    "globe": 89.257725
+  },
+  "collector_interrupted_run": "34903677679",
+  "analysis_cancelled_run": "34905632800",
+  "cloudflare_deploy": "suspended",
+  "reports": {
+    "collection": "reports/monitoring/2026-09-14_194456_BRT",
+    "trends": "reports/trends/2026-09-14_200956_BRT_v19"
+  },
+  "drive_reports": [
+    {
+      "file": "feed_errors.csv",
+      "url": "https://drive.google.com/file/d/12Sqta5peuR5gmwfiica3B_cW3-oTyQiX/view?usp=drivesdk"
+    },
+    {
+      "file": "feed_errors.md",
+      "url": "https://drive.google.com/file/d/1PVPpsFSLo0K1xxfMQNYgC9zQ1kbskfkq/view?usp=drivesdk"
+    },
+    {
+      "file": "extraction_errors.csv",
+      "url": "https://drive.google.com/file/d/1-n1WxmQxmteML0xgs8xoNw7IcRBH1Tit/view?usp=drivesdk"
+    },
+    {
+      "file": "trends_v19.md",
+      "url": "https://drive.google.com/file/d/1P9UKOfdhGe21QHeZlzx1rcLbQSOGFYiZ/view?usp=drivesdk"
+    },
+    {
+      "file": "trends_v19.zip",
+      "url": "https://drive.google.com/file/d/12hzQliGJZxbCzjwupuGxlTTO0Vh5jiv5/view?usp=drivesdk"
+    }
+  ]
+}

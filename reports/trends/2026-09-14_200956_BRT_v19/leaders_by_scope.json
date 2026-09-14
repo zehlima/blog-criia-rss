@@ -1,0 +1,3409 @@
+[
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "África do Sul"
+      ],
+      "evidence": [
+        {
+          "id": 17630,
+          "title": "SA investment firm ploughs R2.1bn into digital economy",
+          "url": "https://www.itweb.co.za/article/sa-investment-firm-ploughs-r21bn-into-digital-economy/KzQenMjyjEA7Zd2r"
+        },
+        {
+          "id": 34780,
+          "title": "SA Investment Firm DNI Invests R2 Billion In Digital Economy",
+          "url": "https://techfinancials.co.za/2026/09/14/sa-investment-firm-dni-invests-r2-billion-in-digital-economy/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "SA Investment Firm DNI Invests R2 Billion In Digital Economy",
+      "publishers": 3,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-ba01e27ef958bd88"
+    },
+    "place": "África",
+    "scope": "continent",
+    "summary": {
+      "articles": 486,
+      "outliers": 427
+    },
+    "topics": 40,
+    "publishers": 50
+  },
+  {
+    "leader": {
+      "articles": 4,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Costa Rica",
+        "Guatemala",
+        "Honduras",
+        "Panamá"
+      ],
+      "evidence": [
+        {
+          "id": 39614,
+          "title": "Trump dice que el ‘único control’ que necesita la IA es un presidente ‘fuerte e inteligente’",
+          "url": "https://www.nacion.com/el-mundo/trump-dice-que-el-unico-control-que-necesita-la-ia/7WN37S4XGNHXDGFA3GA76MM2EQ/story/"
+        },
+        {
+          "id": 42652,
+          "title": "Trump dice que la IA no necesita más control que tenerlo a él como presidente de EE.UU.",
+          "url": "https://ensegundos.com.pa/2026/09/14/trump-dice-que-la-ia-no-necesita-mas-control-que-tenerlo-a-el-como-presidente-de-ee-uu/?utm_source=rss&utm_medium=rss&utm_campaign=trump-dice-que-la-ia-no-necesita-mas-control-que-tenerlo-a-el-como-presidente-de-ee-uu"
+        },
+        {
+          "id": 43074,
+          "title": "Por qué Trump afirma que la IA no necesita control, sino tener un “presidente fuerte e inteligente”",
+          "url": "https://www.prensalibre.com/internacional/por-que-trump-afirma-que-la-ia-no-necesita-control-sino-tener-un-presidente-fuerte-e-inteligente/"
+        },
+        {
+          "id": 43213,
+          "title": "Trump dice que la IA no necesita más control que tenerlo a él como presidente de EEUU",
+          "url": "https://proceso.hn/trump-dice-que-la-ia-no-necesita-mas-control-que-tenerlo-a-el-como-presidente-de-eeuu/"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Trump dice que la IA no necesita más control que tenerlo a él como presidente de Estados Unidos",
+      "publishers": 4,
+      "republication_families_estimated": 4,
+      "topic_id": "topic-7592c09a27b0d707"
+    },
+    "place": "América do Norte",
+    "scope": "continent",
+    "summary": {
+      "articles": 2217,
+      "outliers": 1839
+    },
+    "topics": 202,
+    "publishers": 130
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "evidence": [
+        {
+          "id": 18406,
+          "title": "Samsung lança novas TVs Vision AI no Brasil com inédita Micro RGB de 85”; veja preços",
+          "url": "https://www.tudocelular.com/mercado/noticias/n262780/samsung-lanca-smarttvs-brasil-ia-oled-rgb-precos.html"
+        },
+        {
+          "id": 18444,
+          "title": "Samsung amplia portfólio premium de TVs no Brasil com novas Micro RGB, OLED, Neo QLED e The Frame Pro",
+          "url": "https://www.showmetech.com.br/samsung-amplia-portfolio-premium-de-tvs-micro-rgb-oled-neo-qled-e-the-frame-pro/"
+        },
+        {
+          "id": 56657,
+          "title": "Samsung muda estratégia de TVs no Brasil e estreia Micro RGB em nova linha premium",
+          "url": "https://www.mundoconectado.com.br/samsung/samsung-muda-estrategia-de-tvs-no-brasil-e-estreia-micro-rgb-em-nova-linha-premium/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Samsung amplia portfólio premium de TVs no Brasil com novas Micro RGB, OLED, Neo QLED e The Frame Pro",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-24026ef14a30fd7c"
+    },
+    "place": "América do Sul",
+    "scope": "continent",
+    "summary": {
+      "articles": 596,
+      "outliers": 487
+    },
+    "topics": 78,
+    "publishers": 63
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Irã"
+      ],
+      "evidence": [
+        {
+          "id": 12405,
+          "title": "شیائومی Pad 9 و Pad 9 Pro معرفی شدند؛ نمایشگر 3.2K و اسنپدراگون‌های قدرتمند",
+          "url": "https://techrato.com/2026/09/14/%d8%b4%db%8c%d8%a7%d8%a6%d9%88%d9%85%db%8c-pad-9-%d9%88-pad-9-pro-%d9%85%d8%b9%d8%b1%d9%81%db%8c-%d8%b4%d8%af%d9%86%d8%af%d8%9b-%d9%86%d9%85%d8%a7%db%8c%d8%b4%da%af%d8%b1-3-2k-%d9%88-%d8%a7%d8%b3/"
+        },
+        {
+          "id": 31667,
+          "title": "معرفی تبلت‌های Xiaomi Pad 9 و Pad 9 Pro با صفحه‌نمایش‌های 144 هرتزی و پردازنده‌های سری 8 کوالکام",
+          "url": "http://www.mobile.ir/news/view-6486-introducing-xiaomi-pad-9-and-xiaomi-pad-9-pro.aspx"
+        },
+        {
+          "id": 33799,
+          "title": "تبلت های Pad 9 و Pad 9 Pro شیائومی معرفی شدند",
+          "url": "https://technoc.ir/xiaomi-pad-9-pad-9-pro/"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Xiaomi представила Pad 9 и Pad 9 Pro — относительно доступные планшеты на Snapdragon",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-63519e76a9db3913"
+    },
+    "place": "Ásia",
+    "scope": "continent",
+    "summary": {
+      "articles": 1815,
+      "outliers": 1643
+    },
+    "topics": 103,
+    "publishers": 107
+  },
+  {
+    "leader": {
+      "articles": 4,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Alemanha",
+        "Grécia",
+        "Itália",
+        "Polônia"
+      ],
+      "evidence": [
+        {
+          "id": 5008,
+          "title": "NVIDIA RTX PRO 5500 Blackwell: 84GB μνήμης και 600W κατανάλωση",
+          "url": "https://techblog.gr/videogames/nvidia-rtx-pro-5500-blackwell-84gb-mnimis-kai-600w-katanalosi/"
+        },
+        {
+          "id": 16693,
+          "title": "NVIDIA RTX PRO 5500 Blackwell: 84 GB di memoria per la nuova scheda video professionale",
+          "url": "https://www.hwupgrade.it/news/skvideo/nvidia-rtx-pro-5500-blackwell-84-gb-di-memoria-per-la-nuova-scheda-video-professionale_159106.html"
+        },
+        {
+          "id": 25640,
+          "title": "Mit 84 GB für KI-Workstations: NVIDIA RTX PRO 5500 Blackwell vorgestellt",
+          "url": "https://www.hardwareluxx.de/index.php/news/hardware/grafikkarten/70327-mit-84-gb-fuer-ki-workstations-nvidia-rtx-pro-5500-blackwell-vorgestellt.html"
+        },
+        {
+          "id": 46818,
+          "title": "NVIDIA RTX PRO 5500 Blackwell oficjalnie. Na pokładzie 84 GB pamięci",
+          "url": "https://ithardware.pl/aktualnosci/nvidia_rtx_pro_5500_blackwell_prezentacja-54025.html"
+        }
+      ],
+      "full_texts": 3,
+      "label": "NVIDIA RTX PRO 5500 Blackwell oficjalnie. Na pokładzie 84 GB pamięci",
+      "publishers": 4,
+      "republication_families_estimated": 4,
+      "topic_id": "topic-0eed8ea054215cef"
+    },
+    "place": "Europa",
+    "scope": "continent",
+    "summary": {
+      "articles": 2450,
+      "outliers": 2042
+    },
+    "topics": 244,
+    "publishers": 128
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Europa/Ásia (transcontinental)"
+      ],
+      "countries": [
+        "Turquia"
+      ],
+      "evidence": [
+        {
+          "id": 10317,
+          "title": "WhatsApp Durum Videolarına 2x Hızlandırma Geliyor",
+          "url": "https://shiftdelete.net/whatsapp-durum-videolari-hizlandirma-ozelligi"
+        },
+        {
+          "id": 12533,
+          "title": "WhatsApp'ta Durum Videolarını 2x Hızda İzleyebileceksiniz",
+          "url": "https://www.webtekno.com/whatsapp-durumlari-videolar-2x-hizda-izlenebilecek-h224248.html"
+        },
+        {
+          "id": 33830,
+          "title": "WhatsApp, iPhone’da Durum videolarına basılı tutarak 2x hız ekliyor",
+          "url": "https://www.teknoblog.com/whatsapp-durum-2x/"
+        }
+      ],
+      "full_texts": 3,
+      "label": "WhatsApp'ta Durum Videolarını 2x Hızda İzleyebileceksiniz",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-61bd1e3ddcbeb570"
+    },
+    "place": "Europa/Ásia (transcontinental)",
+    "scope": "continent",
+    "summary": {
+      "articles": 634,
+      "outliers": 496
+    },
+    "topics": 88,
+    "publishers": 30
+  },
+  {
+    "leader": {
+      "articles": 6,
+      "continents": [
+        "Oceania"
+      ],
+      "countries": [
+        "Austrália",
+        "Nova Zelândia"
+      ],
+      "evidence": [
+        {
+          "id": 53030,
+          "title": "Airrived launches observability for enterprise AI agents",
+          "url": "https://cfotech.com.au/story/airrived-launches-observability-for-enterprise-ai-agents"
+        },
+        {
+          "id": 53041,
+          "title": "Airrived launches observability for enterprise AI agents",
+          "url": "https://cfotech.co.nz/story/airrived-launches-observability-for-enterprise-ai-agents"
+        },
+        {
+          "id": 53207,
+          "title": "Airrived launches observability for enterprise AI agents",
+          "url": "https://itbrief.com.au/story/airrived-launches-observability-for-enterprise-ai-agents"
+        },
+        {
+          "id": 53219,
+          "title": "Airrived launches observability for enterprise AI agents",
+          "url": "https://itbrief.co.nz/story/airrived-launches-observability-for-enterprise-ai-agents"
+        },
+        {
+          "id": 53800,
+          "title": "Airrived launches observability for enterprise AI agents",
+          "url": "https://securitybrief.com.au/story/airrived-launches-observability-for-enterprise-ai-agents"
+        }
+      ],
+      "full_texts": 6,
+      "label": "Airrived launches observability for enterprise AI agents",
+      "publishers": 6,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-09d47d9dc8ecdd8d"
+    },
+    "place": "Oceania",
+    "scope": "continent",
+    "summary": {
+      "articles": 498,
+      "outliers": 304
+    },
+    "topics": 64,
+    "publishers": 60
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "África do Sul"
+      ],
+      "evidence": [
+        {
+          "id": 17630,
+          "title": "SA investment firm ploughs R2.1bn into digital economy",
+          "url": "https://www.itweb.co.za/article/sa-investment-firm-ploughs-r21bn-into-digital-economy/KzQenMjyjEA7Zd2r"
+        },
+        {
+          "id": 34780,
+          "title": "SA Investment Firm DNI Invests R2 Billion In Digital Economy",
+          "url": "https://techfinancials.co.za/2026/09/14/sa-investment-firm-dni-invests-r2-billion-in-digital-economy/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "SA Investment Firm DNI Invests R2 Billion In Digital Economy",
+      "publishers": 3,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-ba01e27ef958bd88"
+    },
+    "place": "África do Sul",
+    "scope": "country",
+    "summary": {
+      "articles": 108,
+      "outliers": 93
+    },
+    "topics": 12,
+    "publishers": 13
+  },
+  {
+    "leader": null,
+    "place": "África do Sul (redação; grupo Informa britânico)",
+    "scope": "country",
+    "summary": {
+      "articles": 1,
+      "outliers": 1
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": null,
+    "place": "Albânia",
+    "scope": "country",
+    "summary": {
+      "articles": 0,
+      "outliers": 0
+    },
+    "topics": 0,
+    "publishers": 0
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Alemanha"
+      ],
+      "evidence": [
+        {
+          "id": 5348,
+          "title": "BYD legt vor: Erste E-Autos mit Feststoffbatterie schon nächstes Jahr",
+          "url": "https://winfuture.de/news,161251.html"
+        },
+        {
+          "id": 26427,
+          "title": "BYD nennt erstmals ein Datum: Erstes Auto mit Feststoffbatterie soll 2027 fahren",
+          "url": "https://www.netzwelt.de/news/258518-byd-nennt-erstmals-datum-erstes-auto-feststoffbatterie-2027-fahren.html"
+        }
+      ],
+      "full_texts": 2,
+      "label": "BYD legt vor: Erste E-Autos mit Feststoffbatterie schon nächstes Jahr",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-0857193f6f5339a5"
+    },
+    "place": "Alemanha",
+    "scope": "country",
+    "summary": {
+      "articles": 566,
+      "outliers": 463
+    },
+    "topics": 66,
+    "publishers": 12
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Angola"
+      ],
+      "evidence": [
+        {
+          "id": 34574,
+          "title": "IA está cada vez mais difícil de controlar? Agentes levantam preocupação no sector",
+          "url": "https://www.menosfios.com/ia-esta-cada-vez-mais-dificil-de-controlar-agentes-levantam-preocupacao-no-sector/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "IA está cada vez mais difícil de controlar? Agentes levantam preocupação no sector",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-5b4c6a78c625f3e6"
+    },
+    "place": "Angola",
+    "scope": "country",
+    "summary": {
+      "articles": 2,
+      "outliers": 1
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Arábia Saudita"
+      ],
+      "evidence": [
+        {
+          "id": 51944,
+          "title": "سامسونج تستعد لإطلاق Galaxy Tab S12+ وTab S12 Ultra في 7 أكتوبر",
+          "url": "https://www.tech-wd.com/wd/2026/09/14/%d8%b3%d8%a7%d9%85%d8%b3%d9%88%d9%86%d8%ac-%d8%aa%d8%b3%d8%aa%d8%b9%d8%af-%d9%84%d8%a5%d8%b7%d9%84%d8%a7%d9%82-galaxy-tab-s12-%d9%88tab-s12-ultra-%d9%81%d9%8a-7-%d8%a3%d9%83%d8%aa%d9%88%d8%a8%d8%b1/"
+        }
+      ],
+      "full_texts": 0,
+      "label": "سامسونج تستعد لإطلاق Galaxy Tab S12+ وTab S12 Ultra في 7 أكتوبر",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-0b3e7d3b1b01c9b6"
+    },
+    "place": "Arábia Saudita",
+    "scope": "country",
+    "summary": {
+      "articles": 24,
+      "outliers": 18
+    },
+    "topics": 6,
+    "publishers": 2
+  },
+  {
+    "leader": null,
+    "place": "Argélia",
+    "scope": "country",
+    "summary": {
+      "articles": 11,
+      "outliers": 11
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Argentina"
+      ],
+      "evidence": [
+        {
+          "id": 19375,
+          "title": "\"Estamos al borde de un cambio irreversible\": la ONU reclamó acciones urgentes de los gobiernos para regular la Inteligencia Artificial",
+          "url": "https://tn.com.ar/tecno/novedades/2026/09/14/estamos-al-borde-de-un-cambio-irreversible-la-onu-reclamo-que-los-gobiernos-regulen-la-inteligencia-artificial/"
+        },
+        {
+          "id": 39307,
+          "title": "La ONU reclama controles para la inteligencia artificial antes de un \"cambio irreversible\"",
+          "url": "https://www.iprofesional.com/tecnologia/464391-la-onu-pide-regular-la-inteligencia-artificial-para-evitar-un-cambio-irreversible"
+        }
+      ],
+      "full_texts": 2,
+      "label": "\"Estamos al borde de un cambio irreversible\": la ONU reclamó acciones urgentes de los gobiernos para regular la Inteligencia Artificial",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-2fd3f89dab3ead61"
+    },
+    "place": "Argentina",
+    "scope": "country",
+    "summary": {
+      "articles": 87,
+      "outliers": 73
+    },
+    "topics": 12,
+    "publishers": 11
+  },
+  {
+    "leader": {
+      "articles": 4,
+      "continents": [
+        "Oceania"
+      ],
+      "countries": [
+        "Austrália"
+      ],
+      "evidence": [
+        {
+          "id": 13896,
+          "title": "University of Sydney gives campus-wide ChatGPT Edu access",
+          "url": "https://channellife.com.au/story/university-of-sydney-gives-campus-wide-chatgpt-edu-access"
+        },
+        {
+          "id": 14938,
+          "title": "University of Sydney gives campus-wide ChatGPT Edu access",
+          "url": "https://securitybrief.com.au/story/university-of-sydney-gives-campus-wide-chatgpt-edu-access"
+        },
+        {
+          "id": 15138,
+          "title": "University of Sydney gives campus-wide ChatGPT Edu access",
+          "url": "https://techday.com.au/story/university-of-sydney-gives-campus-wide-chatgpt-edu-access"
+        },
+        {
+          "id": 53221,
+          "title": "University of Sydney to roll out ChatGPT Edu to students",
+          "url": "https://www.itnews.com.au/news/university-of-sydney-to-roll-out-chatgpt-edu-to-students-628894?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+"
+        }
+      ],
+      "full_texts": 4,
+      "label": "University of Sydney gives campus-wide ChatGPT Edu access",
+      "publishers": 4,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-0977eb5d7a448c07"
+    },
+    "place": "Austrália",
+    "scope": "country",
+    "summary": {
+      "articles": 235,
+      "outliers": 147
+    },
+    "topics": 40,
+    "publishers": 41
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Áustria"
+      ],
+      "evidence": [
+        {
+          "id": 3542,
+          "title": "War 2019 erster Kunde – Ex-orderbird-CEO David Feichter wird Co-CEO von Wiener Scaleup fiskaly",
+          "url": "https://brutkasten.com/artikel/war-2019-erster-kunde-ex-orderbird-ceo-david-feichter-wird-co-ceo-von-wiener-scaleup-fiskaly"
+        },
+        {
+          "id": 26976,
+          "title": "fiskaly ernennt David Feichter zum neuen Co-CEO",
+          "url": "https://www.trendingtopics.eu/fiskaly-ernennt-david-feichter-zum-neuen-co-ceo/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "fiskaly ernennt David Feichter zum neuen Co-CEO",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-eacfe64c95a12f16"
+    },
+    "place": "Áustria",
+    "scope": "country",
+    "summary": {
+      "articles": 33,
+      "outliers": 16
+    },
+    "topics": 13,
+    "publishers": 3
+  },
+  {
+    "leader": null,
+    "place": "Bahamas",
+    "scope": "country",
+    "summary": {
+      "articles": 12,
+      "outliers": 12
+    },
+    "topics": 0,
+    "publishers": 2
+  },
+  {
+    "leader": null,
+    "place": "Barbados",
+    "scope": "country",
+    "summary": {
+      "articles": 7,
+      "outliers": 7
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Belarus"
+      ],
+      "evidence": [
+        {
+          "id": 7186,
+          "title": "Honor выпустит Honor Magic9 Super Edition с батареей на 11 000 мАч",
+          "url": "https://tech.onliner.by/2026/09/14/honor-vypustit-honor-magic9-super-edition-s-batareej-na-11-000-mach"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Honor تكشف تصميم وألوان سلسلة Magic9.. وإصدار Super Edition ببطارية ضخمة 11,000 مللي أمبير",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-b7de059f8ab03aba"
+    },
+    "place": "Belarus",
+    "scope": "country",
+    "summary": {
+      "articles": 27,
+      "outliers": 23
+    },
+    "topics": 4,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Bélgica"
+      ],
+      "evidence": [
+        {
+          "id": 4987,
+          "title": "Chift raises €10.5M Series A to scale financial connectivity across Europe",
+          "url": "https://tech.eu/2026/09/14/chift-raises-eur105m-series-a-to-scale-financial-connectivity-across-europe/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Brussels-based Chift raises €10.5 million Series A to become Europe’s financial connectivity layer",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-4e3d93b47b8963d6"
+    },
+    "place": "Bélgica",
+    "scope": "country",
+    "summary": {
+      "articles": 10,
+      "outliers": 8
+    },
+    "topics": 2,
+    "publishers": 1
+  },
+  {
+    "leader": null,
+    "place": "Belize",
+    "scope": "country",
+    "summary": {
+      "articles": 20,
+      "outliers": 20
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Bolívia"
+      ],
+      "evidence": [
+        {
+          "id": 57716,
+          "title": "Microsoft elabora código de conducta para mantener su IA bajo control humano",
+          "url": "https://www.economy.com.bo/articulo/itecno/microsoft-elabora-codigo-conducta-mantener-ia-control-humano/20260914163404024039.html"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Microsoft elabora código de conduta para manter sua IA sob controle humano",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-2dc91e1b1e77dee9"
+    },
+    "place": "Bolívia",
+    "scope": "country",
+    "summary": {
+      "articles": 1,
+      "outliers": 0
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "evidence": [
+        {
+          "id": 18406,
+          "title": "Samsung lança novas TVs Vision AI no Brasil com inédita Micro RGB de 85”; veja preços",
+          "url": "https://www.tudocelular.com/mercado/noticias/n262780/samsung-lanca-smarttvs-brasil-ia-oled-rgb-precos.html"
+        },
+        {
+          "id": 18444,
+          "title": "Samsung amplia portfólio premium de TVs no Brasil com novas Micro RGB, OLED, Neo QLED e The Frame Pro",
+          "url": "https://www.showmetech.com.br/samsung-amplia-portfolio-premium-de-tvs-micro-rgb-oled-neo-qled-e-the-frame-pro/"
+        },
+        {
+          "id": 56657,
+          "title": "Samsung muda estratégia de TVs no Brasil e estreia Micro RGB em nova linha premium",
+          "url": "https://www.mundoconectado.com.br/samsung/samsung-muda-estrategia-de-tvs-no-brasil-e-estreia-micro-rgb-em-nova-linha-premium/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Samsung amplia portfólio premium de TVs no Brasil com novas Micro RGB, OLED, Neo QLED e The Frame Pro",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-24026ef14a30fd7c"
+    },
+    "place": "Brasil",
+    "scope": "country",
+    "summary": {
+      "articles": 378,
+      "outliers": 304
+    },
+    "topics": 57,
+    "publishers": 32
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Bulgária"
+      ],
+      "evidence": [
+        {
+          "id": 6579,
+          "title": "HUAWEI WATCH GT 7 Series пристигна в България и разширява възможностите за спорт на открито с карти на над 3000 ски курорта",
+          "url": "https://www.kaldata.com/%d1%85%d0%b0%d1%80%d0%b4%d1%83%d0%b5%d1%80/huawei-watch-gt-7-series-%d0%bf%d1%80%d0%b8%d1%81%d1%82%d0%b8%d0%b3%d0%bd%d0%b0-%d0%b2-%d0%b1%d1%8a%d0%bb%d0%b3%d0%b0%d1%80%d0%b8%d1%8f-%d0%b8-%d1%80%d0%b0%d0%b7%d1%88%d0%b8%d1%80%d1%8f%d0%b2%d0%b0-704899.html"
+        },
+        {
+          "id": 7011,
+          "title": "Серията смартчасовници Huawei Watch GT 7 с карти на над 3000 ски курорта вече е достъпна в България",
+          "url": "https://mobilebulgaria.com/news/seriyata-smartchasovnitsi-huawei-watch-gt-7-s-karti-na-nad-3000-ski-kurorta-veche-e-dostapna-v-balgariya"
+        }
+      ],
+      "full_texts": 2,
+      "label": "HUAWEI WATCH GT 7 Series пристигна в България и разширява възможностите за спорт на открито с карти на над 3000 ски курорта",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-0ca00b6f2963b16c"
+    },
+    "place": "Bulgária",
+    "scope": "country",
+    "summary": {
+      "articles": 90,
+      "outliers": 66
+    },
+    "topics": 23,
+    "publishers": 4
+  },
+  {
+    "leader": null,
+    "place": "Camarões",
+    "scope": "country",
+    "summary": {
+      "articles": 3,
+      "outliers": 3
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Canadá"
+      ],
+      "evidence": [
+        {
+          "id": 41626,
+          "title": "Apple working on game controller under Beats brand: report",
+          "url": "https://mobilesyrup.com/2026/09/14/apple-working-game-controller-under-beats-brand-report/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Apple working on game controller under Beats brand: report",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-2f7403da5620b669"
+    },
+    "place": "Canadá",
+    "scope": "country",
+    "summary": {
+      "articles": 27,
+      "outliers": 21
+    },
+    "topics": 6,
+    "publishers": 3
+  },
+  {
+    "leader": null,
+    "place": "Catar",
+    "scope": "country",
+    "summary": {
+      "articles": 3,
+      "outliers": 3
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Chéquia"
+      ],
+      "evidence": [
+        {
+          "id": 16786,
+          "title": "Tim Cook odešel na důchod k Samsungu. Nějak se mu ale změnil přízvuk",
+          "url": "https://mobilmania.zive.cz/clanky/samsung-si-rypl-do-applu-jako-nikdy-predtim-hvezdou-reklamy-na-galaxy-z-fold8-je-tim-cook/sc-3-a-1365359/default.aspx"
+        },
+        {
+          "id": 28828,
+          "title": "Tim Cook odešel do důchodu a začal propagovat skládací telefon od Samsungu. Tedy tak nějak",
+          "url": "https://mobilenet.cz/clanky/sam-sung-chvalil-honor-ted-zase-tim-cook-propaguje-samsung-ze-vam-to-nedava-smysl-55233"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Tim Cook odešel na důchod k Samsungu. Nějak se mu ale změnil přízvuk",
+      "publishers": 3,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-0577e25db2e45269"
+    },
+    "place": "Chéquia",
+    "scope": "country",
+    "summary": {
+      "articles": 102,
+      "outliers": 86
+    },
+    "topics": 14,
+    "publishers": 11
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Chile"
+      ],
+      "evidence": [
+        {
+          "id": 57487,
+          "title": "El remake de Zelda: Ocarina of Time apuntaría a 1080p y 60 fps en Switch 2",
+          "url": "https://pisapapeles.net/el-remake-de-zelda-ocarina-of-time-apuntaria-a-1080p-y-60-fps-en-switch-2/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Zelda: Ocarina of Time no Switch 2 traz 1080P e 60 FPS, mas com ausência importante",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-10d22b552dbda39d"
+    },
+    "place": "Chile",
+    "scope": "country",
+    "summary": {
+      "articles": 27,
+      "outliers": 23
+    },
+    "topics": 4,
+    "publishers": 5
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "China"
+      ],
+      "evidence": [
+        {
+          "id": 8591,
+          "title": "荣耀 Magic9 超能版手机规格曝光：第五代骁龙 8 至尊版处理器，11000mAh 电池",
+          "url": "https://www.ithome.com/1/002/148.htm"
+        },
+        {
+          "id": 8620,
+          "title": "刷新行业纪录：荣耀 Magic9 超能版手机官宣搭载 11000mAh 超大容量青海湖电池",
+          "url": "https://www.ithome.com/1/002/083.htm"
+        },
+        {
+          "id": 8694,
+          "title": "荣耀Magic9超能版首发11000mAh电池：史上电量最大的Magic旗舰",
+          "url": "https://news.mydrivers.com/1/1150/1150978.htm"
+        }
+      ],
+      "full_texts": 3,
+      "label": "荣耀Magic9超能版首发11000mAh电池：史上电量最大的Magic旗舰",
+      "publishers": 2,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-327befdb22a500c0"
+    },
+    "place": "China",
+    "scope": "country",
+    "summary": {
+      "articles": 322,
+      "outliers": 297
+    },
+    "topics": 15,
+    "publishers": 8
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Colômbia"
+      ],
+      "evidence": [
+        {
+          "id": 19634,
+          "title": "Sam Altman, director de OpenAI, lanza advertencia sobre la IA y dice que se puede perder el 'control del futuro': 'Podría salir muy mal'",
+          "url": "https://www.eltiempo.com/tecnosfera/novedades-tecnologia/sam-altman-director-de-openai-lanza-advertencia-sobre-la-ia-y-dice-que-se-puede-perder-el-control-del-futuro-podria-salir-muy-mal-3585830"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Sam Altman (OpenAI) advierte de que se puede perder el «control del futuro» ante la IA",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-078bf2021ae903c8"
+    },
+    "place": "Colômbia",
+    "scope": "country",
+    "summary": {
+      "articles": 72,
+      "outliers": 67
+    },
+    "topics": 5,
+    "publishers": 6
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Coreia do Sul"
+      ],
+      "evidence": [
+        {
+          "id": 17166,
+          "title": "삼성디스플레이, '2K·165Hz' 스마트폰 OLED 개발…비보 'iQOO16' 탑재",
+          "url": "https://www.ddaily.co.kr/page/view/2026091413424884053"
+        },
+        {
+          "id": 17256,
+          "title": "삼성디스플레이, 세계 최초 2K·165Hz 모바일 OLED 비보에 공급",
+          "url": "https://www.bloter.net/news/articleView.html?idxno=673515"
+        }
+      ],
+      "full_texts": 2,
+      "label": "삼성디스플레이, '2K·165Hz' 스마트폰 OLED 개발…비보 'iQOO16' 탑재",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-31733c8a66fe1377"
+    },
+    "place": "Coreia do Sul",
+    "scope": "country",
+    "summary": {
+      "articles": 270,
+      "outliers": 256
+    },
+    "topics": 7,
+    "publishers": 6
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Costa Rica"
+      ],
+      "evidence": [
+        {
+          "id": 2322,
+          "title": "Laura Fernández reduce a ¢11.000 millones el recorte al Poder Judicial y condiciona entrega de recursos",
+          "url": "https://observador.cr/laura-fernandez-reduce-a-11-000-millones-el-recorte-al-poder-judicial-y-condiciona-entrega-de-recursos/"
+        },
+        {
+          "id": 2593,
+          "title": "Laura Fernández anuncia que recorte al Poder Judicial será de ¢11 mil millones y no de ¢27 mil millones",
+          "url": "https://www.larepublica.net/laura-fernandez-anuncia-que-recorte-al-poder-judicial-sera-de-c-11-mil-millones-y-no-de-c-27-mil-millones/"
+        },
+        {
+          "id": 54091,
+          "title": "Laura Fernández reduce recorte al Poder Judicial a ¢11 mil millones, pero eleva tono y pone condiciones a magistrados",
+          "url": "https://elperiodicocr.com/laura-fernandez-reduce-recorte-al-poder-judicial-a-%c2%a211-mil-millones-pero-eleva-tono-contra-magistrados/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Laura Fernández reduce recorte al Poder Judicial a ¢11 mil millones, pero eleva tono y pone condiciones a magistrados",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-c0723b92b3b5fde7"
+    },
+    "place": "Costa Rica",
+    "scope": "country",
+    "summary": {
+      "articles": 242,
+      "outliers": 204
+    },
+    "topics": 26,
+    "publishers": 12
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Croácia"
+      ],
+      "evidence": [
+        {
+          "id": 46096,
+          "title": "EU KIDS Act: Europska komisija ovog tjedna predstavlja dobno stupnjevani pristup mrežama",
+          "url": "https://www.bug.hr/zakonodavstvo/eu-kids-act-europska-komisija-ovog-tjedna-predstavlja-dobno-stupnjevani-pristup-62840"
+        }
+      ],
+      "full_texts": 1,
+      "label": "EU KIDS Act: Europska komisija ovog tjedna predstavlja dobno stupnjevani pristup mrežama",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-23708cfe6d9dd892"
+    },
+    "place": "Croácia",
+    "scope": "country",
+    "summary": {
+      "articles": 23,
+      "outliers": 21
+    },
+    "topics": 2,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Cuba"
+      ],
+      "evidence": [
+        {
+          "id": 39924,
+          "title": "Rusia apoya las aspiraciones de Cuba de ingresar como miembro pleno en los BRICS, dice Moscú",
+          "url": "https://oncubanews.com/cuba/rusia-apoya-las-aspiraciones-de-cuba-de-ingresar-como-miembro-pleno-en-los-brics-dice-moscu/"
+        },
+        {
+          "id": 54336,
+          "title": "¿Moscú cambia de opinión ante el deseo de La Habana de ser miembro pleno de los BRICS?",
+          "url": "https://diariodecuba.com/cuba/1789411040_68924.html"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Rusia apoya las aspiraciones de Cuba de ingresar como miembro pleno en los BRICS, dice Moscú",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-3040b749d73f53f7"
+    },
+    "place": "Cuba",
+    "scope": "country",
+    "summary": {
+      "articles": 51,
+      "outliers": 46
+    },
+    "topics": 3,
+    "publishers": 4
+  },
+  {
+    "leader": null,
+    "place": "Dominica",
+    "scope": "country",
+    "summary": {
+      "articles": 13,
+      "outliers": 13
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Egito"
+      ],
+      "evidence": [
+        {
+          "id": 52578,
+          "title": "Yemen’s Houthis seize Red Sea Hanish archipelago as US VP Vance confirms talks with group",
+          "url": "https://www.dailynewsegypt.com/2026/09/14/yemens-houthis-seize-red-sea-hanish-archipelago-as-us-vp-vance-confirms-talks-with-group/?utm_source=rss&utm_medium=rss&utm_campaign=yemens-houthis-seize-red-sea-hanish-archipelago-as-us-vp-vance-confirms-talks-with-group"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Yemen's Houthi rebels seize more key islands in southern Red Sea, tighten grip on shipping routes",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-6d8c1e0c20dbb9a0"
+    },
+    "place": "Egito",
+    "scope": "country",
+    "summary": {
+      "articles": 11,
+      "outliers": 9
+    },
+    "topics": 2,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 5,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "El Salvador"
+      ],
+      "evidence": [
+        {
+          "id": 15809,
+          "title": "Iberojet llega este lunes a El Salvador con vuelo directo desde España",
+          "url": "https://www.elsalvador.com/turismo/rutas-y-aventuras/iberojet-vuelo-directos-espana-madrid/1293160/2026/"
+        },
+        {
+          "id": 15842,
+          "title": "Iberojet inaugura conexión aérea entre El Salvador y Europa",
+          "url": "https://www.elsalvador.com/turismo/rutas-y-aventuras/aerolineas-aeropuerto-internacional-de-el-salvador-espana-vuelos-comerciales-europa/1293179/2026/"
+        },
+        {
+          "id": 23814,
+          "title": "Iberojet inicia operaciones con vuelos directos entre El Salvador y España",
+          "url": "https://diarioelsalvador.com/dedinero/iberojet-inicia-operaciones-con-vuelos-directos-de-espana-a-el-salvador-y-viceversa/852769"
+        },
+        {
+          "id": 23863,
+          "title": "Iberojet inaugura operaciones en El Salvador con conexiones directas a Madrid y Barcelona",
+          "url": "https://dinero.com.sv/economia/iberojet-inaugura-operaciones-en-el-salvador-con-conexiones-directas-a-madrid-y-barcelona/"
+        },
+        {
+          "id": 54156,
+          "title": "Iberojet ya vuela desde El Salvador a España, estas son las rutas y frecuencias",
+          "url": "https://www.elsalvador.com/dinero-y-negocios/vision-empresarial/iberojet-vuelos-barcelona-madrid/1293224/2026/"
+        }
+      ],
+      "full_texts": 4,
+      "label": "Iberojet inicia operaciones con vuelos directos entre El Salvador y España",
+      "publishers": 3,
+      "republication_families_estimated": 5,
+      "topic_id": "topic-7e74e3b07338bf6e"
+    },
+    "place": "El Salvador",
+    "scope": "country",
+    "summary": {
+      "articles": 108,
+      "outliers": 91
+    },
+    "topics": 10,
+    "publishers": 6
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Emirados Árabes Unidos"
+      ],
+      "evidence": [
+        {
+          "id": 9359,
+          "title": "Mannai Information Technology and Oracle Expand Collaboration in Saudi Arabia",
+          "url": "https://arabianreseller.com/2026/09/14/mannai-information-technology-and-oracle-expand-collaboration-in-saudi-arabia/"
+        },
+        {
+          "id": 9493,
+          "title": "Mannai Information Technology and Oracle expand collaboration in Saudi Arabia",
+          "url": "https://www.cxoinsightme.com/business/channel/mannai-information-technology-and-oracle-expand-collaboration-in-saudi-arabia/"
+        },
+        {
+          "id": 30991,
+          "title": "Mannai Information Technology Expand its Partnership with Oracle in Saudi Arabia",
+          "url": "https://channelpostmea.com/2026/09/14/mannai-information-technology-expand-its-partnership-with-oracle-in-saudi-arabia/"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Mannai Information Technology and Oracle expand collaboration in Saudi Arabia",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-6ca9be52e2e8167d"
+    },
+    "place": "Emirados Árabes Unidos",
+    "scope": "country",
+    "summary": {
+      "articles": 68,
+      "outliers": 56
+    },
+    "topics": 8,
+    "publishers": 13
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Equador"
+      ],
+      "evidence": [
+        {
+          "id": 39525,
+          "title": "ONU lanza una dura advertencia sobre la IA: “Todos los derechos humanos están en riesgo”",
+          "url": "https://www.primicias.ec/internacional/onu-advertencia-inteligencia-artificial-ia-riesgo-derechos-humanos-132528/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "La ONU advierte que todos los derechos humanos “están en riesgo” ante el avance de la IA",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-397e817852d263e5"
+    },
+    "place": "Equador",
+    "scope": "country",
+    "summary": {
+      "articles": 5,
+      "outliers": 3
+    },
+    "topics": 2,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Eslováquia"
+      ],
+      "evidence": [
+        {
+          "id": 7162,
+          "title": "Recenzia Google Pixel 11 Pro XL: Otvára dvere novým príležitostiam",
+          "url": "https://www.mojandroid.sk/recenzia-google-pixel-11-pro-xl/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "This one feature convinced me to use the Pixel 11",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-6315d91456b365ba"
+    },
+    "place": "Eslováquia",
+    "scope": "country",
+    "summary": {
+      "articles": 29,
+      "outliers": 27
+    },
+    "topics": 2,
+    "publishers": 3
+  },
+  {
+    "leader": null,
+    "place": "Eslovênia",
+    "scope": "country",
+    "summary": {
+      "articles": 0,
+      "outliers": 0
+    },
+    "topics": 0,
+    "publishers": 0
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Espanha"
+      ],
+      "evidence": [
+        {
+          "id": 16601,
+          "title": "¿Merecerá la pena invertir en un nuevo televisor solo para ver los nuevos canales de la TDT en UHD 4K a partir del 5 de noviembre?",
+          "url": "https://computerhoy.20minutos.es/entretenimiento/merecera-pena-invertir-un-nuevo-televisor-solo-para-ver-los-nuevos-canales-tdt-uhd-4k-partir-5-noviembre_7036285_0.html"
+        },
+        {
+          "id": 54983,
+          "title": "Así puedes saber, en un solo vistazo, si un televisor es compatible con la nueva TDT en DVB-T2 y sirve para ver los nuevos canales en UHD 4K",
+          "url": "https://computerhoy.20minutos.es/entretenimiento/asi-puedes-saber-un-solo-vistazo-si-un-televisor-es-compatible-con-nueva-tdt-dvb-t2-sirve-para-ver-los-nuevos-canales-uhd-4k_7036408_0.html"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Así puedes saber, en un solo vistazo, si un televisor es compatible con la nueva TDT en DVB-T2 y sirve para ver los nuevos canales en UHD 4K",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-d5325f844abaa236"
+    },
+    "place": "Espanha",
+    "scope": "country",
+    "summary": {
+      "articles": 131,
+      "outliers": 117
+    },
+    "topics": 13,
+    "publishers": 8
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Estados Unidos"
+      ],
+      "evidence": [
+        {
+          "id": 40589,
+          "title": "Apple releases iOS 27 with Siri AI and these new iPhone features",
+          "url": "https://9to5mac.com/2026/09/14/ios-27-now-available-features-compatible-iphones/"
+        },
+        {
+          "id": 40732,
+          "title": "iOS 27 Is Here: Upgraded Siri AI, Liquid Glass Tweaks, and Apple Intelligence Arrive",
+          "url": "https://www.androidheadlines.com/2026/09/apple-releases-ios-27-siri-ai-liquid-glass.html"
+        },
+        {
+          "id": 42033,
+          "title": "Apple releases iOS 27 with Siri AI overhaul",
+          "url": "https://www.theverge.com/news/994756/apple-ios-27-launch-iphone-siri-ai-update"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Apple releases iOS 27 with Siri AI and these new iPhone features",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-a9e459f478f0b9f5"
+    },
+    "place": "Estados Unidos",
+    "scope": "country",
+    "summary": {
+      "articles": 788,
+      "outliers": 656
+    },
+    "topics": 92,
+    "publishers": 57
+  },
+  {
+    "leader": null,
+    "place": "Etiópia",
+    "scope": "country",
+    "summary": {
+      "articles": 1,
+      "outliers": 1
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": null,
+    "place": "Fiji",
+    "scope": "country",
+    "summary": {
+      "articles": 28,
+      "outliers": 28
+    },
+    "topics": 0,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Filipinas"
+      ],
+      "evidence": [
+        {
+          "id": 8782,
+          "title": "Xiaomi TV S Mini LED 2026, Mijia Front and Top Load Washer lands in PH",
+          "url": "https://www.noypigeeks.com/appliances/xiaomi-tv-s-mini-led-mijia-washer/"
+        },
+        {
+          "id": 17215,
+          "title": "Xiaomi TV S Mini LED 2026 Series and New Mijia Washers Now Available in the Philippines",
+          "url": "https://www.gadgetpilipinas.net/2026/09/xiaomi-tv-s-mini-led-2026-price/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Xiaomi TV S Mini LED 2026 Series and New Mijia Washers Now Available in the Philippines",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-6152aa01f1c5d081"
+    },
+    "place": "Filipinas",
+    "scope": "country",
+    "summary": {
+      "articles": 37,
+      "outliers": 30
+    },
+    "topics": 5,
+    "publishers": 7
+  },
+  {
+    "leader": null,
+    "place": "Finlândia",
+    "scope": "country",
+    "summary": {
+      "articles": 8,
+      "outliers": 8
+    },
+    "topics": 0,
+    "publishers": 3
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "França"
+      ],
+      "evidence": [
+        {
+          "id": 3715,
+          "title": "Mineurs et réseaux sociaux : Emmanuel Macron porte en Europe la bataille de l’interdiction",
+          "url": "https://www.frenchweb.fr/mineurs-et-reseaux-sociaux-emmanuel-macron-porte-en-europe-la-bataille-de-linterdiction/462990"
+        },
+        {
+          "id": 4606,
+          "title": "Interdiction des réseaux sociaux aux moins de 15 ans : la France soumet une nouvelle version de son projet à Bruxelles",
+          "url": "https://www.lemonde.fr/pixels/article/2026/09/14/interdiction-des-reseaux-sociaux-aux-moins-de-15-ans-le-gouvernement-soumet-une-nouvelle-version-a-bruxelles_6773399_4408996.html"
+        },
+        {
+          "id": 26289,
+          "title": "Réseaux sociaux interdits aux moins de 15 ans : la France change radicalement de cap",
+          "url": "https://www.journaldugeek.com/2026/09/14/reseaux-sociaux-interdits-aux-moins-de-15-ans-la-france-change-radicalement-de-cap/"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Interdiction des réseaux sociaux aux moins de 15 ans : la France soumet une nouvelle version de son projet à Bruxelles",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-3df6df1a5968f31c"
+    },
+    "place": "França",
+    "scope": "country",
+    "summary": {
+      "articles": 254,
+      "outliers": 211
+    },
+    "topics": 33,
+    "publishers": 10
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Gana"
+      ],
+      "evidence": [
+        {
+          "id": 56174,
+          "title": "Africa must remove visa restrictions to unlock jobs, opportunities – Gabby Otchere-Darko",
+          "url": "https://www.myjoyonline.com/africa-must-remove-visa-restrictions-to-unlock-jobs-opportunities-gabby-otchere-darko/"
+        },
+        {
+          "id": 56176,
+          "title": "Visa restrictions costing African businesses opportunities – Gabby Otchere-Darko",
+          "url": "https://www.myjoyonline.com/visa-restrictions-costing-african-businesses-opportunities-gabby-otchere-darko/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Africa must remove visa restrictions to unlock jobs, opportunities – Gabby Otchere-Darko",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-00c23ae8502f6914"
+    },
+    "place": "Gana",
+    "scope": "country",
+    "summary": {
+      "articles": 113,
+      "outliers": 108
+    },
+    "topics": 3,
+    "publishers": 1
+  },
+  {
+    "leader": null,
+    "place": "Granada",
+    "scope": "country",
+    "summary": {
+      "articles": 1,
+      "outliers": 1
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Grécia"
+      ],
+      "evidence": [
+        {
+          "id": 5008,
+          "title": "NVIDIA RTX PRO 5500 Blackwell: 84GB μνήμης και 600W κατανάλωση",
+          "url": "https://techblog.gr/videogames/nvidia-rtx-pro-5500-blackwell-84gb-mnimis-kai-600w-katanalosi/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "NVIDIA RTX PRO 5500 Blackwell oficjalnie. Na pokładzie 84 GB pamięci",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-0eed8ea054215cef"
+    },
+    "place": "Grécia",
+    "scope": "country",
+    "summary": {
+      "articles": 24,
+      "outliers": 18
+    },
+    "topics": 6,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Guatemala"
+      ],
+      "evidence": [
+        {
+          "id": 24373,
+          "title": "Así estará el clima en Guatemala el 15 de septiembre y durante el resto de la semana",
+          "url": "https://www.prensalibre.com/guatemala/comunitario/asi-estara-el-clima-en-guatemala-el-15-de-septiembre-y-durante-el-resto-de-la-semana-breaking/"
+        },
+        {
+          "id": 42715,
+          "title": "Así estará el clima en Guatemala del 14 al 18 de septiembre 2026",
+          "url": "https://www.guatemala.com/noticias/comunidad/guatemala-presentara-temperaturas-hasta-39c-del-14-al-18-septiembre-2026.html"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Así estará el clima en Guatemala el 15 de septiembre y durante el resto de la semana",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-51467367542bd16b"
+    },
+    "place": "Guatemala",
+    "scope": "country",
+    "summary": {
+      "articles": 118,
+      "outliers": 96
+    },
+    "topics": 17,
+    "publishers": 5
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Haiti"
+      ],
+      "evidence": [
+        {
+          "id": 19780,
+          "title": "Haïti - Économie : Cadre comptable des collectivités territoriales",
+          "url": "https://www.haitilibre.com/article-48441-haiti-economie-cadre-comptable-des-collectivites-territoriales.html"
+        },
+        {
+          "id": 39599,
+          "title": "Haïti - Actualité : Zapping",
+          "url": "https://www.haitilibre.com/article-48443-haiti-actualite-zapping.html"
+        }
+      ],
+      "full_texts": 0,
+      "label": "Haïti - Économie : Cadre comptable des collectivités territoriales",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-fadb6511ad561f66"
+    },
+    "place": "Haiti",
+    "scope": "country",
+    "summary": {
+      "articles": 7,
+      "outliers": 5
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Honduras"
+      ],
+      "evidence": [
+        {
+          "id": 2863,
+          "title": "Marathón vence por la mínima al Olimpia y es líder del Apertura hondureño",
+          "url": "https://proceso.hn/marathon-vence-por-la-minima-al-olimpia-y-es-lider-del-apertura-hondureno/"
+        },
+        {
+          "id": 15893,
+          "title": "Tabla de posiciones Liga Nacional de Honduras: Marathón tumba a Olimpia y así queda Motagua",
+          "url": "https://www.elheraldo.hn/portada/tabla-posiciones-liga-nacional-honduras-marathon-tumba-olimpia-asi-queda-motagua-KD32024428"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Marathón vence por la mínima al Olimpia y es líder del Apertura hondureño",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-0453971530150235"
+    },
+    "place": "Honduras",
+    "scope": "country",
+    "summary": {
+      "articles": 116,
+      "outliers": 93
+    },
+    "topics": 19,
+    "publishers": 3
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Hong Kong (China)"
+      ],
+      "evidence": [
+        {
+          "id": 8671,
+          "title": "HONOR Magic 9 全系規格曝光：標準版搭 2 億像素雙鏡、超能版塞 11,000mAh 大電池配主動風扇！",
+          "url": "https://www.mobilemagazinehk.com/2026/09/honor-magic-9-2-11000mah-fan.html"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Honor Magic 9 Super Edition tem especificações vazadas com chip Snapdragon e bateria gigante",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-a37d4e3b6ff51656"
+    },
+    "place": "Hong Kong (China)",
+    "scope": "country",
+    "summary": {
+      "articles": 30,
+      "outliers": 26
+    },
+    "topics": 4,
+    "publishers": 3
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Hungria"
+      ],
+      "evidence": [
+        {
+          "id": 16900,
+          "title": "A Cyberpunk 2077 a Battle.netre költözik, Geralt pedig a Diablo IV-be",
+          "url": "https://prohardver.hu/hir/a_cyberpunk_2077_a_battle_netre_koltozik_geralt_pe.html"
+        }
+      ],
+      "full_texts": 1,
+      "label": "A Cyberpunk 2077 a Battle.netre költözik, Geralt pedig a Diablo IV-be",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-77c9d056c3ba5eac"
+    },
+    "place": "Hungria",
+    "scope": "country",
+    "summary": {
+      "articles": 45,
+      "outliers": 42
+    },
+    "topics": 3,
+    "publishers": 5
+  },
+  {
+    "leader": null,
+    "place": "Ilhas Cayman",
+    "scope": "country",
+    "summary": {
+      "articles": 9,
+      "outliers": 9
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": null,
+    "place": "Ilhas Cook",
+    "scope": "country",
+    "summary": {
+      "articles": 0,
+      "outliers": 0
+    },
+    "topics": 0,
+    "publishers": 0
+  },
+  {
+    "leader": null,
+    "place": "Ilhas Virgens Britânicas",
+    "scope": "country",
+    "summary": {
+      "articles": 5,
+      "outliers": 5
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Indonésia"
+      ],
+      "evidence": [
+        {
+          "id": 29954,
+          "title": "Switch 2 Edisi 40 Tahun Zelda Ludes, Harga Scalper Tembus Rp35 Jutaan",
+          "url": "https://gizmologi.id/news/switch-2-edisi-40-tahun-zelda-ludes/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Zelda-Remake: Offizielle Hyrule-Karte zeigt, was Spieler Neues erwartet",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-2fc5c3734adac581"
+    },
+    "place": "Indonésia",
+    "scope": "country",
+    "summary": {
+      "articles": 48,
+      "outliers": 42
+    },
+    "topics": 6,
+    "publishers": 4
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Irã"
+      ],
+      "evidence": [
+        {
+          "id": 12405,
+          "title": "شیائومی Pad 9 و Pad 9 Pro معرفی شدند؛ نمایشگر 3.2K و اسنپدراگون‌های قدرتمند",
+          "url": "https://techrato.com/2026/09/14/%d8%b4%db%8c%d8%a7%d8%a6%d9%88%d9%85%db%8c-pad-9-%d9%88-pad-9-pro-%d9%85%d8%b9%d8%b1%d9%81%db%8c-%d8%b4%d8%af%d9%86%d8%af%d8%9b-%d9%86%d9%85%d8%a7%db%8c%d8%b4%da%af%d8%b1-3-2k-%d9%88-%d8%a7%d8%b3/"
+        },
+        {
+          "id": 31667,
+          "title": "معرفی تبلت‌های Xiaomi Pad 9 و Pad 9 Pro با صفحه‌نمایش‌های 144 هرتزی و پردازنده‌های سری 8 کوالکام",
+          "url": "http://www.mobile.ir/news/view-6486-introducing-xiaomi-pad-9-and-xiaomi-pad-9-pro.aspx"
+        },
+        {
+          "id": 33799,
+          "title": "تبلت های Pad 9 و Pad 9 Pro شیائومی معرفی شدند",
+          "url": "https://technoc.ir/xiaomi-pad-9-pad-9-pro/"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Xiaomi представила Pad 9 и Pad 9 Pro — относительно доступные планшеты на Snapdragon",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-63519e76a9db3913"
+    },
+    "place": "Irã",
+    "scope": "country",
+    "summary": {
+      "articles": 281,
+      "outliers": 249
+    },
+    "topics": 20,
+    "publishers": 15
+  },
+  {
+    "leader": null,
+    "place": "Irlanda",
+    "scope": "country",
+    "summary": {
+      "articles": 7,
+      "outliers": 7
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Israel"
+      ],
+      "evidence": [
+        {
+          "id": 49540,
+          "title": "לכו לעדכן: iOS 27 שוחררה עכשיו. הנה מה שחדש ומה שאתם חייבים לדעת",
+          "url": "https://www.geektime.co.il/apple-releases-ios-27-with-new-siri/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Nowy iOS 27 już jest. Wielka fala aktualizacji od Apple dostępna",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-8b2970c5db0ebb1d"
+    },
+    "place": "Israel",
+    "scope": "country",
+    "summary": {
+      "articles": 55,
+      "outliers": 53
+    },
+    "topics": 2,
+    "publishers": 7
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Itália"
+      ],
+      "evidence": [
+        {
+          "id": 3974,
+          "title": "Ecobonus, novità in arrivo: Governo valuta aumento della detrazione al 65%",
+          "url": "https://www.hdblog.it/home/articoli/n670251/ecobonus-65-50-efficienza-energetica-italia/"
+        },
+        {
+          "id": 16696,
+          "title": "Ecobonus al 65%: il governo valuta il ritorno dello sconto per la prima casa",
+          "url": "https://greenmove.hwupgrade.it/news/mercato-green/ecobonus-al-65-il-governo-valuta-il-ritorno-dello-sconto-per-la-prima-casa_159096.html"
+        },
+        {
+          "id": 25239,
+          "title": "Ecobonus al 65%, il Governo ripensa agli incentivi per infissi e pompe di calore",
+          "url": "https://www.dday.it/redazione/58732/ecobonus-al-65-il-governo-ripensa-agli-per-infissi-e-pompe-di-calore"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Ecobonus, novità in arrivo: Governo valuta aumento della detrazione al 65%",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-538c823b859cc15b"
+    },
+    "place": "Itália",
+    "scope": "country",
+    "summary": {
+      "articles": 215,
+      "outliers": 178
+    },
+    "topics": 27,
+    "publishers": 6
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Jamaica"
+      ],
+      "evidence": [
+        {
+          "id": 24180,
+          "title": "Monday, September 14, 2026",
+          "url": "https://www.jamaicaobserver.com/2026/09/14/monday-september-14-2026/"
+        },
+        {
+          "id": 24182,
+          "title": "Monday, September 14, 2026",
+          "url": "https://www.jamaicaobserver.com/2026/09/14/monday-september-14-2026-20260914-1139-156023/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Monday, September 14, 2026",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-ce442f919f661ec1"
+    },
+    "place": "Jamaica",
+    "scope": "country",
+    "summary": {
+      "articles": 32,
+      "outliers": 26
+    },
+    "topics": 3,
+    "publishers": 3
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Japão"
+      ],
+      "evidence": [
+        {
+          "id": 7959,
+          "title": "「こどもNISA」とは--SBI証券と楽天証券が受付を10月開始　口座開設は2027年1月予定",
+          "url": "https://japan.cnet.com/article/35252579/"
+        },
+        {
+          "id": 8393,
+          "title": "マネックス証券「こどもNISA」10月から事前受付",
+          "url": "https://www.watch.impress.co.jp/docs/news/2140602.html"
+        },
+        {
+          "id": 8403,
+          "title": "SBI証券、「こどもNISA」事前受付は10月から",
+          "url": "https://www.watch.impress.co.jp/docs/news/2140357.html"
+        }
+      ],
+      "full_texts": 3,
+      "label": "SBI証券、「こどもNISA」事前受付は10月から",
+      "publishers": 2,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-37b62348fdbe3cba"
+    },
+    "place": "Japão",
+    "scope": "country",
+    "summary": {
+      "articles": 249,
+      "outliers": 229
+    },
+    "topics": 13,
+    "publishers": 14
+  },
+  {
+    "leader": null,
+    "place": "Letônia",
+    "scope": "country",
+    "summary": {
+      "articles": 0,
+      "outliers": 0
+    },
+    "topics": 0,
+    "publishers": 0
+  },
+  {
+    "leader": null,
+    "place": "Líbano",
+    "scope": "country",
+    "summary": {
+      "articles": 1,
+      "outliers": 1
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Malásia"
+      ],
+      "evidence": [
+        {
+          "id": 7838,
+          "title": "Yes Lancar Pelan Pascabayar 5G Beserta Langganan ILMUchat Pro – Bermula RM20 Sebulan",
+          "url": "https://cms.amanz.my/2026580876/"
+        },
+        {
+          "id": 17204,
+          "title": "YES AI 30 Dilancarkan – 5G Advanced Tanpa Had, ILMUchat Pro Percuma, RM20/Bulan Untuk 6 Bulan Pertama",
+          "url": "https://wiser.my/yes-ai-30-dilancarkan-5g-advanced-tanpa-had-ilmuchat-pro-percuma-rm20-bulan-untuk-6-bulan-pertama"
+        },
+        {
+          "id": 30484,
+          "title": "Yes AI 30: RM30 postpaid with uncapped 5G, no FUP and free ILMUchat Pro",
+          "url": "https://soyacincau.com/2026/09/14/yes-ai-30-uncapped-5g-postpaid-free-ilmuchat-pro/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Yes AI 30: RM30 postpaid with uncapped 5G, no FUP and free ILMUchat Pro",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-a5b200f9f84745f6"
+    },
+    "place": "Malásia",
+    "scope": "country",
+    "summary": {
+      "articles": 52,
+      "outliers": 43
+    },
+    "topics": 5,
+    "publishers": 6
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Marrocos"
+      ],
+      "evidence": [
+        {
+          "id": 52630,
+          "title": "OpenAI suspend les nouveaux abonnements à ChatGPT Pro face à la demande pour GPT-6 Astra",
+          "url": "https://lematin.ma/hi-tech/openai-suspend-chatgpt-pro-face-a-la-demande-pour-gpt-6-astra/365111"
+        }
+      ],
+      "full_texts": 1,
+      "label": "ChatGPTが本日もリセット。OpenAIがGPT-6 Astraの不具合3件を修正",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-f554df73696beed2"
+    },
+    "place": "Marrocos",
+    "scope": "country",
+    "summary": {
+      "articles": 1,
+      "outliers": 0
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "México"
+      ],
+      "evidence": [
+        {
+          "id": 1945,
+          "title": "Las pequeñas empresas mexicanas ya encontraron un aliado para vender más que en sus propias tiendas en línea: Mercado Libre",
+          "url": "https://www.xataka.com.mx/comercio-electronico/mercado-libre-no-solo-tienda-linea-mitad-pymes-mexicanas-su-mayor-fuente-ventas"
+        },
+        {
+          "id": 23630,
+          "title": "No es casualidad que cada vez veas más tiendas 3B en las calles de México: el negocio de vender barato crece como la espuma",
+          "url": "https://www.xataka.com.mx/empresas-y-economia/tiendas-que-venden-barato-estan-ganando-terreno-mexico-pymes-tienen-nueva-oportunidad"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Las pequeñas empresas mexicanas ya encontraron un aliado para vender más que en sus propias tiendas en línea: Mercado Libre",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-0ba5608f1cdc565a"
+    },
+    "place": "México",
+    "scope": "country",
+    "summary": {
+      "articles": 55,
+      "outliers": 44
+    },
+    "topics": 9,
+    "publishers": 6
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Nicaragua"
+      ],
+      "evidence": [
+        {
+          "id": 42347,
+          "title": "ICE detiene en Florida al periodista nicaragüense exiliado Luis Galeano",
+          "url": "https://confidencial.digital/noticias/ice-detiene-en-florida-al-periodista-nicaraguense-exiliado-luis-galeano/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "ICE detiene en Florida al periodista nicaragüense exiliado Luis Galeano",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-a2307f5426447c45"
+    },
+    "place": "Nicaragua",
+    "scope": "country",
+    "summary": {
+      "articles": 5,
+      "outliers": 4
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Nicarágua"
+      ],
+      "evidence": [
+        {
+          "id": 36320,
+          "title": "ICE arresta al periodista exiliado y perseguido Luis Galeano",
+          "url": "https://nicaraguainvestiga.com/nacion/174153-luis-galeano-arrestado-ice/?utm_source=rss&utm_medium=rss&utm_campaign=luis-galeano-arrestado-ice"
+        }
+      ],
+      "full_texts": 0,
+      "label": "ICE detiene en Florida al periodista nicaragüense exiliado Luis Galeano",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-a2307f5426447c45"
+    },
+    "place": "Nicarágua",
+    "scope": "country",
+    "summary": {
+      "articles": 2,
+      "outliers": 1
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Nigéria"
+      ],
+      "evidence": [
+        {
+          "id": 17698,
+          "title": "Dangote thanks Tinubu for fuel subsidy removal, FX reforms",
+          "url": "https://punchng.com/dangote-thanks-tinubu-for-fuel-subsidy-removal-fx-reforms/?utm_source=rss.punchng.com&utm_medium=web"
+        },
+        {
+          "id": 38242,
+          "title": "Dangote Thanks Tinubu for Fuel Subsidy, Forex Reforms as Refinery IPO Opens",
+          "url": "https://techeconomy.ng/dangote-thanks-tinubu-fuel-subsidy-forex-reforms-refinery-ipo"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Dangote Thanks Tinubu for Fuel Subsidy, Forex Reforms as Refinery IPO Opens",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-00905c9510bd7a88"
+    },
+    "place": "Nigéria",
+    "scope": "country",
+    "summary": {
+      "articles": 154,
+      "outliers": 133
+    },
+    "topics": 16,
+    "publishers": 13
+  },
+  {
+    "leader": {
+      "articles": 5,
+      "continents": [
+        "Oceania"
+      ],
+      "countries": [
+        "Nova Zelândia"
+      ],
+      "evidence": [
+        {
+          "id": 53040,
+          "title": "Reso launches AI dispute platform for New Zealand HR",
+          "url": "https://cfotech.co.nz/story/reso-launches-ai-dispute-platform-for-new-zealand-hr"
+        },
+        {
+          "id": 53062,
+          "title": "Reso launches AI dispute platform for New Zealand HR",
+          "url": "https://channellife.co.nz/story/reso-launches-ai-dispute-platform-for-new-zealand-hr"
+        },
+        {
+          "id": 53130,
+          "title": "Reso launches AI dispute platform for New Zealand HR",
+          "url": "https://ecommercenews.co.nz/story/reso-launches-ai-dispute-platform-for-new-zealand-hr"
+        },
+        {
+          "id": 53212,
+          "title": "Reso launches AI dispute platform for New Zealand HR",
+          "url": "https://itbrief.co.nz/story/reso-launches-ai-dispute-platform-for-new-zealand-hr"
+        },
+        {
+          "id": 53895,
+          "title": "Reso launches AI dispute platform for New Zealand HR",
+          "url": "https://techday.co.nz/story/reso-launches-ai-dispute-platform-for-new-zealand-hr"
+        }
+      ],
+      "full_texts": 5,
+      "label": "Reso launches AI dispute platform for New Zealand HR",
+      "publishers": 5,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-906a2994b46944c7"
+    },
+    "place": "Nova Zelândia",
+    "scope": "country",
+    "summary": {
+      "articles": 235,
+      "outliers": 129
+    },
+    "topics": 50,
+    "publishers": 17
+  },
+  {
+    "leader": null,
+    "place": "Países Baixos",
+    "scope": "country",
+    "summary": {
+      "articles": 4,
+      "outliers": 4
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Panamá"
+      ],
+      "evidence": [
+        {
+          "id": 23972,
+          "title": "Christiansen afronta su nueva era con Panamá entre la Liga de Naciones y el reto de 2030",
+          "url": "https://ensegundos.com.pa/2026/09/14/christiansen-afronta-su-nueva-era-con-panama-entre-la-liga-de-naciones-y-el-reto-de-2030/?utm_source=rss&utm_medium=rss&utm_campaign=christiansen-afronta-su-nueva-era-con-panama-entre-la-liga-de-naciones-y-el-reto-de-2030"
+        },
+        {
+          "id": 54115,
+          "title": "Thomas Christiansen apuesta al relevo generacional de Panamá rumbo al 2030",
+          "url": "https://www.ecotvpanama.com/deportes/thomas-christiansen-apuesta-al-relevo-generacional-panama-rumbo-al-2030-n6091707"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Thomas Christiansen apuesta al relevo generacional de Panamá rumbo al 2030",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-0541fddde4d73751"
+    },
+    "place": "Panamá",
+    "scope": "country",
+    "summary": {
+      "articles": 169,
+      "outliers": 135
+    },
+    "topics": 22,
+    "publishers": 7
+  },
+  {
+    "leader": null,
+    "place": "Papua-Nova Guiné",
+    "scope": "country",
+    "summary": {
+      "articles": 0,
+      "outliers": 0
+    },
+    "topics": 0,
+    "publishers": 0
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Paraguai"
+      ],
+      "evidence": [
+        {
+          "id": 39554,
+          "title": "Trump dice que la IA no necesita más control que tenerlo a él como presidente de EE.UU.",
+          "url": "https://www.abc.com.py/tecnologia/2026/09/14/trump-dice-que-la-ia-no-necesita-mas-control-que-tenerlo-a-el-como-presidente-de-eeuu/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Trump dice que la IA no necesita más control que tenerlo a él como presidente de Estados Unidos",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-7592c09a27b0d707"
+    },
+    "place": "Paraguai",
+    "scope": "country",
+    "summary": {
+      "articles": 2,
+      "outliers": 1
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Peru"
+      ],
+      "evidence": [
+        {
+          "id": 19643,
+          "title": "La ONU advierte que todos los derechos humanos “están en riesgo” ante el avance de la IA",
+          "url": "https://elcomercio.pe/tecnologia/inteligencia-artificial/la-onu-advierte-que-todos-los-derechos-humanos-estan-en-riesgo-ante-el-avance-de-la-ia-noticia/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "La ONU advierte que todos los derechos humanos “están en riesgo” ante el avance de la IA",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-397e817852d263e5"
+    },
+    "place": "Peru",
+    "scope": "country",
+    "summary": {
+      "articles": 15,
+      "outliers": 10
+    },
+    "topics": 5,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Polônia"
+      ],
+      "evidence": [
+        {
+          "id": 27234,
+          "title": "Allegro otwiera biuro w Chinach. Chce mieć sprzedawców na oku",
+          "url": "https://android.com.pl/tech/1085434-allegro-otwiera-biuro-w-chinach/"
+        },
+        {
+          "id": 29121,
+          "title": "Allegro otwiera biuro w Chinach. To ważniejsze niż myślisz",
+          "url": "https://spidersweb.pl/2026/09/allegro-biuro-chiny-sprzedaz-internetowa.html"
+        },
+        {
+          "id": 45941,
+          "title": "Allegro otwiera swoją \"ambasadę\" w Chinach - wiemy, po co",
+          "url": "https://antyweb.pl/allegro-otwiera-swoja-ambasade-w-chinach-wiemy-po-co"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Allegro otwiera biuro w Chinach. To ważniejsze niż myślisz",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-ead2cde0bdf6c404"
+    },
+    "place": "Polônia",
+    "scope": "country",
+    "summary": {
+      "articles": 283,
+      "outliers": 236
+    },
+    "topics": 39,
+    "publishers": 15
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "Porto Rico"
+      ],
+      "evidence": [
+        {
+          "id": 42946,
+          "title": "Gobierno crea grupo especial para atender atrasos en pagos bajo nuevo sistema ERP",
+          "url": "https://www.metro.pr/noticias/2026/09/14/gobierno-crea-grupo-especial-para-atender-atrasos-en-pagos-bajo-nuevo-sistema-erp/"
+        },
+        {
+          "id": 42996,
+          "title": "Atenderán con otro comité los atrasos en pagos del nuevo sistema ERP",
+          "url": "https://noticel.com/ultima-hora/20260914/atenderan-con-otro-comite-los-atrasos-en-pagos-del-nuevo-sistema-erp/?utm_source=rss&utm_medium=rss&utm_campaign=atenderan-con-otro-comite-los-atrasos-en-pagos-del-nuevo-sistema-erp"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Gobierno crea grupo especial para atender atrasos en pagos bajo nuevo sistema ERP",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-760c66c906dc4a76"
+    },
+    "place": "Porto Rico",
+    "scope": "country",
+    "summary": {
+      "articles": 57,
+      "outliers": 47
+    },
+    "topics": 7,
+    "publishers": 3
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Portugal"
+      ],
+      "evidence": [
+        {
+          "id": 4786,
+          "title": "Nova Renault Trafic elétrica: 470 km de autonomia e carregamento ultrarrápido",
+          "url": "https://pplware.sapo.pt/motores/nova-renault-trafic-eletrica-470-km-de-autonomia-e-carregamento-ultrarrapido/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Nova Renault Trafic elétrica: 470 km de autonomia e carregamento ultrarrápido",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-04f32b90c9a05956"
+    },
+    "place": "Portugal",
+    "scope": "country",
+    "summary": {
+      "articles": 75,
+      "outliers": 66
+    },
+    "topics": 9,
+    "publishers": 4
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Quênia"
+      ],
+      "evidence": [
+        {
+          "id": 34723,
+          "title": "Meta Partners with This Is Digital to Launch AI Academy Kenya",
+          "url": "https://www.techarena.co.ke/2026/09/14/meta-ai-academy-kenya-this-is-digital/"
+        },
+        {
+          "id": 34897,
+          "title": "Meta and This Is Digital launch AI Academy Kenya with startup pitchathon and practical training",
+          "url": "https://techtrendske.co.ke/2026/09/14/meta-this-is-digital-ai-academy-kenya/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Meta and This Is Digital launch AI Academy Kenya with startup pitchathon and practical training",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-1e1000f8bf352886"
+    },
+    "place": "Quênia",
+    "scope": "country",
+    "summary": {
+      "articles": 21,
+      "outliers": 14
+    },
+    "topics": 5,
+    "publishers": 5
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Reino Unido"
+      ],
+      "evidence": [
+        {
+          "id": 4145,
+          "title": "OpenAI Agent Swarm Hacks RubyGems Package Manager",
+          "url": "https://www.infosecurity-magazine.com/news/openai-agent-swarm-hacks-rubygems/"
+        },
+        {
+          "id": 45603,
+          "title": "OpenAI's malicious bot swarm attacked RubyGems",
+          "url": "https://www.theregister.com/security/2026/09/14/openais-malicious-bot-swarm-attacked-rubygems/5296356"
+        }
+      ],
+      "full_texts": 1,
+      "label": "OpenAI Agent Swarm Hacks RubyGems Package Manager",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-02f184877af5ee87"
+    },
+    "place": "Reino Unido",
+    "scope": "country",
+    "summary": {
+      "articles": 224,
+      "outliers": 194
+    },
+    "topics": 24,
+    "publishers": 16
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "América do Norte"
+      ],
+      "countries": [
+        "República Dominicana"
+      ],
+      "evidence": [
+        {
+          "id": 42455,
+          "title": "DGII ampliará Scoring Tributario a más de 200,000 pymes",
+          "url": "https://diariodigitalrd.com/2026/09/14/dgii-ampliara-scoring-tributario-a-mas-de-200000-pymes.html/"
+        },
+        {
+          "id": 42621,
+          "title": "DGII ampliará Scoring Tributario a más de 200,000 pymes",
+          "url": "https://eldinero.com.do/380236/dgii-ampliara-scoring-tributario-a-mas-de-200000-pymes/"
+        },
+        {
+          "id": 42772,
+          "title": "DGII amplía Scoring Tributario a más de 200 mil PYMES",
+          "url": "https://hoy.com.do/economia/dgii-amplia-scoring-tributario-200-mil-pymes_1102337.html"
+        }
+      ],
+      "full_texts": 2,
+      "label": "DGII ampliará Scoring Tributario a más de 200,000 pymes",
+      "publishers": 3,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-0adaf824a4a146c6"
+    },
+    "place": "República Dominicana",
+    "scope": "country",
+    "summary": {
+      "articles": 371,
+      "outliers": 301
+    },
+    "topics": 38,
+    "publishers": 9
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Romênia"
+      ],
+      "evidence": [
+        {
+          "id": 46601,
+          "title": "Comunicat oficial: Apple TV este acum disponibil în România",
+          "url": "https://gadget.ro/comunicat-oficial-apple-tv-este-acum-disponibil-in-romania/"
+        },
+        {
+          "id": 47752,
+          "title": "Serviciul de streaming Apple TV este oficial disponibil în România",
+          "url": "https://start-up.ro/serviciul-de-streaming-apple-tv-este-oficial-disponibil-in-romania/"
+        },
+        {
+          "id": 55170,
+          "title": "Apple TV este disponibil oficial în România, Disney Plus va introduce reclame, YouTube Premium se scumpește",
+          "url": "https://www.nwradu.ro/2026/09/apple-tv-disponibil-oficial-romania-disneyplus-introduce-reclame-youtube-premium-scumpit/"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Comunicat oficial: Apple TV este acum disponibil în România",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-9e9bda1917c3447d"
+    },
+    "place": "Romênia",
+    "scope": "country",
+    "summary": {
+      "articles": 122,
+      "outliers": 108
+    },
+    "topics": 11,
+    "publishers": 8
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Europa/Ásia (transcontinental)"
+      ],
+      "countries": [
+        "Rússia"
+      ],
+      "evidence": [
+        {
+          "id": 16876,
+          "title": "NVIDIA представила профессиональную видеокарту RTX PRO 5500 Blackwell Workstation Edition",
+          "url": "https://overclockers.ru/blog/molexandr/show/263913/NVIDIA-predstavila-professional-nuju-videokartu-RTX-PRO-5500-Blackwell-Workstation-Edition"
+        },
+        {
+          "id": 27205,
+          "title": "Nvidia выпустила профессиональную видеокарту RTX Pro 5500 Blackwell Workstation Edition с 84 Гбайт GDDR7",
+          "url": "https://3dnews.ru/1148447"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Nvidia выпустила профессиональную видеокарту RTX Pro 5500 Blackwell Workstation Edition с 84 Гбайт GDDR7",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-1069ba29c90f967e"
+    },
+    "place": "Rússia",
+    "scope": "country",
+    "summary": {
+      "articles": 281,
+      "outliers": 227
+    },
+    "topics": 41,
+    "publishers": 10
+  },
+  {
+    "leader": null,
+    "place": "São Cristóvão e Névis",
+    "scope": "country",
+    "summary": {
+      "articles": 2,
+      "outliers": 2
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": null,
+    "place": "São Vicente e Granadinas",
+    "scope": "country",
+    "summary": {
+      "articles": 0,
+      "outliers": 0
+    },
+    "topics": 0,
+    "publishers": 0
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Senegal"
+      ],
+      "evidence": [
+        {
+          "id": 52700,
+          "title": "Washington : Cybastion annonce un engagement de 300 millions de dollars pour la transformation numérique du Sénégal",
+          "url": "https://www.socialnetlink.org/2026/09/14/washington-cybastion-annonce-un-engagement-de-300-millions-de-dollars-pour-la-transformation-numerique-du-senegal/"
+        },
+        {
+          "id": 52701,
+          "title": "ZLECAf : un corridor numérique de 5,17 milliards de dollars pour accélérer le commerce africain",
+          "url": "https://www.socialnetlink.org/2026/09/14/zlecaf-un-corridor-numerique-de-517-milliards-de-dollars-pour-accelerer-le-commerce-africain/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Washington : Cybastion annonce un engagement de 300 millions de dollars pour la transformation numérique du Sénégal",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-42d2e00450760d80"
+    },
+    "place": "Senegal",
+    "scope": "country",
+    "summary": {
+      "articles": 4,
+      "outliers": 2
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Sérvia"
+      ],
+      "evidence": [
+        {
+          "id": 46075,
+          "title": "Šta sve donose iOS 27 i iPadOS 27 i kako instalirati novi softver",
+          "url": "https://benchmark.rs/vesti/softver-i-servisi/sta-vam-sve-donose-ios-27-i-ipados-27-i-kako-instalirati-novi-softver/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Apple releases iPadOS 27, here’s what’s new for iPad",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-64a2e22d95fb66c7"
+    },
+    "place": "Sérvia",
+    "scope": "country",
+    "summary": {
+      "articles": 26,
+      "outliers": 21
+    },
+    "topics": 5,
+    "publishers": 3
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Singapura"
+      ],
+      "evidence": [
+        {
+          "id": 9114,
+          "title": "Z.AI plans about $5 billion in share and bond financing",
+          "url": "https://technode.global/2026/09/14/zai-plans-5-billion-share-bond-financing/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Z.ai completes around US$5 billion financing for next-generation GLM models",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-91a64f9dcb2679e2"
+    },
+    "place": "Singapura",
+    "scope": "country",
+    "summary": {
+      "articles": 36,
+      "outliers": 34
+    },
+    "topics": 2,
+    "publishers": 5
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Suécia"
+      ],
+      "evidence": [
+        {
+          "id": 44038,
+          "title": "Renaults nya pickup Niagara presenterad",
+          "url": "https://feber.se/bil/renaults-nya-pickup-niagara-presenterad/496105/?utm_source=rss&utm_medium=feed"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Renaults nya pickup Niagara presenterad",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-20232a5634e15819"
+    },
+    "place": "Suécia",
+    "scope": "country",
+    "summary": {
+      "articles": 35,
+      "outliers": 32
+    },
+    "topics": 3,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Suíça"
+      ],
+      "evidence": [
+        {
+          "id": 4555,
+          "title": "Ausgaben für digitale Aussenwerbung steigen um 12 Prozent",
+          "url": "https://www.it-markt.ch/news/2026-09-14/ausgaben-fuer-digitale-aussenwerbung-steigen-um-12-prozent"
+        },
+        {
+          "id": 4731,
+          "title": "Ausgaben für digitale Aussenwerbung steigen um 12 Prozent",
+          "url": "https://www.netzwoche.ch/news/2026-09-14/ausgaben-fuer-digitale-aussenwerbung-steigen-um-12-prozent"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Ausgaben für digitale Aussenwerbung steigen um 12 Prozent",
+      "publishers": 2,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-0e762e73bc891da7"
+    },
+    "place": "Suíça",
+    "scope": "country",
+    "summary": {
+      "articles": 25,
+      "outliers": 11
+    },
+    "topics": 7,
+    "publishers": 3
+  },
+  {
+    "leader": null,
+    "place": "Suíça (edição africana)",
+    "scope": "country",
+    "summary": {
+      "articles": 6,
+      "outliers": 6
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Suíça (edição Oriente Médio)"
+      ],
+      "evidence": [
+        {
+          "id": 17423,
+          "title": "QNB Syria Brings Mastercard Payments to Global Reach",
+          "url": "https://fintechnews.ae/33240/payments/qnb-mastercard-syria-payments-launch/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "QNB Syria Brings Mastercard Payments to Global Reach",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-6da55fa7173ae281"
+    },
+    "place": "Suíça (edição Oriente Médio)",
+    "scope": "country",
+    "summary": {
+      "articles": 3,
+      "outliers": 2
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Tailândia"
+      ],
+      "evidence": [
+        {
+          "id": 9028,
+          "title": "Salesforce เปิดตัว Trusted Enterprise AI Harness รากฐานใหม่สำหรับการใช้งาน AI ในองค์กร [PR]",
+          "url": "https://www.techtalkthai.com/salesforce-launch-trusted-enterprise-ai-harness-pr/"
+        },
+        {
+          "id": 9031,
+          "title": "Salesforce เปิดตัว Enterprise AI Harness และ AI Control Plane",
+          "url": "https://www.techtalkthai.com/salesforce-introduces-enterprise-ai-harness-and-ai-control-plane/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Salesforce เปิดตัว Trusted Enterprise AI Harness รากฐานใหม่สำหรับการใช้งาน AI ในองค์กร [PR]",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-ac29852194290bad"
+    },
+    "place": "Tailândia",
+    "scope": "country",
+    "summary": {
+      "articles": 21,
+      "outliers": 19
+    },
+    "topics": 1,
+    "publishers": 4
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Taiwan"
+      ],
+      "evidence": [
+        {
+          "id": 8482,
+          "title": "Wiz警告3個JFrog Artifactory嚴重漏洞遭積極利用，部分漏洞被串連形成攻擊鏈",
+          "url": "https://www.ithome.com.tw/news/178902"
+        },
+        {
+          "id": 8483,
+          "title": "美國警告ConnectWise ScreenConnect、JFrog Artifactory漏洞遭積極利用",
+          "url": "https://www.ithome.com.tw/news/178900"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Wiz警告3個JFrog Artifactory嚴重漏洞遭積極利用，部分漏洞被串連形成攻擊鏈",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-00380f7c80f4f191"
+    },
+    "place": "Taiwan",
+    "scope": "country",
+    "summary": {
+      "articles": 175,
+      "outliers": 167
+    },
+    "topics": 6,
+    "publishers": 7
+  },
+  {
+    "leader": null,
+    "place": "Tanzânia",
+    "scope": "country",
+    "summary": {
+      "articles": 1,
+      "outliers": 1
+    },
+    "topics": 0,
+    "publishers": 1
+  },
+  {
+    "leader": null,
+    "place": "Trinidad e Tobago",
+    "scope": "country",
+    "summary": {
+      "articles": 0,
+      "outliers": 0
+    },
+    "topics": 0,
+    "publishers": 0
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Tunísia"
+      ],
+      "evidence": [
+        {
+          "id": 17979,
+          "title": "Centenaire de l’Hôtel Carlton Tunis (1926–2026) : Une célébration mémorable au cœur de l’histoire, de l’art et du patrimoine sur l’Avenue Habib Bourguiba",
+          "url": "https://www.entreprises-magazine.com/centenaire-de-lhotel-carlton-tunis-1926-2026-une-celebration-memorable-au-coeur-de-lhistoire-de-lart-et-du-patrimoine-sur-lavenue-habib-bourguiba/"
+        },
+        {
+          "id": 34971,
+          "title": "L’Hôtel Carlton Tunis fête son centenaire : une célébration mémorable au cœur de l’histoire à l’Avenue Habib Bourguiba",
+          "url": "https://www.tekiano.com/2026/09/14/lhotel-carlton-tunis-fete-son-centenaire-une-celebration-memorable-au-coeur-de-lhistoire-a-lavenue-habib-bourguiba/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Centenaire de l’Hôtel Carlton Tunis (1926–2026) : Une célébration mémorable au cœur de l’histoire, de l’art et du patrimoine sur l’Avenue Habib Bourguiba",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-128cadb1f1d92160"
+    },
+    "place": "Tunísia",
+    "scope": "country",
+    "summary": {
+      "articles": 32,
+      "outliers": 30
+    },
+    "topics": 1,
+    "publishers": 4
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Europa/Ásia (transcontinental)"
+      ],
+      "countries": [
+        "Turquia"
+      ],
+      "evidence": [
+        {
+          "id": 10317,
+          "title": "WhatsApp Durum Videolarına 2x Hızlandırma Geliyor",
+          "url": "https://shiftdelete.net/whatsapp-durum-videolari-hizlandirma-ozelligi"
+        },
+        {
+          "id": 12533,
+          "title": "WhatsApp'ta Durum Videolarını 2x Hızda İzleyebileceksiniz",
+          "url": "https://www.webtekno.com/whatsapp-durumlari-videolar-2x-hizda-izlenebilecek-h224248.html"
+        },
+        {
+          "id": 33830,
+          "title": "WhatsApp, iPhone’da Durum videolarına basılı tutarak 2x hız ekliyor",
+          "url": "https://www.teknoblog.com/whatsapp-durum-2x/"
+        }
+      ],
+      "full_texts": 3,
+      "label": "WhatsApp'ta Durum Videolarını 2x Hızda İzleyebileceksiniz",
+      "publishers": 3,
+      "republication_families_estimated": 3,
+      "topic_id": "topic-61bd1e3ddcbeb570"
+    },
+    "place": "Turquia",
+    "scope": "country",
+    "summary": {
+      "articles": 353,
+      "outliers": 269
+    },
+    "topics": 56,
+    "publishers": 20
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "Europa"
+      ],
+      "countries": [
+        "Ucrânia"
+      ],
+      "evidence": [
+        {
+          "id": 46607,
+          "title": "Valve opens Steam Frame preorders — VR headset starts at $1,059",
+          "url": "https://gagadget.com/en/725917-valve-opens-steam-frame-preorders-vr-headset-starts-at-1059/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Valve's Steam Frame VR headset starts at $1,059 and ships with Half Life: Alyx",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-021b2db8e7a4c2ac"
+    },
+    "place": "Ucrânia",
+    "scope": "country",
+    "summary": {
+      "articles": 92,
+      "outliers": 79
+    },
+    "topics": 13,
+    "publishers": 4
+  },
+  {
+    "leader": null,
+    "place": "Uganda",
+    "scope": "country",
+    "summary": {
+      "articles": 0,
+      "outliers": 0
+    },
+    "topics": 0,
+    "publishers": 0
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Uruguai"
+      ],
+      "evidence": [
+        {
+          "id": 19720,
+          "title": "Grok llega a Word, Excel y PowerPoint como opción de IA en Microsoft Copilot",
+          "url": "https://www.montevideo.com.uy/auc.aspx?975127"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Η Microsoft ενσωματώνει το Grok στο Copilot για Word, Excel και PowerPoint",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-7713b36f22082f0a"
+    },
+    "place": "Uruguai",
+    "scope": "country",
+    "summary": {
+      "articles": 5,
+      "outliers": 4
+    },
+    "topics": 1,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "América do Sul"
+      ],
+      "countries": [
+        "Venezuela"
+      ],
+      "evidence": [
+        {
+          "id": 57737,
+          "title": "La urgencia de ralentizar la IA y perder contra China divide a EEUU",
+          "url": "https://doblellave.com/la-urgencia-de-ralentizar-la-ia-y-perder-contra-china-divide-a-eeuu/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "La urgencia de ralentizar la IA y perder contra China divide a EEUU tras alarma del sector",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-0a2631837af094ca"
+    },
+    "place": "Venezuela",
+    "scope": "country",
+    "summary": {
+      "articles": 4,
+      "outliers": 2
+    },
+    "topics": 2,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 3,
+      "continents": [
+        "Ásia"
+      ],
+      "countries": [
+        "Vietnã"
+      ],
+      "evidence": [
+        {
+          "id": 8288,
+          "title": "Quá hot: Giá tăng nhưng người Việt vẫn chi ra 300 tỷ để cọc iPhone mới",
+          "url": "https://genk.vn/qua-hot-gia-tang-nhung-nguoi-viet-van-chi-ra-300-ty-de-coc-iphone-moi-165260913175026808.chn"
+        },
+        {
+          "id": 8858,
+          "title": "Người Việt vung hơn 300 tỷ đồng chỉ để 'giữ chỗ' iPhone 18 Pro Max trong một đêm",
+          "url": "https://soha.vn/nguoi-viet-vung-hon-300-ty-dong-chi-de-giu-cho-iphone-18-pro-max-trong-mot-dem-198260914084259535.htm"
+        },
+        {
+          "id": 8861,
+          "title": "Quá hot: Giá tăng nhưng người Việt vẫn chi ra 300 tỷ để cọc iPhone mới",
+          "url": "https://soha.vn/qua-hot-gia-tang-nhung-nguoi-viet-van-chi-ra-300-ty-de-coc-iphone-moi-198260913184949599.htm"
+        }
+      ],
+      "full_texts": 3,
+      "label": "Quá hot: Giá tăng nhưng người Việt vẫn chi ra 300 tỷ để cọc iPhone mới",
+      "publishers": 2,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-181feb3a5f1bad69"
+    },
+    "place": "Vietnã",
+    "scope": "country",
+    "summary": {
+      "articles": 140,
+      "outliers": 118
+    },
+    "topics": 11,
+    "publishers": 3
+  },
+  {
+    "leader": {
+      "articles": 1,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Zâmbia"
+      ],
+      "evidence": [
+        {
+          "id": 34877,
+          "title": "Pan-African Payment and Settlement System (PAPSS) Targets Accelerated Adoption and Transaction Growth as Network Expands Across Africa",
+          "url": "https://www.techtrends.co.zm/pan-african-payment-and-settlement-system-papss-targets-accelerated-adoption-and-transaction-growth-as-network-expands-across-africa/"
+        }
+      ],
+      "full_texts": 1,
+      "label": "Pan-African Payment and Settlement System (PAPSS) Targets Accelerated Adoption and Transaction Growth as Network Expands Across Africa",
+      "publishers": 1,
+      "republication_families_estimated": 1,
+      "topic_id": "topic-d18f857eb890a9ef"
+    },
+    "place": "Zâmbia",
+    "scope": "country",
+    "summary": {
+      "articles": 5,
+      "outliers": 4
+    },
+    "topics": 1,
+    "publishers": 1
+  },
+  {
+    "leader": {
+      "articles": 2,
+      "continents": [
+        "África"
+      ],
+      "countries": [
+        "Zimbábue"
+      ],
+      "evidence": [
+        {
+          "id": 17666,
+          "title": "Zimbabwe’s Internet Penetration Rate Rises to 87.39% in Q1 2026",
+          "url": "https://technomag.co.zw/zimbabwes-internet-penetration-rate-rises-to-87-39-in-q1-2026/"
+        },
+        {
+          "id": 38095,
+          "title": "Zimbabwe Internet Users Hit 13.9 Million As Broadband Penetration Reaches 85.83% period for Q1 of 2026",
+          "url": "https://technomag.co.zw/zimbabwe-internet-users-hit-13-9-million-as-broadband-penetration-reaches-85-83-period-for-q1-of-2026/"
+        }
+      ],
+      "full_texts": 2,
+      "label": "Zimbabwe’s Internet Penetration Rate Rises to 87.39% in Q1 2026",
+      "publishers": 1,
+      "republication_families_estimated": 2,
+      "topic_id": "topic-159de31b9149270c"
+    },
+    "place": "Zimbábue",
+    "scope": "country",
+    "summary": {
+      "articles": 12,
+      "outliers": 10
+    },
+    "topics": 1,
+    "publishers": 2
+  },
+  {
+    "leader": {
+      "articles": 7,
+      "continents": [
+        "América do Norte",
+        "Europa",
+        "Europa/Ásia (transcontinental)"
+      ],
+      "countries": [
+        "Alemanha",
+        "Estados Unidos",
+        "Grécia",
+        "Itália",
+        "Polônia",
+        "Turquia"
+      ],
+      "evidence": [
+        {
+          "id": 5008,
+          "title": "NVIDIA RTX PRO 5500 Blackwell: 84GB μνήμης και 600W κατανάλωση",
+          "url": "https://techblog.gr/videogames/nvidia-rtx-pro-5500-blackwell-84gb-mnimis-kai-600w-katanalosi/"
+        },
+        {
+          "id": 16693,
+          "title": "NVIDIA RTX PRO 5500 Blackwell: 84 GB di memoria per la nuova scheda video professionale",
+          "url": "https://www.hwupgrade.it/news/skvideo/nvidia-rtx-pro-5500-blackwell-84-gb-di-memoria-per-la-nuova-scheda-video-professionale_159106.html"
+        },
+        {
+          "id": 17523,
+          "title": "NVIDIA RTX PRO 5500 Blackwell Duyuruldu: 84 GB GDDR7 ve 600W Güç Limiti",
+          "url": "https://www.technopat.net/2026/09/14/nvidia-rtx-pro-5500-blackwell-duyuruldu/"
+        },
+        {
+          "id": 22957,
+          "title": "NVIDIA's Beastly RTX Pro 5500 Blackwell Packs 84GB GDDR7 & RTX 5090 Core Count",
+          "url": "https://hothardware.com/news/nvidia-unveils-rtx-pro-5500-blackwell-84gb-gddr7"
+        },
+        {
+          "id": 25640,
+          "title": "Mit 84 GB für KI-Workstations: NVIDIA RTX PRO 5500 Blackwell vorgestellt",
+          "url": "https://www.hardwareluxx.de/index.php/news/hardware/grafikkarten/70327-mit-84-gb-fuer-ki-workstations-nvidia-rtx-pro-5500-blackwell-vorgestellt.html"
+        }
+      ],
+      "full_texts": 5,
+      "label": "NVIDIA RTX PRO 5500 Blackwell oficjalnie. Na pokładzie 84 GB pamięci",
+      "publishers": 7,
+      "republication_families_estimated": 7,
+      "topic_id": "topic-0eed8ea054215cef"
+    },
+    "place": "Globo",
+    "scope": "globe",
+    "summary": {
+      "articles": 8696,
+      "outliers": 7238
+    },
+    "topics": 610,
+    "publishers": 568
+  }
+]
