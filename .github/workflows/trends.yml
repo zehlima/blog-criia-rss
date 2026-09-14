@@ -12,10 +12,10 @@ permissions:
   contents: read
   actions: read
 concurrency:
-  group: boris-topic-analysis
-  # A newer clustering revision supersedes any waiting publication from a
-  # rejected editorial sample. Keep exactly one analysis worker alive.
-  cancel-in-progress: true
+  # A failed collector's skipped workflow must not cancel an eligible analysis
+  # or replace its pending publication. Eligible workers remain serialized.
+  group: ${{ (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') && 'boris-topic-analysis' || format('boris-topic-analysis-ignored-{0}', github.run_id) }}
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 env:
   DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
   DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
@@ -56,6 +56,18 @@ jobs:
       - id: analysis
         name: Analisar corpus completo e congelar temas das ultimas 24h
         run: python -m trends.main prepare --run-id "$ANALYSIS_RUN_ID"
+      - name: Registrar preparacao interrompida
+        if: ${{ always() && steps.analysis.outcome != 'success' }}
+        env:
+          PREPARE_OUTCOME: ${{ steps.analysis.outcome }}
+        run: |
+          python - <<'PY'
+          import os
+          from collector.storage import database_connection
+          from trends.main import mark_interrupted
+          with database_connection() as db:
+              mark_interrupted(db, os.environ['ANALYSIS_RUN_ID'], os.environ['PREPARE_OUTCOME'])
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:

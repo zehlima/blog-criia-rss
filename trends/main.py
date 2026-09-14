@@ -241,6 +241,16 @@ def publish(db,s3,run_id,scope,delay):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write(md[:500000])
     log(phase='published',scope=scope,places=len(result),run_id=run_id,delay_seconds=max(0,(started-scheduled).total_seconds()))
 
+def mark_interrupted(db, run_id, outcome):
+    # Preserve completed/rejected snapshots and all prior progress evidence.
+    reason = 'github_prepare_' + (outcome if outcome in ('cancelled', 'failure', 'skipped') else 'interrupted')
+    return db.execute("""UPDATE news_analysis_runs SET status='failed',
+      finished_at=coalesce(finished_at,now()),error=%s
+      WHERE id=%s AND status='building' AND snapshot_key IS NULL
+      AND NOT EXISTS (SELECT 1 FROM news_topic_snapshots WHERE run_id=%s)
+      RETURNING id""", (reason, run_id, run_id))
+
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','publish']);p.add_argument('--run-id',required=True)
     p.add_argument('--scope',choices=['country','continent','globe']);p.add_argument('--delay',type=int,default=0);args=p.parse_args()

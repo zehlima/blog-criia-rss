@@ -2,6 +2,28 @@ from datetime import datetime,timezone
 from trends.core import rankings,in_window,continent
 from collector.reporting import classify
 
+
+def test_interrupted_analysis_update_is_guarded_and_preserves_progress():
+    from trends.main import mark_interrupted
+    from pglast import parse_sql
+    class DB:
+        def execute(self, sql, params):
+            parse_sql(sql.replace('%s', "'test'"))
+            assert "status='building'" in sql
+            assert 'snapshot_key IS NULL' in sql and 'NOT EXISTS' in sql
+            assert 'coverage=' not in sql
+            assert params == ('github_prepare_cancelled', '123', '123')
+            return 'guarded'
+    assert mark_interrupted(DB(), '123', 'cancelled') == 'guarded'
+
+
+def test_failed_collector_cannot_cancel_eligible_analysis():
+    from pathlib import Path
+    workflow=(Path(__file__).parents[1]/'.github/workflows/trends.yml').read_text()
+    assert "boris-topic-analysis-ignored-{0}" in workflow
+    assert "cancel-in-progress: ${{ github.event_name == 'push' }}" in workflow
+    assert "delay: 15" in workflow and "delay: 20" in workflow and "delay: 25" in workflow
+
 def source(country='Brasil',region='América do Sul',site='https://example.com'):
     return {'id':1,'name':'Example','country':country,'region':region,'site_url':site,'rss_url':site+'/rss'}
 

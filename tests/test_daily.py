@@ -1,5 +1,10 @@
 from datetime import datetime, timezone
-import numpy as np
+import pytest
+# Analytics dependencies are optional in the lightweight collector environment.
+# The daily/trends jobs install all three and execute this suite in full.
+np = pytest.importorskip('numpy')
+pytest.importorskip('sklearn')
+pytest.importorskip('datasketch')
 from daily.core import bounds, compare, fingerprint, group_copies, accounting, chargrams
 
 
