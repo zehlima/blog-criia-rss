@@ -51,3 +51,24 @@ ALTER TABLE public.news_article_versions ENABLE ROW LEVEL SECURITY;
 REVOKE ALL ON public.news_feeds, public.news_runs, public.news_feed_runs,
  public.news_articles, public.news_article_feeds, public.news_article_versions FROM anon,authenticated;
 COMMIT;
+
+-- Additive analysis schema, also applied through Supabase migration history.
+CREATE TABLE IF NOT EXISTS public.news_analysis_runs (
+ id text PRIMARY KEY, collection_slot timestamptz NOT NULL,
+ collection_finished_at timestamptz NOT NULL, started_at timestamptz NOT NULL DEFAULT now(),
+ finished_at timestamptz, status text NOT NULL CHECK(status IN ('building','ready','failed')),
+ model_version text NOT NULL, model_revision text, snapshot_key text,
+ coverage jsonb NOT NULL DEFAULT '{}'::jsonb, error text
+);
+CREATE TABLE IF NOT EXISTS public.news_topic_snapshots (
+ run_id text NOT NULL REFERENCES public.news_analysis_runs(id), scope text NOT NULL CHECK(scope IN ('country','continent','globe')),
+ place text NOT NULL, scheduled_at timestamptz NOT NULL, started_at timestamptz NOT NULL,
+ report_key text NOT NULL, payload jsonb NOT NULL, PRIMARY KEY(run_id,scope,place)
+);
+ALTER TABLE public.news_analysis_runs ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.news_topic_snapshots ENABLE ROW LEVEL SECURITY;
+REVOKE ALL ON public.news_analysis_runs, public.news_topic_snapshots FROM anon,authenticated;
+CREATE INDEX IF NOT EXISTS news_analysis_runs_finished ON public.news_analysis_runs(finished_at DESC);
+CREATE TABLE IF NOT EXISTS public.news_collection_attempts (id text PRIMARY KEY,slot timestamptz NOT NULL,finished_at timestamptz NOT NULL,report jsonb NOT NULL,feeds jsonb NOT NULL);
+ALTER TABLE public.news_collection_attempts ENABLE ROW LEVEL SECURITY;
+REVOKE ALL ON public.news_collection_attempts FROM anon,authenticated;

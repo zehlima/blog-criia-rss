@@ -61,7 +61,7 @@ def load_text(s3,a):
     a['input_hash']=hashlib.sha256((VERSION+text).encode()).hexdigest()
     return a
 
-def vectors(s3,articles):
+def vectors(s3,articles,progress=None):
     import numpy as np
     import torch
     from sentence_transformers import SentenceTransformer
@@ -76,6 +76,7 @@ def vectors(s3,articles):
             cache=dict(zip(data['hashes'].tolist(),data['vectors']))
     missing=[a for a in articles if a['input_hash'] not in cache]
     log(phase='embeddings',articles=len(articles),cached=len(articles)-len(missing),pending=len(missing),model=MODEL,revision=revision)
+    if progress:progress({'phase':'embeddings','articles':len(articles),'done':len(articles)-len(missing)})
     if missing:
         model=SentenceTransformer(MODEL,revision=revision,device='cpu',trust_remote_code=False)
         model.max_seq_length=512
@@ -101,6 +102,7 @@ def vectors(s3,articles):
                 # Superseded cache is reproducible; immutable analysis snapshots stay retained.
                 if old_key and old_key!=key:s3.delete_object(Bucket=BUCKET,Key=old_key)
                 log(phase='embeddings_checkpoint',done=min(start+64,len(missing)),total=len(missing))
+                if progress:progress({'phase':'embeddings','articles':len(articles),'done':len(articles)-len(missing)+min(start+64,len(missing))})
     return np.array([cache[a['input_hash']] for a in articles]),revision
 
 def assign_topics(s3,articles,embeddings,run_id):
@@ -167,7 +169,9 @@ def prepare(db,s3,run_id):
     articles=all_articles(db,cutoff)
     log(phase='corpus',articles=len(articles),cutoff=cutoff)
     with ThreadPoolExecutor(max_workers=16) as pool:articles=list(pool.map(lambda a:load_text(s3,a),articles))
-    embedding,revision=vectors(s3,articles)
+    def progress(state):
+        db.execute('UPDATE news_analysis_runs SET coverage=%s WHERE id=%s',(Jsonb(state),run_id))
+    embedding,revision=vectors(s3,articles,progress)
     import numpy as np
     ids=[i for i,a in enumerate(articles) if in_window(a,cutoff)]
     recent=[articles[i] for i in ids]
