@@ -45,6 +45,7 @@ jobs:
           R2_BUCKET: ${{ secrets.R2_BUCKET }}
           MAX_RUN_SECONDS: '3000'
           ARTICLE_WORKERS: '16'
+          PYTHONFAULTHANDLER: '1'
           MODE: ${{ inputs.mode || 'run' }}
         run: python -m collector.main "$MODE"
       - uses: actions/upload-artifact@v4

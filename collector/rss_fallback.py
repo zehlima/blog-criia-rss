@@ -2,7 +2,9 @@
 import gzip,json,os
 from html import unescape
 from lxml import html
+from .parsing import serialized_parser
 
+@serialized_parser
 def publisher_text(raw):
     blocks=json.loads(raw)
     result=[]

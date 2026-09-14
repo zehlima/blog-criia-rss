@@ -5,6 +5,7 @@ from datetime import datetime,timezone
 import feedparser
 import trafilatura
 from .network import canonical,get
+from .parsing import serialized_parser
 
 def digest(value):
     return hashlib.sha256(value.encode('utf-8')).hexdigest()
@@ -78,6 +79,12 @@ def fetch_article(a):
     if status==304:
         if not a.get('content_key'):raise ValueError('304_without_content')
         return status,h,None,url
+    text=page_text(body,url)
+    return status,h,text,url
+
+
+@serialized_parser
+def page_text(body,url):
     options={'url':url,'include_comments':False,'include_tables':True}
     text=trafilatura.extract(body,**options,favor_precision=True)
     # Some valid publisher layouts are too sparse for precision mode. Recall mode
@@ -88,4 +95,4 @@ def fetch_article(a):
         if recalled and len(recalled.strip())>=400:text=recalled
     if not text or len(text.strip())<200:raise ValueError('insufficient_text')
     # 'extracted' significa extração automática, não garantia de integralidade editorial.
-    return status,h,text.strip(),url
+    return text.strip()
