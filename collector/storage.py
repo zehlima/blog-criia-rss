@@ -1,5 +1,6 @@
 import gzip
 import os
+from urllib.parse import urlsplit, unquote, quote
 import boto3
 import psycopg
 from botocore.config import Config
@@ -18,7 +19,18 @@ def database_connection():
             sslmode='require', connect_timeout=15,
             row_factory=dict_row, autocommit=True)
     overrides={'host':os.environ['DATABASE_HOST']} if os.getenv('DATABASE_HOST') else {}
-    return psycopg.connect(os.environ['DATABASE_URL'],**overrides,sslmode='require',
+    uri=os.environ['DATABASE_URL']
+    parsed=urlsplit(uri)
+    if parsed.scheme in ('postgres','postgresql') and parsed.password is not None:
+        # Normaliza @ literal na senha antes de entregar a URI ao libpq.
+        user=quote(unquote(parsed.username or ''),safe='')
+        password=quote(unquote(parsed.password),safe='')
+        host=parsed.hostname or ''
+        if ':' in host:host='['+host+']'
+        authority=f'{user}:{password}@{host}'
+        if parsed.port is not None:authority+=f':{parsed.port}'
+        uri=parsed._replace(netloc=authority).geturl()
+    return psycopg.connect(uri,**overrides,sslmode='require',
                            connect_timeout=15,row_factory=dict_row,autocommit=True)
 
 def connect():
