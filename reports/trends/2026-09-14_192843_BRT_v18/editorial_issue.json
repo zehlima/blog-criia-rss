@@ -1,0 +1,28 @@
+{
+  "articles": 2,
+  "continents": [
+    "América do Sul",
+    "Europa"
+  ],
+  "countries": [
+    "Brasil",
+    "França"
+  ],
+  "evidence": [
+    {
+      "id": 4659,
+      "title": "Actualité : Paramount+ : notre top 10 des meilleurs films à voir en streaming en 2026",
+      "url": "https://www.lesnumeriques.com/cine-svod/paramount-notre-top-10-des-meilleurs-films-a-voir-en-streaming-en-2026-n261666.html"
+    },
+    {
+      "id": 56667,
+      "title": "Top 10 filmes e séries com maior bitrate no streaming",
+      "url": "https://www.hardware.com.br/artigos/filmes-series-maior-bitrate-streamingg/"
+    }
+  ],
+  "full_texts": 1,
+  "label": "Actualité : Paramount+ : notre top 10 des meilleurs films à voir en streaming en 2026",
+  "publishers": 2,
+  "republication_families_estimated": 2,
+  "topic_id": "topic-e480dbda03c02f31"
+}

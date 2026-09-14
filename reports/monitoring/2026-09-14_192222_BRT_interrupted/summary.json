@@ -1,0 +1,31 @@
+{
+  "finished_at": "2026-09-14 22:22:22.200627+00",
+  "id": "34903677679",
+  "report": {
+    "articles": {
+      "content_key_does_not_prove_integrality": true,
+      "content_key_total": 25390,
+      "invalid_references": 7,
+      "page_texts": 24476,
+      "pending": 22,
+      "publisher_rss_texts": 909,
+      "total": 26896,
+      "unavailable": 1482,
+      "valid_text_bodies": 25385,
+      "without_text": 1511
+    },
+    "due_articles": null,
+    "error": "native_allocator_abort_exit_134",
+    "evidence_job_id": "104175282925",
+    "expected_feeds": 675,
+    "feeds_errors": 29,
+    "feeds_not_attempted": 0,
+    "feeds_ok": 646,
+    "finished_at": "2026-09-14T22:22:22.200627Z",
+    "github_run_id": "34903677679",
+    "report_reconstructed_from_checkpoint_at": "2026-09-14T22:23:37Z",
+    "slot": "2026-09-14T21:00:00+00:00",
+    "status": "interrupted"
+  },
+  "slot": "2026-09-14 21:00:00+00"
+}

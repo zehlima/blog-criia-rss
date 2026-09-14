@@ -1,0 +1,23 @@
+[
+  {
+    "delay_seconds": "376.72",
+    "scheduled_at": "2026-09-14 22:22:14.160454+00",
+    "scope": "continent",
+    "snapshots": 7,
+    "started_at": "2026-09-14 22:28:30.876002+00"
+  },
+  {
+    "delay_seconds": "677.04",
+    "scheduled_at": "2026-09-14 22:17:14.160454+00",
+    "scope": "country",
+    "snapshots": 105,
+    "started_at": "2026-09-14 22:28:31.197408+00"
+  },
+  {
+    "delay_seconds": "89.26",
+    "scheduled_at": "2026-09-14 22:27:14.160454+00",
+    "scope": "globe",
+    "snapshots": 1,
+    "started_at": "2026-09-14 22:28:43.418179+00"
+  }
+]
