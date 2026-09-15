@@ -1,0 +1,55 @@
+name: Confronto 15 referencias
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['reference_compare/**', 'tests/test_reference_compare.py', '.github/workflows/reference15.yml']
+  workflow_run:
+    workflows: ['Fechamento diario semantico']
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: reference15-comparison
+  cancel-in-progress: false
+env:
+  DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+  DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
+  DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  R2_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ secrets.R2_BUCKET }}
+  TOKENIZERS_PARALLELISM: 'false'
+jobs:
+  compare:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            trends/requirements.txt
+      - name: Dependencias CPU
+        run: |
+          pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r trends/requirements.txt
+      - name: Verificar contratos e protecoes
+        run: python -m pytest tests/test_reference_compare.py tests/test_daily.py -q
+      - name: Comparar fechamentos e verificar persistencia
+        run: python -m reference_compare.main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reference15-comparison
+          path: reports/reference15/
+          retention-days: 90

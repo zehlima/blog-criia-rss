@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths: ['frontend/**', 'dashboard/**', '.github/workflows/dashboard.yml']
   workflow_run:
-    workflows: ['Coleta global RSS', 'Tendencias pais continente globo', 'Fechamento diario semantico']
+    workflows: ['Coleta global RSS', 'Tendencias pais continente globo', 'Fechamento diario semantico', 'Confronto 15 referencias']
     types: [completed]
   schedule:
     - cron: '35 * * * *'

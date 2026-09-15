@@ -9,6 +9,9 @@ from pathlib import Path
 from collector.storage import connect
 from collector.inventory import urls as active_urls
 from trends.core import continent
+from reference_compare.core import report_key as reference_key
+from collector.technology15 import manifest as reference_manifest
+from botocore.exceptions import ClientError
 from .export import build, COLLECTION_SQL, TRENDS_SQL
 
 DEST=Path('frontend/data/explorer')
@@ -103,6 +106,16 @@ def main():
                 (DEST/name).write_bytes(raw);entry['download']=name
             except Exception as exc:
                 entry['error']=type(exc).__name__;manifest['export_errors'].append({'type':'daily','id':c['id'],'error':entry['error']})
+            if c['mode']=='closed':
+                try:
+                    comparison=report(s3,reference_key(c['id'],reference_manifest()))
+                    # Export geography separately to stay below the Pages file limit.
+                    scopes=comparison.pop('scopes')
+                    comparison['scope_files']={scope:write(f'reference/{i}-{scope}.json',rows) for scope,rows in scopes.items()}
+                    entry['reference_comparison']=write(f'reference/{i}.json',comparison)
+                except ClientError as exc:
+                    if exc.response['Error']['Code'] not in ('NoSuchKey','404'):raise
+                    entry['reference_status']='waiting_for_comparison'
             manifest['closures'].append(entry)
         for i,r in enumerate(runs):
             entry=public(r)

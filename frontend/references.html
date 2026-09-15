@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BLOG CRIIA · Confronto das 15 referências</title>
+<meta name="description" content="Matérias, tendências e cobertura das fontes monitoradas pelo BLOG CRIIA.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317253e'/%3E%3Cpath d='M23 10a9 9 0 1 0 0 12' fill='none' stroke='%236ca8ff' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.4.0/dist/css/tabler.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar"><a class="brand" href="index.html#overview">CRIIA<span>OBSERVATÓRIO</span></a><nav id="engines" aria-label="Áreas do painel"></nav><div class="sidebar-note">BLOG CRIIA<br><span>Fontes, assuntos e contexto.</span></div></aside>
+<main>
+<header class="topbar"><span class="eyebrow">INTELIGÊNCIA EDITORIAL</span><span class="badge bg-blue-lt">Acompanhamento</span></header>
+<section class="page-heading"><div><h1 id="title">Matérias</h1><p id="description">Leitura e busca na base monitorada</p></div><button class="btn" id="refresh" type="button">Atualizar</button></section>
+<div class="card filters explorer-controls" id="controls"></div>
+<p class="coverage" id="coverage"></p>
+<section id="results" aria-live="polite" aria-busy="true"><div class="card empty"><span class="spinner-border" aria-hidden="true"></span><h2>Buscando dados</h2></div></section>
+<footer>País indica a origem editorial dos veículos monitorados. Textos disponíveis, evidências e relatórios acessíveis nas áreas do observatório.</footer>
+</main>
+</div>
+<dialog id="reader"><button class="btn close-reader" id="close-reader" type="button" aria-label="Fechar leitura">Fechar</button><div id="reader-content"></div></dialog>
+<script type="module" src="src/references.mjs"></script>
+</body></html>
