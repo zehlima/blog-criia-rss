@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths: ['frontend/**', 'dashboard/**', '.github/workflows/dashboard.yml']
   workflow_run:
-    workflows: ['Coleta global RSS', 'Tendencias pais continente globo']
+    workflows: ['Coleta global RSS', 'Tendencias pais continente globo', 'Fechamento diario semantico']
     types: [completed]
   schedule:
     - cron: '35 * * * *'
@@ -13,12 +13,12 @@ permissions:
   contents: read
 concurrency:
   group: dashboard-publish
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   build:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,13 +31,25 @@ jobs:
           node-version: '22'
       - run: pip install -r requirements.txt
       - run: node --test tests/test_dashboard.mjs
+      - run: python -m pytest -q tests/test_full_export.py tests/test_dashboard_export.py
+      - uses: actions/cache@v4
+        with:
+          path: .dashboard-cache
+          key: dashboard-texts-${{ github.run_id }}
+          restore-keys: dashboard-texts-
       - name: Atualizar dados reais
         env:
           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
           DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
-        run: python -m dashboard.export
+          R2_ENDPOINT_URL: ${{ secrets.R2_ENDPOINT_URL }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          python -m dashboard.export
+          python -m dashboard.full_export
       - uses: actions/upload-artifact@v4
         with:
           name: painel-tabler
