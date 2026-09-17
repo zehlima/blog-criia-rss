@@ -25,11 +25,12 @@ def classify(error):
     return 'temporario_ou_investigar', 'Repetir com backoff e verificar causa; nao repor automaticamente.'
 
 
-def write_feed_report(db,s3,slot,report):
+def write_feed_report(db,s3,slot,report,inventory_urls=None):
+    inventory_urls=active_urls(db,slot) if inventory_urls is None else inventory_urls
     rows=db.execute('''SELECT f.id,f.name,f.country,f.region,f.rss_url,
       coalesce(r.status,'not_attempted') status,r.error,r.checked_at
       FROM news_feeds f LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s
-      WHERE f.rss_url=ANY(%s) AND r.status IS DISTINCT FROM 'ok' ORDER BY f.id''',(slot,active_urls())).fetchall()
+      WHERE f.rss_url=ANY(%s) AND r.status IS DISTINCT FROM 'ok' ORDER BY f.id''',(slot,inventory_urls)).fetchall()
     fields=['id','name','country','region','rss_url','status','error','checked_at','classification','action']
     buf=io.StringIO(); writer=csv.DictWriter(buf,fieldnames=fields);writer.writeheader()
     for r in rows:
@@ -40,7 +41,7 @@ def write_feed_report(db,s3,slot,report):
       FROM news_articles a JOIN news_article_feeds af ON af.article_id=a.id
       JOIN news_feeds f ON f.id=af.feed_id
       WHERE f.rss_url=ANY(%s) AND a.content_key IS NULL AND a.content_status='unavailable'
-      ORDER BY a.id''',(active_urls(),)).fetchall()
+      ORDER BY a.id''',(inventory_urls,)).fetchall()
     exbuf=io.StringIO();exwriter=csv.DictWriter(exbuf,fieldnames=['id','url','title','content_status','last_error','attempts','next_attempt_at']);exwriter.writeheader();exwriter.writerows(extraction)
     stamp=report['finished_at'].replace(':','-')
     prefix=f'reports/collection/{slot.strftime("%Y-%m-%d_%H%MUTC")}/{stamp}'

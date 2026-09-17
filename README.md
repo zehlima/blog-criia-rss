@@ -11,6 +11,14 @@ Coleta de RSS e textos, armazenamento em Supabase/R2 e frequência de pautas por
 
 Leia `CONFIGURAR.md` para configuração operacional e `VALIDACAO.json` para o último checkpoint documentado. O resultado verde de um workflow confirma execução técnica; não significa cobertura integral nem revisão editorial.
 
+## Descoberta de novas fontes
+
+O ciclo de descoberta, observação e admissão humana está documentado em
+[DESCOBERTA_CONTINUA.md](DESCOBERTA_CONTINUA.md). A configuração versionada fica
+desligada em `config/discovery.json` até a implantação revisada dos schemas.
+Fontes admitidas entram no coletor existente a partir da próxima janela, com
+inventário congelado, sem criar um segundo coletor no Farza.
+
 ## Verificação local
 
 ```bash

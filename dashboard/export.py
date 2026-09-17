@@ -2,7 +2,8 @@
 import json
 from pathlib import Path
 from datetime import datetime, timezone
-from collector.inventory import urls as active_urls
+from collector.inventory import urls as active_urls,attempt_feeds
+from collector.discovery_store import status as discovery_status
 
 ARTICLES_SQL = """SELECT a.id,a.title,a.url,a.published_at,
  string_agg(DISTINCT f.name, ', ') source,
@@ -42,11 +43,13 @@ def build(articles, collections, trends):
 
 def main():
     from collector.storage import database_connection
-    urls=active_urls()
     with database_connection() as db:
         with db.transaction():
             db.execute('SET TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY')
-            payload=build(db.execute(ARTICLES_SQL,(urls,urls)).fetchall(),db.execute(COLLECTION_SQL).fetchall(),db.execute(TRENDS_SQL).fetchall())
+            collections=db.execute(COLLECTION_SQL).fetchall()
+            urls=[f['rss_url'] for f in attempt_feeds(collections[0])] if collections else active_urls()
+            payload=build(db.execute(ARTICLES_SQL,(urls,urls)).fetchall(),collections,db.execute(TRENDS_SQL).fetchall())
+            payload['source_discovery']=discovery_status(db)
     dest=Path('frontend/data');dest.mkdir(exist_ok=True)
     (dest/'dashboard.json').write_text(json.dumps(payload,ensure_ascii=False,default=str))
     print(json.dumps({'articles':len(payload['articles']),'trend_places':len(payload['trends']),'generated_at':payload['generated_at']}))

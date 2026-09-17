@@ -6,7 +6,7 @@ import time
 import uuid
 from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 from collections import deque
-from .inventory import urls as active_urls
+from .inventory import urls as active_urls,for_slot as inventory_for_slot
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -119,9 +119,10 @@ def articles(db,s3,slot,deadline):
         if buffer:archived_bytes+=persist(db,buffer)
     return archived_bytes
 
-def summary(db,slot,total):
+def summary(db,slot,total,inventory_urls=None):
+    inventory_urls=active_urls(db,slot) if inventory_urls is None else inventory_urls
     r=db.execute('''SELECT count(*) FILTER(WHERE status='ok') ok,
-      count(*) FILTER(WHERE status='error') errors FROM news_feed_runs WHERE slot=%s AND feed_id IN (SELECT id FROM news_feeds WHERE rss_url=ANY(%s))''',(slot,active_urls())).fetchone()
+      count(*) FILTER(WHERE status='error') errors FROM news_feed_runs WHERE slot=%s AND feed_id IN (SELECT id FROM news_feeds WHERE rss_url=ANY(%s))''',(slot,inventory_urls)).fetchone()
     a=db.execute('''WITH current_articles AS (
       SELECT DISTINCT a.id,a.content_key,a.content_status FROM news_articles a
       JOIN news_article_feeds af ON af.article_id=a.id
@@ -136,7 +137,7 @@ def summary(db,slot,total):
       count(*) FILTER(WHERE content_status='extracted' AND content_key IS NOT NULL) page_texts,
       count(*) FILTER(WHERE content_status='rss_content' AND content_key IS NOT NULL) publisher_rss_texts,
       count(*) FILTER(WHERE content_key IS NULL AND content_status NOT IN ('pending','unavailable','invalid_reference')) title_summary_only
-      FROM current_articles''',(active_urls(),)).fetchone()
+      FROM current_articles''',(inventory_urls,)).fetchone()
     # Backward-compatible key, explicitly paired with its limitation.
     a['extracted']=a['content_key_total']
     a['content_key_does_not_prove_integrality']=True
@@ -148,13 +149,15 @@ def summary(db,slot,total):
 def run(db,s3,feeds):
     now=datetime.now(timezone.utc)
     slot=slot_for(now)
+    feeds=inventory_for_slot(db,slot,freeze=True,base_feeds=feeds)
+    inventory_urls=[f['rss_url'] for f in feeds]
     deadline=time.monotonic()+run_budget(now,int(os.getenv('MAX_RUN_SECONDS','1800')))
     db.execute('''INSERT INTO news_runs(slot) VALUES(%s) ON CONFLICT(slot) DO UPDATE SET status='running',finished_at=NULL''',(slot,))
     from .repair_links import repair_dday
     print(json.dumps({'phase':'link_repair',**repair_dday(db)},ensure_ascii=False),flush=True)
     sources(db,s3,slot,feeds,deadline)
     size=articles(db,s3,slot,deadline)
-    report=summary(db,slot,len(feeds));report['compressed_bytes_written']=size
+    report=summary(db,slot,len(feeds),inventory_urls);report['compressed_bytes_written']=size
     status=('partial' if report['feeds_not_attempted'] or report['due_articles'] or report['articles']['pending']
       else 'complete_with_gaps' if report['feeds_errors'] or report['articles']['without_text'] else 'complete')
     report['status']=status
@@ -164,13 +167,13 @@ def run(db,s3,feeds):
     Path('reports/latest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     feed_states=db.execute("""SELECT f.id,f.name,f.country,f.region,f.site_url,f.rss_url,
       coalesce(r.status,'not_attempted') status,r.error FROM news_feeds f
-      LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s WHERE f.rss_url=ANY(%s) ORDER BY f.id""",(slot,active_urls())).fetchall()
+      LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s WHERE f.rss_url=ANY(%s) ORDER BY f.id""",(slot,inventory_urls)).fetchall()
     attempt_id=os.getenv('GITHUB_RUN_ID') or str(uuid.uuid4())
     db.execute('''INSERT INTO news_collection_attempts(id,slot,finished_at,report,feeds)
       VALUES(%s,%s,%s,%s,%s) ON CONFLICT(id) DO NOTHING''',
       (attempt_id,slot,report['finished_at'],Jsonb(report),Jsonb(feed_states)))
     from .reporting import write_feed_report
-    write_feed_report(db,s3,slot,report)
+    write_feed_report(db,s3,slot,report,inventory_urls)
     print(json.dumps(report,ensure_ascii=False),flush=True)
     if os.getenv('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write('```json\n'+json.dumps(report,indent=2)+'\n```\n')
@@ -179,8 +182,9 @@ def run(db,s3,feeds):
     return 0
 
 def preflight(db,s3):
-    count=db.execute('SELECT count(*) n FROM news_feeds WHERE rss_url=ANY(%s)',(active_urls(),)).fetchone()['n']
-    if count!=len(active_urls()):raise ValueError('Inventário ativo ausente no banco')
+    inventory_urls=active_urls(db,slot_for(datetime.now(timezone.utc)))
+    count=db.execute('SELECT count(*) n FROM news_feeds WHERE rss_url=ANY(%s)',(inventory_urls,)).fetchone()['n']
+    if count!=len(inventory_urls):raise ValueError('Inventário ativo ausente no banco')
     key='preflight/'+str(uuid.uuid4())+'.txt'
     s3.put_object(Bucket=os.environ['R2_BUCKET'],Key=key,Body=b'boris-preflight')
     try:

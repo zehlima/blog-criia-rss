@@ -21,6 +21,8 @@ concurrency:
   group: boris-global-collector
   # Explicit repair pushes replace the outdated worker; scheduled runs keep checkpoints.
   cancel-in-progress: ${{ github.event_name == 'push' }}
+env:
+  BORIS_DYNAMIC_INVENTORY: ${{ vars.BORIS_DYNAMIC_INVENTORY }}
 jobs:
   collect:
     if: github.event_name != 'schedule' || vars.ENABLE_COLLECTION != 'false'

@@ -1,0 +1,33 @@
+name: Source discovery checks
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install existing Python test dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install numpy==2.2.6 scikit-learn==1.7.2 datasketch==1.6.5
+      - name: Install isolated PostgreSQL test runtime
+        run: npm install --prefix "$RUNNER_TEMP/boris-pg" --no-save @electric-sql/pglite@0.3.14
+      - name: Run offline tests including PostgreSQL contracts
+        env:
+          BORIS_PGLITE_MODULE: ${{ runner.temp }}/boris-pg/node_modules/@electric-sql/pglite/dist/index.js
+          BORIS_DISCOVERY_ENABLED: '0'
+          BORIS_DYNAMIC_INVENTORY: '0'
+        run: |
+          python -m pytest -q
+          node --test tests/test_dashboard.mjs
+          git diff --check

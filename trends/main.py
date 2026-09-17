@@ -12,7 +12,7 @@ from pathlib import Path
 
 from psycopg.types.json import Jsonb
 from collector.storage import connect
-from collector.inventory import urls as active_urls
+from collector.inventory import urls as active_urls,attempt_feeds
 from .core import continent,families,in_window,rankings
 
 BUCKET=os.getenv('R2_BUCKET')
@@ -45,7 +45,8 @@ def put_json(s3,key,value):
 
 def get_json(s3,key):return json.loads(gzip.decompress(get_object(s3,key)))
 
-def all_articles(db,cutoff):
+def all_articles(db,cutoff,inventory_urls=None):
+    inventory_urls=active_urls() if inventory_urls is None else inventory_urls
     return db.execute('''SELECT a.id,a.url,a.title,a.summary,a.published_at,a.first_seen_at,
       a.content_key,a.content_status,
       jsonb_agg(jsonb_build_object('id',f.id,'name',f.name,
@@ -54,7 +55,7 @@ def all_articles(db,cutoff):
       JOIN news_feeds f ON f.id=af.feed_id WHERE a.first_seen_at<=%s
         AND f.rss_url=ANY(%s)
         AND a.content_status<>'invalid_reference'
-      GROUP BY a.id ORDER BY a.id''',(cutoff,active_urls())).fetchall()
+      GROUP BY a.id ORDER BY a.id''',(cutoff,inventory_urls)).fetchall()
 
 def load_text(s3,a):
     text=a['title']+'\n'+(a['summary'] or '')
@@ -152,10 +153,10 @@ def prepare(db,s3,run_id):
     source_slot=row['slot']
     db.execute('''INSERT INTO news_analysis_runs(id,collection_slot,collection_finished_at,status,model_version)
       VALUES(%s,%s,%s,'building',%s) ON CONFLICT(id) DO UPDATE SET status='building',error=NULL''',(run_id,source_slot,cutoff,VERSION))
-    sources=attempt['feeds'] if attempt else db.execute('''SELECT f.id,f.name,f.country,f.region,f.site_url,f.rss_url,
+    sources=attempt_feeds(attempt) if attempt else db.execute('''SELECT f.id,f.name,f.country,f.region,f.site_url,f.rss_url,
        coalesce(r.status,'not_attempted') status,r.error FROM news_feeds f
-       LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s WHERE f.rss_url=ANY(%s) ORDER BY f.id''',(source_slot,active_urls())).fetchall()
-    articles=all_articles(db,cutoff)
+       LEFT JOIN news_feed_runs r ON r.feed_id=f.id AND r.slot=%s WHERE f.rss_url=ANY(%s) ORDER BY f.id''',(source_slot,active_urls(db,source_slot))).fetchall()
+    articles=all_articles(db,cutoff,[f['rss_url'] for f in sources])
     log(phase='corpus',articles=len(articles),cutoff=cutoff)
     with ThreadPoolExecutor(max_workers=16) as pool:articles=list(pool.map(lambda a:load_text(s3,a),articles))
     def progress(state):

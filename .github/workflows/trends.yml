@@ -17,6 +17,7 @@ concurrency:
   group: ${{ (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') && 'boris-topic-analysis' || format('boris-topic-analysis-ignored-{0}', github.run_id) }}
   cancel-in-progress: ${{ github.event_name == 'push' }}
 env:
+  BORIS_DYNAMIC_INVENTORY: ${{ vars.BORIS_DYNAMIC_INVENTORY }}
   DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
   DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
   DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq

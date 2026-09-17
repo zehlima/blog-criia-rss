@@ -20,6 +20,7 @@ concurrency:
   group: boris-daily-accounting
   cancel-in-progress: ${{ github.event_name == 'push' }}
 env:
+  BORIS_DYNAMIC_INVENTORY: ${{ vars.BORIS_DYNAMIC_INVENTORY }}
   DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
   DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
   DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
