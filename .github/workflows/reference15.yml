@@ -14,6 +14,7 @@ concurrency:
   group: reference15-comparison
   cancel-in-progress: false
 env:
+  BORIS_DYNAMIC_INVENTORY: ${{ vars.BORIS_DYNAMIC_INVENTORY }}
   DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
   DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
   DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq

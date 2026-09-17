@@ -7,7 +7,8 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 from collector.storage import connect
-from collector.inventory import urls as active_urls
+from collector.inventory import urls as active_urls,attempt_feeds
+from collector.discovery_store import status as discovery_status
 from trends.core import continent
 from reference_compare.core import report_key as reference_key
 from collector.technology15 import manifest as reference_manifest
@@ -71,12 +72,14 @@ def main():
                 LEFT JOIN news_feeds f ON f.id=af.feed_id GROUP BY a.id
                 ORDER BY coalesce(a.published_at,a.first_seen_at)>CURRENT_TIMESTAMP,coalesce(a.published_at,a.first_seen_at) DESC,a.id''').fetchall()
             collections=db.execute(COLLECTION_SQL).fetchall()
+            active={f['rss_url'] for f in attempt_feeds(collections[0])} if collections else set(active_urls())
             trends=db.execute(TRENDS_SQL).fetchall()
             closures=db.execute('SELECT id,day,mode,cutoff,report_key,coverage FROM news_daily_closures ORDER BY day DESC,cutoff DESC').fetchall()
             runs=db.execute('SELECT id,status,finished_at,coverage,snapshot_key FROM news_analysis_runs ORDER BY finished_at DESC NULLS LAST').fetchall()
             attempts=db.execute('SELECT id,slot,finished_at,report FROM news_collection_attempts ORDER BY finished_at DESC').fetchall()
+            source_discovery=discovery_status(db)
         manifest={'schema_version':2,'generated_at':datetime.now(timezone.utc).isoformat(),'total_articles':len(articles),'article_chunks':[],'closures':[],'analyses':[],'operations':build([],collections,trends)['operations'],'export_errors':[]}
-        active=set(active_urls())
+        manifest['source_discovery']=source_discovery
         for start in range(0,len(articles),250):
             batch=articles[start:start+250]
             with ThreadPoolExecutor(max_workers=32) as pool:texts=list(pool.map(lambda a:body(s3,a),batch))

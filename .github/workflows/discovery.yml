@@ -1,0 +1,52 @@
+name: Descoberta gradual de fontes
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['config/discovery.json']
+permissions:
+  contents: read
+concurrency:
+  group: boris-source-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir configuração versionada antes de instalar ou conectar
+        id: config
+        env:
+          BORIS_DISCOVERY_ENABLED: ${{ vars.BORIS_DISCOVERY_ENABLED }}
+        run: |
+          python - <<'PY'
+          import os
+          from collector.discovery_settings import enabled
+          value=enabled('BORIS_DISCOVERY_ENABLED')
+          print('Discovery enabled:', value)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write('enabled='+str(value).lower()+'\n')
+          PY
+      - uses: actions/setup-python@v5
+        if: steps.config.outputs.enabled == 'true'
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+        if: steps.config.outputs.enabled == 'true'
+      - run: python -m pytest -q tests/test_discovery.py tests/test_dynamic_inventory.py
+        if: steps.config.outputs.enabled == 'true'
+      - name: Executar lote limitado
+        if: steps.config.outputs.enabled == 'true'
+        env:
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+          DATABASE_HOST: aws-0-sa-east-1.pooler.supabase.com
+          DATABASE_USER: postgres.ikoqkeqxqfqkfjmcwwdq
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          BORIS_DISCOVERY_ENABLED: ${{ vars.BORIS_DISCOVERY_ENABLED }}
+        run: |
+          python -m collector.discovery seed --known-publishers --if-empty --actor "github:$GITHUB_ACTOR"
+          python -m collector.discovery tick
+          python -m collector.discovery status

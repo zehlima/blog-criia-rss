@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from collector.inventory import urls as active_urls
+from collector.inventory import urls as active_urls,attempt_feeds,day_inventory
 from collector.storage import connect
 from psycopg.types.json import Jsonb
 from trends.main import MODEL, MODEL_REVISION, get_object, optional, put_json
@@ -29,7 +29,8 @@ def choose_day(attempt, mode):
     return attempt['finished_at'].astimezone(TZ).date().isoformat(), 'preview'
 
 
-def corpus(db, start, end, cutoff):
+def corpus(db, start, end, cutoff, inventory_urls=None):
+    inventory_urls=active_urls() if inventory_urls is None else inventory_urls
     return db.execute('''SELECT a.id,a.url,a.title,a.summary,a.published_at,a.first_seen_at,a.content_key,a.content_status,
       jsonb_agg(jsonb_build_object('id',f.id,'name',f.name,'country',f.country,'region',f.region,
         'site_url',f.site_url,'rss_url',f.rss_url) ORDER BY f.id) sources
@@ -37,7 +38,7 @@ def corpus(db, start, end, cutoff):
       WHERE a.first_seen_at<=%s AND coalesce(a.published_at,a.first_seen_at)>=%s
         AND coalesce(a.published_at,a.first_seen_at)<%s AND coalesce(a.published_at,a.first_seen_at)<=%s
         AND a.content_status<>'invalid_reference' AND f.rss_url=ANY(%s)
-      GROUP BY a.id ORDER BY a.id''', (cutoff,start,end,cutoff,active_urls())).fetchall()
+      GROUP BY a.id ORDER BY a.id''', (cutoff,start,end,cutoff,inventory_urls)).fetchall()
 
 
 def read_body(s3, article):
@@ -130,7 +131,8 @@ def run(db,s3,mode):
         log(phase='already_closed',run_id=run_id);return
     with db.transaction():
         db.execute('SET TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY')
-        articles=corpus(db,start,end,cutoff)
+        inventory=day_inventory(db,start,end,cutoff,attempt_feeds(attempt))
+        articles=corpus(db,start,end,cutoff,[f['rss_url'] for f in inventory['feeds']])
         observations=db.execute('SELECT slot,feed_id,article_id,source FROM news_article_observations WHERE slot>=%s AND slot<%s AND observed_at<=%s',(start,end,cutoff)).fetchall()
         batches=db.execute('SELECT count(*) n FROM news_observation_batches WHERE slot>=%s AND slot<%s AND recorded_at<=%s',(start,end,cutoff)).fetchone()['n']
         first_ledger=db.execute('SELECT min(recorded_at) first_recorded FROM news_observation_batches').fetchone()['first_recorded']
@@ -139,7 +141,7 @@ def run(db,s3,mode):
         articles=list(pool.map(lambda a:read_body(s3,a),articles))
     title_vec,lead_vec=embeddings(s3,articles)
     evidence=group_copies(articles,title_vec,lead_vec)
-    sources=attempt['feeds']
+    sources=inventory['feeds']
     results={scope:accounting(articles,observations,scope,sources) for scope in ('country','continent','globe')}
     coverage={'mode':mode,'day_start':start.isoformat(),'day_end_exclusive':end.isoformat(),'collection_cutoff':cutoff.isoformat(),
               'source_attempt':attempt['id'],'articles':len(articles),
@@ -149,9 +151,11 @@ def run(db,s3,mode):
               'body_read_errors':sum(bool(a['body_error']) for a in articles),
               'date_fallback':sum(a['published_at'] is None for a in articles),
               'feed_errors_at_closure':attempt['report'].get('feeds_errors'),
-              'observation_batches':batches,'expected_full_day_feed_batches':4*len(sources),
+              'observation_batches':batches,'expected_full_day_feed_batches':inventory['expected_batches'],
+              'inventory_basis':inventory['basis'],'inventory_windows':inventory['slots'],
+              'inventory_history_complete':inventory['complete'],
               'observation_history_started':str(first_ledger) if first_ledger else None,
-              'observation_history_complete':batches>=4*len(sources),
+              'observation_history_complete':inventory['complete'] and batches>=inventory['expected_batches'],
               'historical_sightings_not_reconstructed':True,
               'probabilities_calibrated':False,'editorial_validation':'pending',
               'candidate_search':'top32_semantic_neighbors_plus_minhash_and_exact_hash; recall_not_guaranteed',

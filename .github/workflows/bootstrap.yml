@@ -9,6 +9,8 @@ permissions:
 concurrency:
   group: boris-global-collector
   cancel-in-progress: true
+env:
+  BORIS_DYNAMIC_INVENTORY: ${{ vars.BORIS_DYNAMIC_INVENTORY }}
 jobs:
   bootstrap:
     runs-on: ubuntu-latest
