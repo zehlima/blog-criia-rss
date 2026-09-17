@@ -1,5 +1,5 @@
 {
   "schema_version": 1,
-  "discovery_enabled": false,
-  "dynamic_inventory_enabled": false
+  "discovery_enabled": true,
+  "dynamic_inventory_enabled": true
 }
