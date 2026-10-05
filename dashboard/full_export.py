@@ -18,6 +18,14 @@ from .export import build, COLLECTION_SQL, TRENDS_SQL
 DEST=Path('frontend/data/explorer')
 CACHE=Path('.dashboard-cache')
 PRIVATE={'content_key','rss_content_key','report_key','snapshot_key'}
+ARTICLE_PAGE=1000
+_TS_CEILING=datetime(9999,12,31,tzinfo=timezone.utc)
+ARTICLES_SQL='''SELECT a.id,a.title,a.url,a.summary,a.published_at,a.first_seen_at,a.content_status,a.content_key
+ FROM news_articles a WHERE a.id > %s ORDER BY a.id LIMIT %s'''
+SOURCES_SQL='''SELECT af.article_id,
+ coalesce(jsonb_agg(jsonb_build_object('id',f.id,'name',f.name,'country',f.country,'region',f.region,'rss_url',f.rss_url,'site_url',f.site_url)) FILTER(WHERE f.id IS NOT NULL),'[]') sources
+ FROM news_article_feeds af LEFT JOIN news_feeds f ON f.id=af.feed_id
+ WHERE af.article_id = ANY(%s) GROUP BY af.article_id'''
 
 def public(value):
     if isinstance(value,dict):return {k:public(v) for k,v in value.items() if k not in PRIVATE}
@@ -60,17 +68,37 @@ def normalize_ranks(rows):
         result[place]=entry
     return result
 
+def article_sort_key(article, now=None):
+    now=now or datetime.now(timezone.utc)
+    ts=article.get('published_at') or article.get('first_seen_at')
+    future=bool(ts and ts>now)
+    inverted=_TS_CEILING-ts if ts else _TS_CEILING
+    return (future,inverted,article['id'])
+
+def load_articles(db, page_size=ARTICLE_PAGE, now=None):
+    articles=[]; after=0
+    while True:
+        rows=db.execute(ARTICLES_SQL,(after,page_size)).fetchall()
+        if not rows:break
+        ids=[row['id'] for row in rows]
+        sources={row['article_id']:row['sources'] for row in db.execute(SOURCES_SQL,(ids,)).fetchall()}
+        for row in rows:
+            item=dict(row)
+            item['sources']=sources.get(item['id']) or []
+            articles.append(item)
+        after=rows[-1]['id']
+        if len(rows)<page_size:break
+    articles.sort(key=lambda article:article_sort_key(article,now))
+    return articles
+
 def main():
     DEST.mkdir(parents=True,exist_ok=True);CACHE.mkdir(exist_ok=True)
     db,s3=connect()
     try:
         with db.transaction():
             db.execute('SET TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY')
-            articles=db.execute('''SELECT a.id,a.title,a.url,a.summary,a.published_at,a.first_seen_at,a.content_status,a.content_key,
-                coalesce(jsonb_agg(jsonb_build_object('id',f.id,'name',f.name,'country',f.country,'region',f.region,'rss_url',f.rss_url,'site_url',f.site_url)) FILTER(WHERE f.id IS NOT NULL),'[]') sources
-                FROM news_articles a LEFT JOIN news_article_feeds af ON af.article_id=a.id
-                LEFT JOIN news_feeds f ON f.id=af.feed_id GROUP BY a.id
-                ORDER BY coalesce(a.published_at,a.first_seen_at)>CURRENT_TIMESTAMP,coalesce(a.published_at,a.first_seen_at) DESC,a.id''').fetchall()
+            db.execute("SET LOCAL statement_timeout = '10min'")
+            articles=load_articles(db)
             collections=db.execute(COLLECTION_SQL).fetchall()
             active={f['rss_url'] for f in attempt_feeds(collections[0])} if collections else set(active_urls())
             trends=db.execute(TRENDS_SQL).fetchall()
