@@ -1,14 +1,6 @@
 name: Painel Tabler
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['frontend/**', 'dashboard/**', '.github/workflows/dashboard.yml']
-  workflow_run:
-    workflows: ['Coleta global RSS', 'Tendencias pais continente globo', 'Fechamento diario semantico', 'Confronto 15 referencias']
-    types: [completed]
-  schedule:
-    - cron: '35 * * * *'
 permissions:
   contents: read
 concurrency:
@@ -19,7 +11,8 @@ env:
   BORIS_DISCOVERY_ENABLED: ${{ vars.BORIS_DISCOVERY_ENABLED }}
 jobs:
   build:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'main'
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -59,8 +52,9 @@ jobs:
           path: frontend/
           retention-days: 7
   publish:
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     needs: build
-    if: vars.CLOUDFLARE_PUBLISH_ENABLED != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

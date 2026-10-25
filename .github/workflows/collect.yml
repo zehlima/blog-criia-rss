@@ -1,20 +1,6 @@
 name: Coleta global RSS
 on:
-  schedule:
-    # Brasília (UTC-3): 00h,06h,12h,18h. UTC: 03h,09h,15h,21h.
-    - cron: '0 3,9,15,21 * * *'
-    # Recuperação horária nas demais horas: retoma checkpoints sem refazer feeds OK.
-    - cron: '0 0-2,4-8,10-14,16-20,22-23 * * *'
-  push:
-    branches: [main]
-    paths: ['.github/workflows/collect.trigger']
   workflow_dispatch:
-    inputs:
-      mode:
-        type: choice
-        options: [preflight, setup, run]
-        default: preflight
-        description: 'setup cria banco; preflight testa acessos; run coleta'
 permissions:
   contents: read
 concurrency:
@@ -25,7 +11,8 @@ env:
   BORIS_DYNAMIC_INVENTORY: ${{ vars.BORIS_DYNAMIC_INVENTORY }}
 jobs:
   collect:
-    if: github.event_name != 'schedule' || vars.ENABLE_COLLECTION != 'false'
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 65
     steps:

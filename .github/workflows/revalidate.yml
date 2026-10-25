@@ -1,9 +1,6 @@
 name: Revalidar correcoes RSS
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/revalidate.trigger']
 permissions:
   contents: read
 concurrency:
@@ -11,6 +8,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   validate:
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

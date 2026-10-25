@@ -1,9 +1,6 @@
 name: Validar 15 fontes globais de tecnologia
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['data/technology15.json', 'collector/technology15.py', 'collector/publisher_listing.py', '.github/workflows/technology15.yml']
 permissions:
   contents: read
 concurrency:
@@ -11,6 +8,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   validate:
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

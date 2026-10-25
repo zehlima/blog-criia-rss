@@ -1,11 +1,6 @@
 name: Descoberta gradual de fontes
 on:
-  schedule:
-    - cron: '17 * * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['config/discovery.json']
 permissions:
   contents: read
 concurrency:
@@ -13,6 +8,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   discover:
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:

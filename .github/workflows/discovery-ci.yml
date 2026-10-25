@@ -1,11 +1,12 @@
 name: Source discovery checks
 on:
-  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify:
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

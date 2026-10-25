@@ -1,12 +1,12 @@
 name: Auditar configuracao do banco
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/audit-db.yml']
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   audit:
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

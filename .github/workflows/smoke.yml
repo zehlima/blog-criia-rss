@@ -1,13 +1,12 @@
 name: Verificacao operacional
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/smoke.trigger']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify:
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

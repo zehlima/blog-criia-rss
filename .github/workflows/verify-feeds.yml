@@ -1,12 +1,12 @@
 name: Verificar alternativas oficiais RSS
 on:
-  push:
-    branches: [main]
-    paths: ['research/rss-review-2026-09-14/official-alternatives.json', 'collector/diagnose_extraction.py']
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify:
+    # Farza ON HOLD: all automatic and manual jobs are suspended.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
