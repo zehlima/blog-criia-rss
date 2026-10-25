@@ -45,17 +45,28 @@ def put_json(s3,key,value):
 
 def get_json(s3,key):return json.loads(gzip.decompress(get_object(s3,key)))
 
-def all_articles(db,cutoff,inventory_urls=None):
+def all_articles(db,cutoff,inventory_urls=None,page_size=1000):
+    # Bound the corpus before reading bodies/embeddings. Page by article ID
+    # while retaining every inventory source associated with each article.
+    if isinstance(page_size,bool) or not isinstance(page_size,int) or page_size<1:
+        raise ValueError('page_size must be a positive integer')
     inventory_urls=active_urls() if inventory_urls is None else inventory_urls
-    return db.execute('''SELECT a.id,a.url,a.title,a.summary,a.published_at,a.first_seen_at,
+    articles=[];after=0
+    while True:
+        rows=db.execute('''SELECT a.id,a.url,a.title,a.summary,a.published_at,a.first_seen_at,
       a.content_key,a.content_status,
       jsonb_agg(jsonb_build_object('id',f.id,'name',f.name,
       'country',f.country,'region',f.region,'site_url',f.site_url,'rss_url',f.rss_url) ORDER BY f.id) sources
       FROM news_articles a JOIN news_article_feeds af ON af.article_id=a.id
-      JOIN news_feeds f ON f.id=af.feed_id WHERE a.first_seen_at<=%s
+      JOIN news_feeds f ON f.id=af.feed_id WHERE a.id>%s AND a.first_seen_at<=%s
+        AND coalesce(a.published_at,a.first_seen_at) BETWEEN %s AND %s
         AND f.rss_url=ANY(%s)
         AND a.content_status<>'invalid_reference'
-      GROUP BY a.id ORDER BY a.id''',(cutoff,inventory_urls)).fetchall()
+      GROUP BY a.id ORDER BY a.id LIMIT %s''',
+      (after,cutoff,cutoff-timedelta(hours=24),cutoff,inventory_urls,page_size)).fetchall()
+        articles.extend(rows)
+        if len(rows)<page_size:return articles
+        after=rows[-1]['id']
 
 def load_text(s3,a):
     text=a['title']+'\n'+(a['summary'] or '')
