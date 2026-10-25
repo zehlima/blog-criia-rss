@@ -1,4 +1,5 @@
 """Build an immutable corpus snapshot, then publish scheduled geographic rankings."""
+from collector.runtime_policy import require_ai
 import argparse
 import gzip
 import hashlib
@@ -76,6 +77,7 @@ def load_text(s3,a):
     return a
 
 def vectors(s3,articles,progress=None):
+    require_ai()
     import numpy as np
     import torch
     from sentence_transformers import SentenceTransformer
@@ -134,6 +136,7 @@ def assign_topics(s3,articles,embeddings,run_id):
     log(phase='topics',topics=len(groups),outliers=sum(a['topic_id']=='outlier' for a in articles))
 
 def prepare(db,s3,run_id):
+    require_ai()
     existing=db.execute('SELECT * FROM news_analysis_runs WHERE id=%s',(run_id,)).fetchone()
     if existing and existing['status']=='ready':
         log(phase='already_ready',run_id=run_id);return True
@@ -253,6 +256,7 @@ def mark_interrupted(db, run_id, outcome):
 
 
 def main():
+    require_ai()
     p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','publish']);p.add_argument('--run-id',required=True)
     p.add_argument('--scope',choices=['country','continent','globe']);p.add_argument('--delay',type=int,default=0);args=p.parse_args()
     db,s3=connect()

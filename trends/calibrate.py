@@ -1,4 +1,5 @@
 """Editorial regression cases: observed false groups and explicit translated headline pairs."""
+from collector.runtime_policy import require_ai
 import json,os
 from pathlib import Path
 import numpy as np
@@ -26,6 +27,7 @@ PAIRS=[
 ]
 
 def main():
+ require_ai()
  torch.set_num_threads(min(4,os.cpu_count() or 2))
  name='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'
  revision=model_info(name).sha

@@ -1,4 +1,5 @@
 """Consumes immutable daily closures, writes a versioned comparison, never recollects news."""
+from collector.runtime_policy import require_ai
 import gzip
 import json
 import os
@@ -57,6 +58,7 @@ def coverage(db,closure,refs,articles):
     return result
 
 def run():
+    require_ai()
     db,s3=connect();refs=manifest()
     try:
         if not db.execute('SELECT pg_try_advisory_lock(67426004) locked').fetchone()['locked']:raise RuntimeError('reference_comparison_busy')

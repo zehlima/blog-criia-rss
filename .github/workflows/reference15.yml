@@ -1,13 +1,6 @@
 name: Confronto 15 referencias
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['reference_compare/**', 'tests/test_reference_compare.py', '.github/workflows/reference15.yml']
-  workflow_run:
-    workflows: ['Fechamento diario semantico']
-    types: [completed]
-    branches: [main]
 permissions:
   contents: read
 concurrency:
@@ -26,7 +19,8 @@ env:
   TOKENIZERS_PARALLELISM: 'false'
 jobs:
   compare:
-    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository)
+    # RSS-only policy: no AI/model execution, including manual dispatch.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:

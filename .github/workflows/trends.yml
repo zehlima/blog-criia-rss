@@ -1,12 +1,5 @@
 name: Tendencias pais continente globo
 on:
-  workflow_run:
-    workflows: ['Coleta global RSS', 'Validar conexao e primeira coleta']
-    types: [completed]
-    branches: [main]
-  push:
-    branches: [main]
-    paths: ['.github/workflows/trends.trigger']
   workflow_dispatch:
 permissions:
   contents: read
@@ -31,7 +24,8 @@ env:
   TOKENIZERS_PARALLELISM: 'false'
 jobs:
   prepare:
-    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository)
+    # RSS-only policy: no AI/model execution, including manual dispatch.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 150
     outputs:
@@ -79,8 +73,9 @@ jobs:
             /tmp/installed-versions.txt
           retention-days: 30
   publish:
+    # RSS-only policy: no AI/model execution, including manual dispatch.
+    if: ${{ false }}
     needs: prepare
-    if: needs.prepare.outputs.ready == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 35
     strategy:

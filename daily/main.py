@@ -1,4 +1,5 @@
 """Midnight-triggered calendar-day closure; explicit previews never masquerade as final."""
+from collector.runtime_policy import require_ai
 import argparse
 import gzip
 import hashlib
@@ -59,6 +60,7 @@ def read_body(s3, article):
 
 
 def embeddings(s3, articles):
+    require_ai()
     import numpy as np
     import torch
     from sentence_transformers import SentenceTransformer
@@ -116,6 +118,7 @@ def markdown(payload):
 
 
 def run(db,s3,mode):
+    require_ai()
     parent=os.getenv('SOURCE_COLLECTION_RUN_ID')
     attempt=db.execute('SELECT * FROM news_collection_attempts WHERE id=%s',(parent,)).fetchone() if parent else db.execute('SELECT * FROM news_collection_attempts ORDER BY finished_at DESC LIMIT 1').fetchone()
     if not attempt:
@@ -186,6 +189,7 @@ def run(db,s3,mode):
 
 
 def main():
+    require_ai()
     parser=argparse.ArgumentParser();parser.add_argument('--mode',choices=['auto','preview'],default='auto');args=parser.parse_args()
     db,s3=connect()
     try:

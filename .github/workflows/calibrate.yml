@@ -1,12 +1,12 @@
 name: Calibrar coerencia dos temas
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/calibrate.trigger']
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   check:
+    # RSS-only policy: no AI/model execution, including manual dispatch.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

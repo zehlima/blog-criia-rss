@@ -1,19 +1,6 @@
 name: Fechamento diario semantico
 on:
-  workflow_run:
-    workflows: ['Coleta global RSS']
-    types: [completed]
-    branches: [main]
-  push:
-    branches: [main]
-    paths: ['.github/workflows/daily.trigger']
   workflow_dispatch:
-    inputs:
-      mode:
-        type: choice
-        options: [auto, preview]
-        default: auto
-        description: 'auto fecha o dia anterior apos coleta 00h; preview valida o dia em andamento'
 permissions:
   contents: read
 concurrency:
@@ -33,7 +20,8 @@ env:
   TOKENIZERS_PARALLELISM: 'false'
 jobs:
   select:
-    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository)
+    # RSS-only policy: no AI/model execution, including manual dispatch.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     outputs:
@@ -64,8 +52,9 @@ jobs:
           print('Fechamento elegivel:',eligible)
           PY
   close:
+    # RSS-only policy: no AI/model execution, including manual dispatch.
+    if: ${{ false }}
     needs: select
-    if: needs.select.outputs.eligible == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
